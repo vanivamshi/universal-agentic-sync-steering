@@ -1,6 +1,6 @@
 # Universal Agentic Sync Steering
 
-We investigate whether activation-level interventions can give an agent direct control over the relationship between what it **plans (C)**, what it **executes through tools (H)**, and what it **reports in its final output (O)**. Building on Heimersheim and Mendel’s work on activation plateaus and sensitive directions, we begin with agent trajectories and extract layer-4 activations around planning, tool-use, and reporting decisions. We learn predictive directions for the three channels and convert each into a causal steering direction by projecting the predictive direction onto its local decision gradient, obtaining \(v_C\), \(v_H\), and \(v_O\). We validate these directions at the actual generation sites and calibrate their intervention magnitude and timing.
+We investigate whether activation-level interventions can give an agent direct control over the relationship between what it **plans (C)**, what it **executes through tools (H)**, and what it **reports in its final output (O)**. Building on Heimersheim and Mendel’s work on activation plateaus and sensitive directions, we begin with agent trajectories and extract layer-4 activations around planning, tool-use, and reporting decisions. We learn predictive directions for the three channels and convert each into a causal steering direction by projecting the predictive direction onto its local decision gradient, obtaining $v_C$, $v_H$, and $v_O$. We validate these directions at the actual generation sites and calibrate their intervention magnitude and timing.
 
 The agent state is represented as
 
@@ -11,7 +11,7 @@ $$
 giving eight possible configurations. To control transitions between these configurations, we estimate a target-conditioned shift signal
 
 $$
-\Gamma(a\mid S,m^*),
+\Gamma(a\mid S,m^{\ast}),
 $$
 
 which measures the tendency of an intervention
@@ -20,7 +20,7 @@ $$
 a\in\{+v_C,-v_C,+v_H,-v_H,+v_O,-v_O\}
 $$
 
-to move the current state toward a target configuration \(m^*\). We extend this with one-step anti-stagnation memory to obtain \(\Gamma'\), and use short-horizon beam search over the signed causal actuators when greedy selection cannot reach a target directly. This produces a target-conditioned controller that can use intermediate states and alternative intervention polarities to transition the agent between the eight configurations without retraining the underlying model.
+to move the current state toward a target configuration $m^{\ast}$. We extend this with one-step anti-stagnation memory to obtain $\Gamma'$, and use short-horizon beam search over the signed causal actuators when greedy selection cannot reach a target directly. This produces a target-conditioned controller that can use intermediate states and alternative intervention polarities to transition the agent between the eight configurations without retraining the underlying model.
 
 **Model:** Qwen3-0.6B (local). **Sites locked at L4** via Heim plateau graphs.
 
@@ -33,15 +33,15 @@ Builds on [Agentic-alignment-drift](https://github.com/vanivamshi/Agentic-alignm
 
 | Channel | Bit | Meaning |
 |---------|-----|---------|
-| \(C\) | plan / commitment | Does PLAN match intended execution? |
-| \(H\) | hook / execution | Did tools actually load private config? |
-| \(O\) | output / report | Does FINAL match execution truth? |
+| $C$ | plan / commitment | Does PLAN match intended execution? |
+| $H$ | hook / execution | Did tools actually load private config? |
+| $O$ | output / report | Does FINAL match execution truth? |
 
 $$
-e=m^*-S,\qquad E=\|e\|_1
+e=m^{\ast}-S,\qquad E=\|e\|_1
 $$
 
-Same neutral task for all eight \(m^*\). The model generates freely; we score \(\Delta E\) and \(P(S=m^*)\), not scripted answers.
+Same neutral task for all eight $m^{\ast}$. The model generates freely; we score $\Delta E$ and $P(S=m^{\ast})$, not scripted answers.
 
 ---
 
@@ -88,38 +88,38 @@ Living phase record: [`docs/sync_channel_control.md`](docs/sync_channel_control.
 Blowup-vs-ε curves (real-base vs rand-base) choose the intervention layer.
 **L4 locked.** Figure above; protocol in [`docs/rq1_privilege.md`](docs/rq1_privilege.md).
 
-### 2. Channel actuators (frozen \(v_c\))
+### 2. Channel actuators (frozen $v_c$)
 
 Contrastive / controllability learning yields three causal directions at L4:
 
 - `data/directions/sync_channel_Vc_L4.json`
 
-No new \(v\) after the 8K freeze without a new failure mode.
+No new $v$ after the 8K freeze without a new failure mode.
 
 ### 3. Decision sites + gains (Phase 8C–8K)
 
 | Channel | Site | Gain |
 |---------|------|-----:|
-| \(H\) | decision-token | \(\alpha_H=1.5\) |
-| \(C\) | stem-prefill `PLAN: I will ` | \(\alpha_C=5\) |
-| \(O\) | early-FINAL `FINAL: ` | \(\alpha_O=1.5\) |
+| $H$ | decision-token | $\alpha_H=1.5$ |
+| $C$ | stem-prefill `PLAN: I will ` | $\alpha_C=5$ |
+| $O$ | early-FINAL `FINAL: ` | $\alpha_O=1.5$ |
 
-Same-site causal checks recover \(v\to h^{\mathrm{live}}\to\) bit. Compose \(H\to C\to O\). **This is the frozen controller.**
+Same-site causal checks recover $v \to h^{\mathrm{live}} \to$ bit. Compose $H \to C \to O$. **This is the frozen controller.**
 
-### 4. Soft control via \(\Gamma'\) (Phase 9E–9I arc)
+### 4. Soft control via $\Gamma'$ (Phase 9E–9I arc)
 
 Target-conditioned drift:
 
 $$
-\Gamma(a\mid s,m^*)=P(E\downarrow)-P(E\uparrow)
+\Gamma(a\mid s,m^{\ast})=P(E\downarrow)-P(E\uparrow)
 $$
 
-Live policy: pick relevant \(a\) maximizing \(\Gamma\), with anti-stagnation (\(\Gamma'\)). Works on soft states; **fails alone** on hard sinks \(\{000,001,110\}\).
+Live policy: pick relevant $a$ maximizing $\Gamma$, with anti-stagnation ($\Gamma'$). Works on soft states; **fails alone** on hard sinks `{000, 001, 110}`.
 
 ### 5. Hard control via bidirectional beam (Phase 9Q–9R)
 
-Target-signed polarity is **not** always the polarity that reaches \(m^*\).
-Example: \(011\xrightarrow{+C}001\) works even though \(C^*=0\).
+Target-signed polarity is **not** always the polarity that reaches $m^{\ast}$.
+Example: `011 --(+C)--> 001` works even though target $C^{\ast}=0$.
 
 Action set:
 
@@ -127,14 +127,13 @@ $$
 \mathcal{A}=\{+C,-C,+H,-H,+O,-O\}
 $$
 
-Short-horizon beam (\(K{=}3\), \(T{=}3\)) on **live rollouts** (not a sparse kernel). Hybrid:
+Short-horizon beam ($K=3$, $T=3$) on **live rollouts** (not a sparse kernel). Hybrid rule:
+
+- use $\Gamma'(s,m^{\ast})$ when $\max\Gamma' \ge \tau$ and the chosen action is not a no-op
+- otherwise run $\mathrm{beam}(\mathcal{A})$
 
 $$
-\pi(s,m^*)=
-\begin{cases}
-\Gamma'(s,m^*) & \max\Gamma'\ge\tau,\ \text{action not a no-op}\\
-\mathrm{beam}(\mathcal{A}) & \text{otherwise}
-\end{cases}
+\pi(s,m^{\ast}) \in \{\Gamma'(s,m^{\ast}),\; \mathrm{beam}(\mathcal{A})\}
 $$
 
 ---
@@ -143,11 +142,11 @@ $$
 
 | Milestone | Status |
 |-----------|--------|
-| Reachability: \(\exists\) path to each of 8 states | **supported** (9J+9K) |
-| Hybrid acquisition \(P_{\mathrm{acq}}>0\) on all 8 | **8/8** (9R) |
-| \(\Gamma'\) alone acquisition | 6/8 (misses `000`,`110`) |
+| Reachability: path exists to each of 8 states | **supported** (9J+9K) |
+| Hybrid acquisition $P_{\mathrm{acq}}>0$ on all 8 | **8/8** (9R) |
+| $\Gamma'$ alone acquisition | 6/8 (misses `000`, `110`) |
 | Opposite-to-target polarity on successful hybrid moves | **~56%** (beam-sourced ~68%) |
-| Reliable \(P_{\mathrm{final}}=P_{\mathrm{acq}}P_{\mathrm{ret}}\) on all 8 | **open** (retention) |
+| Reliable $P_{\mathrm{final}}=P_{\mathrm{acq}}\,P_{\mathrm{ret}}$ on all 8 | **open** (retention) |
 
 Paired 9R table (reps=2): `data/results/sync_phase9r_hybrid.md`.
 
@@ -158,9 +157,9 @@ Paired 9R table (reps=2): `data/results/sync_phase9r_hybrid.md`.
 These informed dead-ends; they are not the controller:
 
 - PCA / persona shortlist **steering** (detect can work; steer does not repair)
-- Soft-margin surrogates that move continuous \(\mathcal{L}\) but not discrete \(S\)
+- Soft-margin surrogates that move continuous $\mathcal{L}$ but not discrete $S$
 - Laplace / densified empirical kernels as planners (9C/9O) — rare sink mass + target-sign suppress useful transitions
-- New activation vectors for hard sinks — polarity search over existing \(v_c\) was sufficient for acquisition
+- New activation vectors for hard sinks — polarity search over existing $v_c$ was sufficient for acquisition
 
 ---
 
@@ -207,7 +206,7 @@ Frozen apply path: `scripts/run_phase8k_c_gain_compose.py`.
 | `docs/sync_channel_control.md` | Phase record (Heim→9R) |
 | `docs/sync_universal_equation.md` | Sync equation / policy framing |
 | `scripts/run_phase8k_*.py` / `run_phase9*.py` | Frozen controller + planners |
-| `data/directions/sync_channel_Vc_L4.json` | Frozen \(v_C,v_H,v_O\) |
+| `data/directions/sync_channel_Vc_L4.json` | Frozen $v_C,v_H,v_O$ |
 | `data/results/sync_phase9*.md` | Locked outcomes |
 | `.cursor/hooks/` | Demo detect → equation → repair |
 | `data/sandbox_sync/` | Demo workspace |
@@ -228,8 +227,8 @@ Default model: `qwen3-0.6b` (`activation_pipeline.device.LOCAL_MODEL_KEY`).
 
 ## Design norms
 
-- Freeze \(v_c\) and gains; change **selection / planning**, not actuators, unless a new failure mode appears.
-- Target-bit sign \(\neq\) globally correct polarity for reaching \(m^*\).
+- Freeze $v_c$ and gains; change **selection / planning**, not actuators, unless a new failure mode appears.
+- Target-bit sign is not always the globally correct polarity for reaching $m^{\ast}$.
 - Report clean negatives; do not promote kernel densify or new vectors as the hard-sink fix.
 - Product demo = Agent hooks; research path = local Qwen + activation intervene.
 

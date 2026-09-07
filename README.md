@@ -234,7 +234,12 @@ Default model: `qwen3-0.6b` (`activation_pipeline.device.LOCAL_MODEL_KEY`).
 
 ---
 
-## Citation / lineage
+## Citation
 
-Activation plateaus (Heimersheim et al.), refusal / Assistant Axis directions
-(Arditi, Zou, Lu et al.), Mind-the-GAP agentic scenarios. See `preregistration.md`.
+- Stefan Heimersheim and Jake Mendel. *[Interim research report] Activation plateaus & sensitive directions in GPT2](https://www.lesswrong.com/posts/LajDyGyiyX8DNNsuF/interim-research-report-activation-plateaus-and-sensitive-1)*. LessWrong / Alignment Forum, July 2024.
+- Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes Gurnee, and Neel Nanda. [*Refusal in Language Models Is Mediated by a Single Direction*](https://arxiv.org/abs/2406.11717). arXiv:2406.11717, 2024.
+- Andy Zou, Long Phan, Sarah Chen, James Campbell, Phillip Guo, Richard Ren, Alexander Pan, Xuwang Yin, Mantas Mazeika, Ann-Kathrin Dombrowski, Shashwat Goel, Nathaniel Li, Michael J. Byun, Zifan Wang, Alex Mallen, Steven Basart, Sanmi Koyejo, Dawn Song, Matt Fredrikson, J. Zico Kolter, and Dan Hendrycks. [*Representation Engineering: A Top-Down Approach to AI Transparency*](https://arxiv.org/abs/2310.01405). arXiv:2310.01405, 2023.
+- Christina Lu, Jack Gallagher, Jonathan Michala, Kyle Fish, and Jack Lindsey. [*The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models*](https://arxiv.org/abs/2601.10387). arXiv:2601.10387, 2026.
+- Arnold Cartagena and Ariane Teixeira. [*Mind the GAP: Text Safety Does Not Transfer to Tool-Call Safety in LLM Agents*](https://arxiv.org/abs/2602.16943). arXiv:2602.16943, 2026.
+
+See also `preregistration.md`.

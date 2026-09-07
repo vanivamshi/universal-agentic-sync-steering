@@ -75,7 +75,6 @@ Same neutral task for all eight \(m^*\). The model generates freely; we score \(
            |
            v
   Acquisition: 8/8 states with P_acq > 0
-  Retention:   still open (P_final sparse)
 ```
 
 Living phase record: [`docs/sync_channel_control.md`](docs/sync_channel_control.md).

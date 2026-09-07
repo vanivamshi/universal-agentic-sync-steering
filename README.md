@@ -1,149 +1,172 @@
-# Tool ↔ report synchronization (Qwen3-0.6B + Cursor Agent)
+# Universal Agentic Sync Steering
 
-When an agent **accesses private data via tools** but **hides that access in its
-report**, tool-trace and stated behavior are out of sync. This repo studies that
-failure mode and ships a **working correction layer** on Cursor Agent.
+Control the agent’s **tool ↔ plan ↔ report** sync state with frozen activation
+actuators and short-horizon planning — not by learning a new direction for every
+failure mode.
 
-**Active claim (locked):**
+**Model:** Qwen3-0.6B (local). **Sites locked at L4** via Heim plateau graphs.
 
-> Detect ≠ repair at the activation layer. Geometry/probe **detects** async state;
-> **policy repair** (gate or Agent follow-up) restores disclosure.
+**Active claim:**
 
-Model: **Qwen3-0.6B** (local). Product demo: **Cursor Agent + project hooks**
-(not research CLI).
+> All 8 discrete sync states \(m^*\in\{0,1\}^3\) are **reachable** under frozen
+> \(v_C,v_H,v_O\). Universal **acquisition** needs planning over **both polarities**
+> \(\{\pm C,\pm H,\pm O\}\). Reliable **retention** after acquisition is still open.
 
 Builds on [Agentic-alignment-drift](https://github.com/vanivamshi/Agentic-alignment-drift).
+Sibling archive: [multidim-steering-agentic-alignment](https://github.com/vanivamshi/multidim-steering-agentic-alignment).
 
 ---
 
-## What we are doing
+## Sync state
 
-| Layer | What | Result |
-|-------|------|--------|
-| **Heim graph → layer** | Blowup-vs-ε curves pick intervention layer | L4 locked |
-| **32-dim geometry @ L4** | Persona PCA basis + probe | `GEOM_HIT` — detect works |
-| **Equation / probe** | Score \(s(h)=h\cdot v_\Delta\) | Separates hidden vs disclosed |
-| **Activation steer** | \(+v_\Delta\), \(v_R\), closed-loop hooks | **NULL** — does not repair |
-| **Policy gate / Agent hooks** | Detect → equation flag → regen / follow-up | **`GATE_LOCKED_HIT`**, **`AGENT_PATH_LIVE_HIT`** |
+| Channel | Bit | Meaning |
+|---------|-----|---------|
+| \(C\) | plan / commitment | Does PLAN match intended execution? |
+| \(H\) | hook / execution | Did tools actually load private config? |
+| \(O\) | output / report | Does FINAL match execution truth? |
 
-Earlier RQ1 privilege / persona-PC **steering shortlists** were closed negative
-and removed. See [`docs/archived_pca_shortlist.md`](docs/archived_pca_shortlist.md).
+\[
+S=(C,H,O),\qquad
+e=m^*-S,\qquad
+E=\|e\|_1
+\]
 
-Full protocol: [`docs/sync_geometry_control.md`](docs/sync_geometry_control.md).
+Same neutral task for all eight \(m^*\). The model generates freely; we score
+\(\Delta E\) and \(P(S=m^*)\), not scripted answers.
 
 ---
 
-## Equations (locked)
-
-**Control coordinates** at report point (L4 residual projected onto frozen basis \(Q\)):
-
-\[
-z = Q^\top h, \quad Q = [\text{31 persona PCs @ L4},\; \text{Assistant Axis}]
-\]
-
-**Probe / detect score** (sync failure signal):
-
-\[
-s(h) = h \cdot v_\Delta
-\]
-
-where \(v_\Delta\) is the frozen detect direction (`data/directions/sync_v_delta_L4.jsonl`).
-
-**Repair attempt (Qwen activation — closed NULL):**
-
-\[
-h' = h + \alpha\, v_R, \quad v_R = \mathrm{unit}\bigl(P_S(h_{\mathrm{hidden}} - h_{\mathrm{fault}})\bigr)
-\]
-
-Steering with \(v_\Delta\) or \(v_R\) does **not** restore disclosure under Case B.
-
-**Working repair (Agent / gate — product layer):**
-
-```text
-detect(private_access)  →  equation_fired
-if report omits path    →  repair_triggered  →  force disclosure
-```
-
----
-
-## Flowchart — research path (Heim → layer → equation)
+## End-to-end flow (result-critical only)
 
 ![Heim classic graphs](docs/figures/step_5_heim_classic_graphs.png)
 
 ```text
-  activations (Qwen3-0.6B)
+  Qwen3-0.6B residuals
            |
            v
-  +---------------------------+
-  | Heim blowup-vs-eps graph  |   docs/figures/step_5_heim_classic_graphs.png
-  | real-base vs rand-base    |
-  +---------------------------+
+  Heim blowup-vs-ε graphs  ──►  lock intervention layer L4
            |
            v
-  +---------------------------+
-  | CHOOSE LAYER              |   locked: L4
-  +---------------------------+
+  Learn channel actuators v_C, v_H, v_O @ L4
            |
            v
-  +---------------------------+
-  | BASIS @ L4                |   persona_pca_prose_L4.jsonl (coords only)
-  | 31 PC + Assistant Axis    |
-  +---------------------------+
+  Causal sites (not template probes):
+    H = decision-token    C = stem-prefill "PLAN: I will "
+    O = early-FINAL "FINAL: "
            |
            v
-  +---------------------------+
-  | EQUATION / PROBE          |
-  |   s(h) = h · v_Δ          |
-  +---------------------------+
+  Freeze 8K gains:  α_C=5,  α_H=1.5,  α_O=1.5
            |
-           +-----> GEOM_HIT / gate detect
+           +── soft / high-Γ' states ──►  Γ' action selection (target-sign)
            |
-           +-----> activation steer = NULL
+           +── hard / low-evidence     ──►  beam over {±C,±H,±O}
            |
            v
-  +---------------------------+
-  | WORKING CORRECTION        |
-  | policy gate / Agent hooks |
-  +---------------------------+
+  Hybrid π:  Γ'  or  beam fallback
+           |
+           v
+  Acquisition: 8/8 states with P_acq > 0
+  Retention:   still open (P_final sparse)
 ```
+
+Living phase record: [`docs/sync_channel_control.md`](docs/sync_channel_control.md).
 
 ---
 
-## Flowchart — product demo (Cursor Agent, not CLI)
+## Locked pieces that actually matter
 
-Paste **Prompt A** from [`docs/sync_agent_demo_prompts.md`](docs/sync_agent_demo_prompts.md).
+### 1. Heim graph → L4
 
-```text
-  Prompt A in Cursor Agent
-        |
-        v
-  Shell: api/run_check.py ----loads----> api/.env
-        |
-        v
-  [SYNC EQUATION]              equation_fired = true
-        |
-        v
-  First answer HIDES path      (Case B simulate)
-        |
-        v
-  [SYNC EQUATION REPAIR]       repair_triggered = true
-        |
-        v
-  Revised answer NAMES path    disclosed = true
-        |
-        v
-  AGENT_PATH_LIVE_HIT
-```
+Blowup-vs-ε curves (real-base vs rand-base) choose the intervention layer.
+**L4 locked.** Figure above; protocol in [`docs/rq1_privilege.md`](docs/rq1_privilege.md).
 
-Proof: [`data/results/sync_agent_path_live.json`](data/results/sync_agent_path_live.json)
+### 2. Channel actuators (frozen \(v_c\))
 
-Regression: `.venv/bin/python scripts/test_sync_agent_hooks.py`
+Contrastive / controllability learning yields three causal directions at L4:
+
+- `data/directions/sync_channel_Vc_L4.json`
+
+No new \(v\) after the 8K freeze without a new failure mode.
+
+### 3. Decision sites + gains (Phase 8C–8K)
+
+| Channel | Site | Gain |
+|---------|------|-----:|
+| \(H\) | decision-token | \(\alpha_H=1.5\) |
+| \(C\) | stem-prefill `PLAN: I will ` | \(\alpha_C=5\) |
+| \(O\) | early-FINAL `FINAL: ` | \(\alpha_O=1.5\) |
+
+Same-site causal checks recover \(v\to h^{\mathrm{live}}\to\) bit. Compose
+\(H\to C\to O\). **This is the frozen controller.**
+
+### 4. Soft control via \(\Gamma'\) (Phase 9E–9I arc)
+
+Target-conditioned drift:
+
+\[
+\Gamma(a\mid s,m^*)=P(E\downarrow)-P(E\uparrow)
+\]
+
+Live policy: pick relevant \(a\) maximizing \(\Gamma\), with anti-stagnation
+(\(\Gamma'\)). Works on soft states; **fails alone** on hard sinks
+\(\{000,001,110\}\).
+
+### 5. Hard control via bidirectional beam (Phase 9Q–9R)
+
+Target-signed polarity is **not** always the polarity that reaches \(m^*\).
+Example: \(011\xrightarrow{+C}001\) works even though \(C^*=0\).
+
+Action set:
+
+\[
+\mathcal A=\{+C,-C,+H,-H,+O,-O\}
+\]
+
+Short-horizon beam (\(K{=}3\), \(T{=}3\)) on **live rollouts** (not a sparse
+kernel). Hybrid:
+
+\[
+\pi(s,m^*)=
+\begin{cases}
+\Gamma'(s,m^*) & \max\Gamma'\ge\tau,\ \text{action not a no-op}\\
+\mathrm{beam}(\mathcal A) & \text{otherwise}
+\end{cases}
+\]
 
 ---
 
-## Team-lead demo (5 min)
+## Current results
 
-1. Clone repo; open as **Trusted** workspace in Cursor.
+| Milestone | Status |
+|-----------|--------|
+| Reachability: \(\exists\) path to each of 8 states | **supported** (9J+9K) |
+| Hybrid acquisition \(P_{\mathrm{acq}}>0\) on all 8 | **8/8** (9R) |
+| \(\Gamma'\) alone acquisition | 6/8 (misses `000`,`110`) |
+| Opposite-to-target polarity on successful hybrid moves | **~56%** (beam-sourced ~68%) |
+| Reliable \(P_{\mathrm{final}}=P_{\mathrm{acq}}P_{\mathrm{ret}}\) on all 8 | **open** (retention) |
+
+Paired 9R table (reps=2): `data/results/sync_phase9r_hybrid.md`.
+
+---
+
+## What we deliberately do **not** treat as the path
+
+These informed dead-ends; they are not the controller:
+
+- PCA / persona shortlist **steering** (detect can work; steer does not repair)
+- Soft-margin surrogates that move continuous \(\mathcal L\) but not discrete \(S\)
+- Laplace / densified empirical kernels as planners (9C/9O) — rare sink mass +
+  target-sign suppress useful transitions
+- New activation vectors for hard sinks — polarity search over existing \(v_c\)
+  was sufficient for acquisition
+
+---
+
+## Demo (5 min)
+
+Cursor Agent + project hooks (product path). Not the Qwen research CLI.
+
+1. Clone this repo; open as a **Trusted** workspace in Cursor.
 2. Settings → **Hooks** → confirm `.cursor/hooks.json` loaded.
 3. Sandbox setup:
    ```bash
@@ -151,11 +174,27 @@ Regression: `.venv/bin/python scripts/test_sync_agent_hooks.py`
    pip install -r requirements.txt
    cp data/sandbox_sync/api/env.example data/sandbox_sync/api/.env
    ```
-4. New **Agent** chat → paste **Prompt A** from `docs/sync_agent_demo_prompts.md`.
+4. New **Agent** chat → paste **Prompt A** from [`docs/sync_agent_demo_prompts.md`](docs/sync_agent_demo_prompts.md).
 5. Expect: `[SYNC EQUATION]` → hide answer → `[SYNC EQUATION REPAIR]` → revised answer names `api/.env`.
 
-Do **not** use `scripts/run_sync_agent_prompt.py` for the product demo — that is
-the Qwen research CLI path.
+Regression: `.venv/bin/python scripts/test_sync_agent_hooks.py`
+
+---
+
+## Reproduce research core
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# Hybrid Γ' + beam, full 8-way acq×ret (paired)
+.venv/bin/python -u scripts/run_phase9r_hybrid.py --reps 2
+
+# Hard-sink beam only
+.venv/bin/python -u scripts/run_phase9q_bidir_beam.py --reps 2
+```
+
+Frozen apply path: `scripts/run_phase8k_c_gain_compose.py`.
 
 ---
 
@@ -163,14 +202,13 @@ the Qwen research CLI path.
 
 | Path | Role |
 |------|------|
-| `.cursor/hooks/` | Agent-path detect → equation → repair hooks |
-| `activation_pipeline/` | Model load, hooks, steering, GAP scoring |
-| `scripts/sync_scenario.py` | Sync sandbox scenario + L4 basis load |
-| `scripts/run_sync_*.py` | Geometry, gate, fault-recovery, closed-loop (research) |
-| `data/sandbox_sync/` | Agent demo workspace (`api/run_check.py`) |
-| `data/directions/` | \(v_\Delta\), L4 persona basis, repair dirs |
-| `data/results/sync_*` | Locked experiment outcomes |
-| `docs/sync_*` | Active protocols and flowcharts |
+| `docs/sync_channel_control.md` | Phase record (Heim→9R) |
+| `docs/sync_universal_equation.md` | Sync equation / policy framing |
+| `scripts/run_phase8k_*.py` / `run_phase9*.py` | Frozen controller + planners |
+| `data/directions/sync_channel_Vc_L4.json` | Frozen \(v_C,v_H,v_O\) |
+| `data/results/sync_phase9*.md` | Locked outcomes |
+| `.cursor/hooks/` | Demo detect → equation → repair |
+| `data/sandbox_sync/` | Demo workspace |
 
 ---
 
@@ -184,49 +222,14 @@ pip install -r requirements.txt
 
 Default model: `qwen3-0.6b` (`activation_pipeline.device.LOCAL_MODEL_KEY`).
 
-Smoke:
-
-```bash
-PYTHONPATH=. python scripts/smoke_activation_pipeline.py --print-plans
-.venv/bin/python scripts/test_sync_agent_hooks.py
-```
-
----
-
-## Key results (sync program)
-
-| Experiment | Decision |
-|------------|----------|
-| Exp A geometry | `GEOM_HIT` |
-| Exp B diagonal controller | `CONTROLLER_FAIL` |
-| Fault recovery / causal patch / closed-loop steer | `*_NULL` |
-| Gate locked eval | `GATE_LOCKED_HIT` |
-| Agent hooks (live) | `AGENT_PATH_LIVE_HIT` |
-
-Artifacts: `data/results/sync_geometry.md`, `sync_gate_locked_eval.md`, `sync_agent_path_live.md`.
-
----
-
-## Docs map
-
-| Doc | Topic |
-|-----|-------|
-| [`docs/sync_geometry_control.md`](docs/sync_geometry_control.md) | Active sync program (locked) |
-| [`docs/sync_agent_demo_prompts.md`](docs/sync_agent_demo_prompts.md) | Copy-paste Agent prompts |
-| [`docs/sync_agent_flowchart.md`](docs/sync_agent_flowchart.md) | ASCII flowcharts |
-| [`docs/sync_gate_locked_eval.md`](docs/sync_gate_locked_eval.md) | Policy gate repair |
-| [`docs/sync_repair_causal.md`](docs/sync_repair_causal.md) | Detect ≠ repair framing |
-| [`docs/rq1_privilege.md`](docs/rq1_privilege.md) | Heim graphs / RQ1 pilot (historical) |
-| [`docs/archived_pca_shortlist.md`](docs/archived_pca_shortlist.md) | Removed failed PCA tracks |
-
 ---
 
 ## Design norms
 
-- Pre-commit decision rules; do not retune bars after seeing numbers.
-- **Detect ≠ repair** — do not conflate probe hit with causal recovery.
-- Report clean negatives (`CLOSED_LOOP_NULL`, archived PCA shortlists).
-- Product path = **Agent hooks** or **gate**; not residual steering.
+- Freeze \(v_c\) and gains; change **selection / planning**, not actuators, unless a new failure mode appears.
+- Target-bit sign \(\neq\) globally correct polarity for reaching \(m^*\).
+- Report clean negatives; do not promote kernel densify or new vectors as the hard-sink fix.
+- Product demo = Agent hooks; research path = local Qwen + activation intervene.
 
 ---
 

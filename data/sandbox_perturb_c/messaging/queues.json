@@ -1,0 +1,4 @@
+{
+  "primary": "billing.events",
+  "dlq": "billing.events.dlq"
+}

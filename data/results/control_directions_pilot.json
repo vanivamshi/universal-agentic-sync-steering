@@ -1,0 +1,442 @@
+{
+  "model": "qwen3-0.6b",
+  "pilot": true,
+  "layers": [
+    14,
+    16,
+    19,
+    22
+  ],
+  "depth_fractions_approx": [
+    0.5185185185185185,
+    0.5925925925925926,
+    0.7037037037037037,
+    0.8148148148148148
+  ],
+  "gate": {
+    "threshold": 0.7,
+    "required_layers": 3,
+    "total_layers": 4,
+    "criterion": "at least 3/4 fixed mid/late layers with split-half cosine >= 0.7"
+  },
+  "learned_controls": [
+    {
+      "direction_id": "syntax",
+      "kind": "syntax",
+      "domain": null,
+      "n_pairs": 12,
+      "n_boot": 400,
+      "n_splits_per_stat": 20,
+      "threshold": 0.7,
+      "required_layers": 3,
+      "layers": [
+        {
+          "layer": 14,
+          "split_half_cosine": 0.7339434295892715,
+          "bca_ci95": [
+            0.6912982225418091,
+            0.7502171903848648
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -1.5341205449145758,
+            "acceleration": -0.06176579988078947,
+            "a_lo": 1.050436848615277e-09,
+            "a_hi": 0.1315293708790095,
+            "prop_below_hat": 0.0625
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": false
+        },
+        {
+          "layer": 16,
+          "split_half_cosine": 0.7730870366096496,
+          "bca_ci95": [
+            0.6577705666422844,
+            0.8308235973119735
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.6588376929030214,
+            "acceleration": 0.04515035990006412,
+            "a_lo": 0.001346648906058956,
+            "a_hi": 0.7653122701446073,
+            "prop_below_hat": 0.255
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": false
+        },
+        {
+          "layer": 19,
+          "split_half_cosine": 0.7644935637712479,
+          "bca_ci95": [
+            0.6897996515035629,
+            0.7750378310680389
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -1.598193138558262,
+            "acceleration": 0.032606815204288604,
+            "a_lo": 8.48793017926841e-07,
+            "a_hi": 0.10895515043938958,
+            "prop_below_hat": 0.055
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": false
+        },
+        {
+          "layer": 22,
+          "split_half_cosine": 0.7809065461158753,
+          "bca_ci95": [
+            0.6827928125858307,
+            0.8350547283887864
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.5828415078694396,
+            "acceleration": 0.012961151555592503,
+            "a_lo": 0.0011652755285120886,
+            "a_hi": 0.7936946649147982,
+            "prop_below_hat": 0.28
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": false
+        }
+      ],
+      "n_layers_passing": 4,
+      "passed": true,
+      "status": "eligible_for_step5"
+    },
+    {
+      "direction_id": "domain_content_coding",
+      "kind": "domain_content",
+      "domain": "coding",
+      "n_pairs": 12,
+      "n_boot": 400,
+      "n_splits_per_stat": 20,
+      "threshold": 0.7,
+      "required_layers": 3,
+      "layers": [
+        {
+          "layer": 14,
+          "split_half_cosine": 0.817292433977127,
+          "bca_ci95": [
+            0.7485069960355759,
+            0.8573192238807679
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.6982833653639817,
+            "acceleration": -0.1088918912555121,
+            "a_lo": 4.509313795697523e-06,
+            "a_hi": 0.6594625643998255,
+            "prop_below_hat": 0.2425
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        },
+        {
+          "layer": 16,
+          "split_half_cosine": 0.8243992060422898,
+          "bca_ci95": [
+            0.7257992222905159,
+            0.8727810263633728
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.5607030324994003,
+            "acceleration": -0.06301809207628661,
+            "a_lo": 0.0001872817600797605,
+            "a_hi": 0.7658264762854525,
+            "prop_below_hat": 0.2875
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        },
+        {
+          "layer": 19,
+          "split_half_cosine": 0.8157306045293808,
+          "bca_ci95": [
+            0.7617499351501464,
+            0.8585756450891495
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -1.0152220342714453,
+            "acceleration": -0.041714810826118706,
+            "a_lo": 5.121549554287785e-06,
+            "a_hi": 0.4576719917534479,
+            "prop_below_hat": 0.155
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        },
+        {
+          "layer": 22,
+          "split_half_cosine": 0.8181591838598251,
+          "bca_ci95": [
+            0.7457035809755326,
+            0.853121155500412
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.9842349612068464,
+            "acceleration": -0.02869202850277325,
+            "a_lo": 1.3340226847735615e-05,
+            "a_hi": 0.48600869538961894,
+            "prop_below_hat": 0.1625
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        }
+      ],
+      "n_layers_passing": 4,
+      "passed": true,
+      "status": "eligible_for_step5"
+    },
+    {
+      "direction_id": "domain_content_therapy",
+      "kind": "domain_content",
+      "domain": "therapy",
+      "n_pairs": 24,
+      "n_boot": 400,
+      "n_splits_per_stat": 20,
+      "threshold": 0.7,
+      "required_layers": 3,
+      "layers": [
+        {
+          "layer": 14,
+          "split_half_cosine": 0.8380085498094558,
+          "bca_ci95": [
+            0.7929874449968338,
+            0.8603542000055313
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -1.0581216188600695,
+            "acceleration": 0.020446176784177254,
+            "a_lo": 4.793946922310166e-05,
+            "a_hi": 0.44459169636068313,
+            "prop_below_hat": 0.145
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        },
+        {
+          "layer": 16,
+          "split_half_cosine": 0.8541203320026398,
+          "bca_ci95": [
+            0.7950903952121735,
+            0.8800091117620468
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.7554150256623013,
+            "acceleration": -0.021046667766039733,
+            "a_lo": 0.00013878381121590344,
+            "a_hi": 0.6625203884409783,
+            "prop_below_hat": 0.225
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        },
+        {
+          "layer": 19,
+          "split_half_cosine": 0.8265894800424576,
+          "bca_ci95": [
+            0.7531177848577499,
+            0.8578487724065781
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.8416212327266185,
+            "acceleration": 0.0349951200061253,
+            "a_lo": 0.0003455838951325063,
+            "a_hi": 0.6263767861360244,
+            "prop_below_hat": 0.2
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        },
+        {
+          "layer": 22,
+          "split_half_cosine": 0.7933208882808686,
+          "bca_ci95": [
+            0.7173903077840805,
+            0.8270778656005859
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.9541652535216889,
+            "acceleration": -0.022824947232240825,
+            "a_lo": 2.2914538082008384e-05,
+            "a_hi": 0.5115921297471686,
+            "prop_below_hat": 0.17
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        }
+      ],
+      "n_layers_passing": 4,
+      "passed": true,
+      "status": "eligible_for_step5"
+    },
+    {
+      "direction_id": "domain_content_writing",
+      "kind": "domain_content",
+      "domain": "writing",
+      "n_pairs": 12,
+      "n_boot": 400,
+      "n_splits_per_stat": 20,
+      "threshold": 0.7,
+      "required_layers": 3,
+      "layers": [
+        {
+          "layer": 14,
+          "split_half_cosine": 0.828336289525032,
+          "bca_ci95": [
+            0.785968941450119,
+            0.8446400105953217
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -1.2265281188774846,
+            "acceleration": -0.0020124710499752987,
+            "a_lo": 4.6339214070934e-06,
+            "a_hi": 0.31059192513148015,
+            "prop_below_hat": 0.11
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        },
+        {
+          "layer": 16,
+          "split_half_cosine": 0.8562335729598999,
+          "bca_ci95": [
+            0.8039284914731979,
+            0.8875218480825424
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.5100734574908838,
+            "acceleration": -0.04522182116850969,
+            "a_lo": 0.0004996806591793801,
+            "a_hi": 0.8025047831119407,
+            "prop_below_hat": 0.305
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        },
+        {
+          "layer": 19,
+          "split_half_cosine": 0.8427294254302978,
+          "bca_ci95": [
+            0.7903812199831008,
+            0.8743508219718933
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.8778962944629263,
+            "acceleration": 0.050224552895227606,
+            "a_lo": 0.0003872728384660129,
+            "a_hi": 0.6050180259460952,
+            "prop_below_hat": 0.19
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        },
+        {
+          "layer": 22,
+          "split_half_cosine": 0.8412995308637619,
+          "bca_ci95": [
+            0.7748551338911056,
+            0.8816037505865097
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.6433454056850597,
+            "acceleration": 0.06517985299257516,
+            "a_lo": 0.002058868292083016,
+            "a_hi": 0.7872361438725679,
+            "prop_below_hat": 0.26
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        }
+      ],
+      "n_layers_passing": 4,
+      "passed": true,
+      "status": "eligible_for_step5"
+    }
+  ],
+  "random_controls": [
+    {
+      "layer": 14,
+      "seed": 20260730,
+      "n_random": 16,
+      "hidden_size": 1024,
+      "min_norm": 0.9999998211860657,
+      "max_norm": 1.0000001192092896,
+      "max_abs_dot_with_fixed_basis": 3.4458935260772705e-08,
+      "max_abs_pairwise_cosine": 2.7008354663848877e-08,
+      "passed": true
+    },
+    {
+      "layer": 16,
+      "seed": 20260730,
+      "n_random": 16,
+      "hidden_size": 1024,
+      "min_norm": 0.9999998211860657,
+      "max_norm": 1.0000001192092896,
+      "max_abs_dot_with_fixed_basis": 4.470348358154297e-08,
+      "max_abs_pairwise_cosine": 1.955777406692505e-08,
+      "passed": true
+    },
+    {
+      "layer": 19,
+      "seed": 20260730,
+      "n_random": 16,
+      "hidden_size": 1024,
+      "min_norm": 0.9999998211860657,
+      "max_norm": 1.0000001192092896,
+      "max_abs_dot_with_fixed_basis": 2.0489096641540527e-08,
+      "max_abs_pairwise_cosine": 2.7008354663848877e-08,
+      "passed": true
+    },
+    {
+      "layer": 22,
+      "seed": 20260730,
+      "n_random": 16,
+      "hidden_size": 1024,
+      "min_norm": 0.9999998211860657,
+      "max_norm": 1.0000001192092896,
+      "max_abs_dot_with_fixed_basis": 2.514570951461792e-08,
+      "max_abs_pairwise_cosine": 2.9802322387695312e-08,
+      "passed": true
+    }
+  ],
+  "all_learned_controls_passed": true,
+  "all_random_controls_passed": true,
+  "step4_passed": true,
+  "status": "eligible_for_step5_pilot",
+  "artifacts": {
+    "learned_directions": "/Users/vamshisunku.mohan/bluedot_alignment/data/directions/controls_pilot.jsonl",
+    "random_directions": "/Users/vamshisunku.mohan/bluedot_alignment/data/directions/random_controls_pilot.jsonl",
+    "contrast_pairs": [
+      "/Users/vamshisunku.mohan/bluedot_alignment/data/contrast_pairs/syntax_control_pilot.jsonl",
+      "/Users/vamshisunku.mohan/bluedot_alignment/data/contrast_pairs/domain_content_coding_pilot.jsonl",
+      "/Users/vamshisunku.mohan/bluedot_alignment/data/contrast_pairs/domain_content_therapy_pilot_v2.jsonl",
+      "/Users/vamshisunku.mohan/bluedot_alignment/data/contrast_pairs/domain_content_writing_pilot.jsonl"
+    ]
+  },
+  "interpretation": "Step 4 validates extraction reliability only. It does not show safety-specific deprivilege; that interaction is tested in Step 5.",
+  "revision_history": [
+    {
+      "control": "domain_content_therapy",
+      "version": "v1",
+      "n_pairs": 12,
+      "result": "FAIL (2/4 layers >= 0.70)",
+      "action": "One documented revision: expand to 24 pairs with more parallel syntax. If v2 fails, exclude; do not tune again."
+    }
+  ]
+}

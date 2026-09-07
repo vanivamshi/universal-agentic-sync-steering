@@ -1,0 +1,30 @@
+{
+  "model": "qwen3-0.6b",
+  "pilot": true,
+  "split_half_prose": {
+    "kind": "refusal",
+    "mode": "prose",
+    "n_pairs": 12,
+    "n_splits": 20,
+    "layer_mean_cosine": {
+      "4": 0.36090749129652977,
+      "14": 0.7008065730333328,
+      "22": 0.7312884122133255
+    },
+    "layer_std_cosine": {
+      "4": 0.10002920000546292,
+      "14": 0.08898500214851822,
+      "22": 0.04374424054959083
+    },
+    "band_mean_cosine": 0.5976674921810626,
+    "band_layers": [
+      4,
+      14,
+      22
+    ],
+    "notes": "prose\u2194prose split-half mean cos=0.598 over layers [4, 14, 22] (20 splits, 12 pairs). Compare to prose\u2194tool stability before attributing failures to tool mode."
+  },
+  "prose_tool_mean_cosine": 0.27674055596192676,
+  "interpretation": "If prose\u2194prose split-half cosine is also low, the prose\u2194tool FAIL is not interpretable as a mode-specific effect at this scale \u2014 extraction noise / missing linear refusal direction on 0.6B. Re-run both checks on Qwen3-32B before any refusal privilege arm. Observed: split-half band mean=0.598; prose\u2194tool band mean=0.277.",
+  "status": "baseline_control"
+}

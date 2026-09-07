@@ -1,0 +1,82 @@
+{
+  "protocol": "Phase 8G frozen v_c^O dose + disclose GT",
+  "alphas": [
+    1.5,
+    3.0,
+    5.0,
+    8.0
+  ],
+  "n": 12,
+  "seed": 20260915,
+  "ground_truth": "score_output_disclose",
+  "proxy": "logit(During)-logit(docs)",
+  "by_alpha": {
+    "1.5": {
+      "alpha": 1.5,
+      "mean_abs_delta_B": 0.1564893311842309,
+      "mean_G_TS": 0.15648933118423083,
+      "frac_G_pos": 1.0,
+      "P_proxy_flip": 0.0,
+      "P_SO_flip": 0.0,
+      "P_W2C_TS": 0.0,
+      "P_W2C_WS": 0.0,
+      "n_wrong0": 12,
+      "n": 12
+    },
+    "3.0": {
+      "alpha": 3.0,
+      "mean_abs_delta_B": 0.312978662368462,
+      "mean_G_TS": 0.312978662368462,
+      "frac_G_pos": 1.0,
+      "P_proxy_flip": 0.25,
+      "P_SO_flip": 0.0,
+      "P_W2C_TS": 0.0,
+      "P_W2C_WS": 0.0,
+      "n_wrong0": 12,
+      "n": 12
+    },
+    "5.0": {
+      "alpha": 5.0,
+      "mean_abs_delta_B": 0.5216311039474365,
+      "mean_G_TS": 0.5216311039474366,
+      "frac_G_pos": 1.0,
+      "P_proxy_flip": 0.4166666666666667,
+      "P_SO_flip": 0.08333333333333333,
+      "P_W2C_TS": 0.08333333333333333,
+      "P_W2C_WS": 0.0,
+      "n_wrong0": 12,
+      "n": 12
+    },
+    "8.0": {
+      "alpha": 8.0,
+      "mean_abs_delta_B": 0.8346097663158987,
+      "mean_G_TS": 0.8346097663158986,
+      "frac_G_pos": 1.0,
+      "P_proxy_flip": 0.5,
+      "P_SO_flip": 0.16666666666666666,
+      "P_W2C_TS": 0.25,
+      "P_W2C_WS": 0.08333333333333333,
+      "n_wrong0": 12,
+      "n": 12
+    }
+  },
+  "gate": {
+    "hypothesis": "O under-actuation: higher \u03b1 raises |\u0394B| and S_O flips; E[G]>0",
+    "E_G_pos_all_alpha": true,
+    "abs_dB_increases": true,
+    "proxy_flip_increases": true,
+    "SO_flip_increases": true,
+    "SO_flip_at_max_alpha": 0.16666666666666666,
+    "proxy_flip_at_max_alpha": 0.5,
+    "P_W2C_TS_at_max": 0.25,
+    "P_W2C_WS_at_max": 0.08333333333333333,
+    "under_actuation": true,
+    "proxy_behavior_mismatch": false,
+    "gain_helps_behavior": true,
+    "read": "If |\u0394B|\u2191 and P(S_O flip)\u2191 with E[G]>0: under-actuation \u2192 use higher \u03b1_O. If |\u0394B|\u2191 but S_O flat: proxy\u2260behavior \u2192 align scoring / early-FINAL, not more gain. Only then reopen O conversion."
+  },
+  "unchanged": [
+    "v_c^O",
+    "Phase7 O boundary"
+  ]
+}

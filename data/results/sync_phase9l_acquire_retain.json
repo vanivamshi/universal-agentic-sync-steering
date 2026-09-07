@@ -1,0 +1,5842 @@
+{
+  "protocol": "Phase 9L P_acquire \u00d7 P_retain (hybrid planner)",
+  "seed": 20260931,
+  "reps": 4,
+  "max_steps_acq": 7,
+  "n_retain": 2,
+  "lambda": 0.0,
+  "per_mstar": {
+    "000": {
+      "n": 4,
+      "hard": true,
+      "policy": "sink_seek",
+      "P_acquire": 0.25,
+      "P_retain_given_acq": 0.0,
+      "P_final_product": 0.0,
+      "P_final_empirical": 0.0,
+      "n_acquire": 1,
+      "n_retain_ok": 0,
+      "path_examples": [
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "011",
+            "111",
+            "111",
+            "011",
+            "000",
+            "000",
+            "110"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "H",
+            "H",
+            "H",
+            "C"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "111",
+            "010",
+            "100",
+            "100",
+            "100",
+            "010",
+            "111",
+            "100"
+          ],
+          "acts": [
+            "C",
+            "H",
+            "O",
+            "H",
+            "O",
+            "H",
+            "C"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "111",
+            "100",
+            "011",
+            "111",
+            "111",
+            "111",
+            "100"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "O",
+            "H",
+            "C",
+            "H",
+            "C"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "111",
+            "110",
+            "100",
+            "011",
+            "011",
+            "100",
+            "011"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "H",
+            "O",
+            "H",
+            "C",
+            "O"
+          ]
+        }
+      ]
+    },
+    "001": {
+      "n": 4,
+      "hard": true,
+      "policy": "sink_seek",
+      "P_acquire": 0.0,
+      "P_retain_given_acq": NaN,
+      "P_final_product": 0.0,
+      "P_final_empirical": 0.0,
+      "n_acquire": 0,
+      "n_retain_ok": 0,
+      "path_examples": [
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "110",
+            "011",
+            "111",
+            "100",
+            "000",
+            "010",
+            "011"
+          ],
+          "acts": [
+            "C",
+            "H",
+            "C",
+            "C",
+            "O",
+            "O",
+            "H"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "110",
+            "111",
+            "111",
+            "111",
+            "101",
+            "011",
+            "111"
+          ],
+          "acts": [
+            "C",
+            "H",
+            "C",
+            "H",
+            "C",
+            "O",
+            "C"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "101",
+            "011",
+            "111",
+            "101",
+            "011",
+            "100",
+            "011",
+            "100"
+          ],
+          "acts": [
+            "O",
+            "C",
+            "C",
+            "O",
+            "C",
+            "O",
+            "C"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "110",
+            "111",
+            "110",
+            "110",
+            "010",
+            "111",
+            "000"
+          ],
+          "acts": [
+            "C",
+            "H",
+            "C",
+            "H",
+            "O",
+            "H",
+            "C"
+          ]
+        }
+      ]
+    },
+    "010": {
+      "n": 4,
+      "hard": false,
+      "policy": "gamma_prime",
+      "P_acquire": 0.75,
+      "P_retain_given_acq": 0.0,
+      "P_final_product": 0.0,
+      "P_final_empirical": 0.0,
+      "n_acquire": 3,
+      "n_retain_ok": 0,
+      "path_examples": [
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "011",
+            "011",
+            "111",
+            "011",
+            "111",
+            "100",
+            "101"
+          ],
+          "acts": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "C"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "111",
+            "011",
+            "011",
+            "010",
+            "010",
+            "011"
+          ],
+          "acts": [
+            "O",
+            "O",
+            "O",
+            "H",
+            "O"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "100",
+            "100",
+            "111",
+            "010",
+            "111"
+          ],
+          "acts": [
+            "C",
+            "H",
+            "O",
+            "H"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "111",
+            "010",
+            "111"
+          ],
+          "acts": [
+            "O",
+            "H"
+          ]
+        }
+      ]
+    },
+    "011": {
+      "n": 4,
+      "hard": false,
+      "policy": "gamma_prime",
+      "P_acquire": 1.0,
+      "P_retain_given_acq": 0.25,
+      "P_final_product": 0.25,
+      "P_final_empirical": 0.25,
+      "n_acquire": 4,
+      "n_retain_ok": 1,
+      "path_examples": [
+        {
+          "acq": 1,
+          "ret": 1,
+          "path": [
+            "010",
+            "011",
+            "011",
+            "011"
+          ],
+          "acts": [
+            "O",
+            "O",
+            "H"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "010",
+            "011",
+            "101"
+          ],
+          "acts": [
+            "O",
+            "O"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "100",
+            "011",
+            "011",
+            "111"
+          ],
+          "acts": [
+            "O",
+            "O",
+            "H"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "100",
+            "010",
+            "100",
+            "100",
+            "100",
+            "011",
+            "010"
+          ],
+          "acts": [
+            "O",
+            "O",
+            "O",
+            "C",
+            "O",
+            "O"
+          ]
+        }
+      ]
+    },
+    "100": {
+      "n": 4,
+      "hard": false,
+      "policy": "gamma_prime",
+      "P_acquire": 0.75,
+      "P_retain_given_acq": 0.0,
+      "P_final_product": 0.0,
+      "P_final_empirical": 0.0,
+      "n_acquire": 3,
+      "n_retain_ok": 0,
+      "path_examples": [
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "011",
+            "101",
+            "011",
+            "011",
+            "111",
+            "111",
+            "011",
+            "100",
+            "100",
+            "101"
+          ],
+          "acts": [
+            "C",
+            "O",
+            "C",
+            "H",
+            "H",
+            "O",
+            "C",
+            "H",
+            "C"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "010",
+            "100",
+            "100",
+            "101"
+          ],
+          "acts": [
+            "C",
+            "H",
+            "C"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "011",
+            "100",
+            "100",
+            "010"
+          ],
+          "acts": [
+            "C",
+            "H",
+            "C"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "011",
+            "010",
+            "111",
+            "101",
+            "011",
+            "101",
+            "111"
+          ],
+          "acts": [
+            "C",
+            "H",
+            "C",
+            "H",
+            "O",
+            "C",
+            "O"
+          ]
+        }
+      ]
+    },
+    "101": {
+      "n": 4,
+      "hard": false,
+      "policy": "gamma_prime",
+      "P_acquire": 0.5,
+      "P_retain_given_acq": 0.0,
+      "P_final_product": 0.0,
+      "P_final_empirical": 0.0,
+      "n_acquire": 2,
+      "n_retain_ok": 0,
+      "path_examples": [
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "111",
+            "010",
+            "100",
+            "011",
+            "011",
+            "010",
+            "100",
+            "010"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "O",
+            "H",
+            "C",
+            "C",
+            "O"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "011",
+            "100",
+            "011",
+            "111",
+            "010",
+            "101",
+            "011"
+          ],
+          "acts": [
+            "H",
+            "O",
+            "H",
+            "H",
+            "C",
+            "C"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "010",
+            "100",
+            "011",
+            "111",
+            "010",
+            "101",
+            "100"
+          ],
+          "acts": [
+            "C",
+            "O",
+            "H",
+            "H",
+            "C",
+            "C"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "010",
+            "100",
+            "011",
+            "100",
+            "011",
+            "100",
+            "011",
+            "100"
+          ],
+          "acts": [
+            "C",
+            "O",
+            "H",
+            "O",
+            "H",
+            "O",
+            "H"
+          ]
+        }
+      ]
+    },
+    "110": {
+      "n": 4,
+      "hard": true,
+      "policy": "sink_seek",
+      "P_acquire": 0.5,
+      "P_retain_given_acq": 0.0,
+      "P_final_product": 0.0,
+      "P_final_empirical": 0.0,
+      "n_acquire": 2,
+      "n_retain_ok": 0,
+      "path_examples": [
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "111",
+            "100",
+            "010",
+            "111",
+            "100",
+            "011",
+            "111"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "O",
+            "H",
+            "C",
+            "O",
+            "H"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "100",
+            "011",
+            "111",
+            "100",
+            "011",
+            "111",
+            "101",
+            "011"
+          ],
+          "acts": [
+            "O",
+            "H",
+            "C",
+            "O",
+            "H",
+            "C",
+            "O"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "011",
+            "111",
+            "010",
+            "011",
+            "010",
+            "010",
+            "011",
+            "110",
+            "010"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "H",
+            "H",
+            "H",
+            "O",
+            "H",
+            "H"
+          ]
+        },
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "011",
+            "111",
+            "010",
+            "111",
+            "010",
+            "110",
+            "010"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "H",
+            "C",
+            "H",
+            "H"
+          ]
+        }
+      ]
+    },
+    "111": {
+      "n": 4,
+      "hard": false,
+      "policy": "gamma_prime",
+      "P_acquire": 0.25,
+      "P_retain_given_acq": 0.0,
+      "P_final_product": 0.0,
+      "P_final_empirical": 0.0,
+      "n_acquire": 1,
+      "n_retain_ok": 0,
+      "path_examples": [
+        {
+          "acq": 1,
+          "ret": 0,
+          "path": [
+            "011",
+            "111",
+            "111",
+            "011"
+          ],
+          "acts": [
+            "C",
+            "H",
+            "C"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "100",
+            "011",
+            "100",
+            "010",
+            "011",
+            "100",
+            "011"
+          ],
+          "acts": [
+            "C",
+            "O",
+            "C",
+            "O",
+            "O",
+            "C",
+            "O"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "100",
+            "011",
+            "100",
+            "011",
+            "100",
+            "011",
+            "100"
+          ],
+          "acts": [
+            "C",
+            "O",
+            "C",
+            "O",
+            "C",
+            "O",
+            "C"
+          ]
+        },
+        {
+          "acq": 0,
+          "ret": null,
+          "path": [
+            "011",
+            "100",
+            "011",
+            "100",
+            "100",
+            "110",
+            "011",
+            "101"
+          ],
+          "acts": [
+            "C",
+            "O",
+            "C",
+            "O",
+            "H",
+            "O",
+            "C"
+          ]
+        }
+      ]
+    }
+  },
+  "trials": [
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "policy": "sink_seek",
+      "seed": 20260931,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        1,
+        0
+      ],
+      "path": [
+        "011",
+        "111",
+        "111",
+        "011",
+        "000",
+        "000",
+        "110"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            0,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            0,
+            0
+          ],
+          "dS": 0,
+          "stayed": 1,
+          "mode": "stay_seek",
+          "P_hit_star": null,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "retain",
+          "a": "C",
+          "S_before": [
+            0,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": null,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "H",
+        "C",
+        "H",
+        "H",
+        "H",
+        "C"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 3,
+      "a_arrive": "H",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "policy": "sink_seek",
+      "seed": 20260950,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "path": [
+        "111",
+        "010",
+        "100",
+        "100",
+        "100",
+        "010",
+        "111",
+        "100"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "H",
+        "O",
+        "H",
+        "O",
+        "H",
+        "C"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "policy": "sink_seek",
+      "seed": 20260969,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "path": [
+        "011",
+        "111",
+        "100",
+        "011",
+        "111",
+        "111",
+        "111",
+        "100"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "H",
+        "C",
+        "O",
+        "H",
+        "C",
+        "H",
+        "C"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "policy": "sink_seek",
+      "seed": 20260988,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "path": [
+        "011",
+        "111",
+        "110",
+        "100",
+        "011",
+        "011",
+        "100",
+        "011"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "H",
+        "C",
+        "H",
+        "O",
+        "H",
+        "C",
+        "O"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "policy": "sink_seek",
+      "seed": 20261131,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "path": [
+        "011",
+        "110",
+        "011",
+        "111",
+        "100",
+        "000",
+        "010",
+        "011"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "H",
+        "C",
+        "C",
+        "O",
+        "O",
+        "H"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "policy": "sink_seek",
+      "seed": 20261150,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "path": [
+        "011",
+        "110",
+        "111",
+        "111",
+        "111",
+        "101",
+        "011",
+        "111"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "H",
+        "C",
+        "H",
+        "C",
+        "O",
+        "C"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "policy": "sink_seek",
+      "seed": 20261169,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "path": [
+        "101",
+        "011",
+        "111",
+        "101",
+        "011",
+        "100",
+        "011",
+        "100"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "C"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "policy": "sink_seek",
+      "seed": 20261188,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        0,
+        0
+      ],
+      "path": [
+        "011",
+        "110",
+        "111",
+        "110",
+        "110",
+        "010",
+        "111",
+        "000"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "H",
+        "C",
+        "H",
+        "O",
+        "H",
+        "C"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "policy": "gamma_prime",
+      "seed": 20261331,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        1
+      ],
+      "path": [
+        "011",
+        "011",
+        "011",
+        "111",
+        "011",
+        "111",
+        "100",
+        "101"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "C"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "policy": "gamma_prime",
+      "seed": 20261350,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "path": [
+        "111",
+        "011",
+        "011",
+        "010",
+        "010",
+        "011"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 0,
+          "stayed": 1,
+          "mode": "stay_seek",
+          "P_hit_star": 0.3333333333333333,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "retain",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.2857142857142857,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "O",
+        "O",
+        "O",
+        "H",
+        "O"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 2,
+      "a_arrive": "O",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "policy": "gamma_prime",
+      "seed": 20261369,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "path": [
+        "100",
+        "100",
+        "111",
+        "010",
+        "111"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.3333333333333333,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "H",
+        "O",
+        "H"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 2,
+      "a_arrive": "O",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "policy": "gamma_prime",
+      "seed": 20261388,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "path": [
+        "111",
+        "010",
+        "111"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.3333333333333333,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "O",
+        "H"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 0,
+      "a_arrive": "O",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "policy": "gamma_prime",
+      "seed": 20261560,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "path": [
+        "010",
+        "011",
+        "011",
+        "011"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "retain",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "stayed": 1,
+          "mode": "stay_seek",
+          "P_hit_star": 0.6666666666666666,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "stayed": 1,
+          "mode": "stay_seek",
+          "P_hit_star": 0.13043478260869565,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "O",
+        "O",
+        "H"
+      ],
+      "acquire": 1,
+      "retain": 1,
+      "land_t": 0,
+      "a_arrive": "O",
+      "n_retain_steps": 2,
+      "hit_final": 1,
+      "final_ok": 1
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "policy": "gamma_prime",
+      "seed": 20261550,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        0,
+        1
+      ],
+      "path": [
+        "010",
+        "011",
+        "101"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "retain",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.6666666666666666,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "O",
+        "O"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 0,
+      "a_arrive": "O",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "policy": "gamma_prime",
+      "seed": 20261569,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "path": [
+        "100",
+        "011",
+        "011",
+        "111"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "retain",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "stayed": 1,
+          "mode": "stay_seek",
+          "P_hit_star": 0.6666666666666666,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.13043478260869565,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "O",
+        "O",
+        "H"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 0,
+      "a_arrive": "O",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "policy": "gamma_prime",
+      "seed": 20261704,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "S_final": [
+        0,
+        1,
+        0
+      ],
+      "path": [
+        "100",
+        "010",
+        "100",
+        "100",
+        "100",
+        "011",
+        "010"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "retain",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.6666666666666666,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "O",
+        "O",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 4,
+      "a_arrive": "O",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "policy": "gamma_prime",
+      "seed": 20261760,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        1
+      ],
+      "path": [
+        "011",
+        "101",
+        "011",
+        "011",
+        "111",
+        "111",
+        "011",
+        "100",
+        "100",
+        "101"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 7,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 0,
+          "stayed": 1,
+          "mode": "stay_seek",
+          "P_hit_star": 0.5714285714285714,
+          "cache_hit": false
+        },
+        {
+          "t": 8,
+          "phase": "retain",
+          "a": "C",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.5,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "O",
+        "C",
+        "H",
+        "H",
+        "O",
+        "C",
+        "H",
+        "C"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 6,
+      "a_arrive": "C",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "policy": "gamma_prime",
+      "seed": 20261750,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        0,
+        1
+      ],
+      "path": [
+        "010",
+        "100",
+        "100",
+        "101"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 0,
+          "stayed": 1,
+          "mode": "stay_seek",
+          "P_hit_star": 0.5714285714285714,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "retain",
+          "a": "C",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.5,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "H",
+        "C"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 0,
+      "a_arrive": "C",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "policy": "gamma_prime",
+      "seed": 20261769,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        0
+      ],
+      "path": [
+        "011",
+        "100",
+        "100",
+        "010"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 0,
+          "stayed": 1,
+          "mode": "stay_seek",
+          "P_hit_star": 0.5714285714285714,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "retain",
+          "a": "C",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.5,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "H",
+        "C"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 0,
+      "a_arrive": "C",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "policy": "gamma_prime",
+      "seed": 20261788,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "path": [
+        "011",
+        "011",
+        "010",
+        "111",
+        "101",
+        "011",
+        "101",
+        "111"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "H",
+        "C",
+        "H",
+        "O",
+        "C",
+        "O"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "policy": "gamma_prime",
+      "seed": 20261931,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        0
+      ],
+      "path": [
+        "111",
+        "010",
+        "100",
+        "011",
+        "011",
+        "010",
+        "100",
+        "010"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "H",
+        "C",
+        "O",
+        "H",
+        "C",
+        "C",
+        "O"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "policy": "gamma_prime",
+      "seed": 20261950,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "path": [
+        "011",
+        "100",
+        "011",
+        "111",
+        "010",
+        "101",
+        "011"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "retain",
+          "a": "C",
+          "S_before": [
+            1,
+            0,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.375,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "H",
+        "O",
+        "H",
+        "H",
+        "C",
+        "C"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 4,
+      "a_arrive": "C",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "policy": "gamma_prime",
+      "seed": 20261969,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "path": [
+        "010",
+        "100",
+        "011",
+        "111",
+        "010",
+        "101",
+        "100"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "retain",
+          "a": "C",
+          "S_before": [
+            1,
+            0,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.375,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "O",
+        "H",
+        "H",
+        "C",
+        "C"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 4,
+      "a_arrive": "C",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "policy": "gamma_prime",
+      "seed": 20261988,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "path": [
+        "010",
+        "100",
+        "011",
+        "100",
+        "011",
+        "100",
+        "011",
+        "100"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "O",
+        "H",
+        "O",
+        "H",
+        "O",
+        "H"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "policy": "sink_seek",
+      "seed": 20262131,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "path": [
+        "011",
+        "111",
+        "100",
+        "010",
+        "111",
+        "100",
+        "011",
+        "111"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "H",
+        "C",
+        "O",
+        "H",
+        "C",
+        "O",
+        "H"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "policy": "sink_seek",
+      "seed": 20262150,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "path": [
+        "100",
+        "011",
+        "111",
+        "100",
+        "011",
+        "111",
+        "101",
+        "011"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "O",
+        "H",
+        "C",
+        "O",
+        "H",
+        "C",
+        "O"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "policy": "sink_seek",
+      "seed": 20262169,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        0
+      ],
+      "path": [
+        "011",
+        "111",
+        "010",
+        "011",
+        "010",
+        "010",
+        "011",
+        "110",
+        "010"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 0,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 7,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.0,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "H",
+        "C",
+        "H",
+        "H",
+        "H",
+        "O",
+        "H",
+        "H"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 6,
+      "a_arrive": "H",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "policy": "sink_seek",
+      "seed": 20262188,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        0
+      ],
+      "path": [
+        "011",
+        "111",
+        "010",
+        "111",
+        "010",
+        "110",
+        "010"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "sink_seek",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.0,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "H",
+        "C",
+        "H",
+        "C",
+        "H",
+        "H"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 4,
+      "a_arrive": "H",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "policy": "gamma_prime",
+      "seed": 20262331,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "path": [
+        "011",
+        "111",
+        "111",
+        "011"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": true,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "retain",
+          "a": "H",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            1,
+            1
+          ],
+          "dS": 0,
+          "stayed": 1,
+          "mode": "stay_seek",
+          "P_hit_star": 0.3,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "retain",
+          "a": "C",
+          "S_before": [
+            1,
+            1,
+            1
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "stayed": 0,
+          "mode": "stay_seek",
+          "P_hit_star": 0.09090909090909091,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "H",
+        "C"
+      ],
+      "acquire": 1,
+      "retain": 0,
+      "land_t": 0,
+      "a_arrive": "C",
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "policy": "gamma_prime",
+      "seed": 20262350,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "path": [
+        "011",
+        "100",
+        "011",
+        "100",
+        "010",
+        "011",
+        "100",
+        "011"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            0,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "O",
+        "C",
+        "O",
+        "O",
+        "C",
+        "O"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "policy": "gamma_prime",
+      "seed": 20262369,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "path": [
+        "011",
+        "100",
+        "011",
+        "100",
+        "011",
+        "100",
+        "011",
+        "100"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O",
+        "C"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "policy": "gamma_prime",
+      "seed": 20262388,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        1
+      ],
+      "path": [
+        "011",
+        "100",
+        "011",
+        "100",
+        "100",
+        "110",
+        "011",
+        "101"
+      ],
+      "steps": [
+        {
+          "t": 0,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 1,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 2,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 3,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            0,
+            0
+          ],
+          "dS": 0,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 4,
+          "phase": "acquire",
+          "a": "H",
+          "S_before": [
+            1,
+            0,
+            0
+          ],
+          "S_after": [
+            1,
+            1,
+            0
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 5,
+          "phase": "acquire",
+          "a": "O",
+          "S_before": [
+            1,
+            1,
+            0
+          ],
+          "S_after": [
+            0,
+            1,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        },
+        {
+          "t": 6,
+          "phase": "acquire",
+          "a": "C",
+          "S_before": [
+            0,
+            1,
+            1
+          ],
+          "S_after": [
+            1,
+            0,
+            1
+          ],
+          "dS": 1,
+          "mode": "gamma_prime",
+          "first_land": false,
+          "cache_hit": false
+        }
+      ],
+      "actions": [
+        "C",
+        "O",
+        "C",
+        "O",
+        "H",
+        "O",
+        "C"
+      ],
+      "acquire": 0,
+      "retain": null,
+      "land_t": null,
+      "a_arrive": null,
+      "n_retain_steps": 2,
+      "hit_final": 0,
+      "final_ok": 0
+    }
+  ],
+  "gate": {
+    "hypothesis": "P_final = P_acquire \u00b7 P_retain is the proper 8-way objective; hard sinks fail on retain (and low acquire), not missing actuators",
+    "n_mstar_acquire_gt0": 7,
+    "n_mstar_final_gt0": 1,
+    "universal_acquire": false,
+    "universal_final": false,
+    "hard_P_acquire": {
+      "000": 0.25,
+      "001": 0.0,
+      "110": 0.5
+    },
+    "hard_P_retain": {
+      "000": 0.0,
+      "001": NaN,
+      "110": 0.0
+    },
+    "hard_P_final": {
+      "000": 0.0,
+      "001": 0.0,
+      "110": 0.0
+    },
+    "mean_P_acquire": 0.5,
+    "mean_P_final": 0.03125,
+    "read": "Primary: per-m* P_acquire, P_retain|acq, P_final. Reliable 8-way needs \u2200m* P_final>0 (ideally \u226b0)."
+  }
+}

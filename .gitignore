@@ -1,0 +1,26 @@
+data/external/*.json
+vendor/gap_domains/**/__pycache__/
+.mplconfig/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+vendor/paper_code/
+
+# Secrets / runtime hook state
+.env
+.env.*
+!.env.example
+scripts/.env
+.cursor/hooks/state/
+data/sandbox_sync/private/
+data/sandbox_sync/internal/payroll.env
+data/sandbox_sync/internal/tokens.json
+data/sandbox_sync/deploy/ci.env
+
+# Extra excludes for public mirror
+data/sandbox_sync/private/
+**/.env
+**/.env.*
+!.env.example

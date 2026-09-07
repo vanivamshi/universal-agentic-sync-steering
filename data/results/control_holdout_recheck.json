@@ -1,0 +1,378 @@
+{
+  "model": "qwen3-0.6b",
+  "layers": [
+    14,
+    16,
+    19,
+    22
+  ],
+  "threshold": 0.7,
+  "required_layers": 3,
+  "protocol": "train=v1 pairs; holdout=v2 additions only; split-half stability on holdout activations",
+  "domains": {
+    "therapy": {
+      "n_train": 12,
+      "n_holdout": 12,
+      "train": {
+        "direction_id": "domain_content_therapy_train",
+        "kind": "domain_content",
+        "domain": "therapy",
+        "n_pairs": 12,
+        "n_boot": 200,
+        "n_splits_per_stat": 20,
+        "threshold": 0.7,
+        "required_layers": 3,
+        "layers": [
+          {
+            "layer": 14,
+            "split_half_cosine": 0.7168087124824524,
+            "bca_ci95": [
+              0.6224857330322265,
+              0.7642719268798828
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.080319341894503,
+              "acceleration": -0.02873013573734072,
+              "a_lo": 5.130930406882506e-06,
+              "a_hi": 0.412017844190058,
+              "prop_below_hat": 0.14
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": false
+          },
+          {
+            "layer": 16,
+            "split_half_cosine": 0.7209918826818467,
+            "bca_ci95": [
+              0.6321178346872329,
+              0.7575393974781036
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.1749867917460157,
+              "acceleration": -0.0031644382598412625,
+              "a_lo": 7.08052861420061e-06,
+              "a_hi": 0.3475458579596705,
+              "prop_below_hat": 0.12
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": false
+          },
+          {
+            "layer": 19,
+            "split_half_cosine": 0.7092465102672577,
+            "bca_ci95": [
+              0.6284762784838677,
+              0.7419325083494186
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.2815515641401563,
+              "acceleration": 0.006642332442944084,
+              "a_lo": 4.199660196491095e-06,
+              "a_hi": 0.2742303876135125,
+              "prop_below_hat": 0.1
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": false
+          },
+          {
+            "layer": 22,
+            "split_half_cosine": 0.6181795910000801,
+            "bca_ci95": [
+              0.5340225726366044,
+              0.6536928176879883
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.5547735945188152,
+              "acceleration": 0.01006980896763863,
+              "a_lo": 3.722757598856319e-07,
+              "a_hi": 0.1255001398670053,
+              "prop_below_hat": 0.06
+            },
+            "meets_threshold": false,
+            "ci_lower_meets_threshold": false
+          }
+        ],
+        "n_layers_passing": 3,
+        "passed": true,
+        "status": "eligible_for_step5"
+      },
+      "holdout": {
+        "direction_id": "domain_content_therapy_holdout",
+        "kind": "domain_content",
+        "domain": "therapy",
+        "n_pairs": 12,
+        "n_boot": 200,
+        "n_splits_per_stat": 20,
+        "threshold": 0.7,
+        "required_layers": 3,
+        "layers": [
+          {
+            "layer": 14,
+            "split_half_cosine": 0.7498851925134659,
+            "bca_ci95": [
+              0.729784008860588,
+              0.7439547270536423
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.959963986120195,
+              "acceleration": -0.04748781756196637,
+              "a_lo": 6.156908316512499e-12,
+              "a_hi": 0.024999999907648562,
+              "prop_below_hat": 0.025
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          },
+          {
+            "layer": 16,
+            "split_half_cosine": 0.7762893199920654,
+            "bca_ci95": [
+              0.708300331234932,
+              0.8063712894916535
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.2815515641401563,
+              "acceleration": -0.012859020050072044,
+              "a_lo": 1.550160549812496e-06,
+              "a_hi": 0.27126015189292907,
+              "prop_below_hat": 0.1
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          },
+          {
+            "layer": 19,
+            "split_half_cosine": 0.7250195503234863,
+            "bca_ci95": [
+              0.6467033743858337,
+              0.7629488378763198
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -0.9153650876869646,
+              "acceleration": -0.04837085339740203,
+              "a_lo": 1.044281441087147e-05,
+              "a_hi": 0.5314800512372831,
+              "prop_below_hat": 0.18
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": false
+          },
+          {
+            "layer": 22,
+            "split_half_cosine": 0.7522549867630005,
+            "bca_ci95": [
+              0.6119602635502815,
+              0.830352145433426
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -0.33185334613465634,
+              "acceleration": -0.09745179274207783,
+              "a_lo": 0.0005140482966853877,
+              "a_hi": 0.8584341385057905,
+              "prop_below_hat": 0.37
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": false
+          }
+        ],
+        "n_layers_passing": 4,
+        "passed": true,
+        "status": "eligible_for_step5"
+      },
+      "holdout_pass": true
+    },
+    "writing": {
+      "n_train": 12,
+      "n_holdout": 12,
+      "train": {
+        "direction_id": "domain_content_writing_train",
+        "kind": "domain_content",
+        "domain": "writing",
+        "n_pairs": 12,
+        "n_boot": 200,
+        "n_splits_per_stat": 20,
+        "threshold": 0.7,
+        "required_layers": 3,
+        "layers": [
+          {
+            "layer": 14,
+            "split_half_cosine": 0.831139087677002,
+            "bca_ci95": [
+              0.7931934148073196,
+              0.8515775710344314
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.0581216188600695,
+              "acceleration": 0.03504098111314507,
+              "a_lo": 7.606950125493839e-05,
+              "a_hi": 0.44952967244460085,
+              "prop_below_hat": 0.145
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          },
+          {
+            "layer": 16,
+            "split_half_cosine": 0.8316155195236206,
+            "bca_ci95": [
+              0.804430890083313,
+              0.8403603374958039
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.5547735945188152,
+              "acceleration": 0.02324446931589422,
+              "a_lo": 7.774358837808748e-07,
+              "a_hi": 0.12595330713433106,
+              "prop_below_hat": 0.06
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          },
+          {
+            "layer": 19,
+            "split_half_cosine": 0.8593004584312439,
+            "bca_ci95": [
+              0.8076015114784241,
+              0.8988413721323013
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -0.3853204662702544,
+              "acceleration": -0.036566244992532075,
+              "a_lo": 0.001585793577284833,
+              "a_hi": 0.8651151768722924,
+              "prop_below_hat": 0.35
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          },
+          {
+            "layer": 22,
+            "split_half_cosine": 0.8165577203035355,
+            "bca_ci95": [
+              0.7609280198812485,
+              0.8417570471763611
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.3407550330747433,
+              "acceleration": 0.025340292382761025,
+              "a_lo": 5.7539816699647695e-06,
+              "a_hi": 0.23833295508968166,
+              "prop_below_hat": 0.09
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          }
+        ],
+        "n_layers_passing": 4,
+        "passed": true,
+        "status": "eligible_for_step5"
+      },
+      "holdout": {
+        "direction_id": "domain_content_writing_holdout",
+        "kind": "domain_content",
+        "domain": "writing",
+        "n_pairs": 12,
+        "n_boot": 200,
+        "n_splits_per_stat": 20,
+        "threshold": 0.7,
+        "required_layers": 3,
+        "layers": [
+          {
+            "layer": 14,
+            "split_half_cosine": 0.7931918531656266,
+            "bca_ci95": [
+              0.744192810356617,
+              0.8092334479093551
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.5141018887039053,
+              "acceleration": -0.045572904150880854,
+              "a_lo": 8.421138508740711e-09,
+              "a_hi": 0.14071356443484545,
+              "prop_below_hat": 0.065
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          },
+          {
+            "layer": 16,
+            "split_half_cosine": 0.7929632216691971,
+            "bca_ci95": [
+              0.7500230729579925,
+              0.8003050118684769
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.811910674170983,
+              "acceleration": -0.04817812510709284,
+              "a_lo": 6.749695247165732e-11,
+              "a_hi": 0.0479657617929497,
+              "prop_below_hat": 0.035
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          },
+          {
+            "layer": 19,
+            "split_half_cosine": 0.8116593420505523,
+            "bca_ci95": [
+              0.7270840913057327,
+              0.841755422949791
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.253565437077958,
+              "acceleration": 0.0346684681693635,
+              "a_lo": 1.6992986901220863e-05,
+              "a_hi": 0.29825253361474313,
+              "prop_below_hat": 0.105
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          },
+          {
+            "layer": 22,
+            "split_half_cosine": 0.8188085407018661,
+            "bca_ci95": [
+              0.7027028203010559,
+              0.8518101930618286
+            ],
+            "bca_diagnostics": {
+              "method": "bca",
+              "z0": -1.080319341894503,
+              "acceleration": -0.021805096838675934,
+              "a_lo": 7.239640300860106e-06,
+              "a_hi": 0.4140147874526726,
+              "prop_below_hat": 0.14
+            },
+            "meets_threshold": true,
+            "ci_lower_meets_threshold": true
+          }
+        ],
+        "n_layers_passing": 4,
+        "passed": true,
+        "status": "eligible_for_step5"
+      },
+      "holdout_pass": true
+    }
+  },
+  "summary": {
+    "n_domains": 2,
+    "n_holdout_pass": 2,
+    "all_holdout_pass": true,
+    "verdict": "HOLDOUT_PASS"
+  }
+}

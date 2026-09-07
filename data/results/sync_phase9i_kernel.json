@@ -1,0 +1,486 @@
+{
+  "extra_rows": [
+    {
+      "src": "9I",
+      "edge": "101|C",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "dS": 1,
+      "method": "home",
+      "seed": 20260997
+    },
+    {
+      "src": "9I",
+      "edge": "101|C",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "dS": 1,
+      "method": "home",
+      "seed": 20261020
+    },
+    {
+      "src": "9I",
+      "edge": "101|C",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        1
+      ],
+      "a": "C",
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "dS": 0,
+      "method": "home",
+      "seed": 20261112
+    },
+    {
+      "src": "9I",
+      "edge": "101|C",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        1
+      ],
+      "a": "C",
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "dS": 0,
+      "method": "home",
+      "seed": 20261135
+    },
+    {
+      "src": "9I",
+      "edge": "101|C",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "dS": 1,
+      "method": "home",
+      "seed": 20261181
+    },
+    {
+      "src": "9I",
+      "edge": "101|C",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "C",
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "dS": 1,
+      "method": "home",
+      "seed": 20261204
+    },
+    {
+      "src": "9I",
+      "edge": "101|H",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "to_intended": [
+        1,
+        1,
+        1
+      ],
+      "dS": 1,
+      "method": "home",
+      "seed": 20261928
+    },
+    {
+      "src": "9I",
+      "edge": "101|H",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        1
+      ],
+      "a": "H",
+      "to_intended": [
+        1,
+        1,
+        1
+      ],
+      "dS": 0,
+      "method": "home",
+      "seed": 20262020
+    },
+    {
+      "src": "9I",
+      "edge": "101|H",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "to_intended": [
+        1,
+        1,
+        1
+      ],
+      "dS": 1,
+      "method": "home",
+      "seed": 20262181
+    },
+    {
+      "src": "9I",
+      "edge": "101|H",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        0
+      ],
+      "a": "H",
+      "to_intended": [
+        1,
+        1,
+        1
+      ],
+      "dS": 1,
+      "method": "home",
+      "seed": 20262227
+    },
+    {
+      "src": "9I",
+      "edge": "101|H",
+      "S_before": [
+        1,
+        0,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "to_intended": [
+        1,
+        1,
+        1
+      ],
+      "dS": 1,
+      "method": "home",
+      "seed": 20262319
+    },
+    {
+      "src": "9I_free",
+      "edge": "010|H",
+      "S_before": [
+        0,
+        1,
+        0
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "dS": 1,
+      "method": "free",
+      "seed": 20260928
+    },
+    {
+      "src": "9I_free",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "H",
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "dS": 1,
+      "method": "free",
+      "seed": 20260962
+    },
+    {
+      "src": "9I_free",
+      "edge": "100|C",
+      "S_before": [
+        1,
+        0,
+        0
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "dS": 0,
+      "method": "free",
+      "seed": 20260996
+    },
+    {
+      "src": "9I_free",
+      "edge": "100|C",
+      "S_before": [
+        1,
+        0,
+        0
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "C",
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "dS": 1,
+      "method": "free",
+      "seed": 20261013
+    },
+    {
+      "src": "9I_free",
+      "edge": "010|H",
+      "S_before": [
+        0,
+        1,
+        0
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "dS": 1,
+      "method": "free",
+      "seed": 20261030
+    },
+    {
+      "src": "9I_free",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "dS": 1,
+      "method": "free",
+      "seed": 20261047
+    },
+    {
+      "src": "9I_free",
+      "edge": "010|H",
+      "S_before": [
+        0,
+        1,
+        0
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "H",
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "dS": 1,
+      "method": "free",
+      "seed": 20261064
+    },
+    {
+      "src": "9I_free",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        1
+      ],
+      "a": "H",
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "dS": 1,
+      "method": "free",
+      "seed": 20261115
+    }
+  ],
+  "expand_stats": {
+    "101|C": {
+      "n": 6,
+      "P_shift": 0.6666666666666666,
+      "after_hist": {
+        "100": 3,
+        "101": 2,
+        "111": 1
+      }
+    },
+    "101|H": {
+      "n": 5,
+      "P_shift": 0.8,
+      "after_hist": {
+        "111": 3,
+        "101": 1,
+        "010": 1
+      }
+    },
+    "010|H": {
+      "n": 3,
+      "P_shift": 1.0,
+      "after_hist": {
+        "111": 2,
+        "100": 1
+      }
+    },
+    "011|H": {
+      "n": 3,
+      "P_shift": 1.0,
+      "after_hist": {
+        "100": 1,
+        "111": 1,
+        "101": 1
+      }
+    },
+    "100|C": {
+      "n": 2,
+      "P_shift": 0.5,
+      "after_hist": {
+        "100": 1,
+        "011": 1
+      }
+    }
+  }
+}

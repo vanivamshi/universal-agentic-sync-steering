@@ -1,0 +1,199 @@
+{
+  "model": "qwen3-0.6b",
+  "pilot": true,
+  "note": "Qwen3-0.6B bring-up. Assistant Axis HF vectors are Qwen3-32B-only; this run uses local mean-diff proxies. Full AdvBench / HF axes on 32B.",
+  "refusal_stability": {
+    "kind": "refusal",
+    "passed": false,
+    "threshold": 0.7,
+    "layer_cosines": {
+      "4": 0.3557935953140259,
+      "14": 0.3112335503101349,
+      "22": 0.16319452226161957
+    },
+    "mean_cosine": 0.27674055596192676,
+    "band_layers": [
+      4,
+      14,
+      22
+    ],
+    "notes": "FAIL: mean cos=0.277 < 0.7 over layers [4, 14, 22]. Do not run refusal privilege arm; analyze instability instead."
+  },
+  "artifacts": {
+    "refusal_prose": "/Users/vamshisunku.mohan/bluedot_alignment/data/directions/refusal_prose.jsonl",
+    "refusal_tool": "/Users/vamshisunku.mohan/bluedot_alignment/data/directions/refusal_tool.jsonl",
+    "assistant_axis_prose": "/Users/vamshisunku.mohan/bluedot_alignment/data/directions/assistant_axis_prose.jsonl",
+    "harmlessness_prose": "/Users/vamshisunku.mohan/bluedot_alignment/data/directions/harmlessness_prose.jsonl",
+    "contrast_pairs": "/Users/vamshisunku.mohan/bluedot_alignment/data/contrast_pairs"
+  },
+  "split_half_prose_baseline": {
+    "kind": "refusal",
+    "mode": "prose",
+    "n_pairs": 12,
+    "n_splits": 20,
+    "layer_mean_cosine": {
+      "4": 0.36090749129652977,
+      "14": 0.7008065730333328,
+      "22": 0.7312884122133255
+    },
+    "layer_std_cosine": {
+      "4": 0.10002920000546292,
+      "14": 0.08898500214851822,
+      "22": 0.04374424054959083
+    },
+    "band_mean_cosine": 0.5976674921810626,
+    "band_layers": [
+      4,
+      14,
+      22
+    ],
+    "notes": "prose\u2194prose split-half mean cos=0.598 over layers [4, 14, 22] (20 splits, 12 pairs). Compare to prose\u2194tool stability before attributing failures to tool mode."
+  },
+  "interpretation": "Joint BCa CIs (prereg \u00a75.2). Percentile at small n can look skewed (e.g. L4 pt CI straddling the point); prefer BCa for 32B writeups. Mid/late gaps remain suggestive; scale-confounded at 0.6B.",
+  "status": "suggestive_midlate_gap_with_joint_bca_ci_scale_confounded",
+  "layer_matched_comparison": {
+    "layers": [
+      {
+        "layer": 4,
+        "prose_prose_split_half_point": 0.5308572053909302,
+        "prose_tool_point": 0.3557910919189453,
+        "gap_point": 0.17506611347198486,
+        "prose_tool_bca_ci95": [
+          0.3948308229446411,
+          0.433171808719635
+        ],
+        "prose_tool_percentile_ci95": [
+          0.01691078394651413,
+          0.339141309261322
+        ],
+        "prose_tool_bca_diag": {
+          "method": "bca",
+          "z0": 2.2414027264652865,
+          "acceleration": -0.009446695980017811,
+          "a_lo": 0.99416709339743,
+          "a_hi": 0.9999999998332929,
+          "prop_below_hat": 0.9875
+        },
+        "gap_bca_ci95": [
+          -0.2321959286928177,
+          0.46013015508651733
+        ],
+        "gap_percentile_ci95": [
+          -0.08507159352302551,
+          0.6983354836702347
+        ],
+        "gap_bca_diag": {
+          "method": "bca",
+          "z0": -0.7721932133867824,
+          "acceleration": 0.03540065342554683,
+          "a_lo": 0.0005504192116638218,
+          "a_hi": 0.680005064954406,
+          "prop_below_hat": 0.22
+        },
+        "gap_bca_excludes_zero": false,
+        "ci_method": "bca_joint",
+        "n_prose_pairs": 12,
+        "n_tool_pos": 8,
+        "n_tool_neg": 8,
+        "n_boot": 400,
+        "note": "Gap is joint: each bootstrap replicate resamples prose+tool and recomputes both split-half pp and pt. Percentile shown for pathology check."
+      },
+      {
+        "layer": 14,
+        "prose_prose_split_half_point": 0.6053056716918945,
+        "prose_tool_point": 0.3112333416938782,
+        "gap_point": 0.29407232999801636,
+        "prose_tool_bca_ci95": [
+          0.2476327121257782,
+          0.3775784373283386
+        ],
+        "prose_tool_percentile_ci95": [
+          0.027592595666646957,
+          0.34911128878593445
+        ],
+        "prose_tool_bca_diag": {
+          "method": "bca",
+          "z0": 1.1503493805157545,
+          "acceleration": 0.016710393506589434,
+          "a_lo": 0.6374090499185068,
+          "a_hi": 0.9999953141160451,
+          "prop_below_hat": 0.875
+        },
+        "gap_bca_ci95": [
+          -0.04251961410045624,
+          0.34907659888267517
+        ],
+        "gap_percentile_ci95": [
+          0.24053770303726196,
+          0.8356210961937904
+        ],
+        "gap_bca_diag": {
+          "method": "bca",
+          "z0": -1.6448536251336814,
+          "acceleration": -0.03127774615461398,
+          "a_lo": 5.723397200618763e-09,
+          "a_hi": 0.09129565987634058,
+          "prop_below_hat": 0.05
+        },
+        "gap_bca_excludes_zero": false,
+        "ci_method": "bca_joint",
+        "n_prose_pairs": 12,
+        "n_tool_pos": 8,
+        "n_tool_neg": 8,
+        "n_boot": 400,
+        "note": "Gap is joint: each bootstrap replicate resamples prose+tool and recomputes both split-half pp and pt. Percentile shown for pathology check."
+      },
+      {
+        "layer": 22,
+        "prose_prose_split_half_point": 0.6738516092300415,
+        "prose_tool_point": 0.16319912672042847,
+        "gap_point": 0.510652482509613,
+        "prose_tool_bca_ci95": [
+          0.157030388712883,
+          0.20126500725746155
+        ],
+        "prose_tool_percentile_ci95": [
+          0.035134539008140564,
+          0.17319457232952118
+        ],
+        "prose_tool_bca_diag": {
+          "method": "bca",
+          "z0": 1.722383890805009,
+          "acceleration": 0.021962006366610658,
+          "a_lo": 0.9313653315618671,
+          "a_hi": 0.9999999949407995,
+          "prop_below_hat": 0.9575
+        },
+        "gap_bca_ci95": [
+          0.41482818871736526,
+          0.5593480467796326
+        ],
+        "gap_percentile_ci95": [
+          0.4757130816578865,
+          0.8359500244259834
+        ],
+        "gap_bca_diag": {
+          "method": "bca",
+          "z0": -1.6448536251336814,
+          "acceleration": 0.031838171973642526,
+          "a_lo": 5.343737148333361e-07,
+          "a_hi": 0.09232881404467919,
+          "prop_below_hat": 0.05
+        },
+        "gap_bca_excludes_zero": true,
+        "ci_method": "bca_joint",
+        "n_prose_pairs": 12,
+        "n_tool_pos": 8,
+        "n_tool_neg": 8,
+        "n_boot": 400,
+        "note": "Gap is joint: each bootstrap replicate resamples prose+tool and recomputes both split-half pp and pt. Percentile shown for pathology check."
+      }
+    ],
+    "mid_late_layers": [
+      14,
+      22
+    ],
+    "reading": "Joint BCa CIs (prereg \u00a75.2). Percentile at small n can look skewed (e.g. L4 pt CI straddling the point); prefer BCa for 32B writeups. Mid/late gaps remain suggestive; scale-confounded at 0.6B."
+  },
+  "ci_method": "bca_joint"
+}

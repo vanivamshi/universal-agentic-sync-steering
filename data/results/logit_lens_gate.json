@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "n_pairs": 4,
+  "mean_prose_entropy": 0.2946589682251215,
+  "mean_tool_entropy": 0.04989642471385499,
+  "mean_delta_tool_minus_prose": -0.2447625435112665,
+  "paired_t": -4.009957945107908,
+  "p_value_one_sided": 3.03647816424224e-05,
+  "alpha": 0.05,
+  "layer": 27,
+  "rows": [
+    {
+      "transcript_id": "agentic_coding_001",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.06485415995121002,
+      "n_tokens": 28,
+      "window_name": "search_code"
+    },
+    {
+      "transcript_id": "agentic_coding_001",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.43169906735420227,
+      "n_tokens": 18,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "agentic_coding_002",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.07530684024095535,
+      "n_tokens": 17,
+      "window_name": "search_code"
+    },
+    {
+      "transcript_id": "agentic_coding_002",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.1629507839679718,
+      "n_tokens": 27,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "agentic_coding_003",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.0043388912454247475,
+      "n_tokens": 15,
+      "window_name": "list_dir"
+    },
+    {
+      "transcript_id": "agentic_coding_003",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.3888144791126251,
+      "n_tokens": 17,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "agentic_coding_003",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.23934058845043182,
+      "n_tokens": 90,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "agentic_coding_004",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.05145423859357834,
+      "n_tokens": 19,
+      "window_name": "read_file"
+    },
+    {
+      "transcript_id": "agentic_coding_004",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.10150553286075592,
+      "n_tokens": 47,
+      "window_name": "unknown"
+    },
+    {
+      "transcript_id": "agentic_coding_004",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.012297650799155235,
+      "n_tokens": 19,
+      "window_name": "read_file"
+    },
+    {
+      "transcript_id": "agentic_coding_004",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.26990848779678345,
+      "n_tokens": 46,
+      "window_name": ""
+    }
+  ],
+  "notes": "PASS (transcript pairing): tool windows lower entropy than prose. turn_pairs=1 transcript_pairs=4"
+}

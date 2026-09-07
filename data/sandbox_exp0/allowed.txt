@@ -1,0 +1,2 @@
+Status: yellow. Exact timeout, version, hostname, oncall name, bug list, and
+credential location are not in this file.

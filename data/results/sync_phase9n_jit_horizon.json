@@ -1,0 +1,9087 @@
+{
+  "protocol": "Phase 9N JIT / receding-horizon vs compose",
+  "seed": 20261002,
+  "reps": 4,
+  "max_steps_rh": 3,
+  "agg": {
+    "jit_rh": {
+      "n": 32,
+      "P_hit": 0.375,
+      "P_ever": 0.375,
+      "mean_delta_E": 0.71875,
+      "P_C": 0.8125,
+      "P_H": 0.65625,
+      "P_O": 0.59375,
+      "mean_n_steps": 2.59375
+    },
+    "jit_oneshot": {
+      "n": 32,
+      "P_hit": 0.09375,
+      "P_ever": 0.09375,
+      "mean_delta_E": 0.40625,
+      "P_C": 0.625,
+      "P_H": 0.625,
+      "P_O": 0.5,
+      "mean_n_steps": 1.0
+    },
+    "compose": {
+      "n": 32,
+      "P_hit": 0.1875,
+      "P_ever": 0.1875,
+      "mean_delta_E": 0.53125,
+      "P_C": 0.75,
+      "P_H": 0.6875,
+      "P_O": 0.4375,
+      "mean_n_steps": 1.8125
+    }
+  },
+  "per_mstar": {
+    "000": {
+      "jit_rh": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.25,
+        "P_C": 0.5,
+        "P_H": 0.25,
+        "P_O": 0.75,
+        "mean_n_steps": 3.0
+      },
+      "jit_oneshot": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.25,
+        "P_C": 0.0,
+        "P_H": 0.75,
+        "P_O": 0.75,
+        "mean_n_steps": 1.0
+      },
+      "compose": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.0,
+        "P_C": 0.25,
+        "P_H": 0.75,
+        "P_O": 0.25,
+        "mean_n_steps": 3.0
+      }
+    },
+    "001": {
+      "jit_rh": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": -0.5,
+        "P_C": 0.5,
+        "P_H": 0.5,
+        "P_O": 0.25,
+        "mean_n_steps": 3.0
+      },
+      "jit_oneshot": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": -0.5,
+        "P_C": 0.25,
+        "P_H": 0.5,
+        "P_O": 0.5,
+        "mean_n_steps": 1.0
+      },
+      "compose": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": -0.5,
+        "P_C": 0.25,
+        "P_H": 0.75,
+        "P_O": 0.25,
+        "mean_n_steps": 2.75
+      }
+    },
+    "010": {
+      "jit_rh": {
+        "n": 4,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 0.5,
+        "P_C": 1.0,
+        "P_H": 1.0,
+        "P_O": 0.5,
+        "mean_n_steps": 2.25
+      },
+      "jit_oneshot": {
+        "n": 4,
+        "P_hit": 0.25,
+        "P_ever": 0.25,
+        "mean_delta_E": 0.25,
+        "P_C": 1.0,
+        "P_H": 1.0,
+        "P_O": 0.25,
+        "mean_n_steps": 1.0
+      },
+      "compose": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.0,
+        "P_C": 1.0,
+        "P_H": 1.0,
+        "P_O": 0.0,
+        "mean_n_steps": 1.0
+      }
+    },
+    "011": {
+      "jit_rh": {
+        "n": 4,
+        "P_hit": 0.75,
+        "P_ever": 0.75,
+        "mean_delta_E": 0.75,
+        "P_C": 1.0,
+        "P_H": 0.75,
+        "P_O": 0.75,
+        "mean_n_steps": 2.0
+      },
+      "jit_oneshot": {
+        "n": 4,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 0.75,
+        "P_C": 0.5,
+        "P_H": 1.0,
+        "P_O": 1.0,
+        "mean_n_steps": 1.0
+      },
+      "compose": {
+        "n": 4,
+        "P_hit": 0.25,
+        "P_ever": 0.25,
+        "mean_delta_E": 0.25,
+        "P_C": 0.75,
+        "P_H": 1.0,
+        "P_O": 0.25,
+        "mean_n_steps": 1.5
+      }
+    },
+    "100": {
+      "jit_rh": {
+        "n": 4,
+        "P_hit": 0.75,
+        "P_ever": 0.75,
+        "mean_delta_E": 2.0,
+        "P_C": 1.0,
+        "P_H": 0.75,
+        "P_O": 1.0,
+        "mean_n_steps": 2.25
+      },
+      "jit_oneshot": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 1.25,
+        "P_C": 1.0,
+        "P_H": 0.5,
+        "P_O": 0.5,
+        "mean_n_steps": 1.0
+      },
+      "compose": {
+        "n": 4,
+        "P_hit": 0.75,
+        "P_ever": 0.75,
+        "mean_delta_E": 1.75,
+        "P_C": 1.0,
+        "P_H": 0.75,
+        "P_O": 0.75,
+        "mean_n_steps": 1.5
+      }
+    },
+    "101": {
+      "jit_rh": {
+        "n": 4,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 1.5,
+        "P_C": 0.75,
+        "P_H": 0.75,
+        "P_O": 0.5,
+        "mean_n_steps": 2.5
+      },
+      "jit_oneshot": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 1.25,
+        "P_C": 0.75,
+        "P_H": 0.5,
+        "P_O": 0.5,
+        "mean_n_steps": 1.0
+      },
+      "compose": {
+        "n": 4,
+        "P_hit": 0.25,
+        "P_ever": 0.25,
+        "mean_delta_E": 1.75,
+        "P_C": 1.0,
+        "P_H": 0.5,
+        "P_O": 0.75,
+        "mean_n_steps": 1.5
+      }
+    },
+    "110": {
+      "jit_rh": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.5,
+        "P_C": 1.0,
+        "P_H": 0.5,
+        "P_O": 0.25,
+        "mean_n_steps": 3.0
+      },
+      "jit_oneshot": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.5,
+        "P_C": 0.5,
+        "P_H": 0.75,
+        "P_O": 0.5,
+        "mean_n_steps": 1.0
+      },
+      "compose": {
+        "n": 4,
+        "P_hit": 0.25,
+        "P_ever": 0.25,
+        "mean_delta_E": 1.0,
+        "P_C": 1.0,
+        "P_H": 0.5,
+        "P_O": 0.75,
+        "mean_n_steps": 1.5
+      }
+    },
+    "111": {
+      "jit_rh": {
+        "n": 4,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 0.75,
+        "P_C": 0.75,
+        "P_H": 0.75,
+        "P_O": 0.75,
+        "mean_n_steps": 2.75
+      },
+      "jit_oneshot": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": -0.5,
+        "P_C": 1.0,
+        "P_H": 0.0,
+        "P_O": 0.0,
+        "mean_n_steps": 1.0
+      },
+      "compose": {
+        "n": 4,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.0,
+        "P_C": 0.75,
+        "P_H": 0.25,
+        "P_O": 0.5,
+        "mean_n_steps": 1.75
+      }
+    }
+  },
+  "paired": [
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20261002,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "100",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H+O",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "111",
+          "101",
+          "001"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": -1
+          },
+          {
+            "t": 2,
+            "a": "H+C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C",
+          "H+C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20261021,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "100",
+          "111",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 2
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "100",
+          "111",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 2
+          },
+          {
+            "t": 2,
+            "a": "H+C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C",
+          "H+C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 3,
+        "delta_E": -2,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 3
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20261040,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "111",
+          "101",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": -1
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 1
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 3,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H+O",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 1
+          }
+        ],
+        "actions": [
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 3,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "101",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 2,
+            "a": "H+C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C",
+          "H+C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 3
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20261059,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H+O",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "101",
+          "101"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 2,
+            "a": "H+C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C",
+          "H+C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261202,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -1
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 1
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 1
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "111",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "H+C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C",
+          "H+C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261221,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "100",
+          "100",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "C",
+          "C",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+H",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "C+H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "111",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "H+C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C",
+          "H+C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261240,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011",
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H",
+          "H",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "111",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "H+C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C",
+          "H+C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261259,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "111",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 1
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "110",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": 2
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 2
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261402,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011",
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O",
+          "O",
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "added": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261421,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "011",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "O",
+          "O"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 2
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "added": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261440,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "added": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261459,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011",
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O",
+          "O",
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "added": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261718,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "added": "O",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261621,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "added": "O",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261640,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "101",
+          "110",
+          "101",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "C",
+          "C",
+          "C"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 2,
+        "E_final": 0,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "101",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+H",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C+H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "101",
+          "111",
+          "110",
+          "110"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": 1
+          },
+          {
+            "t": 2,
+            "a": "H+C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C",
+          "H+C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261659,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "111",
+          "100",
+          "000"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 2
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C",
+          "C",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "added": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261802,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "101",
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 2
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -3
+          }
+        ],
+        "actions": [
+          "C",
+          "O",
+          "C"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 2,
+        "E_final": 0,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "110"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+H",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C+H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 2,
+        "E_final": 0,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261821,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -3
+          }
+        ],
+        "actions": [
+          "C"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 3,
+        "E_final": 0,
+        "delta_E": 3,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "101"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+H+O",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "C+H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 3,
+        "E_final": 1,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "111",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "H+O",
+            "added": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 3,
+        "E_final": 2,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 2
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261840,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "110",
+          "110",
+          "110"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H",
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "110"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H+O",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 2,
+        "E_final": 0,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261888,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "101",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H",
+          "O"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 2,
+        "E_final": 0,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 2
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "101"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H+O",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -3
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 2,
+        "E_final": 0,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 2
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20262002,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "100",
+          "010",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -2
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": 2
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "C",
+          "O",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 3,
+        "E_final": 3,
+        "delta_E": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+H+O",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "C+H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 3,
+        "E_final": 1,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 3,
+        "E_final": 1,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20262021,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "100",
+          "011",
+          "101"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -2
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "C",
+          "O",
+          "C"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 3,
+        "E_final": 0,
+        "delta_E": 3,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+H+O",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "C+H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 3,
+        "E_final": 1,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 3,
+        "E_final": 1,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20262040,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "011",
+          "010",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": 1
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 1
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "011",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "H+C",
+            "added": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          },
+          {
+            "t": 2,
+            "a": "H+C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+C",
+          "H+C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20262059,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "101"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": -3
+          }
+        ],
+        "actions": [
+          "C"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 3,
+        "E_final": 0,
+        "delta_E": 3,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+H+O",
+            "remaining_before": [
+              "C",
+              "H",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "C+H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 3,
+        "E_final": 1,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "101"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": -3
+          }
+        ],
+        "actions": [
+          "H"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 3,
+        "E_final": 0,
+        "delta_E": 3,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262202,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "101",
+          "111",
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H",
+          "O",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "101",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H+O",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "101",
+          "111",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "H+O",
+            "added": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 2
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262221,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "011",
+          "101",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "O",
+          "C",
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "remaining_before": [
+              "O"
+            ],
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 1
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "110"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "added": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "O"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262240,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011",
+          "101"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "remaining_before": [
+              "H"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "C",
+          "H",
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+O",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "101",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "added": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C",
+          "C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 2
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262259,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "010",
+          "101",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": -1
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": 1
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C",
+          "C",
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "010"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+O",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "added": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262402,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "C",
+          "H",
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 1
+          }
+        ],
+        "actions": [
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "010",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "added": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "C+O",
+            "added": "O",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "C",
+          "C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 2
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262421,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 1
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "C",
+          "H"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 1,
+        "E_final": 0,
+        "delta_E": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 2
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C"
+            ],
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 1
+          }
+        ],
+        "actions": [
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 2,
+        "delta_E": -1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "101"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "added": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "C"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 1,
+        "E_final": 1,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_steps": 1
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262440,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100",
+          "011"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "dE": -1
+          }
+        ],
+        "actions": [
+          "H",
+          "H",
+          "H"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 1,
+        "delta_E": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H+O",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "added": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "H+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "H",
+          "H+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 2
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262459,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "jit_rh": {
+        "arm": "jit_rh",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "100",
+          "100",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "remaining_before": [
+              "H",
+              "O"
+            ],
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "dE": -2
+          }
+        ],
+        "actions": [
+          "C",
+          "H",
+          "H"
+        ],
+        "hit": 1,
+        "ever": 1,
+        "E0": 2,
+        "E_final": 0,
+        "delta_E": 2,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_steps": 3
+      },
+      "jit_oneshot": {
+        "arm": "jit_oneshot",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C+O",
+            "remaining_before": [
+              "C",
+              "O"
+            ],
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 1
+      },
+      "compose": {
+        "arm": "compose",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "010",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "added": "C",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          },
+          {
+            "t": 1,
+            "a": "C+O",
+            "added": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "dE": 0
+          }
+        ],
+        "actions": [
+          "C",
+          "C+O"
+        ],
+        "hit": 0,
+        "ever": 0,
+        "E0": 2,
+        "E_final": 2,
+        "delta_E": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_steps": 2
+      }
+    }
+  ],
+  "gate": {
+    "hypothesis": "Just-in-time decision-site control beats early acquire/hold; P(S_final=m*) is the objective, not retention",
+    "decision_order": [
+      "C",
+      "H",
+      "O"
+    ],
+    "P_hit": {
+      "jit_rh": 0.375,
+      "jit_oneshot": 0.09375,
+      "compose": 0.1875
+    },
+    "n_mstar_hit_gt0": {
+      "jit_rh": 5,
+      "jit_oneshot": 2,
+      "compose": 4
+    },
+    "best_arm": "jit_rh",
+    "jit_beats_compose": true,
+    "universal_hit_best": false,
+    "read": "Primary: P_hit by arm. If JIT/RH \u2265 compose on hard m*, early persistent-state objective was wrong."
+  },
+  "sync_error_norm_ref": "<function sync_error_norm at 0x10fdbeda0>"
+}

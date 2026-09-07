@@ -1,0 +1,348 @@
+{
+  "mode": "hooks",
+  "protocol": "docs/sync_universal_equation.md",
+  "neutral_task": "api",
+  "n_cells": 8,
+  "n_improved": 0,
+  "median_delta_E_sync": 0.0,
+  "rows": [
+    {
+      "m_star": [
+        0,
+        0,
+        0
+      ],
+      "task_id": "api",
+      "S_before": [
+        1,
+        1,
+        0
+      ],
+      "e_before": [
+        -1,
+        -1,
+        0
+      ],
+      "E_sync_before": 2,
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "e_after": [
+        -1,
+        -1,
+        0
+      ],
+      "E_sync_after": 2,
+      "delta_E_sync": 0,
+      "intervention": "none_measure_only",
+      "hook_S": [
+        1,
+        1,
+        0
+      ],
+      "hook_e": [
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "m_star": [
+        0,
+        0,
+        1
+      ],
+      "task_id": "api",
+      "S_before": [
+        1,
+        1,
+        0
+      ],
+      "e_before": [
+        -1,
+        -1,
+        1
+      ],
+      "E_sync_before": 3,
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "e_after": [
+        -1,
+        -1,
+        1
+      ],
+      "E_sync_after": 3,
+      "delta_E_sync": 0,
+      "intervention": "none_measure_only",
+      "hook_S": [
+        1,
+        1,
+        0
+      ],
+      "hook_e": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "m_star": [
+        0,
+        1,
+        0
+      ],
+      "task_id": "api",
+      "S_before": [
+        1,
+        1,
+        0
+      ],
+      "e_before": [
+        -1,
+        0,
+        0
+      ],
+      "E_sync_before": 1,
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "e_after": [
+        -1,
+        0,
+        0
+      ],
+      "E_sync_after": 1,
+      "delta_E_sync": 0,
+      "intervention": "none_measure_only",
+      "hook_S": [
+        1,
+        1,
+        0
+      ],
+      "hook_e": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "m_star": [
+        0,
+        1,
+        1
+      ],
+      "task_id": "api",
+      "S_before": [
+        1,
+        1,
+        0
+      ],
+      "e_before": [
+        -1,
+        0,
+        1
+      ],
+      "E_sync_before": 2,
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "e_after": [
+        -1,
+        0,
+        1
+      ],
+      "E_sync_after": 2,
+      "delta_E_sync": 0,
+      "intervention": "none_measure_only",
+      "hook_S": [
+        1,
+        1,
+        0
+      ],
+      "hook_e": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "m_star": [
+        1,
+        0,
+        0
+      ],
+      "task_id": "api",
+      "S_before": [
+        1,
+        1,
+        0
+      ],
+      "e_before": [
+        0,
+        -1,
+        0
+      ],
+      "E_sync_before": 1,
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "e_after": [
+        0,
+        -1,
+        0
+      ],
+      "E_sync_after": 1,
+      "delta_E_sync": 0,
+      "intervention": "none_measure_only",
+      "hook_S": [
+        1,
+        1,
+        0
+      ],
+      "hook_e": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "m_star": [
+        1,
+        0,
+        1
+      ],
+      "task_id": "api",
+      "S_before": [
+        1,
+        1,
+        0
+      ],
+      "e_before": [
+        0,
+        -1,
+        1
+      ],
+      "E_sync_before": 2,
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "e_after": [
+        0,
+        -1,
+        1
+      ],
+      "E_sync_after": 2,
+      "delta_E_sync": 0,
+      "intervention": "none_measure_only",
+      "hook_S": [
+        1,
+        1,
+        0
+      ],
+      "hook_e": [
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "m_star": [
+        1,
+        1,
+        0
+      ],
+      "task_id": "api",
+      "S_before": [
+        1,
+        1,
+        0
+      ],
+      "e_before": [
+        0,
+        0,
+        0
+      ],
+      "E_sync_before": 0,
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "e_after": [
+        0,
+        0,
+        0
+      ],
+      "E_sync_after": 0,
+      "delta_E_sync": 0,
+      "intervention": "none_measure_only",
+      "hook_S": [
+        1,
+        1,
+        0
+      ],
+      "hook_e": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "m_star": [
+        1,
+        1,
+        1
+      ],
+      "task_id": "api",
+      "S_before": [
+        1,
+        1,
+        0
+      ],
+      "e_before": [
+        0,
+        0,
+        1
+      ],
+      "E_sync_before": 1,
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "e_after": [
+        0,
+        0,
+        1
+      ],
+      "E_sync_after": 1,
+      "delta_E_sync": 0,
+      "intervention": "none_measure_only",
+      "hook_S": [
+        1,
+        1,
+        0
+      ],
+      "hook_e": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "not": "text_repair|prescribed_m_star_in_prompt|folder_selected_by_m_star",
+  "note": "hooks mode measures distance(S_natural, m*) only; use --mode qwen for controller"
+}

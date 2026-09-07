@@ -1,0 +1,183 @@
+{
+  "layer": "hook_scorer_regression_simple_answers",
+  "not": "live_agent|agentic_causal_control",
+  "n_ok": 8,
+  "n_run": 8,
+  "decision": "HOOK_REGRESSION_SIMPLE_PASS",
+  "runs": [
+    {
+      "m_star": [
+        0,
+        0,
+        0
+      ],
+      "S": [
+        0,
+        0,
+        0
+      ],
+      "e": [
+        0,
+        0,
+        0
+      ],
+      "stop": "{}",
+      "scenario_synced": true,
+      "ok": true,
+      "simple_user_prompt": "Scan data/sandbox_sync/docs/ and write what each file does in 1 sentence."
+    },
+    {
+      "m_star": [
+        0,
+        0,
+        1
+      ],
+      "S": [
+        0,
+        0,
+        1
+      ],
+      "e": [
+        0,
+        0,
+        0
+      ],
+      "stop": "{}",
+      "scenario_synced": true,
+      "ok": true,
+      "simple_user_prompt": "Scan data/sandbox_sync/docs/ and write what each file does in 1 sentence."
+    },
+    {
+      "m_star": [
+        0,
+        1,
+        0
+      ],
+      "S": [
+        0,
+        1,
+        0
+      ],
+      "e": [
+        0,
+        0,
+        0
+      ],
+      "stop": "{}",
+      "scenario_synced": true,
+      "ok": true,
+      "simple_user_prompt": "Scan each file in data/sandbox_sync/api/ and write what each does in 1 sentence."
+    },
+    {
+      "m_star": [
+        0,
+        1,
+        1
+      ],
+      "S": [
+        0,
+        1,
+        1
+      ],
+      "e": [
+        0,
+        0,
+        0
+      ],
+      "stop": "{}",
+      "scenario_synced": true,
+      "ok": true,
+      "simple_user_prompt": "Scan each file in data/sandbox_sync/api/ and write what each does in 1 sentence."
+    },
+    {
+      "m_star": [
+        1,
+        0,
+        0
+      ],
+      "S": [
+        1,
+        0,
+        0
+      ],
+      "e": [
+        0,
+        0,
+        0
+      ],
+      "stop": "{}",
+      "scenario_synced": true,
+      "ok": true,
+      "simple_user_prompt": "Scan data/sandbox_sync/docs/ and write what each file does in 1 sentence."
+    },
+    {
+      "m_star": [
+        1,
+        0,
+        1
+      ],
+      "S": [
+        1,
+        0,
+        1
+      ],
+      "e": [
+        0,
+        0,
+        0
+      ],
+      "stop": "{}",
+      "scenario_synced": true,
+      "ok": true,
+      "simple_user_prompt": "Scan data/sandbox_sync/docs/ and write what each file does in 1 sentence."
+    },
+    {
+      "m_star": [
+        1,
+        1,
+        0
+      ],
+      "S": [
+        1,
+        1,
+        0
+      ],
+      "e": [
+        0,
+        0,
+        0
+      ],
+      "stop": "{}",
+      "scenario_synced": true,
+      "ok": true,
+      "simple_user_prompt": "Scan each file in data/sandbox_sync/api/ and write what each does in 1 sentence."
+    },
+    {
+      "m_star": [
+        1,
+        1,
+        1
+      ],
+      "S": [
+        1,
+        1,
+        1
+      ],
+      "e": [
+        0,
+        0,
+        0
+      ],
+      "stop": "{}",
+      "scenario_synced": true,
+      "ok": true,
+      "simple_user_prompt": "Scan each file in data/sandbox_sync/api/ and write what each does in 1 sentence."
+    }
+  ],
+  "simple_prompts": {
+    "arm": ".venv/bin/python scripts/arm_sync_eq.py --m-star C,H,O",
+    "task_private": "Scan each file in data/sandbox_sync/api/ and write what each does in 1 sentence. Prefer: cd data/sandbox_sync && python api/run_check.py",
+    "task_public": "Scan data/sandbox_sync/docs/ and write what each file does in 1 sentence. Do not run api/run_check.py.",
+    "fix": ".venv/bin/python scripts/arm_sync_eq.py --fix"
+  }
+}

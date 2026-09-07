@@ -1,0 +1,583 @@
+{
+  "model": "qwen3-0.6b",
+  "date": "2026-08-10",
+  "purpose": "Reviewer-proof causal protocol for lookup-nudge rank collapse",
+  "n_roles": 32,
+  "n_questions": 3,
+  "n_boot": 1000,
+  "seed": 20260806,
+  "preregistered_rules": {
+    "D1": "lookup_nudge bootstrap CI for dims@90% must not overlap format_only or emit_nudge CI",
+    "D2": "after length-matching (longest lookup trials \u2265 format_only p25), lookup dims@90% still < format_only_trial_dims \u2212 3",
+    "D3": "within lookup_nudge: emitted tool-call dims@90% CI must not overlap non-emitted CI \u2192 emission is mechanism; overlap \u2192 nudge text itself is mechanism",
+    "D4": "both role halves: lookup dims clearly below format_only and emit_nudge (gap \u2265 3); absolute thresholds avoided because n=16 deflates dims@90%"
+  },
+  "condition_summary": {
+    "format_only": {
+      "tool_call_frac": 0.0,
+      "length_mean": 47.322916666666664,
+      "length_median": 48.0,
+      "n_trials": 96
+    },
+    "emit_nudge": {
+      "tool_call_frac": 0.010416666666666666,
+      "length_mean": 45.010416666666664,
+      "length_median": 48.0,
+      "n_trials": 96
+    },
+    "lookup_nudge": {
+      "tool_call_frac": 0.3854166666666667,
+      "length_mean": 30.145833333333332,
+      "length_median": 24.0,
+      "n_trials": 96
+    }
+  },
+  "analysis": {
+    "preregistered_rules": {
+      "D1": "lookup_nudge bootstrap CI for dims@90% must not overlap format_only or emit_nudge CI",
+      "D2": "after length-matching (longest lookup trials \u2265 format_only p25), lookup dims@90% still < format_only_trial_dims \u2212 3",
+      "D3": "within lookup_nudge: emitted tool-call dims@90% CI must not overlap non-emitted CI \u2192 emission is mechanism; overlap \u2192 nudge text itself is mechanism",
+      "D4": "both role halves: lookup dims clearly below format_only and emit_nudge (gap \u2265 3); absolute thresholds avoided because n=16 deflates dims@90%"
+    },
+    "by_layer": {
+      "4": {
+        "step1_bootstrap": {
+          "format_only": {
+            "point": 21,
+            "n_boot": 1000,
+            "mean": 13.267,
+            "std": 1.2850534472785022,
+            "ci95": [
+              11.0,
+              16.0
+            ],
+            "ci90": [
+              11.0,
+              15.0
+            ],
+            "n_roles": 32,
+            "tool_call_frac": 0.0,
+            "length_mean": 47.322916666666664
+          },
+          "emit_nudge": {
+            "point": 19,
+            "n_boot": 1000,
+            "mean": 12.077,
+            "std": 1.3193982764168715,
+            "ci95": [
+              9.0,
+              14.0
+            ],
+            "ci90": [
+              10.0,
+              14.0
+            ],
+            "n_roles": 32,
+            "tool_call_frac": 0.010416666666666666,
+            "length_mean": 45.010416666666664
+          },
+          "lookup_nudge": {
+            "point": 6,
+            "n_boot": 1000,
+            "mean": 4.798,
+            "std": 0.83059369482671,
+            "ci95": [
+              3.0,
+              6.0
+            ],
+            "ci90": [
+              4.0,
+              6.0
+            ],
+            "n_roles": 32,
+            "tool_call_frac": 0.3854166666666667,
+            "length_mean": 30.145833333333332
+          },
+          "D1_pass": true,
+          "D1_detail": "lookup CI=[3.0, 6.0] vs format_only=[11.0, 16.0] emit_nudge=[9.0, 14.0]; overlap_fo=False overlap_em=False"
+        },
+        "step2_length_match": {
+          "format_only_trial_dims90": 42,
+          "format_only_trial_boot": {
+            "point": 42,
+            "n_boot": 1000,
+            "mean": 27.784,
+            "std": 1.4965238332828459,
+            "ci95": [
+              25.0,
+              31.0
+            ],
+            "ci90": [
+              25.0,
+              30.0
+            ]
+          },
+          "lookup_length_matched_dims90": 13,
+          "lookup_length_matched_boot": {
+            "point": 13,
+            "n_boot": 1000,
+            "mean": 8.607,
+            "std": 0.9876874639917865,
+            "ci95": [
+              7.0,
+              10.0
+            ],
+            "ci90": [
+              7.0,
+              10.0
+            ]
+          },
+          "format_only_length_mean": 47.322916666666664,
+          "lookup_length_mean": 30.145833333333332,
+          "matched_length_mean": 48.0,
+          "n_matched": 23,
+          "threshold": 37,
+          "length_ceiling_note": "format_only lengths cluster at max_new_tokens; matching uses longest lookup trials (\u2265 format_only p25)",
+          "D2_pass": true,
+          "D2_detail": "matched dims=13 (n=23, len_mean=48.0) vs format_only_trials=42 (need < fo-3 and \u2264 37)"
+        },
+        "step3_within_lookup": {
+          "n_emitted": 37,
+          "n_non_emitted": 59,
+          "emitted": {
+            "point": 6,
+            "n_boot": 1000,
+            "mean": 4.379,
+            "std": 0.6795739995179486,
+            "ci95": [
+              3.0,
+              5.0
+            ],
+            "ci90": [
+              3.0,
+              5.0
+            ]
+          },
+          "non_emitted": {
+            "point": 10,
+            "n_boot": 1000,
+            "mean": 7.736,
+            "std": 0.8677886015943383,
+            "ci95": [
+              6.0,
+              9.0
+            ],
+            "ci90": [
+              6.0,
+              9.0
+            ]
+          },
+          "ci_overlap": false,
+          "emission_is_mechanism": true,
+          "nudge_text_is_mechanism": false,
+          "D3_pass_emission_mechanism": true,
+          "D3_detail": "emitted dims=6 CI=[3.0, 5.0] vs non-emitted dims=10 CI=[6.0, 9.0]"
+        },
+        "step4_holdout": {
+          "half_a": {
+            "format_only": {
+              "dims_for_90": 11,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "emit_nudge": {
+              "dims_for_90": 10,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "lookup_nudge": {
+              "dims_for_90": 5,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "pattern_ok": true,
+            "rule": "lookup < format_only and lookup < emit_nudge and gap\u22653"
+          },
+          "half_b": {
+            "format_only": {
+              "dims_for_90": 11,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "emit_nudge": {
+              "dims_for_90": 11,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "lookup_nudge": {
+              "dims_for_90": 4,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "pattern_ok": true,
+            "rule": "lookup < format_only and lookup < emit_nudge and gap\u22653"
+          },
+          "D4_pass": true,
+          "D4_detail": "both halves: lookup clearly lower-rank than format_only and emit_nudge (gap\u22653)"
+        }
+      },
+      "14": {
+        "step1_bootstrap": {
+          "format_only": {
+            "point": 19,
+            "n_boot": 1000,
+            "mean": 12.331,
+            "std": 1.1903175441267158,
+            "ci95": [
+              10.0,
+              15.0
+            ],
+            "ci90": [
+              10.0,
+              14.0
+            ],
+            "n_roles": 32,
+            "tool_call_frac": 0.0,
+            "length_mean": 47.322916666666664
+          },
+          "emit_nudge": {
+            "point": 18,
+            "n_boot": 1000,
+            "mean": 11.139,
+            "std": 1.1683509935135263,
+            "ci95": [
+              9.0,
+              13.0
+            ],
+            "ci90": [
+              9.0,
+              13.0
+            ],
+            "n_roles": 32,
+            "tool_call_frac": 0.010416666666666666,
+            "length_mean": 45.010416666666664
+          },
+          "lookup_nudge": {
+            "point": 7,
+            "n_boot": 1000,
+            "mean": 4.944,
+            "std": 0.8352015095541683,
+            "ci95": [
+              4.0,
+              7.0
+            ],
+            "ci90": [
+              4.0,
+              6.0
+            ],
+            "n_roles": 32,
+            "tool_call_frac": 0.3854166666666667,
+            "length_mean": 30.145833333333332
+          },
+          "D1_pass": true,
+          "D1_detail": "lookup CI=[4.0, 7.0] vs format_only=[10.0, 15.0] emit_nudge=[9.0, 13.0]; overlap_fo=False overlap_em=False"
+        },
+        "step2_length_match": {
+          "format_only_trial_dims90": 32,
+          "format_only_trial_boot": {
+            "point": 32,
+            "n_boot": 1000,
+            "mean": 22.066,
+            "std": 1.1237913093216672,
+            "ci95": [
+              20.0,
+              24.0
+            ],
+            "ci90": [
+              20.0,
+              24.0
+            ]
+          },
+          "lookup_length_matched_dims90": 12,
+          "lookup_length_matched_boot": {
+            "point": 12,
+            "n_boot": 1000,
+            "mean": 7.808,
+            "std": 0.8624847128383667,
+            "ci95": [
+              6.0,
+              9.0
+            ],
+            "ci90": [
+              6.0,
+              9.0
+            ]
+          },
+          "format_only_length_mean": 47.322916666666664,
+          "lookup_length_mean": 30.145833333333332,
+          "matched_length_mean": 48.0,
+          "n_matched": 23,
+          "threshold": 27,
+          "length_ceiling_note": "format_only lengths cluster at max_new_tokens; matching uses longest lookup trials (\u2265 format_only p25)",
+          "D2_pass": true,
+          "D2_detail": "matched dims=12 (n=23, len_mean=48.0) vs format_only_trials=32 (need < fo-3 and \u2264 27)"
+        },
+        "step3_within_lookup": {
+          "n_emitted": 37,
+          "n_non_emitted": 59,
+          "emitted": {
+            "point": 6,
+            "n_boot": 1000,
+            "mean": 4.81,
+            "std": 0.7045540407920434,
+            "ci95": [
+              4.0,
+              6.0
+            ],
+            "ci90": [
+              4.0,
+              6.0
+            ]
+          },
+          "non_emitted": {
+            "point": 9,
+            "n_boot": 1000,
+            "mean": 7.217,
+            "std": 0.8127555423198118,
+            "ci95": [
+              6.0,
+              9.0
+            ],
+            "ci90": [
+              6.0,
+              8.0
+            ]
+          },
+          "ci_overlap": true,
+          "emission_is_mechanism": false,
+          "nudge_text_is_mechanism": true,
+          "D3_pass_emission_mechanism": false,
+          "D3_detail": "emitted dims=6 CI=[4.0, 6.0] vs non-emitted dims=9 CI=[6.0, 9.0]"
+        },
+        "step4_holdout": {
+          "half_a": {
+            "format_only": {
+              "dims_for_90": 11,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "emit_nudge": {
+              "dims_for_90": 10,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "lookup_nudge": {
+              "dims_for_90": 5,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "pattern_ok": true,
+            "rule": "lookup < format_only and lookup < emit_nudge and gap\u22653"
+          },
+          "half_b": {
+            "format_only": {
+              "dims_for_90": 11,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "emit_nudge": {
+              "dims_for_90": 10,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "lookup_nudge": {
+              "dims_for_90": 4,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "pattern_ok": true,
+            "rule": "lookup < format_only and lookup < emit_nudge and gap\u22653"
+          },
+          "D4_pass": true,
+          "D4_detail": "both halves: lookup clearly lower-rank than format_only and emit_nudge (gap\u22653)"
+        }
+      },
+      "22": {
+        "step1_bootstrap": {
+          "format_only": {
+            "point": 18,
+            "n_boot": 1000,
+            "mean": 11.455,
+            "std": 1.102356652898775,
+            "ci95": [
+              9.0,
+              13.0
+            ],
+            "ci90": [
+              10.0,
+              13.0
+            ],
+            "n_roles": 32,
+            "tool_call_frac": 0.0,
+            "length_mean": 47.322916666666664
+          },
+          "emit_nudge": {
+            "point": 16,
+            "n_boot": 1000,
+            "mean": 10.202,
+            "std": 1.079982575027191,
+            "ci95": [
+              8.0,
+              12.0
+            ],
+            "ci90": [
+              9.0,
+              12.0
+            ],
+            "n_roles": 32,
+            "tool_call_frac": 0.010416666666666666,
+            "length_mean": 45.010416666666664
+          },
+          "lookup_nudge": {
+            "point": 8,
+            "n_boot": 1000,
+            "mean": 5.323,
+            "std": 0.904150700098434,
+            "ci95": [
+              4.0,
+              7.0
+            ],
+            "ci90": [
+              4.0,
+              7.0
+            ],
+            "n_roles": 32,
+            "tool_call_frac": 0.3854166666666667,
+            "length_mean": 30.145833333333332
+          },
+          "D1_pass": true,
+          "D1_detail": "lookup CI=[4.0, 7.0] vs format_only=[9.0, 13.0] emit_nudge=[8.0, 12.0]; overlap_fo=False overlap_em=False"
+        },
+        "step2_length_match": {
+          "format_only_trial_dims90": 22,
+          "format_only_trial_boot": {
+            "point": 22,
+            "n_boot": 1000,
+            "mean": 16.353,
+            "std": 0.9269575234336525,
+            "ci95": [
+              15.0,
+              18.0
+            ],
+            "ci90": [
+              15.0,
+              18.0
+            ]
+          },
+          "lookup_length_matched_dims90": 9,
+          "lookup_length_matched_boot": {
+            "point": 9,
+            "n_boot": 1000,
+            "mean": 6.517,
+            "std": 0.7458332704212566,
+            "ci95": [
+              5.0,
+              8.0
+            ],
+            "ci90": [
+              5.0,
+              8.0
+            ]
+          },
+          "format_only_length_mean": 47.322916666666664,
+          "lookup_length_mean": 30.145833333333332,
+          "matched_length_mean": 48.0,
+          "n_matched": 23,
+          "threshold": 17,
+          "length_ceiling_note": "format_only lengths cluster at max_new_tokens; matching uses longest lookup trials (\u2265 format_only p25)",
+          "D2_pass": true,
+          "D2_detail": "matched dims=9 (n=23, len_mean=48.0) vs format_only_trials=22 (need < fo-3 and \u2264 17)"
+        },
+        "step3_within_lookup": {
+          "n_emitted": 37,
+          "n_non_emitted": 59,
+          "emitted": {
+            "point": 5,
+            "n_boot": 1000,
+            "mean": 4.319,
+            "std": 0.650893741452983,
+            "ci95": [
+              3.0,
+              5.0
+            ],
+            "ci90": [
+              3.0,
+              5.0
+            ]
+          },
+          "non_emitted": {
+            "point": 9,
+            "n_boot": 1000,
+            "mean": 6.83,
+            "std": 0.7973303805423043,
+            "ci95": [
+              5.0,
+              8.0
+            ],
+            "ci90": [
+              6.0,
+              8.0
+            ]
+          },
+          "ci_overlap": true,
+          "emission_is_mechanism": false,
+          "nudge_text_is_mechanism": true,
+          "D3_pass_emission_mechanism": false,
+          "D3_detail": "emitted dims=5 CI=[3.0, 5.0] vs non-emitted dims=9 CI=[5.0, 8.0]"
+        },
+        "step4_holdout": {
+          "half_a": {
+            "format_only": {
+              "dims_for_90": 10,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "emit_nudge": {
+              "dims_for_90": 9,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "lookup_nudge": {
+              "dims_for_90": 6,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "pattern_ok": true,
+            "rule": "lookup < format_only and lookup < emit_nudge and gap\u22653"
+          },
+          "half_b": {
+            "format_only": {
+              "dims_for_90": 10,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "emit_nudge": {
+              "dims_for_90": 10,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "lookup_nudge": {
+              "dims_for_90": 5,
+              "n_roles": 16,
+              "tool_call_frac_roles": null
+            },
+            "pattern_ok": true,
+            "rule": "lookup < format_only and lookup < emit_nudge and gap\u22653"
+          },
+          "D4_pass": true,
+          "D4_detail": "both halves: lookup clearly lower-rank than format_only and emit_nudge (gap\u22653)"
+        }
+      }
+    },
+    "layers_pass_counts": {
+      "D1": 3,
+      "D2": 3,
+      "D3": 1,
+      "D4": 3
+    },
+    "mechanism": "tool_call_emission",
+    "confirmatory": true,
+    "verdict": "CONFIRMATORY \u2014 lookup nudge triggers compression; within-condition emission is the mechanism; length confound ruled out; holdout replicates"
+  },
+  "elapsed_s": 27.46196985244751
+}

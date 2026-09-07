@@ -1,0 +1,129 @@
+{
+  "model": "qwen3-0.6b",
+  "date": "2026-08-09",
+  "purpose": "Ablate Phase-1 tool prompt after format-matched \u2192 NOT_FORMAT",
+  "n_roles": 32,
+  "modes": {
+    "format_only": {
+      "note": "Hermes available; no emit-first; no lookup nudge",
+      "tool_call_frac": 0.0,
+      "sample_responses": [
+        {
+          "role": "analyst",
+          "response": "Attending weddings or large family gatherings is a deeply personal and meaningful experience. It often brings together loved ones, celebrates life's milestones, and creates lasting memories. While I don't have specific feelings about such events, I can share that these"
+        },
+        {
+          "role": "therapist",
+          "response": "I appreciate the opportunity to share my thoughts. Attending weddings or large family gatherings can be a wonderful and meaningful experience. It allows us to connect with loved ones, celebrate life's milestones, and create memories that will last a lifetime. I"
+        }
+      ]
+    },
+    "emit_nudge": {
+      "note": "Hermes + emit-first; no user lookup suffix",
+      "tool_call_frac": 0.010416666666666666,
+      "sample_responses": [
+        {
+          "role": "analyst",
+          "response": "I don't have personal opinions or feelings about specific events like weddings or family gatherings. However, I can provide general insights about these social gatherings, such as their cultural significance, social dynamics, and the emotional impact they can have on individuals."
+        },
+        {
+          "role": "therapist",
+          "response": "I find weddings and large family gatherings deeply meaningful and enjoyable. They bring people together, celebrate life, and create lasting memories. I\u2019d be happy to help you explore how to approach these events with confidence and positivity. Let me know if there"
+        }
+      ]
+    },
+    "lookup_nudge": {
+      "note": "Full Phase-1 tool recipe (reproduce compression)",
+      "tool_call_frac": 0.4166666666666667,
+      "sample_responses": [
+        {
+          "role": "analyst",
+          "response": "I don't have specific information about my feelings regarding weddings or uczni gatherings, but I can look up relevant facts to provide you with a more comprehensive answer. Let me check if there's any information I can use to answer this question."
+        },
+        {
+          "role": "therapist",
+          "response": "{\"name\":\"lookup\",\"arguments\":{\"query\":\"Wedding attendance trends in different cultures.\"}}"
+        }
+      ]
+    }
+  },
+  "by_layer": {
+    "4": {
+      "phase1_prose_dims90": 20,
+      "phase1_tool_dims90": 8,
+      "structured_dims90": 21,
+      "ablations": {
+        "format_only": {
+          "dims_for_90": 21,
+          "pc1_var": 0.15495997014626742,
+          "frac_toward_tool": -0.08333333333333333,
+          "tool_call_frac": 0.0
+        },
+        "emit_nudge": {
+          "dims_for_90": 21,
+          "pc1_var": 0.22186744789022017,
+          "frac_toward_tool": -0.08333333333333333,
+          "tool_call_frac": 0.010416666666666666
+        },
+        "lookup_nudge": {
+          "dims_for_90": 7,
+          "pc1_var": 0.7345936087663684,
+          "frac_toward_tool": 1.0833333333333333,
+          "tool_call_frac": 0.4166666666666667
+        }
+      }
+    },
+    "14": {
+      "phase1_prose_dims90": 19,
+      "phase1_tool_dims90": 8,
+      "structured_dims90": 20,
+      "ablations": {
+        "format_only": {
+          "dims_for_90": 20,
+          "pc1_var": 0.1857789798014464,
+          "frac_toward_tool": -0.09090909090909091,
+          "tool_call_frac": 0.0
+        },
+        "emit_nudge": {
+          "dims_for_90": 19,
+          "pc1_var": 0.3051456636257731,
+          "frac_toward_tool": 0.0,
+          "tool_call_frac": 0.010416666666666666
+        },
+        "lookup_nudge": {
+          "dims_for_90": 7,
+          "pc1_var": 0.7371855252813073,
+          "frac_toward_tool": 1.0909090909090908,
+          "tool_call_frac": 0.4166666666666667
+        }
+      }
+    },
+    "22": {
+      "phase1_prose_dims90": 17,
+      "phase1_tool_dims90": 9,
+      "structured_dims90": 18,
+      "ablations": {
+        "format_only": {
+          "dims_for_90": 18,
+          "pc1_var": 0.23526136379696205,
+          "frac_toward_tool": -0.125,
+          "tool_call_frac": 0.0
+        },
+        "emit_nudge": {
+          "dims_for_90": 18,
+          "pc1_var": 0.24861969620449442,
+          "frac_toward_tool": -0.125,
+          "tool_call_frac": 0.010416666666666666
+        },
+        "lookup_nudge": {
+          "dims_for_90": 8,
+          "pc1_var": 0.6946094134369049,
+          "frac_toward_tool": 1.125,
+          "tool_call_frac": 0.4166666666666667
+        }
+      }
+    }
+  },
+  "decision": "LOOKUP_USER_NUDGE_DRIVES_COMPRESSION \u2014 need the user-side lookup prompt on top of Hermes; format/emit alone do not compress",
+  "elapsed_s": 276.3787839412689
+}

@@ -1,0 +1,1180 @@
+{
+  "model": "qwen3-0.6b",
+  "date": "2026-08-09",
+  "purpose": "Cheap causal probes for PC1 sign, rank collapse, rand_02 residual",
+  "pc1_metric": {
+    "layer_k": 4,
+    "layer_L": 22,
+    "n_jobs": 24,
+    "n_transcripts": 8,
+    "pc1_delta_by_mode": {
+      "relative": -1.6603436641693112,
+      "absolute": 0.3901950661659246,
+      "norm_matched": 0.2945417235374457
+    },
+    "pc1_decision": "H_b_CONFIRMED \u2014 PC1 sign flips under absolute/norm_matched (same as AA)",
+    "by_blowup_mode": {
+      "relative": {
+        "threshold": 0.5,
+        "ref_norm": 226.5225133895874,
+        "mean_clean_norm_all": 219.5326747894287,
+        "mean_clean_norm_prose": 226.5225133895874,
+        "tool_over_prose_norm": 0.9074285576003149,
+        "per_direction": [
+          {
+            "direction_id": "assistant_axis_prose",
+            "kind": "assistant_axis",
+            "mean_eps_prose": 18.748155155181887,
+            "mean_eps_tool": 22.086866892051695,
+            "mean_delta": 3.33871173686981,
+            "deltas": [
+              3.673546119689938,
+              2.819055641174316,
+              2.613062400817867,
+              2.072902348327638,
+              3.582756506347657,
+              3.6964342575073204,
+              3.7750168640136685,
+              4.476919757080076
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc0_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 16.23942451591492,
+            "mean_eps_tool": 18.184248659706117,
+            "mean_delta": 1.9448241437911997,
+            "deltas": [
+              2.0137746589660637,
+              2.15720698928833,
+              2.325816271209714,
+              1.0616281257629439,
+              1.7185176811218241,
+              1.1241890357971194,
+              3.678123747253423,
+              1.47933664093018
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc1_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 22.693974747657776,
+            "mean_eps_tool": 21.033631083488466,
+            "mean_delta": -1.6603436641693112,
+            "deltas": [
+              -1.665874964141846,
+              -1.1405922012329093,
+              -0.9952525260925285,
+              -1.869197921752928,
+              -2.10799749298096,
+              -2.049251272583003,
+              -1.0383585189819335,
+              -2.416224415588381
+            ],
+            "n_pairs": 8,
+            "sign": "negative"
+          },
+          {
+            "direction_id": "persona_pc2_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 21.50002457513809,
+            "mean_eps_tool": 24.591687474441528,
+            "mean_delta": 3.0916628993034365,
+            "deltas": [
+              2.9350222061157254,
+              4.022208752441404,
+              4.286185275268554,
+              1.6834225364685125,
+              3.1783994049072284,
+              2.22167524414062,
+              4.178229558563231,
+              2.228160216522216
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc3_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 19.64551320848465,
+            "mean_eps_tool": 23.76904965438843,
+            "mean_delta": 4.123536445903779,
+            "deltas": [
+              5.253972035980226,
+              4.7153378593444835,
+              4.413977378082269,
+              3.701774822998054,
+              3.074258377838138,
+              3.6353992233276387,
+              4.250327192687987,
+              3.943244676971439
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc4_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 16.746158350467685,
+            "mean_eps_tool": 20.98661503372192,
+            "mean_delta": 4.240456683254239,
+            "deltas": [
+              5.080022188568112,
+              4.996480485534665,
+              5.060948740386959,
+              3.6472247611999506,
+              3.159707425689696,
+              4.4231326332092245,
+              4.775991424560544,
+              2.780145806884761
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          }
+        ]
+      },
+      "absolute": {
+        "threshold": 109.76633739471436,
+        "ref_norm": 219.5326747894287,
+        "mean_clean_norm_all": 219.5326747894287,
+        "mean_clean_norm_prose": 226.5225133895874,
+        "tool_over_prose_norm": 0.9074285576003149,
+        "per_direction": [
+          {
+            "direction_id": "assistant_axis_prose",
+            "kind": "assistant_axis",
+            "mean_eps_prose": 18.24757250766754,
+            "mean_eps_tool": 23.652129417037965,
+            "mean_delta": 5.404556909370422,
+            "deltas": [
+              5.067815181732172,
+              4.292670247650147,
+              4.399100088500976,
+              3.538124637603758,
+              6.201159472656254,
+              5.9169650947570815,
+              6.471239498901365,
+              7.3493810531616255
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc0_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 15.620443438816071,
+            "mean_eps_tool": 18.71592102775574,
+            "mean_delta": 3.0954775889396684,
+            "deltas": [
+              2.9952943023681655,
+              3.2291347770690955,
+              3.252404383850102,
+              2.0858722930908247,
+              3.0738769088745137,
+              2.2682144577026335,
+              5.010976306152344,
+              2.8480472824096665
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc1_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 21.979054226207733,
+            "mean_eps_tool": 22.36924929237366,
+            "mean_delta": 0.3901950661659246,
+            "deltas": [
+              -0.06866441345214724,
+              0.5134572250366247,
+              0.7221207481384333,
+              -0.14343233032226976,
+              0.3894798118591325,
+              0.02174373092651294,
+              1.6330686332702626,
+              0.05378712387084761
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc2_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 20.631705846691133,
+            "mean_eps_tool": 26.05538388786316,
+            "mean_delta": 5.423678041172028,
+            "deltas": [
+              4.8549555000305205,
+              5.675495240783693,
+              6.119525114440922,
+              3.6765978713989256,
+              6.130206245422361,
+              4.390707771301269,
+              7.028947123718261,
+              5.512989462280274
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc3_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 19.0711640001297,
+            "mean_eps_tool": 25.18439487667084,
+            "mean_delta": 6.113230876541138,
+            "deltas": [
+              6.916795248413088,
+              6.333910671997071,
+              6.331240389251704,
+              5.4466138626098655,
+              5.443943579864502,
+              5.696857502746585,
+              6.353747058105466,
+              6.382738699340827
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc4_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 16.148491851711274,
+            "mean_eps_tool": 22.152670288276674,
+            "mean_delta": 6.004178436565398,
+            "deltas": [
+              6.565843801879879,
+              6.485353850555416,
+              6.637559967041016,
+              5.185689091491696,
+              5.403126400756836,
+              6.036364880371089,
+              6.910691744995116,
+              4.808797755432131
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          }
+        ]
+      },
+      "norm_matched": {
+        "threshold": 0.5,
+        "ref_norm": 226.5225133895874,
+        "mean_clean_norm_all": 219.5326747894287,
+        "mean_clean_norm_prose": 226.5225133895874,
+        "tool_over_prose_norm": 0.9074285576003149,
+        "per_direction": [
+          {
+            "direction_id": "assistant_axis_prose",
+            "kind": "assistant_axis",
+            "mean_eps_prose": 18.79903357820511,
+            "mean_eps_tool": 24.43299638557434,
+            "mean_delta": 5.633962807369233,
+            "deltas": [
+              5.168904457092285,
+              4.48683795013428,
+              4.739370404052732,
+              3.6327289405822754,
+              6.46895068511963,
+              6.282412361907966,
+              6.746278621673579,
+              7.546219038391115
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc0_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 16.215582705688476,
+            "mean_eps_tool": 18.975606024742127,
+            "mean_delta": 2.760023319053652,
+            "deltas": [
+              2.643961386871336,
+              2.845376999664307,
+              2.9838502334594743,
+              1.7875635635375993,
+              2.644724324798588,
+              1.9283256111145022,
+              4.683294466400152,
+              2.563089966583256
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc1_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 22.77212820158005,
+            "mean_eps_tool": 23.066669925117495,
+            "mean_delta": 0.2945417235374457,
+            "deltas": [
+              -0.24642895050048708,
+              0.3730766464233426,
+              0.5844104522705074,
+              -0.19493064041137842,
+              0.3112786743164051,
+              -0.07324204101562515,
+              1.6189542816162117,
+              -0.01678463439941069
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc2_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 21.496114518260956,
+            "mean_eps_tool": 26.82785853919983,
+            "mean_delta": 5.331744020938875,
+            "deltas": [
+              4.528418067169191,
+              5.696857502746582,
+              5.917728032684327,
+              3.5190511894226084,
+              6.308352251434329,
+              4.321661888885497,
+              7.121644081878667,
+              5.240239153289799
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc3_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 19.61637851638794,
+            "mean_eps_tool": 25.93302771778107,
+            "mean_delta": 6.316649201393129,
+            "deltas": [
+              6.999192544555669,
+              6.564317926025392,
+              6.642519063568116,
+              5.804813219451905,
+              5.648029475402833,
+              5.890643736267091,
+              6.5097678642272925,
+              6.473909781646732
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          },
+          {
+            "direction_id": "persona_pc4_prose",
+            "kind": "persona_pc",
+            "mean_eps_prose": 16.883487177371983,
+            "mean_eps_tool": 22.781235773086546,
+            "mean_delta": 5.897748595714567,
+            "deltas": [
+              6.471239498901365,
+              6.2976711204528755,
+              6.709657601165773,
+              5.068959588623045,
+              5.2959336219787545,
+              5.936038542938231,
+              6.8515640556335455,
+              4.550924736022946
+            ],
+            "n_pairs": 8,
+            "sign": "positive"
+          }
+        ]
+      }
+    }
+  },
+  "random_expand": {
+    "n_random": 32,
+    "orthogonality": {
+      "layer": 4,
+      "seed": 20260809,
+      "n_random": 32,
+      "hidden_size": 1024,
+      "min_norm": 0.9999998211860657,
+      "max_norm": 1.0000001192092896,
+      "max_abs_dot_with_fixed_basis": 2.7939677238464355e-08,
+      "max_abs_pairwise_cosine": 3.3527612686157227e-08,
+      "passed": true
+    },
+    "summary_by_mode": {
+      "absolute": {
+        "n": 32,
+        "mean_delta": 1.701284522667528,
+        "std_delta": 3.2997754825037253,
+        "min": -6.777082240486143,
+        "max": 7.001481358337404,
+        "n_extreme_ge_2sigma_or_residual_ge_2": 20,
+        "frac_extreme": 0.625,
+        "extreme_deltas": [
+          7.001481358337404,
+          -6.777082240486143,
+          6.315361743640903,
+          6.191670432186131,
+          5.828702713298792,
+          5.336750801086429,
+          5.163659258842468,
+          4.7660732315063505,
+          4.154292381095889,
+          4.104939833927155
+        ],
+        "percentiles": {
+          "p5": -3.0871424920845025,
+          "p25": -1.16332536728382,
+          "p50": 2.1076398658275615,
+          "p75": 4.117277970719338,
+          "p95": 6.247331522340778
+        }
+      }
+    },
+    "decision": "SAMPLING_VARIANCE \u2014 only 1/32 draws have residual\u2265+2.0 (rand_02-class); consistent with n=4 luck",
+    "n_jobs": 24,
+    "n_transcripts": 8,
+    "per_direction_absolute": [
+      {
+        "direction_id": "rand_00_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 27.436396903419496,
+        "mean_eps_tool": 31.48988611087799,
+        "mean_delta": 4.053489207458496,
+        "deltas": [
+          4.606237735748287,
+          3.6655352714538587,
+          5.0231833129882695,
+          3.590385885620119,
+          4.118720400238036,
+          4.210654420471201,
+          4.852285217285154,
+          2.3609114158630433
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_01_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 21.62099792022705,
+        "mean_eps_tool": 24.749329523658755,
+        "mean_delta": 3.1283316034317035,
+        "deltas": [
+          3.208535453033445,
+          3.530876727294924,
+          3.1227049362182626,
+          1.8161737358093255,
+          2.9601991577148468,
+          2.540583297729494,
+          3.561012775421151,
+          4.286566744232179
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_02_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 19.590104841518404,
+        "mean_eps_tool": 20.973168252754213,
+        "mean_delta": 1.383063411235809,
+        "deltas": [
+          0.2887720054626399,
+          1.815029328918456,
+          1.7967188186645515,
+          2.6004739250183135,
+          1.5827147300720235,
+          -0.1155850959777851,
+          3.461449375915528,
+          -0.36506579818725626
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_03_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 30.10152981777191,
+        "mean_eps_tool": 28.96484767341614,
+        "mean_delta": -1.1366821443557718,
+        "deltas": [
+          -0.43334874267577916,
+          -0.573347852325437,
+          -0.28381290893554123,
+          -0.8811933059692336,
+          -2.722543993377684,
+          -2.208705299377442,
+          -0.5104054733276335,
+          -1.4800995788574234
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_04_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 17.708699912929536,
+        "mean_eps_tool": 21.81363974685669,
+        "mean_delta": 4.104939833927155,
+        "deltas": [
+          4.1137613037109375,
+          3.3069544456481914,
+          3.195946977233884,
+          5.310047973632813,
+          3.3561639419555718,
+          2.9201449165344293,
+          5.884921701812743,
+          4.751577410888672
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_05_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 21.140108607959746,
+        "mean_eps_tool": 27.45547035160065,
+        "mean_delta": 6.315361743640903,
+        "deltas": [
+          7.847198050689705,
+          6.091296411132813,
+          5.149831008911132,
+          3.8902204910278364,
+          6.790147552490236,
+          7.344803425598151,
+          8.351881489562992,
+          5.057515519714357
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_06_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 23.031574780464172,
+        "mean_eps_tool": 27.797648011970523,
+        "mean_delta": 4.7660732315063505,
+        "deltas": [
+          5.5190929656982455,
+          5.195225815582276,
+          4.424658509063725,
+          3.5488057685852077,
+          3.577797409820562,
+          3.750221381378175,
+          6.9244246276855534,
+          5.188359374237059
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_07_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 24.044374878883364,
+        "mean_eps_tool": 24.704411553192138,
+        "mean_delta": 0.6600366743087753,
+        "deltas": [
+          0.7709487754821751,
+          0.43563755645751456,
+          1.1409736701965372,
+          -0.14762848892212332,
+          -0.010681130981446074,
+          0.32691890182494987,
+          1.51977235107422,
+          1.2443517593383753
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_08_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 29.308598893260957,
+        "mean_eps_tool": 27.58640957336426,
+        "mean_delta": -1.7221893198966969,
+        "deltas": [
+          -1.4480561859130852,
+          -1.1024453048706029,
+          -1.0639169395446793,
+          -0.7633193962097167,
+          -3.9359967666625977,
+          -2.757257669067375,
+          0.006866441345213303,
+          -2.713388738250732
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_09_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 26.218747971534732,
+        "mean_eps_tool": 26.211786162948613,
+        "mean_delta": -0.006961808586121165,
+        "deltas": [
+          1.5201538200378408,
+          -1.670452591705324,
+          1.1856055389404325,
+          -2.1293597549438523,
+          -0.95748709869385,
+          -0.5653370040893577,
+          0.5809772315979025,
+          1.9802053901672387
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_10_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 27.9371226017952,
+        "mean_eps_tool": 33.76582531509399,
+        "mean_delta": 5.828702713298792,
+        "deltas": [
+          5.205525477600091,
+          3.1047758949279753,
+          6.654344601440421,
+          4.177466620635975,
+          6.909928807067864,
+          7.0907450958251985,
+          9.17356563720703,
+          4.313269571685787
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_11_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 38.094830481529236,
+        "mean_eps_tool": 34.74133682231903,
+        "mean_delta": -3.3534936592102023,
+        "deltas": [
+          -4.808034817504883,
+          -4.6970273490905825,
+          -2.5615640907287514,
+          -3.578178878784172,
+          -2.785867841339112,
+          -2.3704481399536093,
+          -0.9639720710754318,
+          -5.062856085205077
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_12_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 24.847843883514404,
+        "mean_eps_tool": 18.070761643028263,
+        "mean_delta": -6.777082240486143,
+        "deltas": [
+          -6.153475852203364,
+          -8.31869368972778,
+          -7.905181333160403,
+          -8.93018843841553,
+          -5.714023606109617,
+          -6.343065927124016,
+          -4.4155032539367625,
+          -6.436525823211671
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_13_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 26.600836822223666,
+        "mean_eps_tool": 28.438706605339053,
+        "mean_delta": 1.8378697831153894,
+        "deltas": [
+          2.515024877166745,
+          2.193065071868901,
+          4.088965821075444,
+          1.4358491790771524,
+          -0.4177085151672344,
+          1.7505610740661623,
+          3.0292450401306183,
+          0.10795571670532667
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_14_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 24.47648384742737,
+        "mean_eps_tool": 26.983116407394412,
+        "mean_delta": 2.506632559967042,
+        "deltas": [
+          1.1405922012329093,
+          2.241130161285401,
+          3.420250727844241,
+          2.1587328651428166,
+          3.0563293365478508,
+          1.7856562187194882,
+          3.4099510658264194,
+          2.840417903137208
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_15_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 27.72526427612305,
+        "mean_eps_tool": 26.391458044815067,
+        "mean_delta": -1.333806231307983,
+        "deltas": [
+          -2.116771279144288,
+          -1.2554143592834457,
+          1.0608651878356952,
+          -2.754205917358398,
+          -2.34603412628174,
+          -1.1604285873413112,
+          -0.4531851287841775,
+          -1.645275640106199
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_16_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 22.047814006900786,
+        "mean_eps_tool": 28.23948443908692,
+        "mean_delta": 6.191670432186131,
+        "deltas": [
+          4.7912501831054755,
+          6.2728756378173856,
+          7.64540096893311,
+          4.577246094512944,
+          6.672273642730715,
+          6.699357939147955,
+          7.2616431915283215,
+          5.613315799713142
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_17_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 26.338624593353273,
+        "mean_eps_tool": 23.469405783462527,
+        "mean_delta": -2.8692188098907483,
+        "deltas": [
+          -4.258338040924073,
+          -4.197303006744384,
+          -2.5901742630004883,
+          -1.9542655006408722,
+          -3.094094763946533,
+          -4.324332171630857,
+          -0.8159621131896984,
+          -1.71928061904908
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_18_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 20.308458583641052,
+        "mean_eps_tool": 20.036375845336913,
+        "mean_delta": -0.2720827383041384,
+        "deltas": [
+          -0.43105992889404376,
+          0.18539391632079827,
+          -0.25253245391845525,
+          -0.7339462860107382,
+          0.49857993545532153,
+          -0.6618486518859896,
+          -0.43029699096679863,
+          -0.35095144653320176
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_19_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 26.68294801664353,
+        "mean_eps_tool": 25.43969298057556,
+        "mean_delta": -1.2432550360679646,
+        "deltas": [
+          -1.9321403007507314,
+          -0.22239640579223874,
+          -2.290339657592778,
+          -1.4903992408752451,
+          -0.4604330390930187,
+          -1.5281646682739307,
+          -0.7186875274658178,
+          -1.3034794486999566
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_20_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 25.363208453369143,
+        "mean_eps_tool": 29.364817881774904,
+        "mean_delta": 4.001609428405763,
+        "deltas": [
+          3.486244858551032,
+          3.6079334579467783,
+          3.9962688629150414,
+          4.201117696380617,
+          4.143897351837154,
+          3.877632015228272,
+          4.880895389556887,
+          3.8188857948303188
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_21_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 23.99316267051697,
+        "mean_eps_tool": 26.506947773551943,
+        "mean_delta": 2.5137851030349743,
+        "deltas": [
+          1.7017330467224099,
+          2.0461995208740227,
+          4.032126945495605,
+          1.4030428482055655,
+          1.5232055717468285,
+          3.440850051879888,
+          3.6334918785095276,
+          2.3296309608459467
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_22_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 26.210546388816837,
+        "mean_eps_tool": 29.71843961105347,
+        "mean_delta": 3.5078932222366324,
+        "deltas": [
+          2.6908820693969773,
+          3.1452116050720207,
+          3.739540250396729,
+          1.6666379020690911,
+          3.6426471336364727,
+          3.811637884521481,
+          6.135546810913084,
+          3.231042121887203
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_23_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 27.233312363910677,
+        "mean_eps_tool": 25.659991307067873,
+        "mean_delta": -1.5733210568428042,
+        "deltas": [
+          -3.3607415695190426,
+          -2.218623492431643,
+          -1.0810830429077107,
+          -0.6931291069030721,
+          -0.9475689056396526,
+          -3.287118059539793,
+          -0.12092566146850814,
+          -0.8773786163330115
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_24_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 26.79104678421021,
+        "mean_eps_tool": 27.233646149253847,
+        "mean_delta": 0.4425993650436397,
+        "deltas": [
+          -0.23345900573730205,
+          -0.2727503089904779,
+          1.3122532348632774,
+          -0.6187426589965845,
+          0.440215184020996,
+          0.9197216712951679,
+          1.3938875930786132,
+          0.5996692108154278
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_25_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 23.241001241493226,
+        "mean_eps_tool": 27.395293622589115,
+        "mean_delta": 4.154292381095889,
+        "deltas": [
+          1.4984100891113314,
+          5.241765029144293,
+          3.362648914337157,
+          1.7959558807373028,
+          5.424488662719732,
+          3.330605521392826,
+          5.7666663230895985,
+          6.813798628234871
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_26_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 23.464255952453613,
+        "mean_eps_tool": 24.326757279205324,
+        "mean_delta": 0.8625013267517101,
+        "deltas": [
+          0.26969855728149383,
+          -0.21057086791991608,
+          -0.21667437133789136,
+          -0.3177636466979976,
+          2.1915391960144035,
+          -0.4650106666564966,
+          2.959817688751226,
+          2.688974724578859
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_27_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 24.376634346199037,
+        "mean_eps_tool": 29.713385147285464,
+        "mean_delta": 5.336750801086429,
+        "deltas": [
+          4.88623595504761,
+          6.145083535003657,
+          5.560291613769529,
+          4.155341420745856,
+          4.623785308074957,
+          4.049674517822275,
+          7.641967748260505,
+          5.631626309967039
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_28_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 15.595409538078309,
+        "mean_eps_tool": 20.759068796920776,
+        "mean_delta": 5.163659258842468,
+        "deltas": [
+          3.6346362854003935,
+          4.047004235076901,
+          3.5804676925659145,
+          4.609670956420896,
+          7.7159727272033685,
+          3.6163257751464855,
+          6.80426190414429,
+          7.300934494781494
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_29_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 20.546304482460023,
+        "mean_eps_tool": 22.923714430999755,
+        "mean_delta": 2.377409948539733,
+        "deltas": [
+          1.660152929687495,
+          2.510447249603274,
+          1.038358518981937,
+          2.767938800048828,
+          5.015172464752194,
+          3.6868975334167473,
+          1.9470175903320275,
+          0.3932945014953617
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      },
+      {
+        "direction_id": "rand_30_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 30.625095970344546,
+        "mean_eps_tool": 29.216140353202825,
+        "mean_delta": -1.4089556171417232,
+        "deltas": [
+          -3.403084624481199,
+          -3.260033763122557,
+          0.3948203773498591,
+          -2.8621616340637175,
+          -0.7316574722290099,
+          -1.404187255096435,
+          2.8705539512634246,
+          -2.875894516754151
+        ],
+        "n_pairs": 8,
+        "sign": "negative"
+      },
+      {
+        "direction_id": "rand_31_L4",
+        "kind": "random_control",
+        "mean_eps_prose": 21.831378053665162,
+        "mean_eps_tool": 28.832859412002566,
+        "mean_delta": 7.001481358337404,
+        "deltas": [
+          6.881700103759769,
+          5.963504308319095,
+          6.221758796691901,
+          5.523670593261716,
+          8.470136868286136,
+          6.382357230377199,
+          9.754924337768553,
+          6.8137986282348635
+        ],
+        "n_pairs": 8,
+        "sign": "positive"
+      }
+    ],
+    "decision_absolute_magnitude_note": "Earlier CLUSTER label used a too-loose |\u0394\u2212mean|\u22652 threshold on absolute \u0394 (sd\u22483.3 \u21d2 20/32 flagged). Correct estimand is (abs\u2212rel)\u22120.0894\u00b7\u03b5*_prose residual.",
+    "residual_check": {
+      "decision": "SAMPLING_VARIANCE \u2014 only 1/32 draws have residual\u2265+2.0 (rand_02-class); consistent with n=4 luck",
+      "summary": {
+        "residual_mean": 0.30789584190238944,
+        "residual_std": 0.8286006760720309,
+        "residual_min": -1.0394261974802963,
+        "residual_max": 2.803674474686163,
+        "n_residual_ge_plus_2": 1,
+        "n_residual_abs_ge_2": 1,
+        "frac_residual_ge_plus_2": 0.03125,
+        "n_abs_delta_ge_5_5": 4,
+        "n_abs_delta_le_minus_3_5": 1,
+        "n_residual_z_ge_2": 1,
+        "percentiles_residual": {
+          "5": -0.8164560466311759,
+          "25": -0.16709148299336218,
+          "50": 0.10090050135393036,
+          "75": 0.6999214008973219,
+          "95": 1.7163159845629816
+        }
+      },
+      "artifact": "data/results/random_residual_expand.json"
+    }
+  },
+  "elapsed_s": 1530.8117570877075,
+  "rank_equal_n": {
+    "cache": "/Users/vamshisunku.mohan/bluedot_alignment/data/activations/real_gap.json",
+    "n_boot": 100,
+    "protocol": "Window-mean PCA on GAP cache. Equal-n: subsample prose to n_tool and recompute dims@90%. Also norm-normalize rows before PCA. Note: Phase-1 persona PCA already used equal n_roles=32; this tests the window-count version of H_b.",
+    "by_layer": {
+      "4": {
+        "n_prose": 48,
+        "n_tool": 24,
+        "n_equal": 24,
+        "full": {
+          "prose_dims90": 8,
+          "tool_dims90": 13,
+          "prose_pc1": 0.7374906811032409,
+          "tool_pc1": 0.20852377246121256,
+          "rank_gap": -5
+        },
+        "full_normed": {
+          "prose_dims90": 8,
+          "tool_dims90": 13,
+          "rank_gap": -5
+        },
+        "equal_n_boot": {
+          "prose_dims90_mean": 6.0,
+          "prose_dims90_std": 0.5477225575051661,
+          "tool_dims90_mean": 13.0,
+          "tool_dims90_std": 0.0,
+          "rank_gap_mean": -7.0,
+          "mean_angle_mean": 77.00408678627151,
+          "mean_angle_std": 1.3726444645033218,
+          "frac_of_full_gap_closed_by_equal_n": -0.3999999999999999
+        },
+        "equal_n_boot_normed": {
+          "prose_dims90_mean": 5.99,
+          "tool_dims90_mean": 13.0,
+          "rank_gap_mean": -7.01,
+          "mean_angle_mean": 76.88898571701554
+        },
+        "persona_pca_note": "Phase-1 persona PCA used equal n_roles=32 in both modes, so unequal window counts cannot explain that rank collapse. This block tests window-mean PCA H_b only.",
+        "decision": "H_b_UNLIKELY \u2014 rank gap survives equal-n"
+      },
+      "22": {
+        "n_prose": 48,
+        "n_tool": 24,
+        "n_equal": 24,
+        "full": {
+          "prose_dims90": 14,
+          "tool_dims90": 14,
+          "prose_pc1": 0.5305179818233092,
+          "tool_pc1": 0.1885733475519225,
+          "rank_gap": 0
+        },
+        "full_normed": {
+          "prose_dims90": 14,
+          "tool_dims90": 14,
+          "rank_gap": 0
+        },
+        "equal_n_boot": {
+          "prose_dims90_mean": 9.79,
+          "prose_dims90_std": 0.4958830507286975,
+          "tool_dims90_mean": 14.0,
+          "tool_dims90_std": 0.0,
+          "rank_gap_mean": -4.210000000000001,
+          "mean_angle_mean": 67.61971713987023,
+          "mean_angle_std": 2.287961942672949,
+          "frac_of_full_gap_closed_by_equal_n": 0.0
+        },
+        "equal_n_boot_normed": {
+          "prose_dims90_mean": 9.82,
+          "tool_dims90_mean": 14.0,
+          "rank_gap_mean": -4.18,
+          "mean_angle_mean": 67.99781730704882
+        },
+        "persona_pca_note": "Phase-1 persona PCA used equal n_roles=32 in both modes, so unequal window counts cannot explain that rank collapse. This block tests window-mean PCA H_b only.",
+        "decision": "H_b_UNLIKELY \u2014 rank gap survives equal-n"
+      }
+    }
+  },
+  "persona_pca_equal_n_roles": {
+    "n_roles": 32,
+    "note": "Persona PCA prose and tool matrices both used the same n_roles; H_b (unequal sample size) does NOT explain Phase-1 dims@90% collapse. Window equal-n block above is a separate test.",
+    "phase1_dims90": {
+      "4": {
+        "prose": 20,
+        "tool": 8
+      },
+      "14": {
+        "prose": 19,
+        "tool": 8
+      },
+      "22": {
+        "prose": 17,
+        "tool": 9
+      }
+    }
+  },
+  "decisions": {
+    "pc1_sign_flip": "H_b_CONFIRMED \u2014 PC1 sign flips under absolute/norm_matched (same as AA)",
+    "rank_collapse_sample_size": {
+      "persona_pca": "H_b_RULED_OUT_A_PRIORI \u2014 equal n_roles=32 already",
+      "window_pca_L4": "H_b_UNLIKELY \u2014 rank gap survives equal-n",
+      "note": "Window-mean PCA on GAP cache has the OPPOSITE rank pattern (L4 prose dims90=8 < tool=13). Persona PCA collapse (8\u20139 vs 17\u201320) is the finding of interest; sample-size does not explain it. Next: format-matched / layer trend already visible L4/14/22 / persona norm-normalize."
+    },
+    "rand_02_residual": "SAMPLING_VARIANCE \u2014 only 1/32 draws have residual\u2265+2.0 (rand_02-class); consistent with n=4 luck",
+    "suggested_next": [
+      "PC1: CLOSED as metric artifact \u2014 do not run depth/content/stability for sign flip. Optional: note PC1 is still the weakest privilege-gainer under abs/nm (\u0394\u2248+0.3 vs +3\u20136).",
+      "Rank: run format-matched structured-prose control; optional persona row-norm PCA.",
+      "rand_02: CLOSED as sampling variance \u2014 no content probe needed.",
+      "Phase 2 steering can proceed with AA / PC0 (gainers) vs PC1 (near-null under preferred metrics)."
+    ]
+  }
+}

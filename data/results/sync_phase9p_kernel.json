@@ -1,0 +1,2297 @@
+{
+  "extra_rows": [
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261004
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20261055
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261106
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261123
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261140
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261157
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261174
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20261191
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261225
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261259
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261276
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20261293
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20262038
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        0,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": "000",
+      "hit_target": 1,
+      "dS": 1,
+      "method": "home",
+      "seed": 20262055
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20262072
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20262089
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20262140
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20262157
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20262174
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20262191
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20262225
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": "110",
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20262259
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20262276
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": "110",
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20262310
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20263157
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": "110",
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20263191
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20263293
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "bridge_101",
+      "seed": 20263361
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20263463
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_011",
+      "seed": 20263480
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20263599
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": "110",
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20263633
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        0,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": "001",
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20263667
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20263701
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        0,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "to_intended": [
+        0,
+        0,
+        0
+      ],
+      "land_hard": "000",
+      "hit_target": 1,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20263769
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264021
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": "110",
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264038
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264055
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264089
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20264106
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264123
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264140
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264157
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264191
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        0
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264225
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        0,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20264242
+    },
+    {
+      "src": "9P",
+      "edge": "011|C",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "C",
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "to_intended": [
+        0,
+        0,
+        1
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20264276
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "bridge_011",
+      "seed": 20266310
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": "110",
+      "hit_target": 1,
+      "dS": 1,
+      "method": "bridge_011",
+      "seed": 20266752
+    },
+    {
+      "src": "9P",
+      "edge": "111|H",
+      "S_before": [
+        1,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "bridge_101",
+      "seed": 20266803
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267004
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267021
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267055
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20267072
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267089
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267106
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 0,
+      "method": "home",
+      "seed": 20267123
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267157
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267174
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        0,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267225
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        0
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": "110",
+      "hit_target": 1,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267242
+    },
+    {
+      "src": "9P",
+      "edge": "011|H",
+      "S_before": [
+        0,
+        1,
+        1
+      ],
+      "S_after": [
+        1,
+        1,
+        1
+      ],
+      "a": "H",
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "to_intended": [
+        1,
+        1,
+        0
+      ],
+      "land_hard": null,
+      "hit_target": 0,
+      "dS": 1,
+      "method": "home",
+      "seed": 20267259
+    }
+  ],
+  "producer_table": {
+    "000": [
+      {
+        "source": "111",
+        "a": "H",
+        "n": 11,
+        "k": 1,
+        "hat_p": 0.09090909090909091,
+        "beta_mean": 0.15384615384615385,
+        "p05": 0.03039140809515786,
+        "p95": 0.3382286603878252,
+        "after_hist": {
+          "100": 2,
+          "110": 2,
+          "010": 2,
+          "111": 1,
+          "011": 2,
+          "001": 1,
+          "000": 1
+        },
+        "n_mined_prior": 3,
+        "score": 0.03039140809515786
+      },
+      {
+        "source": "011",
+        "a": "C",
+        "n": 12,
+        "k": 1,
+        "hat_p": 0.08333333333333333,
+        "beta_mean": 0.14285714285714285,
+        "p05": 0.02791702162606464,
+        "p95": 0.31607764981517483,
+        "after_hist": {
+          "011": 4,
+          "000": 1,
+          "100": 3,
+          "010": 1,
+          "101": 1,
+          "110": 2
+        },
+        "n_mined_prior": 4,
+        "score": 0.02791702162606464
+      },
+      {
+        "source": "011",
+        "a": "H",
+        "n": 12,
+        "k": 0,
+        "hat_p": 0.0,
+        "beta_mean": 0.07142857142857142,
+        "p05": 0.004001833097606726,
+        "p95": 0.2099815582659458,
+        "after_hist": {
+          "111": 5,
+          "011": 2,
+          "010": 2,
+          "100": 3
+        },
+        "n_mined_prior": 3,
+        "score": 0.004001833097606726
+      },
+      {
+        "source": "000",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "000",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "011",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "110",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 4,
+        "score": -1.0
+      },
+      {
+        "source": "111",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 3,
+        "score": -1.0
+      }
+    ],
+    "001": [
+      {
+        "source": "011",
+        "a": "C",
+        "n": 12,
+        "k": 0,
+        "hat_p": 0.0,
+        "beta_mean": 0.07142857142857142,
+        "p05": 0.004001833097606726,
+        "p95": 0.2099815582659458,
+        "after_hist": {
+          "111": 2,
+          "110": 1,
+          "100": 5,
+          "011": 2,
+          "101": 2
+        },
+        "n_mined_prior": 12,
+        "score": 0.004001833097606726
+      },
+      {
+        "source": "001",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 9,
+        "score": -1.0
+      },
+      {
+        "source": "010",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "011",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "110",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 3,
+        "score": -1.0
+      },
+      {
+        "source": "111",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      }
+    ],
+    "110": [
+      {
+        "source": "111",
+        "a": "H",
+        "n": 3,
+        "k": 1,
+        "hat_p": 0.3333333333333333,
+        "beta_mean": 0.4,
+        "p05": 0.09776888840704612,
+        "p95": 0.7525716019057579,
+        "after_hist": {
+          "111": 1,
+          "110": 1,
+          "010": 1
+        },
+        "n_mined_prior": 7,
+        "score": 0.09776888840704612
+      },
+      {
+        "source": "011",
+        "a": "H",
+        "n": 12,
+        "k": 1,
+        "hat_p": 0.08333333333333333,
+        "beta_mean": 0.14285714285714285,
+        "p05": 0.02791702162606464,
+        "p95": 0.31607764981517483,
+        "after_hist": {
+          "111": 7,
+          "011": 2,
+          "010": 2,
+          "110": 1
+        },
+        "n_mined_prior": 15,
+        "score": 0.02791702162606464
+      },
+      {
+        "source": "000",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "010",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 6,
+        "score": -1.0
+      },
+      {
+        "source": "011",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 9,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 6,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "101",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "101",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 5,
+        "score": -1.0
+      },
+      {
+        "source": "110",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 3,
+        "score": -1.0
+      },
+      {
+        "source": "111",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 12,
+        "score": -1.0
+      },
+      {
+        "source": "111",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      }
+    ]
+  }
+}

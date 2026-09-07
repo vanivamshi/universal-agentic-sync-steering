@@ -1,0 +1,149 @@
+{
+  "formula": "Under linear response ||\u03b4(\u03b5)||\u2248\u03b1\u03b5 with mode-independent \u03b1: \u03b5*_rel\u2248\u03c4 N/\u03b1 so \u0394_rel\u2212\u0394_abs \u2248 (N_tool\u2212N_prose)/N_prose * \u03b5*_prose_rel = (ratio-1)*\u03b5*_prose_rel. Equivalently predicted (\u0394_abs\u2212\u0394_rel)\u2248(1-ratio)*\u03b5*_prose_rel.",
+  "norm_ratio_tool_over_prose": 0.910594014466757,
+  "one_minus_ratio": 0.08940598553324297,
+  "per_direction": [
+    {
+      "direction_id": "assistant_axis_L4",
+      "group": "safety",
+      "mean_eps_prose_relative": 23.34671582803726,
+      "predicted_shift_abs_minus_rel": 2.087336137570234,
+      "observed_shift_abs_minus_rel": 1.7545664981842037,
+      "observed_shift_nm_minus_rel": 1.7839396083831787,
+      "residual_abs_minus_pred": -0.3327696393860302,
+      "delta_relative": -0.27503912277221554,
+      "delta_absolute": 1.4795273754119882,
+      "delta_norm_matched": 1.5089004856109631
+    },
+    {
+      "direction_id": "harmlessness_L4",
+      "group": "safety",
+      "mean_eps_prose_relative": 26.27992605657578,
+      "predicted_shift_abs_minus_rel": 2.349582688828909,
+      "observed_shift_abs_minus_rel": 1.7404521465301488,
+      "observed_shift_nm_minus_rel": 1.7484629947662333,
+      "residual_abs_minus_pred": -0.6091305422987601,
+      "delta_relative": 2.6292748317718524,
+      "delta_absolute": 4.369726978302001,
+      "delta_norm_matched": 4.377737826538086
+    },
+    {
+      "direction_id": "refusal_L4",
+      "group": "safety",
+      "mean_eps_prose_relative": 23.60368285865784,
+      "predicted_shift_abs_minus_rel": 2.110310528192418,
+      "observed_shift_abs_minus_rel": 1.6279188022613553,
+      "observed_shift_nm_minus_rel": 1.7612422050476102,
+      "residual_abs_minus_pred": -0.4823917259310626,
+      "delta_relative": 4.073897797012329,
+      "delta_absolute": 5.701816599273684,
+      "delta_norm_matched": 5.835140002059939
+    },
+    {
+      "direction_id": "syntax_L4",
+      "group": "learned",
+      "mean_eps_prose_relative": 21.994646770095827,
+      "predicted_shift_abs_minus_rel": 1.9664530709359767,
+      "observed_shift_abs_minus_rel": 1.8581353218078611,
+      "observed_shift_nm_minus_rel": 2.137942806625366,
+      "residual_abs_minus_pred": -0.10831774912811554,
+      "delta_relative": 1.9067726146698019,
+      "delta_absolute": 3.764907936477663,
+      "delta_norm_matched": 4.044715421295168
+    },
+    {
+      "direction_id": "domain_content_coding_L4",
+      "group": "learned",
+      "mean_eps_prose_relative": 19.268478821563722,
+      "predicted_shift_abs_minus_rel": 1.7227173387683248,
+      "observed_shift_abs_minus_rel": 0.9834269882202191,
+      "observed_shift_nm_minus_rel": 1.1234260978698734,
+      "residual_abs_minus_pred": -0.7392903505481057,
+      "delta_relative": -1.0887124221801754,
+      "delta_absolute": -0.10528543395995626,
+      "delta_norm_matched": 0.034713675689697965
+    },
+    {
+      "direction_id": "domain_content_therapy_L4",
+      "group": "learned",
+      "mean_eps_prose_relative": 22.396715057754516,
+      "predicted_shift_abs_minus_rel": 2.0024003824457655,
+      "observed_shift_abs_minus_rel": 1.885982556152344,
+      "observed_shift_nm_minus_rel": 2.2537186370849636,
+      "residual_abs_minus_pred": -0.11641782629342146,
+      "delta_relative": 1.071927787780762,
+      "delta_absolute": 2.957910343933106,
+      "delta_norm_matched": 3.3256464248657256
+    },
+    {
+      "direction_id": "domain_content_writing_L4",
+      "group": "learned",
+      "mean_eps_prose_relative": 25.003101751708986,
+      "predicted_shift_abs_minus_rel": 2.2354269534994957,
+      "observed_shift_abs_minus_rel": 2.035518389892582,
+      "observed_shift_nm_minus_rel": 2.264399768066408,
+      "residual_abs_minus_pred": -0.19990856360691378,
+      "delta_relative": 3.9237897598266596,
+      "delta_absolute": 5.9593081497192415,
+      "delta_norm_matched": 6.188189527893067
+    },
+    {
+      "direction_id": "rand_00_L4",
+      "group": "random",
+      "mean_eps_prose_relative": 22.38255302248001,
+      "predicted_shift_abs_minus_rel": 2.0011342117248914,
+      "observed_shift_abs_minus_rel": 2.0343739830017094,
+      "observed_shift_nm_minus_rel": 1.9384345386505144,
+      "residual_abs_minus_pred": 0.033239771276817986,
+      "delta_relative": -0.24394940223693862,
+      "delta_absolute": 1.7904245807647707,
+      "delta_norm_matched": 1.6944851364135758
+    },
+    {
+      "direction_id": "rand_01_L4",
+      "group": "random",
+      "mean_eps_prose_relative": 29.4292861366272,
+      "predicted_shift_abs_minus_rel": 2.6311543305849594,
+      "observed_shift_abs_minus_rel": 1.8926582630157456,
+      "observed_shift_nm_minus_rel": 1.3788195690155032,
+      "residual_abs_minus_pred": -0.7384960675692138,
+      "delta_relative": -5.401409790420534,
+      "delta_absolute": -3.508751527404788,
+      "delta_norm_matched": -4.02259022140503
+    },
+    {
+      "direction_id": "rand_02_L4",
+      "group": "random",
+      "mean_eps_prose_relative": 26.021051681137084,
+      "predicted_shift_abs_minus_rel": 2.3264377701635097,
+      "observed_shift_abs_minus_rel": 4.4301898090362535,
+      "observed_shift_nm_minus_rel": 5.5110821174621565,
+      "residual_abs_minus_pred": 2.1037520388727438,
+      "delta_relative": 1.0778405567169198,
+      "delta_absolute": 5.508030365753173,
+      "delta_norm_matched": 6.588922674179076
+    },
+    {
+      "direction_id": "rand_03_L4",
+      "group": "random",
+      "mean_eps_prose_relative": 30.288068140983583,
+      "predicted_shift_abs_minus_rel": 2.7079345820426557,
+      "observed_shift_abs_minus_rel": 2.6069588973999025,
+      "observed_shift_nm_minus_rel": 2.246089257812501,
+      "residual_abs_minus_pred": -0.1009756846427532,
+      "delta_relative": -4.1065133934021,
+      "delta_absolute": -1.4995544960021974,
+      "delta_norm_matched": -1.8604241355895987
+    }
+  ],
+  "summary": {
+    "mean_predicted_shift_excl_refusal": 2.203057746656472,
+    "mean_observed_abs_minus_rel_excl_refusal": 2.122226285324097,
+    "mean_abs_residual_excl_refusal": 0.5082298233622875,
+    "fraction_of_shift_explained": 0.7605204370161343,
+    "interpretation": "Random mean \u0394 under absolute/norm_matched \u2248+0.57/+0.60 includes 0 by cancellation across opposite-signed per-direction \u0394s (rand_01/03 negative, rand_00/02 positive). Aggregate mean |resid|\u22480.51 / ~76% explained understates rand_02 residual \u2248+2.1 (same order as the predicted 9% effect). Report randoms individually; n=4 is not a stable null baseline. Safety/learned residuals remain ~0.3\u20130.5 (closer to second-order).",
+    "mean_abs_residual_random_only": 0.7441158905903822,
+    "rand_02_residual": 2.1037520388727438,
+    "caveat_averaging": "Random mean \u0394 under absolute/norm_matched \u2248+0.57/+0.60 includes 0 by cancellation across opposite-signed per-direction \u0394s (rand_01/03 negative, rand_00/02 positive). Aggregate mean |resid|\u22480.51 / ~76% explained understates rand_02 residual \u2248+2.1 (same order as the predicted 9% effect). Report randoms individually; n=4 is not a stable null baseline. Safety/learned residuals remain ~0.3\u20130.5 (closer to second-order)."
+  }
+}

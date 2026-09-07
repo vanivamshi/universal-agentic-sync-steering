@@ -1,0 +1,46 @@
+{
+  "evaluation_dataset": "tau_bench",
+  "cache": "data/activations/tau_short.json",
+  "model_note": "Qwen3-0.6B pilot; confirmatory subspace analysis planned on Qwen3-32B.",
+  "analysis": "preregistered exploratory \u2014 centroid cosine + Procrustes on window-mean activation sets; PCA principal angles exploratory only. Does not decide RQ1. Do not compare raw disparity across datasets. FROZEN pilot.",
+  "interpretation": "Across both datasets, prose and tool activations remain substantially aligned (cosine \u22480.8\u20130.9), but cannot be perfectly aligned by an orthogonal transformation, indicating measurable geometric differences without evidence of complete representational separation.",
+  "status": "frozen_pilot",
+  "layers": [
+    {
+      "layer": 4,
+      "mean_cosine": 0.8548532128334045,
+      "procrustes_disparity": 1.2239570617675781,
+      "principal_angles_deg": [
+        72.93563842773438,
+        81.54783630371094,
+        85.03888702392578,
+        89.69188690185547
+      ],
+      "mean_principal_angle_deg": 82.30356216430664,
+      "max_principal_angle_deg": 89.69188690185547,
+      "subspace_rank": 4,
+      "n_prose": 7,
+      "n_tool": 6,
+      "hidden": 1024
+    },
+    {
+      "layer": 22,
+      "mean_cosine": 0.793635368347168,
+      "procrustes_disparity": 1.4464572668075562,
+      "principal_angles_deg": [
+        76.58154296875,
+        79.41717529296875,
+        87.7762222290039,
+        88.91415405273438
+      ],
+      "mean_principal_angle_deg": 83.17227363586426,
+      "max_principal_angle_deg": 88.91415405273438,
+      "subspace_rank": 4,
+      "n_prose": 7,
+      "n_tool": 6,
+      "hidden": 1024
+    }
+  ],
+  "by_domain": {},
+  "method": "Mean cosine = cosine between prose and tool centroids of window-mean residual activations. Procrustes on the same centered point sets. Principal angles between PCA subspaces fit independently to each set (top-r\u22644 right singular vectors). Large principal angles with high mean cosine suggest central tendency is more similar than estimated subspace orientation; descriptive only at small pilot n."
+}

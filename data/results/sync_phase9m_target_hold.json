@@ -1,0 +1,3995 @@
+{
+  "protocol": "Phase 9M target hold vs planner retention",
+  "seed": 20261001,
+  "reps": 4,
+  "max_steps_acq": 7,
+  "n_hold": 2,
+  "lambda": 0.0,
+  "diagnostic_per_mstar": {
+    "000": {
+      "n": 4,
+      "n_acq": 2,
+      "P_acquire": 0.5,
+      "P_stay_hold": 0.0,
+      "P_stay_planner": 0.0,
+      "P_final_hold": 0.0,
+      "P_final_planner": 0.0,
+      "delta_stay_hold_minus_planner": 0.0,
+      "hard": true
+    },
+    "001": {
+      "n": 4,
+      "n_acq": 0,
+      "P_acquire": 0.0,
+      "P_stay_hold": null,
+      "P_stay_planner": null,
+      "P_final_hold": 0.0,
+      "P_final_planner": 0.0,
+      "delta_stay_hold_minus_planner": null,
+      "hard": true
+    },
+    "010": {
+      "n": 4,
+      "n_acq": 4,
+      "P_acquire": 1.0,
+      "P_stay_hold": 0.0,
+      "P_stay_planner": 0.0,
+      "P_final_hold": 0.0,
+      "P_final_planner": 0.0,
+      "delta_stay_hold_minus_planner": 0.0,
+      "hard": false
+    },
+    "011": {
+      "n": 4,
+      "n_acq": 4,
+      "P_acquire": 1.0,
+      "P_stay_hold": 0.25,
+      "P_stay_planner": 0.5,
+      "P_final_hold": 0.25,
+      "P_final_planner": 0.5,
+      "delta_stay_hold_minus_planner": -0.25,
+      "hard": false
+    },
+    "100": {
+      "n": 4,
+      "n_acq": 4,
+      "P_acquire": 1.0,
+      "P_stay_hold": 0.25,
+      "P_stay_planner": 0.75,
+      "P_final_hold": 0.25,
+      "P_final_planner": 0.75,
+      "delta_stay_hold_minus_planner": -0.5,
+      "hard": false
+    },
+    "101": {
+      "n": 4,
+      "n_acq": 4,
+      "P_acquire": 1.0,
+      "P_stay_hold": 0.0,
+      "P_stay_planner": 0.25,
+      "P_final_hold": 0.0,
+      "P_final_planner": 0.25,
+      "delta_stay_hold_minus_planner": -0.25,
+      "hard": false
+    },
+    "110": {
+      "n": 4,
+      "n_acq": 0,
+      "P_acquire": 0.0,
+      "P_stay_hold": null,
+      "P_stay_planner": null,
+      "P_final_hold": 0.0,
+      "P_final_planner": 0.0,
+      "delta_stay_hold_minus_planner": null,
+      "hard": true
+    },
+    "111": {
+      "n": 4,
+      "n_acq": 2,
+      "P_acquire": 0.5,
+      "P_stay_hold": 0.0,
+      "P_stay_planner": 0.0,
+      "P_final_hold": 0.0,
+      "P_final_planner": 0.0,
+      "delta_stay_hold_minus_planner": 0.0,
+      "hard": false
+    }
+  },
+  "diagnostic_paired": [
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20261001,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "100",
+        "011",
+        "100",
+        "111",
+        "000"
+      ],
+      "acq_actions": [
+        "O",
+        "H",
+        "O",
+        "C"
+      ],
+      "land_t": 3,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "000",
+          "011",
+          "111"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "000",
+          "100",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          "H",
+          "O"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20261020,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "011",
+        "111",
+        "111",
+        "111",
+        "001",
+        "010",
+        "111",
+        "100"
+      ],
+      "acq_actions": [
+        "H",
+        "C",
+        "H",
+        "C",
+        "O",
+        "H",
+        "C"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20261039,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "100",
+        "011",
+        "011",
+        "101",
+        "011",
+        "111",
+        "100",
+        "011"
+      ],
+      "acq_actions": [
+        "O",
+        "H",
+        "C",
+        "O",
+        "H",
+        "C",
+        "O"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20261058,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "111",
+        "110",
+        "011",
+        "000"
+      ],
+      "acq_actions": [
+        "C",
+        "H",
+        "H"
+      ],
+      "land_t": 2,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "000",
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "000",
+          "000",
+          "100"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "C",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "actions": [
+          "H",
+          "C"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261201,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "111",
+        "111",
+        "111",
+        "100",
+        "011",
+        "110",
+        "110",
+        "010"
+      ],
+      "acq_actions": [
+        "C",
+        "H",
+        "C",
+        "O",
+        "C",
+        "H",
+        "O"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261220,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "011",
+        "100",
+        "100",
+        "100",
+        "100",
+        "000",
+        "011",
+        "111"
+      ],
+      "acq_actions": [
+        "C",
+        "O",
+        "H",
+        "O",
+        "H",
+        "O",
+        "C"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261239,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "011",
+        "110",
+        "110",
+        "011",
+        "101",
+        "011",
+        "101",
+        "011"
+      ],
+      "acq_actions": [
+        "C",
+        "H",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261258,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "011",
+        "010",
+        "100",
+        "011",
+        "100",
+        "010",
+        "011",
+        "100"
+      ],
+      "acq_actions": [
+        "C",
+        "H",
+        "O",
+        "C",
+        "O",
+        "H",
+        "C"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261401,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "101",
+        "011",
+        "011",
+        "100",
+        "100",
+        "111",
+        "010"
+      ],
+      "acq_actions": [
+        "O",
+        "O",
+        "O",
+        "C",
+        "H",
+        "O"
+      ],
+      "land_t": 5,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          "H",
+          "O"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261420,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "100",
+        "111",
+        "000",
+        "011",
+        "010"
+      ],
+      "acq_actions": [
+        "O",
+        "C",
+        "O",
+        "H",
+        "O"
+      ],
+      "land_t": 4,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "010",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "stayed": 1,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          "H",
+          "O"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261468,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "111",
+        "011",
+        "100",
+        "100",
+        "111",
+        "010"
+      ],
+      "acq_actions": [
+        "O",
+        "O",
+        "C",
+        "H",
+        "O"
+      ],
+      "land_t": 4,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          "H",
+          "O"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261458,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "011",
+        "011",
+        "010"
+      ],
+      "acq_actions": [
+        "O",
+        "O",
+        "O"
+      ],
+      "land_t": 2,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          "H",
+          "O"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261630,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "100",
+        "011"
+      ],
+      "acq_actions": [
+        "O"
+      ],
+      "land_t": 0,
+      "hold": {
+        "mode": "hold",
+        "stay": 1,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 1,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 1,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          "O",
+          "O"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261765,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "100",
+        "011"
+      ],
+      "acq_actions": [
+        "O"
+      ],
+      "land_t": 0,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011",
+          "111"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 1,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011",
+          "111"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "actions": [
+          "O",
+          "H"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261668,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "100",
+        "011"
+      ],
+      "acq_actions": [
+        "O"
+      ],
+      "land_t": 0,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 1,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 1,
+        "stay_all_steps": 1,
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          "O",
+          "H"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261687,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "010",
+        "011"
+      ],
+      "acq_actions": [
+        "O"
+      ],
+      "land_t": 0,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "010"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "010"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "actions": [
+          "O",
+          "O"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261801,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "101",
+        "011",
+        "111",
+        "100"
+      ],
+      "acq_actions": [
+        "C",
+        "O",
+        "C",
+        "H"
+      ],
+      "land_t": 3,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "011",
+          "010"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 1,
+        "stay_all_steps": 1,
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "actions": [
+          "H",
+          "C"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261820,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "100"
+      ],
+      "acq_actions": [
+        "C"
+      ],
+      "land_t": 0,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "100",
+          "011",
+          "111"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 1,
+        "stay_all_steps": 1,
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "actions": [
+          "H",
+          "C"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261839,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "010",
+        "101",
+        "011",
+        "100"
+      ],
+      "acq_actions": [
+        "C",
+        "C",
+        "O",
+        "C"
+      ],
+      "land_t": 3,
+      "hold": {
+        "mode": "hold",
+        "stay": 1,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 1,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 1,
+        "stay_all_steps": 1,
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "actions": [
+          "H",
+          "C"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261858,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "101",
+        "010",
+        "101",
+        "010",
+        "100"
+      ],
+      "acq_actions": [
+        "C",
+        "O",
+        "C",
+        "O",
+        "C"
+      ],
+      "land_t": 4,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "100",
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "101"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "actions": [
+          "H",
+          "C"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20262001,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "111",
+        "010",
+        "101"
+      ],
+      "acq_actions": [
+        "H",
+        "H",
+        "C"
+      ],
+      "land_t": 2,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "101",
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "101",
+          "011",
+          "100"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "actions": [
+          "C",
+          "C"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20262020,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "111",
+        "010",
+        "101"
+      ],
+      "acq_actions": [
+        "H",
+        "H",
+        "C"
+      ],
+      "land_t": 2,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "101",
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 1,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "101",
+          "011",
+          "101"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "actions": [
+          "C",
+          "C"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20262039,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "010",
+        "101"
+      ],
+      "acq_actions": [
+        "C"
+      ],
+      "land_t": 0,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "101",
+          "111",
+          "111"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "101",
+          "100",
+          "111"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "actions": [
+          "C",
+          "H"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20262058,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "010",
+        "101"
+      ],
+      "acq_actions": [
+        "H",
+        "C"
+      ],
+      "land_t": 1,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "101",
+          "010",
+          "010"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "101",
+          "101",
+          "100"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "actions": [
+          "C",
+          "H"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262201,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "111",
+        "111",
+        "111",
+        "001",
+        "011",
+        "010",
+        "010",
+        "011"
+      ],
+      "acq_actions": [
+        "C",
+        "H",
+        "C",
+        "H",
+        "H",
+        "H",
+        "O"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262220,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "011",
+        "111",
+        "101",
+        "100",
+        "111",
+        "100",
+        "010",
+        "111"
+      ],
+      "acq_actions": [
+        "H",
+        "C",
+        "O",
+        "O",
+        "C",
+        "O",
+        "H"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262239,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "111",
+        "001",
+        "111",
+        "100",
+        "011",
+        "111",
+        "100",
+        "011"
+      ],
+      "acq_actions": [
+        "C",
+        "H",
+        "C",
+        "O",
+        "H",
+        "C",
+        "O"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262258,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "011",
+        "111",
+        "101",
+        "011",
+        "111",
+        "100",
+        "011",
+        "011"
+      ],
+      "acq_actions": [
+        "H",
+        "C",
+        "O",
+        "H",
+        "C",
+        "O",
+        "H"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262401,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "100",
+        "011",
+        "011",
+        "010",
+        "011",
+        "101",
+        "111"
+      ],
+      "acq_actions": [
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "H"
+      ],
+      "land_t": 6,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "011",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "010",
+          "010"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "actions": [
+          "H",
+          "H"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262420,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 1,
+      "acq_path": [
+        "011",
+        "100",
+        "011",
+        "011",
+        "100",
+        "011",
+        "101",
+        "111"
+      ],
+      "acq_actions": [
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "H"
+      ],
+      "land_t": 6,
+      "hold": {
+        "mode": "hold",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "010",
+          "011"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": null,
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": null,
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "stayed": 0,
+            "mode": "hold",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "actions": [
+          null,
+          null
+        ]
+      },
+      "planner": {
+        "mode": "planner",
+        "stay": 0,
+        "stay_all_steps": 0,
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "111",
+          "111",
+          "001"
+        ],
+        "steps": [
+          {
+            "k": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "stayed": 1,
+            "mode": "stay_seek",
+            "cache_hit": false
+          },
+          {
+            "k": 1,
+            "a": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "stayed": 0,
+            "mode": "stay_seek",
+            "cache_hit": false
+          }
+        ],
+        "S_final": [
+          0,
+          0,
+          1
+        ],
+        "actions": [
+          "H",
+          "C"
+        ]
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262439,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "011",
+        "010",
+        "011",
+        "011",
+        "100",
+        "011",
+        "011",
+        "101"
+      ],
+      "acq_actions": [
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "C"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262458,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquire": 0,
+      "acq_path": [
+        "011",
+        "101",
+        "110",
+        "100",
+        "011",
+        "110",
+        "011",
+        "101"
+      ],
+      "acq_actions": [
+        "C",
+        "H",
+        "O",
+        "O",
+        "C",
+        "O",
+        "C"
+      ],
+      "land_t": null,
+      "hold": null,
+      "planner": null
+    }
+  ],
+  "full_per_mstar": {},
+  "full_trials": [],
+  "gate": {
+    "hypothesis": "After acquire, no-steer hold vs continued planner separates controller-induced loss from intrinsic instability",
+    "mean_P_stay_hold": 0.08333333333333333,
+    "mean_P_stay_planner": 0.25,
+    "hold_wins": false,
+    "verdict": "mixed / inconclusive",
+    "n_mstar_acq_gt0": 6,
+    "n_mstar_final_hold": 2,
+    "n_mstar_final_planner": 3,
+    "ran_full_8way": false,
+    "n_mstar_final_full_hold": null,
+    "universal_final_full": null,
+    "controller": "\u03c0(s,m*)=acquire if s\u2260m*; hold if s=m*",
+    "read": "If hold\u226bplanner: stop acting at target. If both\u22480: need retention mechanism beyond no-steer."
+  }
+}

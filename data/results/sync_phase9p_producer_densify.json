@@ -1,0 +1,1567 @@
+{
+  "protocol": "Phase 9P active producer densification",
+  "seed": 20261004,
+  "reps": 12,
+  "mined": {
+    "counts": {
+      "110": [
+        {
+          "target": "110",
+          "source": "011",
+          "a": "H",
+          "n_mined": 15,
+          "files": [
+            "sync_phase9g_kernel.json",
+            "sync_phase9h_live_antistag.json:fixed",
+            "sync_phase9i_kernel_8way.json:fixed",
+            "sync_phase9j_sink_seeking.json:gamma_prime",
+            "sync_phase9j_sink_seeking_hard_r2.json:gamma_prime",
+            "sync_phase9j_sink_seeking_r1_relevant.json:gamma_prime"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "111",
+          "a": "C",
+          "n_mined": 12,
+          "files": [
+            "sync_phase9i_kernel_8way.json:fixed",
+            "sync_phase9i_kernel_8way.json:gamma",
+            "sync_phase9i_kernel_8way.json:gamma_prime",
+            "sync_phase9j_kernel.json",
+            "sync_phase9j_sink_seeking.json:sink_seek",
+            "sync_phase9j_sink_seeking_hard_r2.json:sink_seek"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "011",
+          "a": "C",
+          "n_mined": 9,
+          "files": [
+            "sync_phase9j_sink_seeking.json:sink_seek",
+            "sync_phase9j_sink_seeking_hard_r2.json:sink_seek",
+            "sync_phase9k_sink_to_111.json:via_010",
+            "sync_phase9k_sink_to_111.json:via_011",
+            "sync_phase9o_hitting_planner.json:gamma_prime",
+            "sync_phase9o_hitting_planner.json:hitting"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "111",
+          "a": "H",
+          "n_mined": 7,
+          "files": [
+            "sync_phase9h_live_antistag.json:fixed",
+            "sync_phase9i_kernel_8way.json:fixed",
+            "sync_phase9i_kernel_8way.json:gamma",
+            "sync_phase9i_kernel_8way.json:gamma_prime",
+            "sync_phase9k_sink_to_111.json:via_010",
+            "sync_phase9k_sink_to_111.json:via_011"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "010",
+          "a": "H",
+          "n_mined": 6,
+          "files": [
+            "sync_phase9j_sink_seeking.json:sink_seek",
+            "sync_phase9j_sink_seeking_hard_r2.json:sink_seek",
+            "sync_phase9k_sink_to_111.json:via_010",
+            "sync_phase9k_sink_to_111.json:via_011"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "100",
+          "a": "H",
+          "n_mined": 6,
+          "files": [
+            "sync_phase9f_live_gamma.json:fixed",
+            "sync_phase9f_live_gamma.json:gamma",
+            "sync_phase9h_live_antistag.json:fixed",
+            "sync_phase9h_live_antistag.json:gamma",
+            "sync_phase9h_live_antistag.json:gamma_prime"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "101",
+          "a": "H",
+          "n_mined": 5,
+          "files": [
+            "sync_phase9j_sink_seeking.json:gamma_prime",
+            "sync_phase9j_sink_seeking_hard_r2.json:gamma_prime",
+            "sync_phase9j_sink_seeking_r1_relevant.json:gamma_prime",
+            "sync_phase9o_hitting_planner.json:gamma_prime",
+            "sync_phase9o_hitting_planner.json:hitting"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "110",
+          "a": "H",
+          "n_mined": 3,
+          "files": [
+            "sync_phase9i_kernel_8way.json:fixed",
+            "sync_phase9n_jit_horizon.json:jit_rh"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "100",
+          "a": "C",
+          "n_mined": 2,
+          "files": [
+            "sync_phase9o_hitting_planner.json:gamma_prime",
+            "sync_phase9o_hitting_planner.json:hitting"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "100",
+          "a": "O",
+          "n_mined": 2,
+          "files": [
+            "sync_phase9i_kernel_8way.json:gamma",
+            "sync_phase9i_kernel_8way.json:gamma_prime"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "000",
+          "a": "O",
+          "n_mined": 1,
+          "files": [
+            "sync_phase9k_sink_to_111.json:via_011"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "101",
+          "a": "C",
+          "n_mined": 1,
+          "files": [
+            "sync_phase9n_jit_horizon.json:jit_rh"
+          ]
+        },
+        {
+          "target": "110",
+          "source": "111",
+          "a": "O",
+          "n_mined": 1,
+          "files": [
+            "sync_phase9n_jit_horizon.json:compose"
+          ]
+        }
+      ],
+      "001": [
+        {
+          "target": "001",
+          "source": "011",
+          "a": "C",
+          "n_mined": 12,
+          "files": [
+            "p9e",
+            "sync_phase9f_live_gamma.json:fixed",
+            "sync_phase9f_live_gamma.json:gamma",
+            "sync_phase9g_kernel.json",
+            "sync_phase9h_live_antistag.json:fixed",
+            "sync_phase9h_live_antistag.json:gamma"
+          ]
+        },
+        {
+          "target": "001",
+          "source": "001",
+          "a": "H",
+          "n_mined": 9,
+          "files": [
+            "sync_phase9f_live_gamma.json:fixed",
+            "sync_phase9f_live_gamma.json:gamma",
+            "sync_phase9h_live_antistag.json:fixed",
+            "sync_phase9h_live_antistag.json:gamma",
+            "sync_phase9h_live_antistag.json:gamma_prime"
+          ]
+        },
+        {
+          "target": "001",
+          "source": "110",
+          "a": "H",
+          "n_mined": 3,
+          "files": [
+            "sync_phase9j_sink_seeking_r1_relevant.json:sink_seek",
+            "sync_phase9k_sink_to_111.json:via_010",
+            "sync_phase9k_sink_to_111.json:via_011"
+          ]
+        },
+        {
+          "target": "001",
+          "source": "010",
+          "a": "C",
+          "n_mined": 2,
+          "files": [
+            "sync_phase9f_live_gamma.json:fixed",
+            "sync_phase9f_live_gamma.json:gamma"
+          ]
+        },
+        {
+          "target": "001",
+          "source": "100",
+          "a": "H",
+          "n_mined": 1,
+          "files": [
+            "sync_phase9f_live_gamma.json:fixed"
+          ]
+        },
+        {
+          "target": "001",
+          "source": "011",
+          "a": "H",
+          "n_mined": 1,
+          "files": [
+            "sync_phase9f_live_gamma.json:fixed"
+          ]
+        },
+        {
+          "target": "001",
+          "source": "111",
+          "a": "C",
+          "n_mined": 1,
+          "files": [
+            "sync_phase9o_hitting_planner.json:hitting"
+          ]
+        }
+      ],
+      "000": [
+        {
+          "target": "000",
+          "source": "110",
+          "a": "H",
+          "n_mined": 4,
+          "files": [
+            "sync_phase9j_sink_seeking.json:sink_seek",
+            "sync_phase9j_sink_seeking_hard_r2.json:sink_seek",
+            "sync_phase9j_sink_seeking_r1_relevant.json:sink_seek",
+            "sync_phase9o_hitting_planner.json:hitting"
+          ]
+        },
+        {
+          "target": "000",
+          "source": "011",
+          "a": "C",
+          "n_mined": 4,
+          "files": [
+            "sync_phase9j_sink_seeking.json:sink_seek",
+            "sync_phase9j_sink_seeking_hard_r2.json:sink_seek"
+          ]
+        },
+        {
+          "target": "000",
+          "source": "111",
+          "a": "O",
+          "n_mined": 3,
+          "files": [
+            "sync_phase9j_sink_seeking.json:gamma_prime",
+            "sync_phase9j_sink_seeking_hard_r2.json:gamma_prime",
+            "sync_phase9j_sink_seeking_r1_relevant.json:gamma_prime"
+          ]
+        },
+        {
+          "target": "000",
+          "source": "011",
+          "a": "H",
+          "n_mined": 3,
+          "files": [
+            "sync_phase9i_kernel_8way.json:fixed",
+            "sync_phase9i_kernel_8way.json:gamma",
+            "sync_phase9i_kernel_8way.json:gamma_prime"
+          ]
+        },
+        {
+          "target": "000",
+          "source": "111",
+          "a": "H",
+          "n_mined": 3,
+          "files": [
+            "sync_phase9i_kernel_8way.json:fixed",
+            "sync_phase9k_sink_to_111.json:via_010",
+            "sync_phase9k_sink_to_111.json:via_011"
+          ]
+        },
+        {
+          "target": "000",
+          "source": "011",
+          "a": "O",
+          "n_mined": 2,
+          "files": [
+            "sync_phase9f_live_gamma.json:fixed",
+            "sync_phase9f_live_gamma.json:gamma"
+          ]
+        },
+        {
+          "target": "000",
+          "source": "100",
+          "a": "O",
+          "n_mined": 2,
+          "files": [
+            "sync_phase9k_sink_to_111.json:via_010",
+            "sync_phase9k_sink_to_111.json:via_011"
+          ]
+        },
+        {
+          "target": "000",
+          "source": "000",
+          "a": "O",
+          "n_mined": 1,
+          "files": [
+            "sync_phase9k_sink_to_111.json:via_011"
+          ]
+        },
+        {
+          "target": "000",
+          "source": "000",
+          "a": "H",
+          "n_mined": 1,
+          "files": [
+            "sync_phase9k_sink_to_111.json:via_010"
+          ]
+        },
+        {
+          "target": "000",
+          "source": "100",
+          "a": "C",
+          "n_mined": 1,
+          "files": [
+            "sync_phase9n_jit_horizon.json:jit_rh"
+          ]
+        }
+      ]
+    },
+    "n_edges": 30
+  },
+  "producer_table": {
+    "000": [
+      {
+        "source": "111",
+        "a": "H",
+        "n": 11,
+        "k": 1,
+        "hat_p": 0.09090909090909091,
+        "beta_mean": 0.15384615384615385,
+        "p05": 0.03039140809515786,
+        "p95": 0.3382286603878252,
+        "after_hist": {
+          "100": 2,
+          "110": 2,
+          "010": 2,
+          "111": 1,
+          "011": 2,
+          "001": 1,
+          "000": 1
+        },
+        "n_mined_prior": 3,
+        "score": 0.03039140809515786
+      },
+      {
+        "source": "011",
+        "a": "C",
+        "n": 12,
+        "k": 1,
+        "hat_p": 0.08333333333333333,
+        "beta_mean": 0.14285714285714285,
+        "p05": 0.02791702162606464,
+        "p95": 0.31607764981517483,
+        "after_hist": {
+          "011": 4,
+          "000": 1,
+          "100": 3,
+          "010": 1,
+          "101": 1,
+          "110": 2
+        },
+        "n_mined_prior": 4,
+        "score": 0.02791702162606464
+      },
+      {
+        "source": "011",
+        "a": "H",
+        "n": 12,
+        "k": 0,
+        "hat_p": 0.0,
+        "beta_mean": 0.07142857142857142,
+        "p05": 0.004001833097606726,
+        "p95": 0.2099815582659458,
+        "after_hist": {
+          "111": 5,
+          "011": 2,
+          "010": 2,
+          "100": 3
+        },
+        "n_mined_prior": 3,
+        "score": 0.004001833097606726
+      },
+      {
+        "source": "000",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "000",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "011",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "110",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 4,
+        "score": -1.0
+      },
+      {
+        "source": "111",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 3,
+        "score": -1.0
+      }
+    ],
+    "001": [
+      {
+        "source": "011",
+        "a": "C",
+        "n": 12,
+        "k": 0,
+        "hat_p": 0.0,
+        "beta_mean": 0.07142857142857142,
+        "p05": 0.004001833097606726,
+        "p95": 0.2099815582659458,
+        "after_hist": {
+          "111": 2,
+          "110": 1,
+          "100": 5,
+          "011": 2,
+          "101": 2
+        },
+        "n_mined_prior": 12,
+        "score": 0.004001833097606726
+      },
+      {
+        "source": "001",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 9,
+        "score": -1.0
+      },
+      {
+        "source": "010",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "011",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "110",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 3,
+        "score": -1.0
+      },
+      {
+        "source": "111",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      }
+    ],
+    "110": [
+      {
+        "source": "111",
+        "a": "H",
+        "n": 3,
+        "k": 1,
+        "hat_p": 0.3333333333333333,
+        "beta_mean": 0.4,
+        "p05": 0.09776888840704612,
+        "p95": 0.7525716019057579,
+        "after_hist": {
+          "111": 1,
+          "110": 1,
+          "010": 1
+        },
+        "n_mined_prior": 7,
+        "score": 0.09776888840704612
+      },
+      {
+        "source": "011",
+        "a": "H",
+        "n": 12,
+        "k": 1,
+        "hat_p": 0.08333333333333333,
+        "beta_mean": 0.14285714285714285,
+        "p05": 0.02791702162606464,
+        "p95": 0.31607764981517483,
+        "after_hist": {
+          "111": 7,
+          "011": 2,
+          "010": 2,
+          "110": 1
+        },
+        "n_mined_prior": 15,
+        "score": 0.02791702162606464
+      },
+      {
+        "source": "000",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "010",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 6,
+        "score": -1.0
+      },
+      {
+        "source": "011",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 9,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 6,
+        "score": -1.0
+      },
+      {
+        "source": "100",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 2,
+        "score": -1.0
+      },
+      {
+        "source": "101",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      },
+      {
+        "source": "101",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 5,
+        "score": -1.0
+      },
+      {
+        "source": "110",
+        "a": "H",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 3,
+        "score": -1.0
+      },
+      {
+        "source": "111",
+        "a": "C",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 12,
+        "score": -1.0
+      },
+      {
+        "source": "111",
+        "a": "O",
+        "n": 0,
+        "k": 0,
+        "hat_p": null,
+        "beta_mean": null,
+        "p05": null,
+        "p95": null,
+        "after_hist": {},
+        "n_mined_prior": 1,
+        "score": -1.0
+      }
+    ]
+  },
+  "n_rows": 62,
+  "live": {
+    "agg": {
+      "max_pland": {
+        "n": 12,
+        "P_ever": 0.3333333333333333,
+        "P_hit": 0.3333333333333333
+      },
+      "gamma_prime": {
+        "n": 12,
+        "P_ever": 0.08333333333333333,
+        "P_hit": 0.08333333333333333
+      }
+    },
+    "per": {
+      "000": {
+        "max_pland": {
+          "n": 4,
+          "P_ever": 0.0,
+          "P_hit": 0.0
+        },
+        "gamma_prime": {
+          "n": 4,
+          "P_ever": 0.0,
+          "P_hit": 0.0
+        }
+      },
+      "001": {
+        "max_pland": {
+          "n": 4,
+          "P_ever": 0.0,
+          "P_hit": 0.0
+        },
+        "gamma_prime": {
+          "n": 4,
+          "P_ever": 0.0,
+          "P_hit": 0.0
+        }
+      },
+      "110": {
+        "max_pland": {
+          "n": 4,
+          "P_ever": 1.0,
+          "P_hit": 1.0
+        },
+        "gamma_prime": {
+          "n": 4,
+          "P_ever": 0.25,
+          "P_hit": 0.25
+        }
+      }
+    },
+    "paired": [
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "seed": 20261004,
+        "max_pland": {
+          "mstar_key": "000",
+          "path": [
+            "011",
+            "010",
+            "100",
+            "100",
+            "011",
+            "101"
+          ],
+          "actions": [
+            "C",
+            "H",
+            "C",
+            "C",
+            "C"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 2,
+          "E_final": 2
+        },
+        "gamma_prime": {
+          "mstar_key": "000",
+          "path": [
+            "011",
+            "010",
+            "011",
+            "011",
+            "100",
+            "101"
+          ],
+          "actions": [
+            "O",
+            "H",
+            "O",
+            "H",
+            "C"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 2,
+          "E_final": 2
+        }
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "seed": 20261023,
+        "max_pland": {
+          "mstar_key": "000",
+          "path": [
+            "010",
+            "100",
+            "111",
+            "010",
+            "011",
+            "100"
+          ],
+          "actions": [
+            "H",
+            "C",
+            "H",
+            "H",
+            "C"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 1
+        },
+        "gamma_prime": {
+          "mstar_key": "000",
+          "path": [
+            "010",
+            "100",
+            "111",
+            "011",
+            "011",
+            "100"
+          ],
+          "actions": [
+            "H",
+            "C",
+            "O",
+            "O",
+            "H"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 1
+        }
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "seed": 20261042,
+        "max_pland": {
+          "mstar_key": "000",
+          "path": [
+            "010",
+            "100",
+            "010",
+            "011",
+            "100",
+            "110"
+          ],
+          "actions": [
+            "H",
+            "C",
+            "H",
+            "C",
+            "C"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 2
+        },
+        "gamma_prime": {
+          "mstar_key": "000",
+          "path": [
+            "010",
+            "100",
+            "010",
+            "011",
+            "011",
+            "111"
+          ],
+          "actions": [
+            "H",
+            "C",
+            "H",
+            "O",
+            "H"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 3
+        }
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "seed": 20261061,
+        "max_pland": {
+          "mstar_key": "000",
+          "path": [
+            "011",
+            "100",
+            "110",
+            "101",
+            "011",
+            "010"
+          ],
+          "actions": [
+            "C",
+            "C",
+            "H",
+            "C",
+            "C"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 2,
+          "E_final": 1
+        },
+        "gamma_prime": {
+          "mstar_key": "000",
+          "path": [
+            "011",
+            "100",
+            "110",
+            "101",
+            "011",
+            "011"
+          ],
+          "actions": [
+            "O",
+            "C",
+            "H",
+            "C",
+            "O"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 2,
+          "E_final": 2
+        }
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "seed": 20261404,
+        "max_pland": {
+          "mstar_key": "001",
+          "path": [
+            "011",
+            "110",
+            "111",
+            "100",
+            "011",
+            "100"
+          ],
+          "actions": [
+            "C",
+            "H",
+            "C",
+            "O",
+            "C"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 2
+        },
+        "gamma_prime": {
+          "mstar_key": "001",
+          "path": [
+            "011",
+            "100",
+            "011",
+            "011",
+            "111",
+            "100"
+          ],
+          "actions": [
+            "H",
+            "O",
+            "H",
+            "H",
+            "C"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 2
+        }
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "seed": 20261423,
+        "max_pland": {
+          "mstar_key": "001",
+          "path": [
+            "010",
+            "011",
+            "101",
+            "011",
+            "011",
+            "100"
+          ],
+          "actions": [
+            "O",
+            "C",
+            "C",
+            "C",
+            "C"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 2,
+          "E_final": 2
+        },
+        "gamma_prime": {
+          "mstar_key": "001",
+          "path": [
+            "010",
+            "011",
+            "100",
+            "011",
+            "100",
+            "100"
+          ],
+          "actions": [
+            "O",
+            "H",
+            "O",
+            "H",
+            "O"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 2,
+          "E_final": 2
+        }
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "seed": 20261442,
+        "max_pland": {
+          "mstar_key": "001",
+          "path": [
+            "011",
+            "110",
+            "111",
+            "111",
+            "110",
+            "110"
+          ],
+          "actions": [
+            "C",
+            "H",
+            "C",
+            "H",
+            "H"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 3
+        },
+        "gamma_prime": {
+          "mstar_key": "001",
+          "path": [
+            "011",
+            "110",
+            "011",
+            "011",
+            "011",
+            "010"
+          ],
+          "actions": [
+            "H",
+            "H",
+            "H",
+            "H",
+            "H"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 2
+        }
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "seed": 20261461,
+        "max_pland": {
+          "mstar_key": "001",
+          "path": [
+            "011",
+            "010",
+            "100",
+            "011",
+            "100",
+            "010"
+          ],
+          "actions": [
+            "C",
+            "O",
+            "O",
+            "C",
+            "O"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 2
+        },
+        "gamma_prime": {
+          "mstar_key": "001",
+          "path": [
+            "011",
+            "111",
+            "110",
+            "011",
+            "100",
+            "010"
+          ],
+          "actions": [
+            "H",
+            "C",
+            "H",
+            "H",
+            "O"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 1,
+          "E_final": 2
+        }
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "seed": 20261804,
+        "max_pland": {
+          "mstar_key": "110",
+          "path": [
+            "011",
+            "111",
+            "111",
+            "110"
+          ],
+          "actions": [
+            "H",
+            "H",
+            "H"
+          ],
+          "hit": 1,
+          "ever": 1,
+          "E0": 2,
+          "E_final": 0
+        },
+        "gamma_prime": {
+          "mstar_key": "110",
+          "path": [
+            "011",
+            "100",
+            "111",
+            "100",
+            "111",
+            "011"
+          ],
+          "actions": [
+            "C",
+            "H",
+            "O",
+            "H",
+            "O"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 2,
+          "E_final": 2
+        }
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "seed": 20261823,
+        "max_pland": {
+          "mstar_key": "110",
+          "path": [
+            "011",
+            "111",
+            "111",
+            "101",
+            "110"
+          ],
+          "actions": [
+            "H",
+            "H",
+            "H",
+            "H"
+          ],
+          "hit": 1,
+          "ever": 1,
+          "E0": 2,
+          "E_final": 0
+        },
+        "gamma_prime": {
+          "mstar_key": "110",
+          "path": [
+            "011",
+            "100",
+            "010",
+            "101",
+            "111",
+            "010"
+          ],
+          "actions": [
+            "C",
+            "H",
+            "C",
+            "H",
+            "O"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 2,
+          "E_final": 1
+        }
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "seed": 20261842,
+        "max_pland": {
+          "mstar_key": "110",
+          "path": [
+            "011",
+            "110"
+          ],
+          "actions": [
+            "H"
+          ],
+          "hit": 1,
+          "ever": 1,
+          "E0": 2,
+          "E_final": 0
+        },
+        "gamma_prime": {
+          "mstar_key": "110",
+          "path": [
+            "011",
+            "010",
+            "100",
+            "110"
+          ],
+          "actions": [
+            "C",
+            "C",
+            "H"
+          ],
+          "hit": 1,
+          "ever": 1,
+          "E0": 2,
+          "E_final": 0
+        }
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "seed": 20261861,
+        "max_pland": {
+          "mstar_key": "110",
+          "path": [
+            "011",
+            "010",
+            "100",
+            "111",
+            "110"
+          ],
+          "actions": [
+            "H",
+            "C",
+            "H",
+            "H"
+          ],
+          "hit": 1,
+          "ever": 1,
+          "E0": 2,
+          "E_final": 0
+        },
+        "gamma_prime": {
+          "mstar_key": "110",
+          "path": [
+            "011",
+            "100",
+            "111",
+            "011",
+            "100",
+            "111"
+          ],
+          "actions": [
+            "C",
+            "H",
+            "O",
+            "C",
+            "H"
+          ],
+          "hit": 0,
+          "ever": 0,
+          "E0": 2,
+          "E_final": 1
+        }
+      }
+    ]
+  },
+  "gate": {
+    "hypothesis": "Active target-sign densify of producer edges restores kernel mass into hard sinks; max P(land) recovers P_acq",
+    "best_producers": {
+      "000": {
+        "source": "111",
+        "a": "H",
+        "n": 11,
+        "k": 1,
+        "hat_p": 0.09090909090909091,
+        "beta_mean": 0.15384615384615385,
+        "p05": 0.03039140809515786,
+        "p95": 0.3382286603878252,
+        "after_hist": {
+          "100": 2,
+          "110": 2,
+          "010": 2,
+          "111": 1,
+          "011": 2,
+          "001": 1,
+          "000": 1
+        },
+        "n_mined_prior": 3,
+        "score": 0.03039140809515786
+      },
+      "001": {
+        "source": "011",
+        "a": "C",
+        "n": 12,
+        "k": 0,
+        "hat_p": 0.0,
+        "beta_mean": 0.07142857142857142,
+        "p05": 0.004001833097606726,
+        "p95": 0.2099815582659458,
+        "after_hist": {
+          "111": 2,
+          "110": 1,
+          "100": 5,
+          "011": 2,
+          "101": 2
+        },
+        "n_mined_prior": 12,
+        "score": 0.004001833097606726
+      },
+      "110": {
+        "source": "111",
+        "a": "H",
+        "n": 3,
+        "k": 1,
+        "hat_p": 0.3333333333333333,
+        "beta_mean": 0.4,
+        "p05": 0.09776888840704612,
+        "p95": 0.7525716019057579,
+        "after_hist": {
+          "111": 1,
+          "110": 1,
+          "010": 1
+        },
+        "n_mined_prior": 7,
+        "score": 0.09776888840704612
+      }
+    },
+    "n_9p_rows": 62,
+    "live_P_ever_max_pland": {
+      "000": 0.0,
+      "001": 0.0,
+      "110": 1.0
+    },
+    "n_hard_ever_max_pland": 1,
+    "hard_acq_gate": false,
+    "read": "Primary: densified hat_p / p05 for producers. Secondary: live P_ever under max-P(land)."
+  }
+}

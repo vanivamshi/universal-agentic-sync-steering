@@ -1,0 +1,1 @@
+Each subfolder has a run_check.py smoke script. Private folders keep secrets in local `.env` files read by the script at execution time.

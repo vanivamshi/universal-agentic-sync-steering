@@ -1,0 +1,3 @@
+metrics:
+  scrape_port: 9109
+  path: /metrics

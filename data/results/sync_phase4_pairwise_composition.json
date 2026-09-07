@@ -1,0 +1,932 @@
+{
+  "protocol": "Phase 4 pairwise composition",
+  "alpha": 1.5,
+  "layer": 4,
+  "pairs": [
+    "C+H",
+    "H+O",
+    "C+O"
+  ],
+  "arms": [
+    "predictive",
+    "converted",
+    "random"
+  ],
+  "jacobians": {
+    "predictive": {
+      "J": [
+        [
+          -0.12140846252441406,
+          -0.039855003356933594,
+          0.02968565622965495
+        ],
+        [
+          -0.41838836669921875,
+          -0.06864420572916667,
+          -1.2392590840657551
+        ],
+        [
+          0.05037117004394531,
+          0.022579511006673176,
+          0.04115072886149088
+        ]
+      ],
+      "diagonal_dominance": {
+        "C": 1.7458629706156634,
+        "H": 0.04141061822131638,
+        "O": 0.5640897147065359
+      },
+      "composition_class": "coupled_composition"
+    },
+    "converted": {
+      "J": [
+        [
+          2.99879519144694,
+          0.1735957463582357,
+          -0.38027191162109375
+        ],
+        [
+          0.9790013631184896,
+          11.244163513183594,
+          -2.101729075113932
+        ],
+        [
+          -0.1115282376607259,
+          -0.14156007766723633,
+          1.438785711924235
+        ]
+      ],
+      "diagonal_dominance": {
+        "C": 5.414281098100975,
+        "H": 3.6498368612980516,
+        "O": 5.684915599757333
+      },
+      "composition_class": "independent_composition"
+    },
+    "random": {
+      "J": [
+        [
+          0.05125109354654948,
+          0.062416394551595054,
+          0.005199114481608073
+        ],
+        [
+          0.9575030008951823,
+          -0.611151377360026,
+          -0.3247388203938802
+        ],
+        [
+          -0.08286428451538086,
+          0.00023984909057617188,
+          -0.08429670333862305
+        ]
+      ],
+      "diagonal_dominance": {
+        "C": 0.7579783732957216,
+        "H": 0.4766272377121686,
+        "O": 1.0143503058261898
+      },
+      "composition_class": "coupled_composition"
+    }
+  },
+  "rows": [
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "predictive",
+      "tag": "both_up",
+      "e": {
+        "C": 1.0,
+        "H": 1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 0.35901713371276855,
+      "abs_dM_collateral": 0.07263588905334473,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 0.0,
+      "dM_C": -0.16458463668823242,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -0.5534496307373047,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.07263588905334473,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "predictive",
+      "tag": "both_down",
+      "e": {
+        "C": -1.0,
+        "H": -1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 0.29418182373046875,
+      "abs_dM_collateral": 0.07247018814086914,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 0.0,
+      "dM_C": 0.26827239990234375,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 0.32009124755859375,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.07247018814086914,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "predictive",
+      "tag": "a_up_b_down",
+      "e": {
+        "C": 1.0,
+        "H": -1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 0.25614285469055176,
+      "abs_dM_collateral": 0.02861166000366211,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 1.0,
+      "dM_C": -0.052843570709228516,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -0.459442138671875,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.02861166000366211,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "predictive",
+      "tag": "a_down_b_up",
+      "e": {
+        "C": -1.0,
+        "H": 1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 0.22943377494812012,
+      "abs_dM_collateral": 0.013282299041748047,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 1.0,
+      "dM_C": 0.06140851974487305,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 0.3974590301513672,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.013282299041748047,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "converted",
+      "tag": "both_up",
+      "e": {
+        "C": 1.0,
+        "H": 1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 9.162976264953613,
+      "abs_dM_collateral": 0.2024095058441162,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": 3.9201908111572266,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 14.40576171875,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.2024095058441162,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "converted",
+      "tag": "both_down",
+      "e": {
+        "C": -1.0,
+        "H": -1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 7.2451817989349365,
+      "abs_dM_collateral": 0.4545557498931885,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": -2.186051845550537,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -12.304311752319336,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.4545557498931885,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "converted",
+      "tag": "a_up_b_down",
+      "e": {
+        "C": 1.0,
+        "H": -1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 7.811320781707764,
+      "abs_dM_collateral": 0.02360987663269043,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": 3.4382667541503906,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -12.184374809265137,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.02360987663269043,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "converted",
+      "tag": "a_down_b_up",
+      "e": {
+        "C": -1.0,
+        "H": 1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 8.098238945007324,
+      "abs_dM_collateral": 0.04679536819458008,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": -1.9953117370605469,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 14.201166152954102,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.04679536819458008,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "random",
+      "tag": "both_up",
+      "e": {
+        "C": 1.0,
+        "H": 1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 0.2644951343536377,
+      "abs_dM_collateral": 0.08694672584533691,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": 0.12448358535766602,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 0.4045066833496094,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.08694672584533691,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "random",
+      "tag": "both_down",
+      "e": {
+        "C": -1.0,
+        "H": -1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 0.2717134952545166,
+      "abs_dM_collateral": 0.0745398998260498,
+      "sign_agree_a": NaN,
+      "sign_agree_b": 1.0,
+      "dM_C": -0.03467607498168945,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -0.5087509155273438,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.0745398998260498,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "random",
+      "tag": "a_up_b_down",
+      "e": {
+        "C": 1.0,
+        "H": -1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 0.8358128070831299,
+      "abs_dM_collateral": 0.09065604209899902,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 0.0,
+      "dM_C": 0.06504678726196289,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 1.6065788269042969,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.09065604209899902,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+H",
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?",
+      "arm": "random",
+      "tag": "a_down_b_up",
+      "e": {
+        "C": -1.0,
+        "H": 1.0,
+        "O": 0.0
+      },
+      "mean_abs_dM_intended": 0.9077575206756592,
+      "abs_dM_collateral": 0.08433151245117188,
+      "sign_agree_a": NaN,
+      "sign_agree_b": 0.0,
+      "dM_C": -0.04429960250854492,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -1.7712154388427734,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.08433151245117188,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "predictive",
+      "tag": "both_up",
+      "e": {
+        "H": 1.0,
+        "O": 1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 0.7203364372253418,
+      "abs_dM_collateral": 0.027927875518798828,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 1.0,
+      "dM_C": -0.027927875518798828,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -1.378652572631836,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.062020301818847656,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "predictive",
+      "tag": "both_down",
+      "e": {
+        "H": -1.0,
+        "O": -1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 0.6989723443984985,
+      "abs_dM_collateral": 0.04936981201171875,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": NaN,
+      "dM_C": 0.04936981201171875,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 1.3489799499511719,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.048964738845825195,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "predictive",
+      "tag": "a_up_b_down",
+      "e": {
+        "H": 1.0,
+        "O": -1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 0.6545747518539429,
+      "abs_dM_collateral": 0.10082435607910156,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": NaN,
+      "dM_C": -0.10082435607910156,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 1.3028717041015625,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.006277799606323242,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "predictive",
+      "tag": "a_down_b_up",
+      "e": {
+        "H": -1.0,
+        "O": 1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 0.7039103507995605,
+      "abs_dM_collateral": 0.15440130233764648,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": NaN,
+      "dM_C": 0.15440130233764648,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -1.3717975616455078,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.03602313995361328,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "converted",
+      "tag": "both_up",
+      "e": {
+        "H": 1.0,
+        "O": 1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 7.658360838890076,
+      "abs_dM_collateral": 0.36487674713134766,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": -0.36487674713134766,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 13.84466552734375,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 1.4720561504364014,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "converted",
+      "tag": "both_down",
+      "e": {
+        "H": -1.0,
+        "O": -1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 6.5383113622665405,
+      "abs_dM_collateral": 0.457089900970459,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": 0.457089900970459,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -11.958660125732422,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -1.1179625988006592,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "converted",
+      "tag": "a_up_b_down",
+      "e": {
+        "H": 1.0,
+        "O": -1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 7.91459858417511,
+      "abs_dM_collateral": 0.8364353179931641,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": 0.8364353179931641,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 14.586288452148438,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -1.2429087162017822,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "converted",
+      "tag": "a_down_b_up",
+      "e": {
+        "H": -1.0,
+        "O": 1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 7.099917054176331,
+      "abs_dM_collateral": 0.5719766616821289,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": -0.5719766616821289,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -12.53321361541748,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 1.6666204929351807,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "random",
+      "tag": "both_up",
+      "e": {
+        "H": 1.0,
+        "O": 1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 0.5634773969650269,
+      "abs_dM_collateral": 0.04384756088256836,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 0.0,
+      "dM_C": 0.04384756088256836,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -1.0291099548339844,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.09784483909606934,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "random",
+      "tag": "both_down",
+      "e": {
+        "H": -1.0,
+        "O": -1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 0.5333585739135742,
+      "abs_dM_collateral": 0.05757474899291992,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 0.0,
+      "dM_C": 0.05757474899291992,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 0.9917106628417969,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.07500648498535156,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "random",
+      "tag": "a_up_b_down",
+      "e": {
+        "H": 1.0,
+        "O": -1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 0.12403833866119385,
+      "abs_dM_collateral": 0.06860542297363281,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 0.0,
+      "dM_C": 0.06860542297363281,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -0.14601516723632812,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.10206151008605957,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "H+O",
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)",
+      "arm": "random",
+      "tag": "a_down_b_up",
+      "e": {
+        "H": -1.0,
+        "O": 1.0,
+        "C": 0.0
+      },
+      "mean_abs_dM_intended": 0.19092869758605957,
+      "abs_dM_collateral": 0.028379440307617188,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 0.0,
+      "dM_C": 0.028379440307617188,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 0.2943553924560547,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.08750200271606445,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "predictive",
+      "tag": "both_up",
+      "e": {
+        "C": 1.0,
+        "O": 1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 0.09542298316955566,
+      "abs_dM_collateral": 1.7101898193359375,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 1.0,
+      "dM_C": -0.10425233840942383,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -1.7101898193359375,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.0865936279296875,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "predictive",
+      "tag": "both_down",
+      "e": {
+        "C": -1.0,
+        "O": -1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 0.057831645011901855,
+      "abs_dM_collateral": 1.859619140625,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": NaN,
+      "dM_C": 0.06650876998901367,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 1.859619140625,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.04915452003479004,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "predictive",
+      "tag": "a_up_b_down",
+      "e": {
+        "C": 1.0,
+        "O": -1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 0.09985208511352539,
+      "abs_dM_collateral": 0.8649139404296875,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": NaN,
+      "dM_C": -0.17081594467163086,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 0.8649139404296875,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.028888225555419922,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "predictive",
+      "tag": "a_down_b_up",
+      "e": {
+        "C": -1.0,
+        "O": 1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 0.14146530628204346,
+      "abs_dM_collateral": 0.9603214263916016,
+      "sign_agree_a": 0.0,
+      "sign_agree_b": 1.0,
+      "dM_C": 0.1907196044921875,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -0.9603214263916016,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.09221100807189941,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "converted",
+      "tag": "both_up",
+      "e": {
+        "C": 1.0,
+        "O": 1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 2.5118683576583862,
+      "abs_dM_collateral": 1.0035228729248047,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": 3.5582895278930664,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -1.0035228729248047,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 1.465447187423706,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "converted",
+      "tag": "both_down",
+      "e": {
+        "C": -1.0,
+        "O": -1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 1.3992760181427002,
+      "abs_dM_collateral": 1.34246826171875,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": -1.4847369194030762,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 1.34246826171875,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -1.3138151168823242,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "converted",
+      "tag": "a_up_b_down",
+      "e": {
+        "C": 1.0,
+        "O": -1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 2.375808358192444,
+      "abs_dM_collateral": 2.617525100708008,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": 3.824665069580078,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 2.617525100708008,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.9269516468048096,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "converted",
+      "tag": "a_down_b_up",
+      "e": {
+        "C": -1.0,
+        "O": 1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 1.9844144582748413,
+      "abs_dM_collateral": 3.2005577087402344,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 1.0,
+      "dM_C": -2.315797805786133,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -3.2005577087402344,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 1.6530311107635498,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "random",
+      "tag": "both_up",
+      "e": {
+        "C": 1.0,
+        "O": 1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 0.11057174205780029,
+      "abs_dM_collateral": 0.6791000366210938,
+      "sign_agree_a": NaN,
+      "sign_agree_b": 0.0,
+      "dM_C": 0.04723215103149414,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 0.6791000366210938,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.17391133308410645,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "random",
+      "tag": "both_down",
+      "e": {
+        "C": -1.0,
+        "O": -1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 0.11708343029022217,
+      "abs_dM_collateral": 0.65478515625,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": 0.0,
+      "dM_C": -0.06151771545410156,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -0.65478515625,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.17264914512634277,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "random",
+      "tag": "a_up_b_down",
+      "e": {
+        "C": 1.0,
+        "O": -1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 0.0447160005569458,
+      "abs_dM_collateral": 1.4864444732666016,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": NaN,
+      "dM_C": 0.08675432205200195,
+      "M0_C": 7.2849884033203125,
+      "dM_H": 1.4864444732666016,
+      "M0_H": 3.0675735473632812,
+      "dM_O": 0.0026776790618896484,
+      "M0_O": 3.286677598953247
+    },
+    {
+      "pair": "C+O",
+      "question": "Can non-adjacent channels compose without H mediation?",
+      "arm": "random",
+      "tag": "a_down_b_up",
+      "e": {
+        "C": -1.0,
+        "O": 1.0,
+        "H": 0.0
+      },
+      "mean_abs_dM_intended": 0.03506302833557129,
+      "abs_dM_collateral": 1.4863777160644531,
+      "sign_agree_a": 1.0,
+      "sign_agree_b": NaN,
+      "dM_C": -0.0642552375793457,
+      "M0_C": 7.2849884033203125,
+      "dM_H": -1.4863777160644531,
+      "M0_H": 3.0675735473632812,
+      "dM_O": -0.005870819091796875,
+      "M0_O": 3.286677598953247
+    }
+  ],
+  "summary": {
+    "C+H": {
+      "by_arm": {
+        "predictive": {
+          "mean_abs_dM_intended": 0.2846938967704773,
+          "mean_abs_dM_collateral": 0.046750009059906006,
+          "mean_sign_agree": 0.25
+        },
+        "converted": {
+          "mean_abs_dM_intended": 8.07942944765091,
+          "mean_abs_dM_collateral": 0.1818426251411438,
+          "mean_sign_agree": 1.0
+        },
+        "random": {
+          "mean_abs_dM_intended": 0.5699447393417358,
+          "mean_abs_dM_collateral": 0.0841185450553894,
+          "mean_sign_agree": 0.6666666666666666
+        }
+      },
+      "converted_ge_predictive_ge_random": false,
+      "converted_beats_predictive": true,
+      "question": "Can earlier plan-state intervention compose with downstream tool decision?"
+    },
+    "H+O": {
+      "by_arm": {
+        "predictive": {
+          "mean_abs_dM_intended": 0.6944484710693359,
+          "mean_abs_dM_collateral": 0.0831308364868164,
+          "mean_sign_agree": 0.6
+        },
+        "converted": {
+          "mean_abs_dM_intended": 7.302796959877014,
+          "mean_abs_dM_collateral": 0.5575946569442749,
+          "mean_sign_agree": 1.0
+        },
+        "random": {
+          "mean_abs_dM_intended": 0.3529507517814636,
+          "mean_abs_dM_collateral": 0.04960179328918457,
+          "mean_sign_agree": 0.0
+        }
+      },
+      "converted_ge_predictive_ge_random": true,
+      "converted_beats_predictive": true,
+      "question": "Does controlling execution preserve/control subsequent disclosure? (H\u2192O)"
+    },
+    "C+O": {
+      "by_arm": {
+        "predictive": {
+          "mean_abs_dM_intended": 0.09864300489425659,
+          "mean_abs_dM_collateral": 1.3487610816955566,
+          "mean_sign_agree": 0.3333333333333333
+        },
+        "converted": {
+          "mean_abs_dM_intended": 2.067841798067093,
+          "mean_abs_dM_collateral": 2.041018486022949,
+          "mean_sign_agree": 1.0
+        },
+        "random": {
+          "mean_abs_dM_intended": 0.07685855031013489,
+          "mean_abs_dM_collateral": 1.076676845550537,
+          "mean_sign_agree": 0.6
+        }
+      },
+      "converted_ge_predictive_ge_random": true,
+      "converted_beats_predictive": true,
+      "question": "Can non-adjacent channels compose without H mediation?"
+    }
+  },
+  "gate": {
+    "hypothesis": "Converted components compose with limited cross-channel interference; converted composition > predictive composition > random.",
+    "n_pairs_converted_beats_predictive": 3,
+    "jacobian_class_converted": "independent_composition",
+    "diagonal_dominance_converted": {
+      "C": 5.414281098100975,
+      "H": 3.6498368612980516,
+      "O": 5.684915599757333
+    },
+    "ready_for_sequential": true,
+    "ready_for_8way": false,
+    "next_if_pass": "sequential C\u2192H\u2192O closed-loop with e recomputed each stage",
+    "next_if_coupled": "characterize coupling; do not jump to 8-way"
+  }
+}

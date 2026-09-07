@@ -1,0 +1,576 @@
+{
+  "ci_method": "bca_joint",
+  "bootstrap_n": 2000,
+  "seed": 20260801,
+  "n_transcripts": 8,
+  "cluster": "transcript",
+  "rationale": "\u00a73 moved from percentile to BCa+joint after small-n undercoverage (L14 flip). \u00a75 uses the same cluster count order (n=8 transcripts), so interaction/group CIs use BCa+joint; percentile kept for pathology.",
+  "group_mean_delta": {
+    "safety_excluding_blocked_refusal": {
+      "label": "safety_excluding_blocked_refusal",
+      "point": 1.1768317527771013,
+      "boot_mean": 1.1777756142812508,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        0.7606014298439037,
+        1.8796644764423383
+      ],
+      "percentile_ci95": [
+        0.6825910267829922,
+        1.7587149731636065
+      ],
+      "bca_width": 1.1190630465984346,
+      "percentile_width": 1.0761239463806143,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.0526635269432613,
+        "acceleration": 0.07200828981650122,
+        "a_lo": 0.05215399122284109,
+        "a_hi": 0.9919449079395193,
+        "prop_below_hat": 0.521
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73)."
+    },
+    "learned_controls": {
+      "label": "learned_controls",
+      "point": 1.1527038408279437,
+      "boot_mean": 1.1059596971243248,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        0.45524744536876977,
+        1.8497668464183805
+      ],
+      "percentile_ci95": [
+        0.3938296176804433,
+        1.769479550480844
+      ],
+      "bca_width": 1.3945194010496107,
+      "percentile_width": 1.3756499328004008,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.06145104644316103,
+        "acceleration": 0.022300446048756892,
+        "a_lo": 0.039208305885829575,
+        "a_hi": 0.9853077699928097,
+        "prop_below_hat": 0.5245
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73)."
+    },
+    "random_controls": {
+      "label": "random_controls",
+      "point": -2.1995142815351483,
+      "boot_mean": -2.1925920265121936,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        -3.02619328842163,
+        -1.3263795074224478
+      ],
+      "percentile_ci95": [
+        -3.0410586570978158,
+        -1.334736061906813
+      ],
+      "bca_width": 1.699813780999182,
+      "percentile_width": 1.7063225951910028,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.0037599512753843304,
+        "acceleration": 0.0031081560865907744,
+        "a_lo": 0.02615207923582058,
+        "a_hi": 0.9761225596628536,
+        "prop_below_hat": 0.5015
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73)."
+    },
+    "pooled_controls": {
+      "label": "pooled_controls",
+      "point": -0.5234052203536023,
+      "boot_mean": -0.5920941125247982,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        -1.3384474370320627,
+        0.21717504935264687
+      ],
+      "percentile_ci95": [
+        -1.4727008326063338,
+        0.10983723289569372
+      ],
+      "bca_width": 1.5556224863847095,
+      "percentile_width": 1.5825380655020276,
+      "bca_excludes_zero": false,
+      "percentile_excludes_zero": false,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.07652679147226901,
+        "acceleration": 0.02987118944256839,
+        "a_lo": 0.043949024202974696,
+        "a_hi": 0.9876135753698485,
+        "prop_below_hat": 0.5305
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73)."
+    }
+  },
+  "interaction": {
+    "safety_minus_learned": {
+      "label": "safety_minus_learned",
+      "point": 0.024127911949157532,
+      "boot_mean": 0.07181591715692595,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        -0.5596631830734704,
+        0.7818524300257388
+      ],
+      "percentile_ci95": [
+        -0.5345310010957705,
+        0.8205561651113317
+      ],
+      "bca_width": 1.3415156130992092,
+      "percentile_width": 1.355087166207102,
+      "bca_excludes_zero": false,
+      "percentile_excludes_zero": false,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": -0.010026681111515298,
+        "acceleration": -0.02524992486562011,
+        "a_lo": 0.018619309216205193,
+        "a_hi": 0.9677284088050286,
+        "prop_below_hat": 0.496
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73)."
+    },
+    "safety_minus_pooled": {
+      "label": "safety_minus_pooled",
+      "point": 1.7002369731307034,
+      "boot_mean": 1.7698697268060488,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        1.3288805133152,
+        2.3305982571465638
+      ],
+      "percentile_ci95": [
+        1.3827153208065033,
+        2.4687085115452225
+      ],
+      "bca_width": 1.0017177438313638,
+      "percentile_width": 1.0859931907387192,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": -0.11556159713932289,
+        "acceleration": -0.024859884805484133,
+        "a_lo": 0.010611181159001282,
+        "a_hi": 0.9503215665430541,
+        "prop_below_hat": 0.454
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73)."
+    },
+    "safety_minus_random": {
+      "label": "safety_minus_random",
+      "point": 3.3763460343122498,
+      "boot_mean": 3.370367640793444,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        2.8901757610797896,
+        4.033342877817154
+      ],
+      "percentile_ci95": [
+        2.833789879894257,
+        3.943912247657777
+      ],
+      "bca_width": 1.1431671167373647,
+      "percentile_width": 1.1101223677635201,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.06396260843836912,
+        "acceleration": 0.03405081816641817,
+        "a_lo": 0.04298451327246772,
+        "a_hi": 0.9873795214007217,
+        "prop_below_hat": 0.5255
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73)."
+    }
+  },
+  "per_direction_delta": {
+    "refusal_L4": {
+      "label": "refusal_L4",
+      "point": 4.073707062530518,
+      "boot_mean": 4.060801109185982,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        3.2913142181396493,
+        4.776277526283264
+      ],
+      "percentile_ci95": [
+        3.2944613370895395,
+        4.776277526283264
+      ],
+      "bca_width": 1.484963308143615,
+      "percentile_width": 1.481816189193725,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.02883021854855678,
+        "acceleration": -0.01845194614212678,
+        "a_lo": 0.024210288638736144,
+        "a_hi": 0.9742461086284881,
+        "prop_below_hat": 0.5115
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "refusal",
+      "direction_type": "safety"
+    },
+    "assistant_axis_L4": {
+      "label": "assistant_axis_L4",
+      "point": -0.27537290811538595,
+      "boot_mean": -0.27844857316002747,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        -1.032350382804871,
+        0.4359713418006912
+      ],
+      "percentile_ci95": [
+        -1.0313490267753602,
+        0.44207484521866025
+      ],
+      "bca_width": 1.4683217246055622,
+      "percentile_width": 1.4734238719940205,
+      "bca_excludes_zero": false,
+      "percentile_excludes_zero": false,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.005013277554574074,
+        "acceleration": -0.006923061674025976,
+        "a_lo": 0.02403442640665643,
+        "a_hi": 0.9740292584612786,
+        "prop_below_hat": 0.502
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "assistant_axis",
+      "direction_type": "safety"
+    },
+    "harmlessness_L4": {
+      "label": "harmlessness_L4",
+      "point": 2.6290364136695885,
+      "boot_mean": 2.633999801722529,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        2.10980947055817,
+        3.328125973129273
+      ],
+      "percentile_ci95": [
+        2.072663930225376,
+        3.254836248493196
+      ],
+      "bca_width": 1.2183165025711031,
+      "percentile_width": 1.1821723182678197,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.015040336695360994,
+        "acceleration": 0.04467989623400585,
+        "a_lo": 0.03799981582233597,
+        "a_hi": 0.9854154052522307,
+        "prop_below_hat": 0.506
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "harmlessness",
+      "direction_type": "safety"
+    },
+    "syntax_L4": {
+      "label": "syntax_L4",
+      "point": 1.9067726146698014,
+      "boot_mean": 1.9052802604004875,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        1.0522344525337237,
+        2.98575757827759
+      ],
+      "percentile_ci95": [
+        1.0006407752037054,
+        2.8764667201995864
+      ],
+      "bca_width": 1.933523125743866,
+      "percentile_width": 1.875825944995881,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.016293804742932433,
+        "acceleration": 0.0315579279233049,
+        "a_lo": 0.03475847222785422,
+        "a_hi": 0.9831650203707158,
+        "prop_below_hat": 0.5065
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "syntax",
+      "direction_type": "learned_control"
+    },
+    "domain_content_coding_L4": {
+      "label": "domain_content_coding_L4",
+      "point": -1.088330953216551,
+      "boot_mean": -1.0725613713441635,
+      "n_boot": 1989,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        -2.379603395080565,
+        -0.6130206245422324
+      ],
+      "percentile_ci95": [
+        -1.9503554437637325,
+        -0.5728392270406069
+      ],
+      "bca_width": 1.7665827705383328,
+      "percentile_width": 1.3775162167231256,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": -0.14352914184604887,
+        "acceleration": -0.09206488139387083,
+        "a_lo": 0.0029596850086824333,
+        "a_hi": 0.9211226969808902,
+        "prop_below_hat": 0.44293614881850174
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "domain_content",
+      "direction_type": "learned_control"
+    },
+    "rand_00_L4": {
+      "label": "rand_00_L4",
+      "point": -0.29311121492385883,
+      "boot_mean": -0.2923140878407481,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        -0.7873996245384207,
+        0.4323950702667263
+      ],
+      "percentile_ci95": [
+        -0.8207304752349862,
+        0.31871731910705536
+      ],
+      "bca_width": 1.219794694805147,
+      "percentile_width": 1.1394477943420416,
+      "bca_excludes_zero": false,
+      "percentile_excludes_zero": false,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.03760828769991078,
+        "acceleration": 0.04185644671144763,
+        "a_lo": 0.04079028314443023,
+        "a_hi": 0.9867034461303433,
+        "prop_below_hat": 0.515
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "random_control",
+      "direction_type": "random_control"
+    },
+    "rand_01_L4": {
+      "label": "rand_01_L4",
+      "point": -5.4027449317932135,
+      "boot_mean": -5.394768081978513,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        -6.581340978527068,
+        -4.896392566204073
+      ],
+      "percentile_ci95": [
+        -6.1640139323234555,
+        -4.800262387371065
+      ],
+      "bca_width": 1.6849484123229956,
+      "percentile_width": 1.3637515449523905,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": -0.10043372055919257,
+        "acceleration": -0.08629188693424027,
+        "a_lo": 0.004575282003688841,
+        "a_hi": 0.9334476870814006,
+        "prop_below_hat": 0.46
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "random_control",
+      "direction_type": "random_control"
+    },
+    "rand_02_L4": {
+      "label": "rand_02_L4",
+      "point": 0.9844760278701798,
+      "boot_mean": 0.9912106001630323,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        -0.5461681886672958,
+        2.9506624336242684
+      ],
+      "percentile_ci95": [
+        -0.6726251501083356,
+        2.7730409474372877
+      ],
+      "bca_width": 3.496830622291564,
+      "percentile_width": 3.4456660975456233,
+      "bca_excludes_zero": false,
+      "percentile_excludes_zero": false,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": 0.020054370374998944,
+        "acceleration": 0.03409045338863059,
+        "a_lo": 0.03596805158486349,
+        "a_hi": 0.9839594161109053,
+        "prop_below_hat": 0.508
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "random_control",
+      "direction_type": "random_control"
+    },
+    "rand_03_L4": {
+      "label": "rand_03_L4",
+      "point": -4.086677007293701,
+      "boot_mean": -4.074496536392545,
+      "n_boot": 2000,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        -5.359543571662904,
+        -3.0079304617881775
+      ],
+      "percentile_ci95": [
+        -5.282677575492859,
+        -2.950853168106079
+      ],
+      "bca_width": 2.3516131098747266,
+      "percentile_width": 2.3318244073867804,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": -0.017547298391561147,
+        "acceleration": -0.016649020219293674,
+        "a_lo": 0.019585693056282494,
+        "a_hi": 0.9688406034441672,
+        "prop_below_hat": 0.493
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "random_control",
+      "direction_type": "random_control"
+    },
+    "domain_content_writing_L4": {
+      "label": "domain_content_writing_L4",
+      "point": 2.7194922416687053,
+      "boot_mean": 2.7108017232901664,
+      "n_boot": 1816,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        1.3782473655700755,
+        4.060737117767335
+      ],
+      "percentile_ci95": [
+        1.3782473655700755,
+        4.060737117767335
+      ],
+      "bca_width": 2.6824897521972595,
+      "percentile_width": 2.6824897521972595,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": -0.2411080602889661,
+        "acceleration": 0.0,
+        "a_lo": 0.0072994306709577295,
+        "a_hi": 0.9302623612876425,
+        "prop_below_hat": 0.40473568281938327
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "domain_content",
+      "direction_type": "learned_control"
+    },
+    "domain_content_therapy_L4": {
+      "label": "domain_content_therapy_L4",
+      "point": 1.0728814601898193,
+      "boot_mean": 1.0723752421988773,
+      "n_boot": 1788,
+      "n_jack": 8,
+      "n_transcripts": 8,
+      "ci_method": "bca_joint",
+      "bca_ci95": [
+        0.49514671478271666,
+        1.650616205596922
+      ],
+      "percentile_ci95": [
+        0.49514671478271666,
+        1.650616205596922
+      ],
+      "bca_width": 1.1554694908142054,
+      "percentile_width": 1.1554694908142054,
+      "bca_excludes_zero": true,
+      "percentile_excludes_zero": true,
+      "bca_diagnostics": {
+        "method": "bca",
+        "z0": -0.2797855241389352,
+        "acceleration": 0.0,
+        "a_lo": 0.005875497281286002,
+        "a_hi": 0.9193021581724061,
+        "prop_below_hat": 0.38982102908277405
+      },
+      "note": "Joint: each replicate forms transcript-level \u0394=\u03b5*_tool\u2212\u03b5*_prose from paired modes, then aggregates directions. BCa with jackknife over transcripts. Percentile retained as pathology check (\u00a73).",
+      "kind": "domain_content",
+      "direction_type": "learned_control"
+    }
+  }
+}

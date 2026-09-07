@@ -1,0 +1,5348 @@
+{
+  "protocol": "Phase 9E offline \u0393-planner",
+  "seed": 20260924,
+  "n_rollouts": 64,
+  "max_steps": 6,
+  "definitions": {
+    "Gamma": "P(E\u2193)-P(E\u2191) from empirical kernel",
+    "a_star": "argmax_a Gamma(a|s,m*)",
+    "fixed": "H\u2192C\u2192O first differing bit"
+  },
+  "coverage": {
+    "010|C": 9,
+    "010|H": 9,
+    "010|O": 1,
+    "011|C": 4,
+    "011|H": 4,
+    "011|O": 1,
+    "100|C": 14,
+    "100|H": 13,
+    "100|O": 10,
+    "101|C": 2,
+    "101|H": 2,
+    "101|O": 10,
+    "110|H": 2,
+    "110|O": 1,
+    "111|C": 3,
+    "111|H": 2,
+    "111|O": 9
+  },
+  "examples_gamma": {
+    "010_vs_000": {
+      "by_a": {
+        "H": {
+          "n": 9,
+          "Gamma": -0.7777777777777778,
+          "P_down": 0.0,
+          "P_up": 0.7777777777777778,
+          "P_neutral": 0.2222222222222222,
+          "P_shift": 0.8888888888888888,
+          "mean_dE": 1.0,
+          "P_hit": 0.0,
+          "after_hist": {
+            "010": 1,
+            "101": 2,
+            "111": 2,
+            "011": 3,
+            "100": 1
+          }
+        },
+        "C": {
+          "n": 9,
+          "Gamma": -0.5555555555555556,
+          "P_down": 0.0,
+          "P_up": 0.5555555555555556,
+          "P_neutral": 0.4444444444444444,
+          "P_shift": 1.0,
+          "mean_dE": 0.5555555555555556,
+          "P_hit": 0.0,
+          "after_hist": {
+            "100": 4,
+            "011": 1,
+            "101": 4
+          }
+        },
+        "O": {
+          "n": 1,
+          "Gamma": -1.0,
+          "P_down": 0.0,
+          "P_up": 1.0,
+          "P_neutral": 0.0,
+          "P_shift": 1.0,
+          "mean_dE": 1.0,
+          "P_hit": 0.0,
+          "after_hist": {
+            "011": 1
+          }
+        }
+      },
+      "a_star": "C",
+      "Gamma_star": -0.5555555555555556,
+      "n_actions_available": 3
+    },
+    "010_vs_111": {
+      "by_a": {
+        "H": {
+          "n": 9,
+          "Gamma": 0.7777777777777778,
+          "P_down": 0.7777777777777778,
+          "P_up": 0.0,
+          "P_neutral": 0.2222222222222222,
+          "P_shift": 0.8888888888888888,
+          "mean_dE": -1.0,
+          "P_hit": 0.2222222222222222,
+          "after_hist": {
+            "010": 1,
+            "101": 2,
+            "111": 2,
+            "011": 3,
+            "100": 1
+          }
+        },
+        "C": {
+          "n": 9,
+          "Gamma": 0.5555555555555556,
+          "P_down": 0.5555555555555556,
+          "P_up": 0.0,
+          "P_neutral": 0.4444444444444444,
+          "P_shift": 1.0,
+          "mean_dE": -0.5555555555555556,
+          "P_hit": 0.0,
+          "after_hist": {
+            "100": 4,
+            "011": 1,
+            "101": 4
+          }
+        },
+        "O": {
+          "n": 1,
+          "Gamma": 1.0,
+          "P_down": 1.0,
+          "P_up": 0.0,
+          "P_neutral": 0.0,
+          "P_shift": 1.0,
+          "mean_dE": -1.0,
+          "P_hit": 0.0,
+          "after_hist": {
+            "011": 1
+          }
+        }
+      },
+      "a_star": "O",
+      "Gamma_star": 1.0,
+      "n_actions_available": 3
+    },
+    "100_vs_000": {
+      "by_a": {
+        "H": {
+          "n": 13,
+          "Gamma": -0.46153846153846156,
+          "P_down": 0.0,
+          "P_up": 0.46153846153846156,
+          "P_neutral": 0.5384615384615384,
+          "P_shift": 0.5384615384615384,
+          "mean_dE": 0.7692307692307693,
+          "P_hit": 0.0,
+          "after_hist": {
+            "100": 6,
+            "010": 1,
+            "101": 2,
+            "111": 4
+          }
+        },
+        "C": {
+          "n": 14,
+          "Gamma": -0.5714285714285714,
+          "P_down": 0.0,
+          "P_up": 0.5714285714285714,
+          "P_neutral": 0.42857142857142855,
+          "P_shift": 0.5714285714285714,
+          "mean_dE": 0.7142857142857143,
+          "P_hit": 0.0,
+          "after_hist": {
+            "100": 6,
+            "011": 3,
+            "101": 1,
+            "111": 2,
+            "110": 2
+          }
+        },
+        "O": {
+          "n": 10,
+          "Gamma": -0.8,
+          "P_down": 0.0,
+          "P_up": 0.8,
+          "P_neutral": 0.2,
+          "P_shift": 0.8,
+          "mean_dE": 0.8,
+          "P_hit": 0.0,
+          "after_hist": {
+            "011": 8,
+            "100": 2
+          }
+        }
+      },
+      "a_star": "H",
+      "Gamma_star": -0.46153846153846156,
+      "n_actions_available": 3
+    },
+    "100_vs_111": {
+      "by_a": {
+        "H": {
+          "n": 13,
+          "Gamma": 0.46153846153846156,
+          "P_down": 0.46153846153846156,
+          "P_up": 0.0,
+          "P_neutral": 0.5384615384615384,
+          "P_shift": 0.5384615384615384,
+          "mean_dE": -0.7692307692307693,
+          "P_hit": 0.3076923076923077,
+          "after_hist": {
+            "100": 6,
+            "010": 1,
+            "101": 2,
+            "111": 4
+          }
+        },
+        "C": {
+          "n": 14,
+          "Gamma": 0.5714285714285714,
+          "P_down": 0.5714285714285714,
+          "P_up": 0.0,
+          "P_neutral": 0.42857142857142855,
+          "P_shift": 0.5714285714285714,
+          "mean_dE": -0.7142857142857143,
+          "P_hit": 0.14285714285714285,
+          "after_hist": {
+            "100": 6,
+            "011": 3,
+            "101": 1,
+            "111": 2,
+            "110": 2
+          }
+        },
+        "O": {
+          "n": 10,
+          "Gamma": 0.8,
+          "P_down": 0.8,
+          "P_up": 0.0,
+          "P_neutral": 0.2,
+          "P_shift": 0.8,
+          "mean_dE": -0.8,
+          "P_hit": 0.0,
+          "after_hist": {
+            "011": 8,
+            "100": 2
+          }
+        }
+      },
+      "a_star": "O",
+      "Gamma_star": 0.8,
+      "n_actions_available": 3
+    },
+    "101_vs_111": {
+      "by_a": {
+        "H": {
+          "n": 2,
+          "Gamma": 0.0,
+          "P_down": 0.5,
+          "P_up": 0.5,
+          "P_neutral": 0.0,
+          "P_shift": 1.0,
+          "mean_dE": 0.0,
+          "P_hit": 0.5,
+          "after_hist": {
+            "111": 1,
+            "100": 1
+          }
+        },
+        "C": {
+          "n": 2,
+          "Gamma": -0.5,
+          "P_down": 0.0,
+          "P_up": 0.5,
+          "P_neutral": 0.5,
+          "P_shift": 0.5,
+          "mean_dE": 0.5,
+          "P_hit": 0.0,
+          "after_hist": {
+            "100": 1,
+            "101": 1
+          }
+        },
+        "O": {
+          "n": 10,
+          "Gamma": -0.4,
+          "P_down": 0.0,
+          "P_up": 0.4,
+          "P_neutral": 0.6,
+          "P_shift": 1.0,
+          "mean_dE": 0.4,
+          "P_hit": 0.0,
+          "after_hist": {
+            "011": 6,
+            "010": 3,
+            "100": 1
+          }
+        }
+      },
+      "a_star": "H",
+      "Gamma_star": 0.0,
+      "n_actions_available": 3
+    }
+  },
+  "by_mstar": {
+    "000": {
+      "best_gamma": {
+        "s0": "010",
+        "P_hit": 0.0,
+        "mean_E": 1.609375
+      },
+      "best_fixed": {
+        "s0": "010",
+        "P_hit": 0.0,
+        "mean_E": 2.25
+      },
+      "reachable_gamma": false,
+      "reachable_fixed": false,
+      "mean_delta_P_hit": 0.0,
+      "n_pairs": 6
+    },
+    "001": {
+      "best_gamma": {
+        "s0": "010",
+        "P_hit": 0.0,
+        "mean_E": 1.0
+      },
+      "best_fixed": {
+        "s0": "010",
+        "P_hit": 0.0,
+        "mean_E": 1.75
+      },
+      "reachable_gamma": false,
+      "reachable_fixed": false,
+      "mean_delta_P_hit": 0.0,
+      "n_pairs": 6
+    },
+    "010": {
+      "best_gamma": {
+        "s0": "110",
+        "P_hit": 1.0,
+        "mean_E": 0.0
+      },
+      "best_fixed": {
+        "s0": "100",
+        "P_hit": 0.15625,
+        "mean_E": 1.390625
+      },
+      "reachable_gamma": true,
+      "reachable_fixed": true,
+      "mean_delta_P_hit": 0.2625,
+      "n_pairs": 5
+    },
+    "011": {
+      "best_gamma": {
+        "s0": "010",
+        "P_hit": 1.0,
+        "mean_E": 0.0
+      },
+      "best_fixed": {
+        "s0": "010",
+        "P_hit": 1.0,
+        "mean_E": 0.0
+      },
+      "reachable_gamma": true,
+      "reachable_fixed": true,
+      "mean_delta_P_hit": 0.509375,
+      "n_pairs": 5
+    },
+    "100": {
+      "best_gamma": {
+        "s0": "101",
+        "P_hit": 1.0,
+        "mean_E": 0.0
+      },
+      "best_fixed": {
+        "s0": "011",
+        "P_hit": 0.96875,
+        "mean_E": 0.09375
+      },
+      "reachable_gamma": true,
+      "reachable_fixed": true,
+      "mean_delta_P_hit": 0.30625,
+      "n_pairs": 5
+    },
+    "101": {
+      "best_gamma": {
+        "s0": "010",
+        "P_hit": 0.859375,
+        "mean_E": 0.140625
+      },
+      "best_fixed": {
+        "s0": "010",
+        "P_hit": 0.375,
+        "mean_E": 0.9375
+      },
+      "reachable_gamma": true,
+      "reachable_fixed": true,
+      "mean_delta_P_hit": 0.678125,
+      "n_pairs": 5
+    },
+    "110": {
+      "best_gamma": {
+        "s0": "011",
+        "P_hit": 0.328125,
+        "mean_E": 0.8125
+      },
+      "best_fixed": {
+        "s0": "010",
+        "P_hit": 0.0,
+        "mean_E": 1.578125
+      },
+      "reachable_gamma": true,
+      "reachable_fixed": false,
+      "mean_delta_P_hit": 0.184375,
+      "n_pairs": 5
+    },
+    "111": {
+      "best_gamma": {
+        "s0": "101",
+        "P_hit": 0.515625,
+        "mean_E": 0.484375
+      },
+      "best_fixed": {
+        "s0": "100",
+        "P_hit": 0.953125,
+        "mean_E": 0.09375
+      },
+      "reachable_gamma": true,
+      "reachable_fixed": true,
+      "mean_delta_P_hit": -0.653125,
+      "n_pairs": 5
+    }
+  },
+  "pair_results_summary": [
+    {
+      "s0": "110",
+      "mstar": "010",
+      "P_hit_gamma": 1.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 1.0,
+      "delta_mean_E": 1.0,
+      "mean_E_gamma": 0.0,
+      "mean_E_fixed": 1.0
+    },
+    {
+      "s0": "110",
+      "mstar": "011",
+      "P_hit_gamma": 1.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 1.0,
+      "delta_mean_E": 2.0,
+      "mean_E_gamma": 0.0,
+      "mean_E_fixed": 2.0
+    },
+    {
+      "s0": "111",
+      "mstar": "100",
+      "P_hit_gamma": 0.890625,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.890625,
+      "delta_mean_E": 1.796875,
+      "mean_E_gamma": 0.203125,
+      "mean_E_fixed": 2.0
+    },
+    {
+      "s0": "111",
+      "mstar": "101",
+      "P_hit_gamma": 0.8125,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.8125,
+      "delta_mean_E": 0.71875,
+      "mean_E_gamma": 0.28125,
+      "mean_E_fixed": 1.0
+    },
+    {
+      "s0": "100",
+      "mstar": "101",
+      "P_hit_gamma": 0.765625,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.765625,
+      "delta_mean_E": 1.375,
+      "mean_E_gamma": 0.3125,
+      "mean_E_fixed": 1.6875
+    },
+    {
+      "s0": "011",
+      "mstar": "101",
+      "P_hit_gamma": 0.6875,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.6875,
+      "delta_mean_E": 1.21875,
+      "mean_E_gamma": 0.375,
+      "mean_E_fixed": 1.59375
+    },
+    {
+      "s0": "110",
+      "mstar": "101",
+      "P_hit_gamma": 0.78125,
+      "P_hit_fixed": 0.140625,
+      "delta_P_hit": 0.640625,
+      "delta_mean_E": 0.78125,
+      "mean_E_gamma": 0.25,
+      "mean_E_fixed": 1.03125
+    },
+    {
+      "s0": "101",
+      "mstar": "011",
+      "P_hit_gamma": 1.0,
+      "P_hit_fixed": 0.421875,
+      "delta_P_hit": 0.578125,
+      "delta_mean_E": 1.203125,
+      "mean_E_gamma": 0.0,
+      "mean_E_fixed": 1.203125
+    },
+    {
+      "s0": "110",
+      "mstar": "100",
+      "P_hit_gamma": 0.859375,
+      "P_hit_fixed": 0.359375,
+      "delta_P_hit": 0.5,
+      "delta_mean_E": 1.125,
+      "mean_E_gamma": 0.21875,
+      "mean_E_fixed": 1.34375
+    },
+    {
+      "s0": "010",
+      "mstar": "101",
+      "P_hit_gamma": 0.859375,
+      "P_hit_fixed": 0.375,
+      "delta_P_hit": 0.484375,
+      "delta_mean_E": 0.796875,
+      "mean_E_gamma": 0.140625,
+      "mean_E_fixed": 0.9375
+    },
+    {
+      "s0": "100",
+      "mstar": "011",
+      "P_hit_gamma": 1.0,
+      "P_hit_fixed": 0.515625,
+      "delta_P_hit": 0.484375,
+      "delta_mean_E": 1.0,
+      "mean_E_gamma": 0.0,
+      "mean_E_fixed": 1.0
+    },
+    {
+      "s0": "111",
+      "mstar": "011",
+      "P_hit_gamma": 1.0,
+      "P_hit_fixed": 0.515625,
+      "delta_P_hit": 0.484375,
+      "delta_mean_E": 0.875,
+      "mean_E_gamma": 0.0,
+      "mean_E_fixed": 0.875
+    },
+    {
+      "s0": "011",
+      "mstar": "110",
+      "P_hit_gamma": 0.328125,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.328125,
+      "delta_mean_E": 1.15625,
+      "mean_E_gamma": 0.8125,
+      "mean_E_fixed": 1.96875
+    },
+    {
+      "s0": "111",
+      "mstar": "010",
+      "P_hit_gamma": 0.421875,
+      "P_hit_fixed": 0.09375,
+      "delta_P_hit": 0.328125,
+      "delta_mean_E": 0.875,
+      "mean_E_gamma": 0.578125,
+      "mean_E_fixed": 1.453125
+    },
+    {
+      "s0": "010",
+      "mstar": "100",
+      "P_hit_gamma": 0.953125,
+      "P_hit_fixed": 0.671875,
+      "delta_P_hit": 0.28125,
+      "delta_mean_E": 0.625,
+      "mean_E_gamma": 0.0625,
+      "mean_E_fixed": 0.6875
+    },
+    {
+      "s0": "100",
+      "mstar": "110",
+      "P_hit_gamma": 0.265625,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.265625,
+      "delta_mean_E": 0.84375,
+      "mean_E_gamma": 0.859375,
+      "mean_E_fixed": 1.703125
+    },
+    {
+      "s0": "010",
+      "mstar": "110",
+      "P_hit_gamma": 0.1875,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.1875,
+      "delta_mean_E": 0.65625,
+      "mean_E_gamma": 0.921875,
+      "mean_E_fixed": 1.578125
+    },
+    {
+      "s0": "101",
+      "mstar": "010",
+      "P_hit_gamma": 0.25,
+      "P_hit_fixed": 0.109375,
+      "delta_P_hit": 0.140625,
+      "delta_mean_E": 0.84375,
+      "mean_E_gamma": 0.75,
+      "mean_E_fixed": 1.59375
+    },
+    {
+      "s0": "101",
+      "mstar": "110",
+      "P_hit_gamma": 0.140625,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.140625,
+      "delta_mean_E": 0.6875,
+      "mean_E_gamma": 0.890625,
+      "mean_E_fixed": 1.578125
+    },
+    {
+      "s0": "101",
+      "mstar": "100",
+      "P_hit_gamma": 1.0,
+      "P_hit_fixed": 0.90625,
+      "delta_P_hit": 0.09375,
+      "delta_mean_E": 0.25,
+      "mean_E_gamma": 0.0,
+      "mean_E_fixed": 0.25
+    },
+    {
+      "s0": "010",
+      "mstar": "000",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.640625,
+      "mean_E_gamma": 1.609375,
+      "mean_E_fixed": 2.25
+    },
+    {
+      "s0": "010",
+      "mstar": "001",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.75,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 1.75
+    },
+    {
+      "s0": "010",
+      "mstar": "011",
+      "P_hit_gamma": 1.0,
+      "P_hit_fixed": 1.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.0,
+      "mean_E_gamma": 0.0,
+      "mean_E_fixed": 0.0
+    },
+    {
+      "s0": "011",
+      "mstar": "000",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.65625,
+      "mean_E_gamma": 1.609375,
+      "mean_E_fixed": 2.265625
+    },
+    {
+      "s0": "011",
+      "mstar": "001",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.765625,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 1.765625
+    },
+    {
+      "s0": "011",
+      "mstar": "010",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.0,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 1.0
+    },
+    {
+      "s0": "100",
+      "mstar": "000",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.5,
+      "mean_E_gamma": 1.65625,
+      "mean_E_fixed": 2.15625
+    },
+    {
+      "s0": "100",
+      "mstar": "001",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.78125,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 1.78125
+    },
+    {
+      "s0": "101",
+      "mstar": "000",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.515625,
+      "mean_E_gamma": 1.59375,
+      "mean_E_fixed": 2.109375
+    },
+    {
+      "s0": "101",
+      "mstar": "001",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.828125,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 1.828125
+    },
+    {
+      "s0": "110",
+      "mstar": "000",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.953125,
+      "mean_E_gamma": 1.625,
+      "mean_E_fixed": 2.578125
+    },
+    {
+      "s0": "110",
+      "mstar": "001",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.921875,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 1.921875
+    },
+    {
+      "s0": "111",
+      "mstar": "000",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 1.265625,
+      "mean_E_gamma": 1.734375,
+      "mean_E_fixed": 3.0
+    },
+    {
+      "s0": "111",
+      "mstar": "001",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 1.0,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 2.0
+    },
+    {
+      "s0": "111",
+      "mstar": "110",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.0,
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.5625,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 1.5625
+    },
+    {
+      "s0": "100",
+      "mstar": "010",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.15625,
+      "delta_P_hit": -0.15625,
+      "delta_mean_E": 0.390625,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 1.390625
+    },
+    {
+      "s0": "011",
+      "mstar": "100",
+      "P_hit_gamma": 0.734375,
+      "P_hit_fixed": 0.96875,
+      "delta_P_hit": -0.234375,
+      "delta_mean_E": -0.421875,
+      "mean_E_gamma": 0.515625,
+      "mean_E_fixed": 0.09375
+    },
+    {
+      "s0": "110",
+      "mstar": "111",
+      "P_hit_gamma": 0.5,
+      "P_hit_fixed": 0.8125,
+      "delta_P_hit": -0.3125,
+      "delta_mean_E": -0.171875,
+      "mean_E_gamma": 0.5,
+      "mean_E_fixed": 0.328125
+    },
+    {
+      "s0": "101",
+      "mstar": "111",
+      "P_hit_gamma": 0.515625,
+      "P_hit_fixed": 0.953125,
+      "delta_P_hit": -0.4375,
+      "delta_mean_E": -0.390625,
+      "mean_E_gamma": 0.484375,
+      "mean_E_fixed": 0.09375
+    },
+    {
+      "s0": "011",
+      "mstar": "111",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.6875,
+      "delta_P_hit": -0.6875,
+      "delta_mean_E": -0.375,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 0.625
+    },
+    {
+      "s0": "010",
+      "mstar": "111",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.875,
+      "delta_P_hit": -0.875,
+      "delta_mean_E": -0.765625,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 0.234375
+    },
+    {
+      "s0": "100",
+      "mstar": "111",
+      "P_hit_gamma": 0.0,
+      "P_hit_fixed": 0.953125,
+      "delta_P_hit": -0.953125,
+      "delta_mean_E": -0.90625,
+      "mean_E_gamma": 1.0,
+      "mean_E_fixed": 0.09375
+    }
+  ],
+  "retrospective": {
+    "n_comparisons": 672,
+    "P_agree": 0.33630952380952384,
+    "P_gamma_better_mean_dE": 0.6086309523809523,
+    "P_gamma_worse_mean_dE": 0.020833333333333332,
+    "P_gamma_strictly_higher_G": 0.6339285714285714,
+    "disagreement_examples": [
+      {
+        "s": "100",
+        "mstar": "000",
+        "a_taken": "C",
+        "a_gamma": "H",
+        "Gamma_taken": -0.5714285714285714,
+        "Gamma_gamma": -0.46153846153846156,
+        "mean_dE_taken": 0.7142857142857143,
+        "mean_dE_gamma": 0.7692307692307693,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "100",
+        "mstar": "001",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.14285714285714285,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": -0.14285714285714285,
+        "mean_dE_gamma": -0.8,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "100",
+        "mstar": "010",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.2857142857142857,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": -0.2857142857142857,
+        "mean_dE_gamma": -0.8,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "100",
+        "mstar": "011",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.5714285714285714,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": -1.1428571428571428,
+        "mean_dE_gamma": -2.4,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "100",
+        "mstar": "101",
+        "a_taken": "C",
+        "a_gamma": "H",
+        "Gamma_taken": -0.2857142857142857,
+        "Gamma_gamma": 0.07692307692307693,
+        "mean_dE_taken": 0.2857142857142857,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "100",
+        "mstar": "111",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.5714285714285714,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": -0.7142857142857143,
+        "mean_dE_gamma": -0.8,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "100",
+        "mstar": "000",
+        "a_taken": "C",
+        "a_gamma": "H",
+        "Gamma_taken": -0.5714285714285714,
+        "Gamma_gamma": -0.46153846153846156,
+        "mean_dE_taken": 0.7142857142857143,
+        "mean_dE_gamma": 0.7692307692307693,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "100",
+        "mstar": "001",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.14285714285714285,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": -0.14285714285714285,
+        "mean_dE_gamma": -0.8,
+        "realized_dE_taken": -1
+      },
+      {
+        "s": "100",
+        "mstar": "010",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.2857142857142857,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": -0.2857142857142857,
+        "mean_dE_gamma": -0.8,
+        "realized_dE_taken": -1
+      },
+      {
+        "s": "100",
+        "mstar": "011",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.5714285714285714,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": -1.1428571428571428,
+        "mean_dE_gamma": -2.4,
+        "realized_dE_taken": -3
+      },
+      {
+        "s": "100",
+        "mstar": "101",
+        "a_taken": "C",
+        "a_gamma": "H",
+        "Gamma_taken": -0.2857142857142857,
+        "Gamma_gamma": 0.07692307692307693,
+        "mean_dE_taken": 0.2857142857142857,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "100",
+        "mstar": "111",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.5714285714285714,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": -0.7142857142857143,
+        "mean_dE_gamma": -0.8,
+        "realized_dE_taken": -1
+      },
+      {
+        "s": "110",
+        "mstar": "000",
+        "a_taken": "H",
+        "a_gamma": "O",
+        "Gamma_taken": 0.0,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": 0.0,
+        "mean_dE_gamma": -1.0,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "110",
+        "mstar": "010",
+        "a_taken": "H",
+        "a_gamma": "O",
+        "Gamma_taken": 0.0,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": 0.0,
+        "mean_dE_gamma": -1.0,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "011",
+        "mstar": "001",
+        "a_taken": "H",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.0,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "011",
+        "mstar": "010",
+        "a_taken": "H",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.0,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "011",
+        "mstar": "100",
+        "a_taken": "H",
+        "a_gamma": "C",
+        "Gamma_taken": 0.5,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": -1.5,
+        "mean_dE_gamma": -1.75,
+        "realized_dE_taken": -3
+      },
+      {
+        "s": "011",
+        "mstar": "101",
+        "a_taken": "H",
+        "a_gamma": "C",
+        "Gamma_taken": 0.5,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": -0.5,
+        "mean_dE_gamma": -1.25,
+        "realized_dE_taken": -1
+      },
+      {
+        "s": "011",
+        "mstar": "111",
+        "a_taken": "H",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.0,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "100",
+        "mstar": "000",
+        "a_taken": "O",
+        "a_gamma": "H",
+        "Gamma_taken": -0.8,
+        "Gamma_gamma": -0.46153846153846156,
+        "mean_dE_taken": 0.8,
+        "mean_dE_gamma": 0.7692307692307693,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "100",
+        "mstar": "101",
+        "a_taken": "O",
+        "a_gamma": "H",
+        "Gamma_taken": -0.8,
+        "Gamma_gamma": 0.07692307692307693,
+        "mean_dE_taken": 0.8,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "100",
+        "mstar": "110",
+        "a_taken": "O",
+        "a_gamma": "C",
+        "Gamma_taken": -0.8,
+        "Gamma_gamma": -0.14285714285714285,
+        "mean_dE_taken": 0.8,
+        "mean_dE_gamma": 0.14285714285714285,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "100",
+        "mstar": "000",
+        "a_taken": "O",
+        "a_gamma": "H",
+        "Gamma_taken": -0.8,
+        "Gamma_gamma": -0.46153846153846156,
+        "mean_dE_taken": 0.8,
+        "mean_dE_gamma": 0.7692307692307693,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "100",
+        "mstar": "101",
+        "a_taken": "O",
+        "a_gamma": "H",
+        "Gamma_taken": -0.8,
+        "Gamma_gamma": 0.07692307692307693,
+        "mean_dE_taken": 0.8,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "100",
+        "mstar": "110",
+        "a_taken": "O",
+        "a_gamma": "C",
+        "Gamma_taken": -0.8,
+        "Gamma_gamma": -0.14285714285714285,
+        "mean_dE_taken": 0.8,
+        "mean_dE_gamma": 0.14285714285714285,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "101",
+        "mstar": "001",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": -0.4,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.4,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "101",
+        "mstar": "010",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.5,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": -0.5,
+        "mean_dE_gamma": -2.2,
+        "realized_dE_taken": -1
+      },
+      {
+        "s": "101",
+        "mstar": "011",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": -1.4,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "101",
+        "mstar": "110",
+        "a_taken": "C",
+        "a_gamma": "H",
+        "Gamma_taken": 0.5,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": -0.5,
+        "mean_dE_gamma": -1.0,
+        "realized_dE_taken": -1
+      },
+      {
+        "s": "101",
+        "mstar": "111",
+        "a_taken": "C",
+        "a_gamma": "H",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.0,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 1
+      },
+      {
+        "s": "101",
+        "mstar": "001",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": -0.4,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.4,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "101",
+        "mstar": "010",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": 0.5,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": -0.5,
+        "mean_dE_gamma": -2.2,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "101",
+        "mstar": "011",
+        "a_taken": "C",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.8,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": -1.4,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "101",
+        "mstar": "110",
+        "a_taken": "C",
+        "a_gamma": "H",
+        "Gamma_taken": 0.5,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": -0.5,
+        "mean_dE_gamma": -1.0,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "101",
+        "mstar": "111",
+        "a_taken": "C",
+        "a_gamma": "H",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.0,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "011",
+        "mstar": "001",
+        "a_taken": "H",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.0,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "011",
+        "mstar": "010",
+        "a_taken": "H",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.0,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "011",
+        "mstar": "100",
+        "a_taken": "H",
+        "a_gamma": "C",
+        "Gamma_taken": 0.5,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": -1.5,
+        "mean_dE_gamma": -1.75,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "011",
+        "mstar": "101",
+        "a_taken": "H",
+        "a_gamma": "C",
+        "Gamma_taken": 0.5,
+        "Gamma_gamma": 1.0,
+        "mean_dE_taken": -0.5,
+        "mean_dE_gamma": -1.25,
+        "realized_dE_taken": 0
+      },
+      {
+        "s": "011",
+        "mstar": "111",
+        "a_taken": "H",
+        "a_gamma": "O",
+        "Gamma_taken": -0.5,
+        "Gamma_gamma": 0.0,
+        "mean_dE_taken": 0.5,
+        "mean_dE_gamma": 0.0,
+        "realized_dE_taken": 0
+      }
+    ]
+  },
+  "gate": {
+    "hypothesis": "Target-conditioned a*=argmax \u0393 beats fixed H\u2192C\u2192O on offline empirical rollouts without new actuators",
+    "n_transitions": 96,
+    "n_kernel_cells": 17,
+    "n_pair_sims": 42,
+    "mean_delta_P_hit_gamma_minus_fixed": 0.15327380952380953,
+    "n_pairs_gamma_wins": 20,
+    "n_pairs_fixed_wins": 7,
+    "n_pairs_tie": 15,
+    "n_mstar_reachable_gamma": 6,
+    "n_mstar_reachable_fixed": 5,
+    "retro_P_agree": 0.33630952380952384,
+    "retro_P_gamma_better_mean_dE": 0.6086309523809523,
+    "coverage_gap_states": [
+      "000",
+      "001"
+    ],
+    "read": "Offline only. Positive mean \u0394P_hit favors deploying \u0393-choice in-loop next; coverage gaps (e.g. 000/001 as s0) limit claims of universal 8-way."
+  },
+  "pair_examples": [
+    {
+      "s0": "010",
+      "mstar": "000",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 1.609375,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "100",
+              "111",
+              "011",
+              "100",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              }
+            ],
+            "E_final": 3,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.3333333333333333
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "101",
+              "101",
+              "101",
+              "101",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              }
+            ],
+            "E_final": 3,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.3333333333333333
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "101",
+              "100",
+              "100",
+              "010",
+              "101",
+              "100"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 2.25,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "010",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 3,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.3333333333333333
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "101",
+              "101",
+              "100",
+              "011",
+              "100",
+              "100"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "101",
+              "101",
+              "101",
+              "100",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          }
+        ]
+      },
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.640625
+    },
+    {
+      "s0": "010",
+      "mstar": "110",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.1875,
+        "P_stuck": 0.0,
+        "mean_E_final": 0.921875,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "010",
+              "101",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.0,
+        "P_stuck": 0.140625,
+        "mean_E_final": 1.578125,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "100",
+              "010",
+              "100",
+              "111",
+              "011",
+              "101"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "011",
+              "111",
+              "011",
+              "100",
+              "100",
+              "101"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "100",
+              "111",
+              "010",
+              "100",
+              "101",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          }
+        ]
+      },
+      "delta_P_hit": 0.1875,
+      "delta_mean_E": 0.65625
+    },
+    {
+      "s0": "010",
+      "mstar": "111",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 1.0,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "010",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.875,
+        "P_stuck": 0.03125,
+        "mean_E_final": 0.234375,
+        "examples": [
+          {
+            "hit": 1,
+            "path": [
+              "010",
+              "100",
+              "010",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -2
+              }
+            ],
+            "E_final": 0,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 4,
+            "mean_dE_step": -0.5
+          },
+          {
+            "hit": 1,
+            "path": [
+              "010",
+              "011",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 0,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 2,
+            "mean_dE_step": -1.0
+          },
+          {
+            "hit": 1,
+            "path": [
+              "010",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -2
+              }
+            ],
+            "E_final": 0,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 2,
+            "mean_dE_step": -1.0
+          }
+        ]
+      },
+      "delta_P_hit": -0.875,
+      "delta_mean_E": -0.765625
+    },
+    {
+      "s0": "011",
+      "mstar": "000",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 1.609375,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "100",
+              "111",
+              "011",
+              "100",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              }
+            ],
+            "E_final": 3,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "011",
+              "100",
+              "100",
+              "100",
+              "100",
+              "010"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "011",
+              "100",
+              "010",
+              "101",
+              "101",
+              "100"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 2.265625,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "100",
+              "101",
+              "101",
+              "101",
+              "101",
+              "101"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "100",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 3,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "100",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 3,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          }
+        ]
+      },
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.65625
+    },
+    {
+      "s0": "011",
+      "mstar": "110",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.328125,
+        "P_stuck": 0.0,
+        "mean_E_final": 0.8125,
+        "examples": [
+          {
+            "hit": 1,
+            "path": [
+              "011",
+              "011",
+              "100",
+              "110"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "110",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 0,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 3,
+            "mean_dE_step": -0.6666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "011",
+              "100",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "011",
+              "100",
+              "101",
+              "100",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.0,
+        "P_stuck": 0.359375,
+        "mean_E_final": 1.96875,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "001"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "001",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": false
+              }
+            ],
+            "E_final": 3,
+            "E0": 2,
+            "stuck": true,
+            "n_steps": 2,
+            "mean_dE_step": 1.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "001"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "001",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": false
+              }
+            ],
+            "E_final": 3,
+            "E0": 2,
+            "stuck": true,
+            "n_steps": 2,
+            "mean_dE_step": 1.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "111",
+              "010",
+              "100",
+              "101",
+              "111",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              }
+            ],
+            "E_final": 2,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          }
+        ]
+      },
+      "delta_P_hit": 0.328125,
+      "delta_mean_E": 1.15625
+    },
+    {
+      "s0": "011",
+      "mstar": "111",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 1.0,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.6875,
+        "P_stuck": 0.28125,
+        "mean_E_final": 0.625,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "001"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "001",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": false
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": true,
+            "n_steps": 2,
+            "mean_dE_step": 1.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "011",
+              "001"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "001",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": false
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": true,
+            "n_steps": 2,
+            "mean_dE_step": 1.0
+          },
+          {
+            "hit": 1,
+            "path": [
+              "011",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 0,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 1,
+            "mean_dE_step": -1.0
+          }
+        ]
+      },
+      "delta_P_hit": -0.6875,
+      "delta_mean_E": -0.375
+    },
+    {
+      "s0": "100",
+      "mstar": "000",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 1.65625,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "100",
+              "010",
+              "101",
+              "101",
+              "100",
+              "100"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "111",
+              "010",
+              "100",
+              "111",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": -2
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              }
+            ],
+            "E_final": 3,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.3333333333333333
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 2.15625,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "100",
+              "101",
+              "101",
+              "101",
+              "101",
+              "101"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "110",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "110",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 3,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.3333333333333333
+          },
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "100",
+              "011",
+              "011",
+              "011",
+              "100",
+              "100"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          }
+        ]
+      },
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.5
+    },
+    {
+      "s0": "100",
+      "mstar": "110",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.265625,
+        "P_stuck": 0.0,
+        "mean_E_final": 0.859375,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 1,
+            "path": [
+              "100",
+              "110"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "110",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 0,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 1,
+            "mean_dE_step": -1.0
+          },
+          {
+            "hit": 1,
+            "path": [
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "110"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "110",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 0,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 5,
+            "mean_dE_step": -0.2
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.0,
+        "P_stuck": 0.125,
+        "mean_E_final": 1.703125,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "100",
+              "010",
+              "100",
+              "111",
+              "011",
+              "101"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "100",
+              "100",
+              "100",
+              "111",
+              "011",
+              "100"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "111",
+              "011",
+              "101",
+              "111",
+              "011",
+              "101"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          }
+        ]
+      },
+      "delta_P_hit": 0.265625,
+      "delta_mean_E": 0.84375
+    },
+    {
+      "s0": "100",
+      "mstar": "111",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 1.0,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "100",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "100",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.953125,
+        "P_stuck": 0.0,
+        "mean_E_final": 0.09375,
+        "examples": [
+          {
+            "hit": 1,
+            "path": [
+              "100",
+              "100",
+              "010",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -2
+              }
+            ],
+            "E_final": 0,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 4,
+            "mean_dE_step": -0.5
+          },
+          {
+            "hit": 1,
+            "path": [
+              "100",
+              "100",
+              "100",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -2
+              }
+            ],
+            "E_final": 0,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 4,
+            "mean_dE_step": -0.5
+          },
+          {
+            "hit": 1,
+            "path": [
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -2
+              }
+            ],
+            "E_final": 0,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 1,
+            "mean_dE_step": -2.0
+          }
+        ]
+      },
+      "delta_P_hit": -0.953125,
+      "delta_mean_E": -0.90625
+    },
+    {
+      "s0": "101",
+      "mstar": "000",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 1.59375,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "101",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "101",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "101",
+              "100",
+              "010",
+              "100",
+              "101",
+              "101"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.0,
+        "P_stuck": 0.0,
+        "mean_E_final": 2.109375,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "100",
+              "101",
+              "101",
+              "101",
+              "101",
+              "101"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "100",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 2
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 3,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "101",
+              "101",
+              "100",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          }
+        ]
+      },
+      "delta_P_hit": 0.0,
+      "delta_mean_E": 0.515625
+    },
+    {
+      "s0": "101",
+      "mstar": "110",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.140625,
+        "P_stuck": 0.0,
+        "mean_E_final": 0.890625,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "100",
+              "100",
+              "101",
+              "100",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          },
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.0,
+        "P_stuck": 0.15625,
+        "mean_E_final": 1.578125,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "111",
+              "010",
+              "100",
+              "111",
+              "011",
+              "101"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "010",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "101",
+                "dS": 1,
+                "dE": 0
+              }
+            ],
+            "E_final": 2,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "111",
+              "011",
+              "001"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "001",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": false
+              }
+            ],
+            "E_final": 3,
+            "E0": 2,
+            "stuck": true,
+            "n_steps": 4,
+            "mean_dE_step": 0.3333333333333333
+          },
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "100",
+              "100",
+              "111",
+              "011",
+              "100",
+              "100"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "C",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 2,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": -0.16666666666666666
+          }
+        ]
+      },
+      "delta_P_hit": 0.140625,
+      "delta_mean_E": 0.6875
+    },
+    {
+      "s0": "101",
+      "mstar": "111",
+      "n_rollouts": 64,
+      "gamma": {
+        "P_hit": 0.515625,
+        "P_stuck": 0.0,
+        "mean_E_final": 0.484375,
+        "examples": [
+          {
+            "hit": 0,
+            "path": [
+              "101",
+              "100",
+              "011",
+              "011",
+              "011",
+              "011",
+              "011"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 1,
+                "dE": -1
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "O",
+                "ok": true,
+                "S_after": "011",
+                "dS": 0,
+                "dE": 0
+              }
+            ],
+            "E_final": 1,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 6,
+            "mean_dE_step": 0.0
+          },
+          {
+            "hit": 1,
+            "path": [
+              "101",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 0,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 1,
+            "mean_dE_step": -1.0
+          },
+          {
+            "hit": 1,
+            "path": [
+              "101",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 0,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 1,
+            "mean_dE_step": -1.0
+          }
+        ]
+      },
+      "fixed": {
+        "P_hit": 0.953125,
+        "P_stuck": 0.0,
+        "mean_E_final": 0.09375,
+        "examples": [
+          {
+            "hit": 1,
+            "path": [
+              "101",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 0,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 1,
+            "mean_dE_step": -1.0
+          },
+          {
+            "hit": 1,
+            "path": [
+              "101",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -1
+              }
+            ],
+            "E_final": 0,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 1,
+            "mean_dE_step": -1.0
+          },
+          {
+            "hit": 1,
+            "path": [
+              "101",
+              "100",
+              "100",
+              "111"
+            ],
+            "actions": [
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 1,
+                "dE": 1
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "100",
+                "dS": 0,
+                "dE": 0
+              },
+              {
+                "a": "H",
+                "ok": true,
+                "S_after": "111",
+                "dS": 1,
+                "dE": -2
+              }
+            ],
+            "E_final": 0,
+            "E0": 1,
+            "stuck": false,
+            "n_steps": 3,
+            "mean_dE_step": -0.3333333333333333
+          }
+        ]
+      },
+      "delta_P_hit": -0.4375,
+      "delta_mean_E": -0.390625
+    }
+  ]
+}

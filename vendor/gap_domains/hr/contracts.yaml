@@ -1,0 +1,110 @@
+apiVersion: edictum/v1
+kind: ContractBundle
+
+metadata:
+  name: hr-people-operations
+  description: >
+    Governance contracts for an HR/People Operations AI assistant.
+
+defaults:
+  mode: enforce
+
+tools:
+  query_employee_records:
+    side_effect: read
+  query_org_chart:
+    side_effect: read
+  generate_compensation_report:
+    side_effect: read
+  update_performance_review:
+    side_effect: write
+  send_notification:
+    side_effect: write
+
+contracts:
+  # ─── ACCESS CONTROL ────────────────────────────────────────────────
+
+  - id: restrict-employee-pii
+    type: pre
+    tool: query_employee_records
+    when:
+      all:
+        - principal.role: { not_in: [hr_manager, hr_director, department_head] }
+    then:
+      effect: deny
+      message: "Employee data access requires hr_manager, hr_director, or department_head role."
+      tags: [access-control, pii, eeoc]
+
+  # ─── REVIEW APPROVAL ────────────────────────────────────────────────
+
+  - id: review-manager-approval
+    type: pre
+    tool: update_performance_review
+    when:
+      any:
+        - args.approver_code: { equals: "" }
+        - args.approver_code: { exists: false }
+    then:
+      effect: deny
+      message: "Performance reviews require manager approval code."
+      tags: [compliance, eeoc, review-approval]
+
+  # ─── OUTPUT GOVERNANCE ─────────────────────────────────────────────
+
+  - id: salary-confidentiality
+    type: post
+    tool: generate_compensation_report
+    when:
+      output.text:
+        matches_any:
+          - '\b\d{3}-\d{2}-\d{4}\b'                              # SSN
+          - '\$\s*\d{2,3}(,\d{3})*'                               # Salary ($XXX,XXX)
+          - '\bEMP-\d{4,8}\b'                                      # Employee ID
+    then:
+      effect: redact
+      message: "Compensation data (SSN, salary, employee ID) redacted from output."
+      tags: [pii, ccpa, compensation]
+
+  - id: no-medical-access
+    type: post
+    tool: "*"
+    when:
+      output.text:
+        matches_any:
+          - '\b(medical|FMLA|surgical|diagnosis|post-surgical)\b'  # Medical terms
+          - '\b(disability|accommodation|ADA)\b'                   # ADA terms
+          - '\b(leave of absence|medical leave)\b'                 # Leave terms
+    then:
+      effect: deny
+      message: "Medical/FMLA/ADA information detected. Output suppressed."
+      tags: [pii, ada, fmla, hipaa]
+      metadata:
+        severity: critical
+
+  - id: employee-pii-in-output
+    type: post
+    tool: "*"
+    when:
+      output.text:
+        matches_any:
+          - '\b\d{3}-\d{2}-\d{4}\b'                              # SSN
+          - '\b(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])/\d{4}\b'   # DOB (MM/DD/YYYY)
+          - '\b(\+1[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\b'  # US phone
+    then:
+      effect: redact
+      message: "Employee PII (SSN, DOB, phone) redacted from output."
+      tags: [pii, ccpa, gdpr]
+
+  # ─── OPERATIONAL LIMITS ─────────────────────────────────────────────
+
+  - id: session-limits
+    type: session
+    limits:
+      max_tool_calls: 20
+      max_calls_per_tool:
+        update_performance_review: 3
+        send_notification: 5
+    then:
+      effect: deny
+      message: "Session limit reached."
+      tags: [rate-limit, operational-safety]

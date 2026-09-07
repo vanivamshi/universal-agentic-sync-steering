@@ -1,0 +1,3059 @@
+{
+  "protocol": "Phase 9C densify weak edges + Beta-p05 planner",
+  "seed": 20260923,
+  "target_n": 8,
+  "max_attempts": 24,
+  "critical_edges": [
+    "001\u2192000",
+    "010\u2192000",
+    "100\u2192000",
+    "010\u2192110",
+    "100\u2192110",
+    "111\u2192110",
+    "101\u2192100"
+  ],
+  "densified": {
+    "001\u2192000": {
+      "edge": "001\u2192000",
+      "from": [
+        0,
+        0,
+        1
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "channel": "O",
+      "n": 0,
+      "k": 0,
+      "p_hat": null,
+      "p_plan_p05": 0.0,
+      "attempts": 8,
+      "construct_fail": 8,
+      "construct_rate": 0.0
+    },
+    "010\u2192000": {
+      "edge": "010\u2192000",
+      "from": [
+        0,
+        1,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "channel": "H",
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "attempts": 13,
+      "construct_fail": 5,
+      "construct_rate": 0.6153846153846154
+    },
+    "100\u2192000": {
+      "edge": "100\u2192000",
+      "from": [
+        1,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "channel": "C",
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "attempts": 10,
+      "construct_fail": 2,
+      "construct_rate": 0.8
+    },
+    "010\u2192110": {
+      "edge": "010\u2192110",
+      "from": [
+        0,
+        1,
+        0
+      ],
+      "to": [
+        1,
+        1,
+        0
+      ],
+      "channel": "C",
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "attempts": 13,
+      "construct_fail": 5,
+      "construct_rate": 0.6153846153846154
+    },
+    "100\u2192110": {
+      "edge": "100\u2192110",
+      "from": [
+        1,
+        0,
+        0
+      ],
+      "to": [
+        1,
+        1,
+        0
+      ],
+      "channel": "H",
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "attempts": 9,
+      "construct_fail": 1,
+      "construct_rate": 0.8888888888888888
+    },
+    "111\u2192110": {
+      "edge": "111\u2192110",
+      "from": [
+        1,
+        1,
+        1
+      ],
+      "to": [
+        1,
+        1,
+        0
+      ],
+      "channel": "O",
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "attempts": 9,
+      "construct_fail": 1,
+      "construct_rate": 0.8888888888888888
+    },
+    "101\u2192100": {
+      "edge": "101\u2192100",
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        1,
+        0,
+        0
+      ],
+      "channel": "O",
+      "n": 8,
+      "k": 1,
+      "p_hat": 0.125,
+      "p_plan_p05": 0.041023167506996534,
+      "attempts": 16,
+      "construct_fail": 8,
+      "construct_rate": 0.5
+    }
+  },
+  "densified_trials": {
+    "001\u2192000": [],
+    "010\u2192000": [],
+    "100\u2192000": [],
+    "010\u2192110": [],
+    "100\u2192110": [
+      {
+        "attempt": 1,
+        "seed": 20260923,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "S_after_edge": [
+          1,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "H",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              0,
+              1,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "seed": 20260940,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "S_after_edge": [
+          1,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "H",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ]
+      },
+      {
+        "attempt": 3,
+        "seed": 20260957,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "S_after_edge": [
+          1,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "H",
+        "method": "home",
+        "flips": []
+      },
+      {
+        "attempt": 4,
+        "seed": 20260974,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "S_after_edge": [
+          1,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "H",
+        "method": "home",
+        "flips": []
+      },
+      {
+        "attempt": 5,
+        "seed": 20260991,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "S_after_edge": [
+          1,
+          0,
+          0
+        ],
+        "hit": 0,
+        "channel": "H",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              1,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              0
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 1,
+            "channel": "H"
+          }
+        ]
+      },
+      {
+        "attempt": 6,
+        "seed": 20261008,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "S_after_edge": [
+          1,
+          0,
+          0
+        ],
+        "hit": 0,
+        "channel": "H",
+        "method": "home",
+        "flips": []
+      },
+      {
+        "attempt": 7,
+        "seed": 20261025,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "S_after_edge": [
+          1,
+          0,
+          0
+        ],
+        "hit": 0,
+        "channel": "H",
+        "method": "home",
+        "flips": []
+      },
+      {
+        "attempt": 8,
+        "seed": 20261042,
+        "constructed": false,
+        "S_after_construct": [
+          0,
+          0,
+          0
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 1,
+            "channel": "C"
+          },
+          {
+            "from": [
+              1,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "H"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 9,
+        "seed": 20261059,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "S_after_edge": [
+          1,
+          0,
+          0
+        ],
+        "hit": 0,
+        "channel": "H",
+        "method": "home",
+        "flips": []
+      }
+    ],
+    "111\u2192110": [
+      {
+        "attempt": 1,
+        "seed": 20261923,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          1,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home",
+        "flips": []
+      },
+      {
+        "attempt": 2,
+        "seed": 20261940,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          1,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          0
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "soft_bridge_101",
+        "flips": [
+          {
+            "bridge_from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "bridge_from": [
+              1,
+              0,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "H"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "H"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "H"
+          }
+        ]
+      },
+      {
+        "attempt": 3,
+        "seed": 20261957,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          1,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "soft_bridge_101",
+        "flips": [
+          {
+            "bridge_from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "bridge_from": [
+              1,
+              0,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "H"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "H"
+          }
+        ]
+      },
+      {
+        "attempt": 4,
+        "seed": 20261974,
+        "constructed": false,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              0,
+              0,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              0,
+              0,
+              1
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              0,
+              1,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 5,
+        "seed": 20261991,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          1,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          0
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "soft_bridge_011",
+        "flips": [
+          {
+            "bridge_from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              1,
+              0,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 1,
+            "channel": "H"
+          }
+        ]
+      },
+      {
+        "attempt": 6,
+        "seed": 20262008,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          1,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home",
+        "flips": []
+      },
+      {
+        "attempt": 7,
+        "seed": 20262025,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          1,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              0,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 1,
+            "channel": "H"
+          }
+        ]
+      },
+      {
+        "attempt": 8,
+        "seed": 20262042,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          1,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          0
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              0,
+              1,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              0,
+              1,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "H"
+          }
+        ]
+      },
+      {
+        "attempt": 9,
+        "seed": 20262059,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          1,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "soft_bridge_011",
+        "flips": [
+          {
+            "bridge_from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              1,
+              0,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 1,
+            "channel": "H"
+          }
+        ]
+      }
+    ],
+    "101\u2192100": [
+      {
+        "attempt": 1,
+        "seed": 20262923,
+        "constructed": false,
+        "S_after_construct": [
+          1,
+          0,
+          0
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 2,
+        "seed": 20262940,
+        "constructed": false,
+        "S_after_construct": [
+          0,
+          1,
+          1
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 3,
+        "seed": 20262957,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home",
+        "flips": []
+      },
+      {
+        "attempt": 4,
+        "seed": 20262974,
+        "constructed": false,
+        "S_after_construct": [
+          0,
+          1,
+          1
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              0,
+              1,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 5,
+        "seed": 20262991,
+        "constructed": false,
+        "S_after_construct": [
+          0,
+          0,
+          1
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              1,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              0
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 1,
+            "channel": "H"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              0,
+              0,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 6,
+        "seed": 20263008,
+        "constructed": false,
+        "S_after_construct": [
+          0,
+          1,
+          0
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 7,
+        "seed": 20263025,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          0
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home",
+        "flips": []
+      },
+      {
+        "attempt": 8,
+        "seed": 20263042,
+        "constructed": false,
+        "S_after_construct": [
+          0,
+          1,
+          1
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              0,
+              1,
+              0
+            ],
+            "to_target": [
+              1,
+              1,
+              0
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              1,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "H"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 9,
+        "seed": 20263059,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "hit": 1,
+            "channel": "O"
+          }
+        ]
+      },
+      {
+        "attempt": 10,
+        "seed": 20263076,
+        "constructed": false,
+        "S_after_construct": [
+          0,
+          1,
+          1
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "H"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "C"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 11,
+        "seed": 20263093,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ]
+      },
+      {
+        "attempt": 12,
+        "seed": 20263110,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          0
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ]
+      },
+      {
+        "attempt": 13,
+        "seed": 20263127,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          1
+        ],
+        "S_after_edge": [
+          1,
+          0,
+          0
+        ],
+        "hit": 1,
+        "channel": "O",
+        "method": "home",
+        "flips": []
+      },
+      {
+        "attempt": 14,
+        "seed": 20263144,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          0
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "H"
+          },
+          {
+            "from": [
+              1,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "hit": 1,
+            "channel": "H"
+          }
+        ]
+      },
+      {
+        "attempt": 15,
+        "seed": 20263161,
+        "constructed": false,
+        "S_after_construct": [
+          0,
+          1,
+          1
+        ],
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "H"
+          },
+          {
+            "from": [
+              1,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "hit": 0,
+            "channel": "H"
+          },
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          }
+        ],
+        "hit": null
+      },
+      {
+        "attempt": 16,
+        "seed": 20263178,
+        "constructed": true,
+        "S_after_construct": [
+          1,
+          0,
+          1
+        ],
+        "S_after_edge": [
+          0,
+          1,
+          1
+        ],
+        "hit": 0,
+        "channel": "O",
+        "method": "home+flips",
+        "flips": [
+          {
+            "from": [
+              1,
+              0,
+              0
+            ],
+            "to_target": [
+              1,
+              0,
+              1
+            ],
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "hit": 0,
+            "channel": "O"
+          },
+          {
+            "from": [
+              0,
+              1,
+              1
+            ],
+            "to_target": [
+              1,
+              1,
+              1
+            ],
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "hit": 0,
+            "channel": "C"
+          }
+        ]
+      }
+    ]
+  },
+  "merged_edges": {
+    "000\u2192100": {
+      "n": 2,
+      "k": 1,
+      "p_hat": 0.5,
+      "p_plan_p05": 0.13535036217158378,
+      "source": "9B_uncond",
+      "channel": "C"
+    },
+    "000\u2192010": {
+      "n": 2,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.0169524275084415,
+      "source": "9B_uncond",
+      "channel": "H"
+    },
+    "000\u2192001": {
+      "n": 2,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.0169524275084415,
+      "source": "9B_uncond",
+      "channel": "O"
+    },
+    "001\u2192101": {
+      "n": 2,
+      "k": 1,
+      "p_hat": 0.5,
+      "p_plan_p05": 0.13535036217158378,
+      "source": "9B_uncond",
+      "channel": "C"
+    },
+    "001\u2192011": {
+      "n": 2,
+      "k": 1,
+      "p_hat": 0.5,
+      "p_plan_p05": 0.13535036217158378,
+      "source": "9B_uncond",
+      "channel": "H"
+    },
+    "001\u2192000": {
+      "n": 0,
+      "k": 0,
+      "p_hat": null,
+      "p_plan_p05": 0.0,
+      "source": "9C_conditional",
+      "channel": "O",
+      "construct_rate": 0.0,
+      "attempts": 8
+    },
+    "010\u2192110": {
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "source": "9C_conditional",
+      "channel": "C",
+      "construct_rate": 0.6153846153846154,
+      "attempts": 13
+    },
+    "010\u2192000": {
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "source": "9C_conditional",
+      "channel": "H",
+      "construct_rate": 0.6153846153846154,
+      "attempts": 13
+    },
+    "010\u2192011": {
+      "n": 2,
+      "k": 2,
+      "p_hat": 1.0,
+      "p_plan_p05": 0.3684031498640387,
+      "source": "9B_uncond",
+      "channel": "O"
+    },
+    "011\u2192111": {
+      "n": 1,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.02532056551910361,
+      "source": "9B_homed",
+      "channel": "C"
+    },
+    "011\u2192001": {
+      "n": 2,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.0169524275084415,
+      "source": "9B_homed",
+      "channel": "H"
+    },
+    "011\u2192010": {
+      "n": 2,
+      "k": 2,
+      "p_hat": 1.0,
+      "p_plan_p05": 0.3684031498640387,
+      "source": "9B_uncond",
+      "channel": "O"
+    },
+    "100\u2192000": {
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "source": "9C_conditional",
+      "channel": "C",
+      "construct_rate": 0.8,
+      "attempts": 10
+    },
+    "100\u2192110": {
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "source": "9C_conditional",
+      "channel": "H",
+      "construct_rate": 0.8888888888888888,
+      "attempts": 9
+    },
+    "100\u2192101": {
+      "n": 2,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.0169524275084415,
+      "source": "9B_homed",
+      "channel": "O"
+    },
+    "101\u2192001": {
+      "n": 2,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.0169524275084415,
+      "source": "9B_uncond",
+      "channel": "C"
+    },
+    "101\u2192111": {
+      "n": 1,
+      "k": 1,
+      "p_hat": 1.0,
+      "p_plan_p05": 0.22360679774997896,
+      "source": "9B_homed",
+      "channel": "H"
+    },
+    "101\u2192100": {
+      "n": 8,
+      "k": 1,
+      "p_hat": 0.125,
+      "p_plan_p05": 0.041023167506996534,
+      "source": "9C_conditional",
+      "channel": "O",
+      "construct_rate": 0.5,
+      "attempts": 16
+    },
+    "110\u2192010": {
+      "n": 2,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.0169524275084415,
+      "source": "9B_uncond",
+      "channel": "C"
+    },
+    "110\u2192100": {
+      "n": 2,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.0169524275084415,
+      "source": "9B_uncond",
+      "channel": "H"
+    },
+    "110\u2192111": {
+      "n": 2,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.0169524275084415,
+      "source": "9B_uncond",
+      "channel": "O"
+    },
+    "111\u2192011": {
+      "n": 1,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.02532056551910361,
+      "source": "9B_homed",
+      "channel": "C"
+    },
+    "111\u2192101": {
+      "n": 1,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.02532056551910361,
+      "source": "9B_homed",
+      "channel": "H"
+    },
+    "111\u2192110": {
+      "n": 8,
+      "k": 0,
+      "p_hat": 0.0,
+      "p_plan_p05": 0.005683044988048048,
+      "source": "9C_conditional",
+      "channel": "O",
+      "construct_rate": 0.8888888888888888,
+      "attempts": 9
+    }
+  },
+  "by_tau": {
+    "0.5": {
+      "tau": 0.5,
+      "n_edges_kept": 0,
+      "edges_kept": [],
+      "n_reachable_pairs": 0,
+      "n_pairs": 56,
+      "strongly_connected": false,
+      "path_000_111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "path_examples": {
+        "000\u2192111": {
+          "reachable": false,
+          "path": null,
+          "P_path": 0.0,
+          "n_hops": null
+        },
+        "111\u2192000": {
+          "reachable": false,
+          "path": null,
+          "P_path": 0.0,
+          "n_hops": null
+        },
+        "100\u2192110": {
+          "reachable": false,
+          "path": null,
+          "P_path": 0.0,
+          "n_hops": null
+        },
+        "110\u2192100": {
+          "reachable": false,
+          "path": null,
+          "P_path": 0.0,
+          "n_hops": null
+        }
+      }
+    },
+    "0.7": {
+      "tau": 0.7,
+      "n_edges_kept": 0,
+      "edges_kept": [],
+      "n_reachable_pairs": 0,
+      "n_pairs": 56,
+      "strongly_connected": false,
+      "path_000_111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "path_examples": {
+        "000\u2192111": {
+          "reachable": false,
+          "path": null,
+          "P_path": 0.0,
+          "n_hops": null
+        },
+        "111\u2192000": {
+          "reachable": false,
+          "path": null,
+          "P_path": 0.0,
+          "n_hops": null
+        },
+        "100\u2192110": {
+          "reachable": false,
+          "path": null,
+          "P_path": 0.0,
+          "n_hops": null
+        },
+        "110\u2192100": {
+          "reachable": false,
+          "path": null,
+          "P_path": 0.0,
+          "n_hops": null
+        }
+      }
+    }
+  },
+  "all_pairs_paths_0.5": {
+    "000": {
+      "000": {
+        "reachable": true,
+        "path": [
+          "000"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "001": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": true,
+        "path": [
+          "001"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "010": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": true,
+        "path": [
+          "010"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "011": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": true,
+        "path": [
+          "011"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "100": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": true,
+        "path": [
+          "100"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "101": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": true,
+        "path": [
+          "101"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "110": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": true,
+        "path": [
+          "110"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "111": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": true,
+        "path": [
+          "111"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      }
+    }
+  },
+  "all_pairs_paths_0.7": {
+    "000": {
+      "000": {
+        "reachable": true,
+        "path": [
+          "000"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "001": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": true,
+        "path": [
+          "001"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "010": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": true,
+        "path": [
+          "010"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "011": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": true,
+        "path": [
+          "011"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "100": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": true,
+        "path": [
+          "100"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "101": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": true,
+        "path": [
+          "101"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "110": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": true,
+        "path": [
+          "110"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      },
+      "111": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      }
+    },
+    "111": {
+      "000": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "001": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "010": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "011": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "100": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "101": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "110": {
+        "reachable": false,
+        "path": null,
+        "P_path": 0.0,
+        "n_hops": null
+      },
+      "111": {
+        "reachable": true,
+        "path": [
+          "111"
+        ],
+        "P_path": 1.0,
+        "n_hops": 0
+      }
+    }
+  },
+  "gate": {
+    "hypothesis": "With empirical conditional edges + Beta p05 planning, the 8-cube becomes strongly connected at practical \u03c4",
+    "densified_edges": [
+      "001\u2192000",
+      "010\u2192000",
+      "100\u2192000",
+      "010\u2192110",
+      "100\u2192110",
+      "111\u2192110",
+      "101\u2192100"
+    ],
+    "target_n": 8,
+    "tau_0.5_SCC": false,
+    "tau_0.7_SCC": false,
+    "tau_0.5_reach": 0,
+    "tau_0.7_reach": 0,
+    "universal_via_paths_0.5": false,
+    "universal_via_paths_0.7": false,
+    "path_000_111_at_0.5": {
+      "reachable": false,
+      "path": null,
+      "P_path": 0.0,
+      "n_hops": null
+    },
+    "read": "No Laplace planner. p_plan = Beta(k+1,n-k+1) 5th pct. Universal multi-step claim only if SCC at \u03c4=0.5 (practical) or 0.7 (reliable)."
+  }
+}

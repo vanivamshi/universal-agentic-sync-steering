@@ -1,0 +1,139 @@
+{
+  "protocol": "docs/gap_native_privilege.md",
+  "p90_native_hit_unchanged": true,
+  "layer_k": 4,
+  "layer_L": 22,
+  "threshold": 0.5,
+  "n_transcripts": 24,
+  "n_random": 8,
+  "sign_note": "\u0394=\u03b5*_tool\u2212\u03b5*_prose; positive \u21d2 privilege gain in tool",
+  "native_delta": -0.960635211052498,
+  "mean_learned_delta": 1.4487741720939704,
+  "mean_random_delta": -0.8456619306944329,
+  "I_native_minus_learned": -2.4094093831464685,
+  "I_native_minus_random": -0.1149732803580652,
+  "random_delta_p10": -2.7111353891617105,
+  "random_delta_p90": 0.8861582636080158,
+  "decision": "NULL_VS_CONTROLS",
+  "exploratory": true,
+  "per_direction": [
+    {
+      "direction_id": "domain_content_coding_L4",
+      "direction_type": "learned_control",
+      "mean_eps_prose": 19.281347438633443,
+      "mean_eps_tool": 18.283800138306624,
+      "delta_tool_minus_prose": -0.9975473003268185,
+      "n_prose": 8,
+      "n_tool": 4
+    },
+    {
+      "direction_id": "domain_content_therapy_L4",
+      "direction_type": "learned_control",
+      "mean_eps_prose": 22.39753461998105,
+      "mean_eps_tool": 23.071554515987636,
+      "delta_tool_minus_prose": 0.674019896006584,
+      "n_prose": 32,
+      "n_tool": 16
+    },
+    {
+      "direction_id": "domain_content_writing_L4",
+      "direction_type": "learned_control",
+      "mean_eps_prose": 24.535647299504284,
+      "mean_eps_tool": 28.6685058932066,
+      "delta_tool_minus_prose": 4.132858593702316,
+      "n_prose": 8,
+      "n_tool": 4
+    },
+    {
+      "direction_id": "gap_native_tool_surface_gap",
+      "direction_type": "native",
+      "mean_eps_prose": 18.67584791180889,
+      "mean_eps_tool": 17.715212700756393,
+      "delta_tool_minus_prose": -0.960635211052498,
+      "n_prose": 48,
+      "n_tool": 24
+    },
+    {
+      "direction_id": "rand_00_L4",
+      "direction_type": "random_control",
+      "mean_eps_prose": 26.243410337396465,
+      "mean_eps_tool": 24.69008063842853,
+      "delta_tool_minus_prose": -1.5533296989679357,
+      "n_prose": 48,
+      "n_tool": 24
+    },
+    {
+      "direction_id": "rand_01_L4",
+      "direction_type": "random_control",
+      "mean_eps_prose": 19.904395531193416,
+      "mean_eps_tool": 20.742925904579955,
+      "delta_tool_minus_prose": 0.8385303733865399,
+      "n_prose": 48,
+      "n_tool": 24
+    },
+    {
+      "direction_id": "rand_02_L4",
+      "direction_type": "random_control",
+      "mean_eps_prose": 24.76380845632752,
+      "mean_eps_tool": 25.761098463785647,
+      "delta_tool_minus_prose": 0.9972900074581261,
+      "n_prose": 48,
+      "n_tool": 24
+    },
+    {
+      "direction_id": "rand_03_L4",
+      "direction_type": "random_control",
+      "mean_eps_prose": 32.540671180031694,
+      "mean_eps_tool": 32.568296884222825,
+      "delta_tool_minus_prose": 0.02762570419113075,
+      "n_prose": 48,
+      "n_tool": 24
+    },
+    {
+      "direction_id": "rand_04_L4",
+      "direction_type": "random_control",
+      "mean_eps_prose": 26.976716868166136,
+      "mean_eps_tool": 23.911707125878333,
+      "delta_tool_minus_prose": -3.0650097422878027,
+      "n_prose": 48,
+      "n_tool": 24
+    },
+    {
+      "direction_id": "rand_05_L4",
+      "direction_type": "random_control",
+      "mean_eps_prose": 25.378992725147807,
+      "mean_eps_tool": 22.819517773040136,
+      "delta_tool_minus_prose": -2.5594749521076707,
+      "n_prose": 48,
+      "n_tool": 24
+    },
+    {
+      "direction_id": "rand_06_L4",
+      "direction_type": "random_control",
+      "mean_eps_prose": 28.75126677695513,
+      "mean_eps_tool": 29.57487615077496,
+      "delta_tool_minus_prose": 0.8236093738198278,
+      "n_prose": 48,
+      "n_tool": 24
+    },
+    {
+      "direction_id": "rand_07_L4",
+      "direction_type": "random_control",
+      "mean_eps_prose": 37.15492075742483,
+      "mean_eps_tool": 34.880384246377155,
+      "delta_tool_minus_prose": -2.2745365110476783,
+      "n_prose": 48,
+      "n_tool": 24
+    },
+    {
+      "direction_id": "syntax_L4",
+      "direction_type": "learned_control",
+      "mean_eps_prose": 22.100038498793044,
+      "mean_eps_tool": 24.085803997786844,
+      "delta_tool_minus_prose": 1.9857654989937998,
+      "n_prose": 48,
+      "n_tool": 24
+    }
+  ],
+  "n_rows": 792
+}

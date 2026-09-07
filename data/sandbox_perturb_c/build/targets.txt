@@ -1,0 +1,6 @@
+default: install
+.PHONY: install test package
+install:
+	pip install -e .
+package:
+	python -m build

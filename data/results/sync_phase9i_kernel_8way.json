@@ -1,0 +1,7184 @@
+{
+  "protocol": "Phase 9I kernel expand + full 8-way \u0393'/\u0393/fixed",
+  "seed": 20260928,
+  "reps_expand": 3,
+  "reps_8way": 2,
+  "max_steps": 4,
+  "expand_stats": {
+    "101|C": {
+      "n": 6,
+      "P_shift": 0.6666666666666666,
+      "after_hist": {
+        "100": 3,
+        "101": 2,
+        "111": 1
+      }
+    },
+    "101|H": {
+      "n": 5,
+      "P_shift": 0.8,
+      "after_hist": {
+        "111": 3,
+        "101": 1,
+        "010": 1
+      }
+    },
+    "010|H": {
+      "n": 3,
+      "P_shift": 1.0,
+      "after_hist": {
+        "111": 2,
+        "100": 1
+      }
+    },
+    "011|H": {
+      "n": 3,
+      "P_shift": 1.0,
+      "after_hist": {
+        "100": 1,
+        "111": 1,
+        "101": 1
+      }
+    },
+    "100|C": {
+      "n": 2,
+      "P_shift": 0.5,
+      "after_hist": {
+        "100": 1,
+        "011": 1
+      }
+    }
+  },
+  "hard_coverage": {
+    "110|H": 2,
+    "101|C": 8,
+    "111|H": 2,
+    "111|O": 9,
+    "110|O": 1,
+    "111|C": 3,
+    "101|H": 7,
+    "101|O": 10
+  },
+  "agg": {
+    "gamma": {
+      "n": 16,
+      "P_hit": 0.4375,
+      "P_ever": 0.4375,
+      "mean_delta_E": 0.9375,
+      "mean_E_final": 0.875,
+      "mean_P_down_steps": 0.48958333333333326,
+      "P_repeat_after_noop": 1.0,
+      "P_rescue_given_noop": 0.0,
+      "n_noop_contexts": 8
+    },
+    "gamma_prime": {
+      "n": 16,
+      "P_hit": 0.4375,
+      "P_ever": 0.4375,
+      "mean_delta_E": 0.9375,
+      "mean_E_final": 0.875,
+      "mean_P_down_steps": 0.48958333333333326,
+      "P_repeat_after_noop": 0.625,
+      "P_rescue_given_noop": 0.375,
+      "n_noop_contexts": 8
+    },
+    "fixed": {
+      "n": 16,
+      "P_hit": 0.375,
+      "P_ever": 0.375,
+      "mean_delta_E": 0.8125,
+      "mean_E_final": 1.0,
+      "mean_P_down_steps": 0.34375,
+      "P_repeat_after_noop": 1.0,
+      "P_rescue_given_noop": 0.0,
+      "n_noop_contexts": 14
+    }
+  },
+  "per_mstar": {
+    "000": {
+      "gamma": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.0,
+        "mean_E_final": 1.5,
+        "mean_P_down_steps": 0.375,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 2
+      },
+      "gamma_prime": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": -0.5,
+        "mean_E_final": 2.0,
+        "mean_P_down_steps": 0.375,
+        "P_repeat_after_noop": 0.0,
+        "P_rescue_given_noop": 1.0,
+        "n_noop_contexts": 2
+      },
+      "fixed": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.5,
+        "mean_E_final": 1.0,
+        "mean_P_down_steps": 0.375,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 3
+      }
+    },
+    "001": {
+      "gamma": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": -1.0,
+        "mean_E_final": 2.0,
+        "mean_P_down_steps": 0.125,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 1
+      },
+      "gamma_prime": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": -1.0,
+        "mean_E_final": 2.0,
+        "mean_P_down_steps": 0.125,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 1
+      },
+      "fixed": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": -1.0,
+        "mean_E_final": 2.0,
+        "mean_P_down_steps": 0.125,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 2
+      }
+    },
+    "010": {
+      "gamma": {
+        "n": 2,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 1.0,
+        "mean_E_final": 0.5,
+        "mean_P_down_steps": 0.5,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 3
+      },
+      "gamma_prime": {
+        "n": 2,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 1.0,
+        "mean_E_final": 0.5,
+        "mean_P_down_steps": 0.5,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 3
+      },
+      "fixed": {
+        "n": 2,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 1.0,
+        "mean_E_final": 0.5,
+        "mean_P_down_steps": 0.25,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 3
+      }
+    },
+    "011": {
+      "gamma": {
+        "n": 2,
+        "P_hit": 1.0,
+        "P_ever": 1.0,
+        "mean_delta_E": 2.0,
+        "mean_E_final": 0.0,
+        "mean_P_down_steps": 0.75,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN,
+        "n_noop_contexts": 0
+      },
+      "gamma_prime": {
+        "n": 2,
+        "P_hit": 1.0,
+        "P_ever": 1.0,
+        "mean_delta_E": 2.0,
+        "mean_E_final": 0.0,
+        "mean_P_down_steps": 0.75,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN,
+        "n_noop_contexts": 0
+      },
+      "fixed": {
+        "n": 2,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 0.5,
+        "mean_E_final": 1.5,
+        "mean_P_down_steps": 0.16666666666666666,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 3
+      }
+    },
+    "100": {
+      "gamma": {
+        "n": 2,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 2.0,
+        "mean_E_final": 1.0,
+        "mean_P_down_steps": 0.75,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN,
+        "n_noop_contexts": 0
+      },
+      "gamma_prime": {
+        "n": 2,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 2.0,
+        "mean_E_final": 1.0,
+        "mean_P_down_steps": 0.75,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN,
+        "n_noop_contexts": 0
+      },
+      "fixed": {
+        "n": 2,
+        "P_hit": 1.0,
+        "P_ever": 1.0,
+        "mean_delta_E": 3.0,
+        "mean_E_final": 0.0,
+        "mean_P_down_steps": 0.8333333333333333,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN,
+        "n_noop_contexts": 0
+      }
+    },
+    "101": {
+      "gamma": {
+        "n": 2,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 1.5,
+        "mean_E_final": 0.5,
+        "mean_P_down_steps": 0.5833333333333333,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 1
+      },
+      "gamma_prime": {
+        "n": 2,
+        "P_hit": 0.5,
+        "P_ever": 0.5,
+        "mean_delta_E": 1.5,
+        "mean_E_final": 0.5,
+        "mean_P_down_steps": 0.5833333333333333,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 1
+      },
+      "fixed": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.5,
+        "mean_E_final": 1.5,
+        "mean_P_down_steps": 0.375,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN,
+        "n_noop_contexts": 0
+      }
+    },
+    "110": {
+      "gamma": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.5,
+        "mean_E_final": 1.5,
+        "mean_P_down_steps": 0.25,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 1
+      },
+      "gamma_prime": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 1.0,
+        "mean_E_final": 1.0,
+        "mean_P_down_steps": 0.25,
+        "P_repeat_after_noop": 0.0,
+        "P_rescue_given_noop": 1.0,
+        "n_noop_contexts": 1
+      },
+      "fixed": {
+        "n": 2,
+        "P_hit": 0.0,
+        "P_ever": 0.0,
+        "mean_delta_E": 0.5,
+        "mean_E_final": 1.5,
+        "mean_P_down_steps": 0.25,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 1
+      }
+    },
+    "111": {
+      "gamma": {
+        "n": 2,
+        "P_hit": 1.0,
+        "P_ever": 1.0,
+        "mean_delta_E": 1.5,
+        "mean_E_final": 0.0,
+        "mean_P_down_steps": 0.5833333333333333,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN,
+        "n_noop_contexts": 0
+      },
+      "gamma_prime": {
+        "n": 2,
+        "P_hit": 1.0,
+        "P_ever": 1.0,
+        "mean_delta_E": 1.5,
+        "mean_E_final": 0.0,
+        "mean_P_down_steps": 0.5833333333333333,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN,
+        "n_noop_contexts": 0
+      },
+      "fixed": {
+        "n": 2,
+        "P_hit": 1.0,
+        "P_ever": 1.0,
+        "mean_delta_E": 1.5,
+        "mean_E_final": 0.0,
+        "mean_P_down_steps": 0.375,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0,
+        "n_noop_contexts": 2
+      }
+    }
+  },
+  "reachability": {
+    "000": {
+      "gamma": false,
+      "gamma_prime": false,
+      "fixed": false
+    },
+    "001": {
+      "gamma": false,
+      "gamma_prime": false,
+      "fixed": false
+    },
+    "010": {
+      "gamma": true,
+      "gamma_prime": true,
+      "fixed": true
+    },
+    "011": {
+      "gamma": true,
+      "gamma_prime": true,
+      "fixed": true
+    },
+    "100": {
+      "gamma": true,
+      "gamma_prime": true,
+      "fixed": true
+    },
+    "101": {
+      "gamma": true,
+      "gamma_prime": true,
+      "fixed": false
+    },
+    "110": {
+      "gamma": false,
+      "gamma_prime": false,
+      "fixed": false
+    },
+    "111": {
+      "gamma": true,
+      "gamma_prime": true,
+      "fixed": true
+    }
+  },
+  "paired": [
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20260928,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "seed": 20260928,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          3,
+          2,
+          2,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": -1,
+        "E0": 1,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "O",
+          "O",
+          "O"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "seed": 20260928,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          3,
+          2,
+          2,
+          3
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": "O"
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": -2,
+        "E0": 1,
+        "E_final": 3,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "O",
+          "O",
+          "H"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 1,
+        "P_repeat_after_noop": 0.0,
+        "P_rescue_given_noop": 1.0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "seed": 20260928,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 0,
+        "E0": 1,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "H"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "mstar_key": "000",
+      "seed": 20260947,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "seed": 20260947,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          1,
+          3,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "O",
+          "O",
+          "C",
+          "O"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "seed": 20260947,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          1,
+          3,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": "O"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "O",
+          "H",
+          "C",
+          "O"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 1,
+        "P_repeat_after_noop": 0.0,
+        "P_rescue_given_noop": 1.0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "mstar_key": "000",
+        "seed": 20260947,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "C"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 2,
+        "n_repeat_after_noop": 2,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261128,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "seed": 20261128,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": -1,
+        "E0": 1,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "O",
+          "H"
+        ],
+        "P_down_steps": 0.0,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "seed": 20261128,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": "H"
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": -1,
+        "E0": 1,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "O",
+          "H"
+        ],
+        "P_down_steps": 0.0,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "seed": 20261128,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": -1,
+        "E0": 1,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "O",
+          "H"
+        ],
+        "P_down_steps": 0.0,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      }
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "mstar_key": "001",
+      "seed": 20261147,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "seed": 20261147,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": -1,
+        "E0": 1,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "C",
+          "O",
+          "H"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "seed": 20261147,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": -1,
+        "E0": 1,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "C",
+          "O",
+          "H"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "mstar_key": "001",
+        "seed": 20261147,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": -1,
+        "E0": 1,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "H"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261328,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20261328,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 2,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 1,
+        "actions": [
+          "O"
+        ],
+        "P_down_steps": 1.0,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20261328,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 2,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 1,
+        "actions": [
+          "O"
+        ],
+        "P_down_steps": 1.0,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20261328,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 2,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 2,
+        "actions": [
+          "C",
+          "H"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20261376,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20261376,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 0,
+        "E0": 1,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "P_down_steps": 0.0,
+        "n_noop_contexts": 3,
+        "n_repeat_after_noop": 3,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20261376,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": "O"
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": "O"
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": "O"
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 0,
+        "E0": 1,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "P_down_steps": 0.0,
+        "n_noop_contexts": 3,
+        "n_repeat_after_noop": 3,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20261376,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 0,
+        "E0": 1,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "P_down_steps": 0.0,
+        "n_noop_contexts": 3,
+        "n_repeat_after_noop": 3,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261644,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261644,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 1,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 2,
+        "actions": [
+          "C",
+          "O"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261644,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 1,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 2,
+        "actions": [
+          "C",
+          "O"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261644,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 1,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 3,
+        "actions": [
+          "C",
+          "C",
+          "H"
+        ],
+        "P_down_steps": 0.3333333333333333,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      }
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261547,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261547,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          3,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 3,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 2,
+        "actions": [
+          "O",
+          "O"
+        ],
+        "P_down_steps": 1.0,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261547,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          3,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 3,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 2,
+        "actions": [
+          "O",
+          "O"
+        ],
+        "P_down_steps": 1.0,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261547,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 0,
+        "E0": 3,
+        "E_final": 3,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "H"
+        ],
+        "P_down_steps": 0.0,
+        "n_noop_contexts": 3,
+        "n_repeat_after_noop": 3,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261728,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261728,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 3,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 1,
+        "actions": [
+          "C"
+        ],
+        "P_down_steps": 1.0,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261728,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 3,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 1,
+        "actions": [
+          "C"
+        ],
+        "P_down_steps": 1.0,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261728,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          2,
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 3,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 3,
+        "actions": [
+          "H",
+          "H",
+          "H"
+        ],
+        "P_down_steps": 0.6666666666666666,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261747,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261747,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          1,
+          2,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 3,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "O",
+          "H",
+          "H"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261747,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          1,
+          2,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 3,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "O",
+          "H",
+          "H"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261747,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 3,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 1,
+        "actions": [
+          "H"
+        ],
+        "P_down_steps": 1.0,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20261957,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261957,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          3,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "O",
+          "O",
+          "C"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261957,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          3,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "blocked": "O"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "O",
+          "O",
+          "C"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261957,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "C",
+          "O"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      }
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20261947,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261947,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 2,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 3,
+        "actions": [
+          "C",
+          "O",
+          "C"
+        ],
+        "P_down_steps": 0.6666666666666666,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261947,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 2,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 3,
+        "actions": [
+          "C",
+          "O",
+          "C"
+        ],
+        "P_down_steps": 0.6666666666666666,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261947,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          3,
+          1,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "H"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262128,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20262128,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "C",
+          "H",
+          "O"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20262128,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "C",
+          "H",
+          "O"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20262128,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "C",
+          "H",
+          "O"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20262147,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20262147,
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "O",
+          "H"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20262147,
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": "H"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 1,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "O",
+          "C",
+          "H"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 1,
+        "P_repeat_after_noop": 0.0,
+        "P_rescue_given_noop": 1.0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20262147,
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          }
+        ],
+        "hit": 0,
+        "ever_reach": 0,
+        "delta_E": 0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "actions": [
+          "H",
+          "H",
+          "O",
+          "H"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 1,
+        "n_repeat_after_noop": 1,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262357,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "seed": 20262357,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 1,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "O",
+          "C",
+          "H"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "seed": 20262357,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 1,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "O",
+          "C",
+          "H"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "seed": 20262357,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 1,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 2,
+        "actions": [
+          "C",
+          "H"
+        ],
+        "P_down_steps": 0.5,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      }
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "mstar_key": "111",
+      "seed": 20262347,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "seed": 20262347,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 2,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 3,
+        "actions": [
+          "O",
+          "C",
+          "H"
+        ],
+        "P_down_steps": 0.6666666666666666,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "gamma_prime": {
+        "policy": "gamma_prime",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "seed": 20262347,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 2,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 3,
+        "actions": [
+          "O",
+          "C",
+          "H"
+        ],
+        "P_down_steps": 0.6666666666666666,
+        "n_noop_contexts": 0,
+        "n_repeat_after_noop": 0,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": NaN,
+        "P_rescue_given_noop": NaN
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "mstar_key": "111",
+        "seed": 20262347,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          2,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "blocked": null
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "blocked": null
+          }
+        ],
+        "hit": 1,
+        "ever_reach": 1,
+        "delta_E": 2,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 4,
+        "actions": [
+          "C",
+          "H",
+          "H",
+          "H"
+        ],
+        "P_down_steps": 0.25,
+        "n_noop_contexts": 2,
+        "n_repeat_after_noop": 2,
+        "n_rescue_after_noop": 0,
+        "P_repeat_after_noop": 1.0,
+        "P_rescue_given_noop": 0.0
+      }
+    }
+  ],
+  "gate": {
+    "hypothesis": "Expanded kernel + \u0393' yields P(ever reach)>0 for all 8 m* (multi-step reachability before high final hit)",
+    "n_9i_rows": 19,
+    "hard_coverage": {
+      "110|H": 2,
+      "101|C": 8,
+      "111|H": 2,
+      "111|O": 9,
+      "110|O": 1,
+      "111|C": 3,
+      "101|H": 7,
+      "101|O": 10
+    },
+    "P_hit": {
+      "gamma": 0.4375,
+      "gamma_prime": 0.4375,
+      "fixed": 0.375
+    },
+    "P_ever": {
+      "gamma": 0.4375,
+      "gamma_prime": 0.4375,
+      "fixed": 0.375
+    },
+    "n_mstar_ever_gamma_prime": 5,
+    "n_mstar_ever_gamma": 5,
+    "n_mstar_ever_fixed": 4,
+    "universal_ever_gamma_prime": false,
+    "hard_ever_prime": {
+      "000": false,
+      "001": false,
+      "111": true
+    },
+    "delta_P_hit_prime_gamma": 0.0,
+    "delta_P_ever_prime_gamma": 0.0,
+    "read": "Primary: \u2200m* P(ever reach)>0 under \u0393'. Secondary: final P(hit) and \u0393' vs \u0393 vs fixed. No extra memory."
+  }
+}

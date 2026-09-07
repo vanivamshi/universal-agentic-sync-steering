@@ -1,0 +1,573 @@
+{
+  "protocol": "Phase 9G kernel expand + anti-stagnation diagnostic",
+  "seed": 20260926,
+  "reps": 8,
+  "offline_only": false,
+  "anti_stagnation_pre": {
+    "n_gamma_trials": 20,
+    "n_steps": 53,
+    "n_disagree_raw_vs_anti": 5,
+    "P_disagree": 0.09433962264150944,
+    "n_blocked_applications": 7,
+    "n_sticky_raw_repeats": 7,
+    "n_sticky_rescues": 5,
+    "n_rescue_better_mean_dE": 0,
+    "P_rescue_better_given_sticky": 0.0,
+    "n_gamma_miss_fixed_hit": 2,
+    "n_sticky_in_gamma_miss": 4,
+    "mean_expected_dE_raw": -0.6205200028729441,
+    "mean_expected_dE_anti": -0.5841054370466134,
+    "rescue_examples": [
+      {
+        "mstar": "010",
+        "s": "100",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -0.2857142857142857,
+        "mean_dE_anti": 0.0,
+        "realized_a": "C",
+        "realized_dS": 0
+      },
+      {
+        "mstar": "010",
+        "s": "100",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -0.2857142857142857,
+        "mean_dE_anti": 0.0,
+        "realized_a": "C",
+        "realized_dS": 0
+      },
+      {
+        "mstar": "010",
+        "s": "100",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -0.2857142857142857,
+        "mean_dE_anti": 0.0,
+        "realized_a": "C",
+        "realized_dS": 0
+      },
+      {
+        "mstar": "100",
+        "s": "011",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -1.75,
+        "mean_dE_anti": -1.5,
+        "realized_a": "C",
+        "realized_dS": 1
+      },
+      {
+        "mstar": "101",
+        "s": "011",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -1.25,
+        "mean_dE_anti": -0.5,
+        "realized_a": "C",
+        "realized_dS": 1
+      }
+    ],
+    "path_rescue_examples": [
+      {
+        "mstar": "010",
+        "S0": "100",
+        "realized_acts": [
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        "raw_recomputed": [
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        "anti_acts": [
+          "C",
+          "H",
+          "H",
+          "H"
+        ],
+        "hit_realized": 0,
+        "path": [
+          "100",
+          "100",
+          "100",
+          "100",
+          "100"
+        ]
+      },
+      {
+        "mstar": "101",
+        "S0": "011",
+        "realized_acts": [
+          "C",
+          "C",
+          "O",
+          "C"
+        ],
+        "raw_recomputed": [
+          "C",
+          "C",
+          "O",
+          "C"
+        ],
+        "anti_acts": [
+          "C",
+          "H",
+          "O",
+          "C"
+        ],
+        "hit_realized": 0,
+        "path": [
+          "011",
+          "011",
+          "100",
+          "011",
+          "100"
+        ]
+      }
+    ],
+    "verdict": "anti-stagnation breaks sticky repeats (live-relevant)"
+  },
+  "anti_stagnation_post": {
+    "n_gamma_trials": 20,
+    "n_steps": 53,
+    "n_disagree_raw_vs_anti": 5,
+    "P_disagree": 0.09433962264150944,
+    "n_blocked_applications": 7,
+    "n_sticky_raw_repeats": 7,
+    "n_sticky_rescues": 5,
+    "n_rescue_better_mean_dE": 0,
+    "P_rescue_better_given_sticky": 0.0,
+    "n_gamma_miss_fixed_hit": 2,
+    "n_sticky_in_gamma_miss": 4,
+    "mean_expected_dE_raw": -0.5956144073791133,
+    "mean_expected_dE_anti": -0.5721019721019721,
+    "rescue_examples": [
+      {
+        "mstar": "010",
+        "s": "100",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -0.2727272727272727,
+        "mean_dE_anti": -0.09523809523809523,
+        "realized_a": "C",
+        "realized_dS": 0
+      },
+      {
+        "mstar": "010",
+        "s": "100",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -0.2727272727272727,
+        "mean_dE_anti": -0.09523809523809523,
+        "realized_a": "C",
+        "realized_dS": 0
+      },
+      {
+        "mstar": "010",
+        "s": "100",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -0.2727272727272727,
+        "mean_dE_anti": -0.09523809523809523,
+        "realized_a": "C",
+        "realized_dS": 0
+      },
+      {
+        "mstar": "100",
+        "s": "011",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -2.0,
+        "mean_dE_anti": -1.8333333333333333,
+        "realized_a": "C",
+        "realized_dS": 1
+      },
+      {
+        "mstar": "101",
+        "s": "011",
+        "a_raw": "C",
+        "a_anti": "H",
+        "mean_dE_raw": -1.1666666666666667,
+        "mean_dE_anti": -0.6666666666666666,
+        "realized_a": "C",
+        "realized_dS": 1
+      }
+    ],
+    "path_rescue_examples": [
+      {
+        "mstar": "010",
+        "S0": "100",
+        "realized_acts": [
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        "raw_recomputed": [
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        "anti_acts": [
+          "C",
+          "H",
+          "H",
+          "H"
+        ],
+        "hit_realized": 0,
+        "path": [
+          "100",
+          "100",
+          "100",
+          "100",
+          "100"
+        ]
+      },
+      {
+        "mstar": "101",
+        "S0": "011",
+        "realized_acts": [
+          "C",
+          "C",
+          "O",
+          "C"
+        ],
+        "raw_recomputed": [
+          "C",
+          "C",
+          "O",
+          "C"
+        ],
+        "anti_acts": [
+          "C",
+          "H",
+          "O",
+          "C"
+        ],
+        "hit_realized": 0,
+        "path": [
+          "011",
+          "011",
+          "100",
+          "011",
+          "100"
+        ]
+      }
+    ],
+    "verdict": "anti-stagnation breaks sticky repeats (live-relevant)"
+  },
+  "focus_100_vs_010": {
+    "pre": {
+      "H": {
+        "n": 13,
+        "Gamma": -0.07692307692307693,
+        "P_down": 0.07692307692307693,
+        "P_up": 0.15384615384615385,
+        "P_neutral": 0.7692307692307693,
+        "P_shift": 0.5384615384615384,
+        "mean_dE": 0.0,
+        "P_hit": 0.07692307692307693,
+        "after_hist": {
+          "100": 6,
+          "010": 1,
+          "101": 2,
+          "111": 4
+        }
+      },
+      "C": {
+        "n": 14,
+        "Gamma": 0.2857142857142857,
+        "P_down": 0.35714285714285715,
+        "P_up": 0.07142857142857142,
+        "P_neutral": 0.5714285714285714,
+        "P_shift": 0.5714285714285714,
+        "mean_dE": -0.2857142857142857,
+        "P_hit": 0.0,
+        "after_hist": {
+          "100": 6,
+          "011": 3,
+          "101": 1,
+          "111": 2,
+          "110": 2
+        }
+      },
+      "O": {
+        "n": 10,
+        "Gamma": 0.8,
+        "P_down": 0.8,
+        "P_up": 0.0,
+        "P_neutral": 0.2,
+        "P_shift": 0.8,
+        "mean_dE": -0.8,
+        "P_hit": 0.0,
+        "after_hist": {
+          "011": 8,
+          "100": 2
+        }
+      }
+    },
+    "post": {
+      "H": {
+        "n": 21,
+        "Gamma": 0.047619047619047616,
+        "P_down": 0.14285714285714285,
+        "P_up": 0.09523809523809523,
+        "P_neutral": 0.7619047619047619,
+        "P_shift": 0.42857142857142855,
+        "mean_dE": -0.09523809523809523,
+        "P_hit": 0.047619047619047616,
+        "after_hist": {
+          "100": 12,
+          "010": 1,
+          "101": 2,
+          "111": 4,
+          "011": 2
+        }
+      },
+      "C": {
+        "n": 22,
+        "Gamma": 0.2727272727272727,
+        "P_down": 0.3181818181818182,
+        "P_up": 0.045454545454545456,
+        "P_neutral": 0.6363636363636364,
+        "P_shift": 0.5,
+        "mean_dE": -0.2727272727272727,
+        "P_hit": 0.0,
+        "after_hist": {
+          "100": 11,
+          "011": 5,
+          "101": 1,
+          "111": 3,
+          "110": 2
+        }
+      },
+      "O": {
+        "n": 18,
+        "Gamma": 0.7777777777777778,
+        "P_down": 0.7777777777777778,
+        "P_up": 0.0,
+        "P_neutral": 0.2222222222222222,
+        "P_shift": 0.8333333333333334,
+        "mean_dE": -0.8333333333333334,
+        "P_hit": 0.05555555555555555,
+        "after_hist": {
+          "011": 13,
+          "100": 3,
+          "010": 1,
+          "111": 1
+        }
+      }
+    }
+  },
+  "expand_stats": {
+    "100|H": {
+      "n": 8,
+      "P_shift": 0.25,
+      "after_hist": {
+        "100": 6,
+        "011": 2
+      }
+    },
+    "100|C": {
+      "n": 8,
+      "P_shift": 0.375,
+      "after_hist": {
+        "100": 5,
+        "111": 1,
+        "011": 2
+      }
+    },
+    "100|O": {
+      "n": 8,
+      "P_shift": 0.875,
+      "after_hist": {
+        "010": 1,
+        "011": 5,
+        "100": 1,
+        "111": 1
+      }
+    },
+    "010|H": {
+      "n": 5,
+      "P_shift": 0.6,
+      "after_hist": {
+        "010": 2,
+        "111": 2,
+        "011": 1
+      }
+    },
+    "010|C": {
+      "n": 5,
+      "P_shift": 0.8,
+      "after_hist": {
+        "100": 2,
+        "101": 2,
+        "010": 1
+      }
+    },
+    "010|O": {
+      "n": 6,
+      "P_shift": 0.6666666666666666,
+      "after_hist": {
+        "010": 2,
+        "011": 4
+      }
+    },
+    "011|H": {
+      "n": 8,
+      "P_shift": 0.875,
+      "after_hist": {
+        "100": 4,
+        "111": 2,
+        "011": 1,
+        "110": 1
+      }
+    },
+    "011|C": {
+      "n": 8,
+      "P_shift": 1.0,
+      "after_hist": {
+        "001": 1,
+        "101": 3,
+        "100": 3,
+        "010": 1
+      }
+    },
+    "011|O": {
+      "n": 8,
+      "P_shift": 0.375,
+      "after_hist": {
+        "100": 3,
+        "011": 5
+      }
+    }
+  },
+  "kernel_coverage_post": {
+    "010|C": 14,
+    "010|H": 14,
+    "010|O": 7,
+    "011|C": 12,
+    "011|H": 12,
+    "011|O": 9,
+    "100|C": 22,
+    "100|H": 21,
+    "100|O": 18,
+    "101|C": 2,
+    "101|H": 2,
+    "101|O": 10,
+    "110|H": 2,
+    "110|O": 1,
+    "111|C": 3,
+    "111|H": 2,
+    "111|O": 9
+  },
+  "gate": {
+    "hypothesis": "Sticky 9F failures are anti-stagnation / sparse-kernel issues, not missing actuators",
+    "anti_stag_pre": {
+      "n_sticky": 7,
+      "n_rescues": 5,
+      "n_better": 0,
+      "verdict": "anti-stagnation breaks sticky repeats (live-relevant)"
+    },
+    "anti_stag_post": {
+      "n_sticky": 7,
+      "n_rescues": 5,
+      "n_better": 0,
+      "verdict": "anti-stagnation breaks sticky repeats (live-relevant)"
+    },
+    "n_extra_transitions": 64,
+    "expand_stats": {
+      "100|H": {
+        "n": 8,
+        "P_shift": 0.25,
+        "after_hist": {
+          "100": 6,
+          "011": 2
+        }
+      },
+      "100|C": {
+        "n": 8,
+        "P_shift": 0.375,
+        "after_hist": {
+          "100": 5,
+          "111": 1,
+          "011": 2
+        }
+      },
+      "100|O": {
+        "n": 8,
+        "P_shift": 0.875,
+        "after_hist": {
+          "010": 1,
+          "011": 5,
+          "100": 1,
+          "111": 1
+        }
+      },
+      "010|H": {
+        "n": 5,
+        "P_shift": 0.6,
+        "after_hist": {
+          "010": 2,
+          "111": 2,
+          "011": 1
+        }
+      },
+      "010|C": {
+        "n": 5,
+        "P_shift": 0.8,
+        "after_hist": {
+          "100": 2,
+          "101": 2,
+          "010": 1
+        }
+      },
+      "010|O": {
+        "n": 6,
+        "P_shift": 0.6666666666666666,
+        "after_hist": {
+          "010": 2,
+          "011": 4
+        }
+      },
+      "011|H": {
+        "n": 8,
+        "P_shift": 0.875,
+        "after_hist": {
+          "100": 4,
+          "111": 2,
+          "011": 1,
+          "110": 1
+        }
+      },
+      "011|C": {
+        "n": 8,
+        "P_shift": 1.0,
+        "after_hist": {
+          "001": 1,
+          "101": 3,
+          "100": 3,
+          "010": 1
+        }
+      },
+      "011|O": {
+        "n": 8,
+        "P_shift": 0.375,
+        "after_hist": {
+          "100": 3,
+          "011": 5
+        }
+      }
+    },
+    "promising_for_live_antistag": true,
+    "note_mean_dE": "Pre-expand kernel can rate sticky C as good mean_dE; densify 100|C to test wrong-\u0393 vs anti-stag-needed.",
+    "read": "Anti-stag switches C\u2192H after no-op at 100 (matches fixed's successful first action). Densify sticky cells; then live \u0393' before full 8-way."
+  }
+}

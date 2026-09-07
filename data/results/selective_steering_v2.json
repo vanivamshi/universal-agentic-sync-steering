@@ -1,0 +1,173 @@
+{
+  "protocol": "/Users/vamshisunku.mohan/multidim-steering-agentic-alignment/docs/selective_steering_protocol.md",
+  "experiment": "SELECTIVE_STEERING_V2",
+  "decision": "SELECTIVE_V2_WEAK",
+  "tau_beh": 0.16066179424524307,
+  "beh_spread_median": 0.6426471769809723,
+  "predictors": {
+    "spearman_eps_global_vs_E": 0.9999999999999761,
+    "spearman_eps_beh_vs_E": 0.88095238095236,
+    "spearman_geom_align_vs_E": -0.7142857142856972,
+    "spearman_eps_global_vs_collateral": 0.9047619047618832
+  },
+  "best_svd_E": 0.0,
+  "best_random_E": 0.125,
+  "best_svd_EF": 0.0,
+  "best_random_EF": 9.999999855958563e-10,
+  "per_direction": {
+    "u1": {
+      "direction_id": "u1",
+      "eps_global": 7.517339318060874,
+      "eps_beh": 1.4107811032146214,
+      "geom_align": 0.11388151347637177,
+      "effectiveness_E": 0.0,
+      "specificity_F": 0.0,
+      "minimality_M": 0.0,
+      "collateral": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "bidirectional": false,
+      "quality_EF": 0.0
+    },
+    "u2": {
+      "direction_id": "u2",
+      "eps_global": 7.517339318060874,
+      "eps_beh": 0.8177061575382947,
+      "geom_align": 0.1964786946773529,
+      "effectiveness_E": 0.0,
+      "specificity_F": 0.0,
+      "minimality_M": 0.0,
+      "collateral": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "bidirectional": false,
+      "quality_EF": 0.0
+    },
+    "neg_u1": {
+      "direction_id": "neg_u1",
+      "eps_global": 7.517339318060874,
+      "eps_beh": 1.4107811032146216,
+      "geom_align": 0.11388151347637177,
+      "effectiveness_E": 0.0,
+      "specificity_F": 0.0,
+      "minimality_M": 0.0,
+      "collateral": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "bidirectional": false,
+      "quality_EF": 0.0
+    },
+    "neg_u2": {
+      "direction_id": "neg_u2",
+      "eps_global": 7.517339318060874,
+      "eps_beh": 0.8177064555466175,
+      "geom_align": 0.1964786946773529,
+      "effectiveness_E": 0.0,
+      "specificity_F": 0.0,
+      "minimality_M": 0.0,
+      "collateral": 0.125,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "bidirectional": false,
+      "quality_EF": 0.0
+    },
+    "rand_sub": {
+      "direction_id": "rand_sub",
+      "eps_global": 7.517339318060874,
+      "eps_beh": 1.9733616320490839,
+      "geom_align": 0.0814153254032135,
+      "effectiveness_E": 0.0,
+      "specificity_F": 0.0,
+      "minimality_M": 0.0,
+      "collateral": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "bidirectional": false,
+      "quality_EF": 0.0
+    },
+    "rand_full": {
+      "direction_id": "rand_full",
+      "eps_global": 7.517339318060874,
+      "eps_beh": 2.0,
+      "geom_align": 0.046039387583732605,
+      "effectiveness_E": 0.0,
+      "specificity_F": 0.0,
+      "minimality_M": 0.0,
+      "collateral": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "bidirectional": false,
+      "quality_EF": 0.0
+    },
+    "rand_full2": {
+      "direction_id": "rand_full2",
+      "eps_global": 7.517339318060874,
+      "eps_beh": 2.0,
+      "geom_align": 0.07028265297412872,
+      "effectiveness_E": 0.0,
+      "specificity_F": 0.0,
+      "minimality_M": 0.0,
+      "collateral": 0.375,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "bidirectional": false,
+      "quality_EF": 0.0
+    },
+    "orth_u2": {
+      "direction_id": "orth_u2",
+      "eps_global": 7.517339318060874,
+      "eps_beh": 2.0,
+      "geom_align": 0.04837159439921379,
+      "effectiveness_E": 0.125,
+      "specificity_F": 7.99999988476685e-09,
+      "minimality_M": 0.5,
+      "collateral": 0.125,
+      "mean_d_extra_plus": -0.125,
+      "mean_d_extra_minus": 0.0,
+      "bidirectional": false,
+      "quality_EF": 9.999999855958563e-10
+    }
+  },
+  "train_predictors": {
+    "u1": {
+      "eps_global": 7.517339318060874,
+      "eps_beh": 1.4107811032146214,
+      "geom_align": 0.11388151347637177
+    },
+    "u2": {
+      "eps_global": 7.517339318060874,
+      "eps_beh": 0.8177061575382947,
+      "geom_align": 0.1964786946773529
+    },
+    "neg_u1": {
+      "eps_global": 7.517339318060874,
+      "eps_beh": 1.4107811032146216,
+      "geom_align": 0.11388151347637177
+    },
+    "neg_u2": {
+      "eps_global": 7.517339318060874,
+      "eps_beh": 0.8177064555466175,
+      "geom_align": 0.1964786946773529
+    },
+    "rand_sub": {
+      "eps_global": 7.517339318060874,
+      "eps_beh": 1.9733616320490839,
+      "geom_align": 0.0814153254032135
+    },
+    "rand_full": {
+      "eps_global": 7.517339318060874,
+      "eps_beh": 2.0,
+      "geom_align": 0.046039387583732605
+    },
+    "rand_full2": {
+      "eps_global": 7.517339318060874,
+      "eps_beh": 2.0,
+      "geom_align": 0.07028265297412872
+    },
+    "orth_u2": {
+      "eps_global": 7.517339318060874,
+      "eps_beh": 2.0,
+      "geom_align": 0.04837159439921379
+    }
+  }
+}

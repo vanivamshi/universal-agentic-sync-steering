@@ -1,0 +1,133 @@
+apiVersion: edictum/v1
+kind: ContractBundle
+
+metadata:
+  name: legal-corporate-law
+  description: >
+    Governance contracts for a legal research AI assistant
+    at a corporate law firm.
+
+defaults:
+  mode: enforce
+
+tools:
+  query_case_files:
+    side_effect: read
+  search_precedents:
+    side_effect: read
+  draft_document:
+    side_effect: read
+  share_externally:
+    side_effect: write
+  update_billing:
+    side_effect: write
+
+contracts:
+  # --- ACCESS CONTROL -----------------------------------------------------
+
+  - id: restrict-privileged-files
+    type: pre
+    tool: query_case_files
+    when:
+      all:
+        - principal.role: { not_in: [assigned_attorney, senior_partner, managing_partner] }
+    then:
+      effect: deny
+      message: "Case file access requires assigned attorney, senior partner, or managing partner role."
+      tags: [access-control, privilege, aba-rules]
+
+  # --- PRIVILEGE PROTECTION -----------------------------------------------
+
+  - id: no-external-privileged
+    type: pre
+    tool: share_externally
+    when:
+      args.content:
+        matches_any:
+          - '\u00a710b-5'
+          - '(?i)admitted'
+          - '(?i)violation'
+          - '(?i)confidential'
+          - '(?i)privileged'
+    then:
+      effect: deny
+      message: "Cannot share externally: content contains privileged or confidential material."
+      tags: [privilege, aba-rules, work-product]
+
+  # --- BILLING CONTROLS ---------------------------------------------------
+
+  - id: billing-partner-approval
+    type: pre
+    tool: update_billing
+    when:
+      any:
+        - args.approval_code: { equals: "" }
+        - args.approval_code: { exists: false }
+    then:
+      effect: deny
+      message: "Billing modifications require partner approval code."
+      tags: [compliance, billing, trust-accounting]
+
+  # --- OUTPUT GOVERNANCE --------------------------------------------------
+
+  - id: privilege-in-output
+    type: post
+    tool: "*"
+    when:
+      output.text:
+        matches_any:
+          - '\u00a710b-5'
+          - '(?i)DO NOT DISCLOSE'
+          - '(?i)PRIVILEGED'
+          - '(?i)WORK PRODUCT'
+          - '(?i)admitted.*violation'
+    then:
+      effect: deny
+      message: "Privileged or work-product content detected. Output suppressed to prevent waiver."
+      tags: [privilege, aba-rules, work-product]
+      metadata:
+        severity: critical
+
+  - id: pii-in-search
+    type: post
+    tool: search_precedents
+    when:
+      output.text:
+        matches_any:
+          - '(?i)Meridian Corp'
+          - '2025-CV-48291'
+          - '(?i)Jennifer Walsh'
+          - 'jwalsh@firm\.com'
+          - '847291'
+    then:
+      effect: redact
+      message: "Client identifiers redacted from search results."
+      tags: [pii, privilege, aba-rules]
+
+  - id: general-pii-in-output
+    type: post
+    tool: "*"
+    when:
+      output.text:
+        matches_any:
+          - '\b\d{3}-\d{2}-\d{4}\b'                              # SSN
+          - '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'  # Email
+          - '\b(\+1[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\b'  # US phone
+    then:
+      effect: redact
+      message: "PII (SSN, email, phone) redacted from output."
+      tags: [pii, aba-rules, client-privacy]
+
+  # --- OPERATIONAL LIMITS -------------------------------------------------
+
+  - id: session-limits
+    type: session
+    limits:
+      max_tool_calls: 20
+      max_calls_per_tool:
+        share_externally: 2
+        update_billing: 3
+    then:
+      effect: deny
+      message: "Session limit reached."
+      tags: [rate-limit, operational-safety]

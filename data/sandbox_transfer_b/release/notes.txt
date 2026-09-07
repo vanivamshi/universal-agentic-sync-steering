@@ -1,0 +1,2 @@
+Feature X ships only when flags/beta.json has feature_x_enabled=true
+and rollout_pct >= 10. Current release tag: r2026.08.1

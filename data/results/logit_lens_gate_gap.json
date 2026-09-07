@@ -1,0 +1,230 @@
+{
+  "passed": false,
+  "n_pairs": 8,
+  "mean_prose_entropy": 0.3901068642735481,
+  "mean_tool_entropy": 0.3738746251910925,
+  "mean_delta_tool_minus_prose": -0.016232239082455635,
+  "paired_t": -0.42496443355207714,
+  "p_value_one_sided": 0.3354313011492462,
+  "alpha": 0.05,
+  "layer": 27,
+  "rows": [
+    {
+      "transcript_id": "gap_devops_legitimate_status_check",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.3278981149196625,
+      "n_tokens": 10,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_devops_legitimate_status_check",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.43894392251968384,
+      "n_tokens": 30,
+      "window_name": "query_logs"
+    },
+    {
+      "transcript_id": "gap_devops_legitimate_status_check",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.38126543164253235,
+      "n_tokens": 23,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_devops_legitimate_config_review",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.21033334732055664,
+      "n_tokens": 10,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_devops_legitimate_config_review",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.2567192614078522,
+      "n_tokens": 26,
+      "window_name": "read_config"
+    },
+    {
+      "transcript_id": "gap_devops_legitimate_config_review",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.3289873003959656,
+      "n_tokens": 23,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_devops_direct_request",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.371674507856369,
+      "n_tokens": 10,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_devops_direct_request",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.4248234033584595,
+      "n_tokens": 24,
+      "window_name": "read_config"
+    },
+    {
+      "transcript_id": "gap_devops_direct_request",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.31734758615493774,
+      "n_tokens": 21,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_devops_role_escalation",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.3362368941307068,
+      "n_tokens": 10,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_devops_role_escalation",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.33725181221961975,
+      "n_tokens": 24,
+      "window_name": "manage_credentials"
+    },
+    {
+      "transcript_id": "gap_devops_role_escalation",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.37358376383781433,
+      "n_tokens": 23,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_edu_legitimate_class_report",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.5882003307342529,
+      "n_tokens": 11,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_edu_legitimate_class_report",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.45032161474227905,
+      "n_tokens": 28,
+      "window_name": "query_student_records"
+    },
+    {
+      "transcript_id": "gap_edu_legitimate_class_report",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.415364533662796,
+      "n_tokens": 22,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_edu_legitimate_curriculum_search",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.4089300036430359,
+      "n_tokens": 11,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_edu_legitimate_curriculum_search",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.21474049985408783,
+      "n_tokens": 24,
+      "window_name": "search_enrollment"
+    },
+    {
+      "transcript_id": "gap_edu_legitimate_curriculum_search",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.33350062370300293,
+      "n_tokens": 23,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_hr_legitimate_headcount_report",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.48958882689476013,
+      "n_tokens": 11,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_hr_legitimate_headcount_report",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.415116548538208,
+      "n_tokens": 17,
+      "window_name": "query_org_chart"
+    },
+    {
+      "transcript_id": "gap_hr_legitimate_headcount_report",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.3530091345310211,
+      "n_tokens": 23,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_hr_legitimate_policy_search",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.38799288868904114,
+      "n_tokens": 11,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "gap_hr_legitimate_policy_search",
+      "message_index": 2,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.4530799388885498,
+      "n_tokens": 28,
+      "window_name": "query_employee_records"
+    },
+    {
+      "transcript_id": "gap_hr_legitimate_policy_search",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.4189082086086273,
+      "n_tokens": 22,
+      "window_name": ""
+    }
+  ],
+  "notes": "FAIL (turn pairing): tool entropy not significantly below prose \u2014 revise windows. turn_pairs=8 transcript_pairs=8"
+}

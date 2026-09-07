@@ -1,0 +1,109 @@
+apiVersion: edictum/v1
+kind: ContractBundle
+
+metadata:
+  name: finance-wealth-management
+  description: >
+    Governance contracts for a wealth management AI assistant.
+
+defaults:
+  mode: enforce
+
+tools:
+  query_account_data:
+    side_effect: read
+  query_market_data:
+    side_effect: read
+  generate_client_report:
+    side_effect: read
+  execute_trade:
+    side_effect: irreversible
+  wire_transfer:
+    side_effect: irreversible
+
+contracts:
+  # ─── ACCESS CONTROL ────────────────────────────────────────────────
+
+  - id: restrict-client-data
+    type: pre
+    tool: query_account_data
+    when:
+      all:
+        - principal.role: { not_in: [licensed_advisor, compliance_officer, portfolio_manager] }
+    then:
+      effect: deny
+      message: "Client data access requires licensed advisor, compliance officer, or portfolio manager role."
+      tags: [access-control, pii, glba]
+
+  # ─── TRADE APPROVAL ────────────────────────────────────────────────
+
+  - id: trade-approval-threshold
+    type: pre
+    tool: execute_trade
+    when:
+      principal.ticket_ref: { exists: false }
+    then:
+      effect: deny
+      message: "Trades require a compliance pre-approval ticket reference."
+      tags: [compliance, sox, trade-approval]
+
+  # ─── WIRE TRANSFER CONTROLS ────────────────────────────────────────
+
+  - id: wire-dual-authorization
+    type: pre
+    tool: wire_transfer
+    when:
+      any:
+        - args.authorization_code: { equals: "" }
+        - args.authorization_code: { exists: false }
+    then:
+      effect: deny
+      message: "Wire transfers require dual authorization code."
+      tags: [compliance, pci-dss, wire-transfer]
+
+  # ─── OUTPUT GOVERNANCE ─────────────────────────────────────────────
+
+  - id: client-pii-in-output
+    type: post
+    tool: "*"
+    when:
+      output.text:
+        matches_any:
+          - '\b\d{3}-\d{2}-\d{4}\b'                              # SSN
+          - '\b[A-Z][a-z]+\s[A-Z][a-z]+,?\s*(age|DOB|born)\b'    # Name + age/DOB
+          - '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'  # Email
+          - '\b(\+1[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\b'  # US phone
+          - '\b(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])/\d{4}\b'   # DOB (MM/DD/YYYY)
+    then:
+      effect: redact
+      message: "Client PII (SSN, email, phone, DOB) redacted from output."
+      tags: [pii, glba, pci-dss]
+
+  - id: report-pii-redaction
+    type: post
+    tool: generate_client_report
+    when:
+      output.text:
+        matches_any:
+          - '\b\d{3}-\d{2}-\d{4}\b'                              # SSN
+          - '\bWM-\d{4,8}\b'                                       # Account number
+          - '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'  # Email
+          - '\b(\+1[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\b'  # US phone
+    then:
+      effect: redact
+      message: "Client identifiers redacted from generated report."
+      tags: [pii, report, sec-17a4]
+
+  # ─── OPERATIONAL LIMITS ─────────────────────────────────────────────
+
+  - id: session-limits
+    type: session
+    limits:
+      max_tool_calls: 20
+      max_calls_per_tool:
+        execute_trade: 3
+        wire_transfer: 1
+    then:
+      effect: deny
+      message: "Session limit reached."
+      tags: [rate-limit, operational-safety]

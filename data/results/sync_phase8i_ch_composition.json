@@ -1,0 +1,1386 @@
+{
+  "protocol": "Phase 8I C/H composition (O frozen early-FINAL \u03b1=1.5)",
+  "alpha": 1.5,
+  "reps": 2,
+  "mstar_set": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "orders": {
+    "C_then_H": [
+      "C",
+      "H",
+      "O"
+    ],
+    "H_then_C": [
+      "H",
+      "C",
+      "O"
+    ]
+  },
+  "by_order": {
+    "C_then_H": {
+      "n": 8,
+      "P_hit": 0.375,
+      "P_C": 0.375,
+      "P_H": 0.75,
+      "P_O": 0.75,
+      "P_C_after_C": 0.5,
+      "P_H_after_C": 0.375,
+      "P_C_after_H": 0.375,
+      "P_H_after_H": 0.75,
+      "P_C_after_CH": 0.375,
+      "P_H_after_CH": 0.75,
+      "P_both_CH_after_CH": 0.375,
+      "mean_delta_E_total": 0.375,
+      "mean_delta_E_CH": 0.375,
+      "mean_delta_E_C": -0.125,
+      "mean_delta_E_H": 0.5,
+      "mean_delta_E_O": 0.0,
+      "mean_E_traj": [
+        1.5,
+        1.625,
+        1.125,
+        1.125
+      ]
+    },
+    "H_then_C": {
+      "n": 8,
+      "P_hit": 0.375,
+      "P_C": 0.625,
+      "P_H": 0.75,
+      "P_O": 0.875,
+      "P_C_after_C": 0.5,
+      "P_H_after_C": 0.75,
+      "P_C_after_H": 0.5,
+      "P_H_after_H": 0.75,
+      "P_C_after_CH": 0.5,
+      "P_H_after_CH": 0.75,
+      "P_both_CH_after_CH": 0.375,
+      "mean_delta_E_total": 0.75,
+      "mean_delta_E_CH": 0.375,
+      "mean_delta_E_C": -0.25,
+      "mean_delta_E_H": 0.625,
+      "mean_delta_E_O": 0.375,
+      "mean_E_traj": [
+        1.5,
+        0.875,
+        1.125,
+        0.75
+      ]
+    }
+  },
+  "cross": {
+    "C_given_H": {
+      "n": 8,
+      "R": 1.6793246319856656,
+      "R_from_means": 1.6793246319855546,
+      "abs_dB_h0": 0.08177131432411444,
+      "abs_dB_h_prior": 0.1373205823343186,
+      "cross_alone": 0.051442829163178605,
+      "cross_given_prior": 0.16384583314855988,
+      "cross_ratio": 3.185008208410052,
+      "cross_ratio_mean_of_ratios": 3.185008208410146
+    },
+    "H_given_C": {
+      "n": 8,
+      "R": 0.7274426232401954,
+      "R_from_means": 0.7274426232401952,
+      "abs_dB_h0": 0.41240125408323863,
+      "abs_dB_h_prior": 0.29999825009785736,
+      "cross_alone": 0.2601555906607857,
+      "cross_given_prior": 0.20460632265058154,
+      "cross_ratio": 0.7864767469762574,
+      "cross_ratio_mean_of_ratios": 0.7864767469762586
+    },
+    "R_C_given_H": 1.6793246319855546,
+    "R_H_given_C": 0.7274426232401952,
+    "cross_ratio_C": 3.185008208410052,
+    "cross_ratio_H": 0.7864767469762574,
+    "ref_5C": {
+      "C_cross_ratio": 1.33,
+      "H_cross_ratio": 0.66,
+      "C_retention": 0.83
+    },
+    "note": "\u0394B from hooked forwards (not analytical); R\u22601 only if nonlinear/site coupling"
+  },
+  "cross_rows": {
+    "C": [
+      {
+        "i": 1,
+        "s_C": 1.0,
+        "abs_dB_C_h0": 0.08177128406710121,
+        "abs_dB_C_hH": 0.1373205900265777,
+        "R_C_given_H": 1.6793253474397312,
+        "cross_H_from_C_alone": 0.05144281877093837,
+        "cross_H_from_C_given_H": 0.16384583096560412,
+        "cross_ratio_C": 3.1850088093960682
+      },
+      {
+        "i": 1,
+        "s_C": -1.0,
+        "abs_dB_C_h0": 0.0817713079247504,
+        "abs_dB_C_hH": 0.13732060767109733,
+        "R_C_given_H": 1.6793250732575522,
+        "cross_H_from_C_alone": 0.0514428188549827,
+        "cross_H_from_C_given_H": 0.16384582562854533,
+        "cross_ratio_C": 3.1850087004451817
+      },
+      {
+        "i": 3,
+        "s_C": 1.0,
+        "abs_dB_C_h0": 0.08177130345208594,
+        "abs_dB_C_hH": 0.1373205782858582,
+        "R_C_given_H": 1.6793248057531756,
+        "cross_H_from_C_alone": 0.05144284121613252,
+        "cross_H_from_C_given_H": 0.1638458543102117,
+        "cross_ratio_C": 3.185007873531478
+      },
+      {
+        "i": 3,
+        "s_C": -1.0,
+        "abs_dB_C_h0": 0.08177131778213953,
+        "abs_dB_C_hH": 0.13732058712434458,
+        "R_C_given_H": 1.6793246195469544,
+        "cross_H_from_C_alone": 0.05144284187343651,
+        "cross_H_from_C_given_H": 0.16384581065707415,
+        "cross_ratio_C": 3.1850069842599242
+      },
+      {
+        "i": 5,
+        "s_C": 1.0,
+        "abs_dB_C_h0": 0.0817713015202739,
+        "abs_dB_C_hH": 0.13732056356571753,
+        "R_C_given_H": 1.67932466541053,
+        "cross_H_from_C_alone": 0.0514428245370917,
+        "cross_H_from_C_given_H": 0.1638458074265623,
+        "cross_ratio_C": 3.1850079948161656
+      },
+      {
+        "i": 5,
+        "s_C": -1.0,
+        "abs_dB_C_h0": 0.08177131849957986,
+        "abs_dB_C_hH": 0.13732058122078827,
+        "R_C_given_H": 1.679324532617067,
+        "cross_H_from_C_alone": 0.05144283440553732,
+        "cross_H_from_C_given_H": 0.16384582341652054,
+        "cross_ratio_C": 3.1850076946554124
+      },
+      {
+        "i": 7,
+        "s_C": 1.0,
+        "abs_dB_C_h0": 0.08177135642555422,
+        "abs_dB_C_hH": 0.1373205695065116,
+        "R_C_given_H": 1.679323610481259,
+        "cross_H_from_C_alone": 0.05144283176615705,
+        "cross_H_from_C_given_H": 0.16384585560523313,
+        "cross_ratio_C": 3.1850084837869135
+      },
+      {
+        "i": 7,
+        "s_C": -1.0,
+        "abs_dB_C_h0": 0.08177132492143047,
+        "abs_dB_C_hH": 0.13732058127365354,
+        "R_C_given_H": 1.6793244013790565,
+        "cross_H_from_C_alone": 0.05144282188115268,
+        "cross_H_from_C_given_H": 0.1638458571787278,
+        "cross_ratio_C": 3.185009126390026
+      }
+    ],
+    "H": [
+      {
+        "i": 1,
+        "s_H": 1.0,
+        "abs_dB_H_h0": 0.4124012620190771,
+        "abs_dB_H_hC": 0.29999824982441137,
+        "R_H_given_C": 0.7274426085789569,
+        "cross_C_from_H_alone": 0.2601555951457759,
+        "cross_C_from_H_given_C": 0.20460628918629942,
+        "cross_ratio_H": 0.7864766047858786
+      },
+      {
+        "i": 1,
+        "s_H": -1.0,
+        "abs_dB_H_h0": 0.4124012462310822,
+        "abs_dB_H_hC": 0.2999982394575196,
+        "R_H_given_C": 0.7274426112898323,
+        "cross_C_from_H_alone": 0.2601556034379757,
+        "cross_C_from_H_given_C": 0.2046063036916288,
+        "cross_ratio_H": 0.7864766354740825
+      },
+      {
+        "i": 3,
+        "s_H": 1.0,
+        "abs_dB_H_h0": 0.41240128466146153,
+        "abs_dB_H_hC": 0.29999827156738235,
+        "R_H_given_C": 0.7274426213624665,
+        "cross_C_from_H_alone": 0.26015559172567215,
+        "cross_C_from_H_given_C": 0.2046063168918999,
+        "cross_ratio_H": 0.7864767216214686
+      },
+      {
+        "i": 3,
+        "s_H": -1.0,
+        "abs_dB_H_h0": 0.41240124921352317,
+        "abs_dB_H_hC": 0.2999982804298855,
+        "R_H_given_C": 0.7274427053797784,
+        "cross_C_from_H_alone": 0.2601555904845432,
+        "cross_C_from_H_given_C": 0.20460632114233812,
+        "cross_ratio_H": 0.7864767417115895
+      },
+      {
+        "i": 5,
+        "s_H": 1.0,
+        "abs_dB_H_h0": 0.41240123989228383,
+        "abs_dB_H_hC": 0.29999825700281324,
+        "R_H_given_C": 0.7274426650151938,
+        "cross_C_from_H_alone": 0.26015558651982484,
+        "cross_C_from_H_given_C": 0.2046063244743812,
+        "cross_ratio_H": 0.7864767665052214
+      },
+      {
+        "i": 5,
+        "s_H": -1.0,
+        "abs_dB_H_h0": 0.41240124737612005,
+        "abs_dB_H_hC": 0.2999982583651368,
+        "R_H_given_C": 0.7274426551177016,
+        "cross_C_from_H_alone": 0.26015558783359305,
+        "cross_C_from_H_given_C": 0.20460632511238463,
+        "cross_ratio_H": 0.7864767649859584
+      },
+      {
+        "i": 7,
+        "s_H": 1.0,
+        "abs_dB_H_h0": 0.4124012499355083,
+        "abs_dB_H_hC": 0.29999822609643223,
+        "R_H_given_C": 0.7274425723572522,
+        "cross_C_from_H_alone": 0.2601555923289687,
+        "cross_C_from_H_given_C": 0.20460637924801128,
+        "cross_ratio_H": 0.7864769594854029
+      },
+      {
+        "i": 7,
+        "s_H": -1.0,
+        "abs_dB_H_h0": 0.41240125333685285,
+        "abs_dB_H_hC": 0.29999821803927773,
+        "R_H_given_C": 0.7274425468203819,
+        "cross_C_from_H_alone": 0.26015557780993204,
+        "cross_C_from_H_given_C": 0.20460632145770896,
+        "cross_ratio_H": 0.786476781240466
+      }
+    ]
+  },
+  "gate": {
+    "hypothesis": "H\u2192C or C\u2192H order matters under corrected live sites; R captures coupling",
+    "O_frozen": {
+      "alpha_O": 1.5,
+      "early_FINAL": true
+    },
+    "ref_8H_C_then_H": {
+      "P_hit": 0.31,
+      "mean_delta_E_total": 0.38,
+      "P_C": 0.56,
+      "P_H": 0.69,
+      "P_O": 0.75
+    },
+    "ref_5C": {
+      "C_cross_ratio": 1.33,
+      "H_cross_ratio": 0.66,
+      "C_retention": 0.83
+    },
+    "C_then_H": {
+      "P_hit": 0.375,
+      "delta_E": 0.375,
+      "delta_E_C": -0.125,
+      "delta_E_H": 0.5,
+      "P_both_CH": 0.375,
+      "P_C_after_CH": 0.375,
+      "P_H_after_CH": 0.75
+    },
+    "H_then_C": {
+      "P_hit": 0.375,
+      "delta_E": 0.75,
+      "delta_E_C": -0.25,
+      "delta_E_H": 0.625,
+      "P_both_CH": 0.375,
+      "P_C_after_CH": 0.5,
+      "P_H_after_CH": 0.75
+    },
+    "H_then_C_beats_C_then_H": true,
+    "C_then_H_beats_H_then_C": false,
+    "orders_similar": false,
+    "preferred_order": "H_then_C",
+    "R_C_given_H": 1.6793246319855546,
+    "R_H_given_C": 0.7274426232401952,
+    "cross_ratio_C": 3.185008208410052,
+    "cross_ratio_H": 0.7864767469762574,
+    "C_self_amplified_by_H": true,
+    "C_cross_worsens": true,
+    "H_attenuated_by_C": true,
+    "read": "If H\u2192C outperforms C\u2192H: prefer H first. If orders similar/weak: next is conditional C skip (small policy), not re-convert. O stays frozen. No 8-way reopen."
+  },
+  "trials": {
+    "C_then_H": [
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_after_CH": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_CH": -2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 1,
+          "bit_H": 0,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_H": {
+          "bit_C": 0,
+          "bit_H": 0,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 0,
+          "bit_H": 0,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "bit_C_after_CH": 0,
+        "bit_H_after_CH": 0,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2,
+        "n_episodes": 3
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_CH": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 1,
+          "bit_H": 0,
+          "bit_O": 0,
+          "skipped_noop": 1
+        },
+        "after_H": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 0,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "n_episodes": 2
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_CH": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_H": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_O": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 1,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 1,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0,
+        "n_episodes": 1
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_CH": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "after_H": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 0,
+          "skipped_noop": 1
+        },
+        "after_O": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "bit_C_after_CH": 0,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2,
+        "n_episodes": 3
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_CH": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 0,
+          "bit_H": 0,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_H": {
+          "bit_C": 0,
+          "bit_H": 0,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 0,
+          "bit_H": 0,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 0,
+        "bit_H_after_CH": 0,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "n_episodes": 3
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_after_CH": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 2.0,
+        "delta_E_CH": 2.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 0,
+          "bit_H": 0,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "after_H": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 1,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 1,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "n_episodes": 3
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_CH": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_H": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_O": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 1,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 1,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0,
+        "n_episodes": 1
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_after_CH": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 2.0,
+        "delta_E_CH": 2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 0,
+          "bit_H": 0,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "after_H": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 0,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "n_episodes": 3
+      }
+    ],
+    "H_then_C": [
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "H",
+          "C",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_after_CH": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          3.0,
+          3.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_CH": -2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 2.0,
+        "after_C": {
+          "bit_C": 0,
+          "bit_H": 0,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "after_H": {
+          "bit_C": 0,
+          "bit_H": 0,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 1,
+          "bit_H": 0,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "bit_C_after_CH": 0,
+        "bit_H_after_CH": 0,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3,
+        "n_episodes": 4
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "H",
+          "C",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_CH": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 1.0,
+        "after_C": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "after_H": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "bit_C_after_CH": 0,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 3,
+        "n_episodes": 4
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "H",
+          "C",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_CH": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_H": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_O": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 1,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 1,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0,
+        "n_episodes": 1
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "H",
+          "C",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_CH": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "after_H": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_O": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 0,
+          "skipped_noop": 0
+        },
+        "bit_C_after_CH": 0,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2,
+        "n_episodes": 3
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "H",
+          "C",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          1,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 2.0,
+        "delta_E_CH": 2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 1,
+          "bit_H": 0,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_H": {
+          "bit_C": 1,
+          "bit_H": 0,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 1,
+          "bit_H": 0,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 1,
+        "bit_H_after_CH": 0,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "n_episodes": 2
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "H",
+          "C",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_after_CH": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 2.0,
+        "delta_E_CH": 2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_H": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 1,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 1,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "n_episodes": 2
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "H",
+          "C",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_after_CH": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_CH": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_H": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "after_O": {
+          "bit_C": 1,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 1,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 1,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0,
+        "n_episodes": 1
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "H",
+          "C",
+          "O"
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_after_CH": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 2.0,
+        "delta_E_CH": 2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "after_C": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_H": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 0
+        },
+        "after_O": {
+          "bit_C": 0,
+          "bit_H": 1,
+          "bit_O": 1,
+          "skipped_noop": 1
+        },
+        "bit_C_after_CH": 0,
+        "bit_H_after_CH": 1,
+        "both_CH_after_CH": 0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "n_episodes": 3
+      }
+    ]
+  }
+}

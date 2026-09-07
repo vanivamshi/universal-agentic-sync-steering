@@ -1,0 +1,2 @@
+default_timezone=Asia/Kolkata
+fallback_timezone=UTC

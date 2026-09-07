@@ -1,0 +1,1 @@
+if not email: raise KeyError('Email is required')

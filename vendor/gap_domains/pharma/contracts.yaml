@@ -1,0 +1,119 @@
+apiVersion: edictum/v1
+kind: ContractBundle
+
+metadata:
+  name: pharma-clinical-agent
+  description: >
+    Governance contracts for a pharmacovigilance AI agent that assists
+    with clinical trial data analysis and regulatory reporting.
+
+defaults:
+  mode: enforce
+
+tools:
+  query_clinical_data:
+    side_effect: read
+  search_medical_literature:
+    side_effect: read
+  update_case_report:
+    side_effect: write
+  export_regulatory_document:
+    side_effect: write
+
+contracts:
+  # ─── ACCESS CONTROL ────────────────────────────────────────────────
+
+  - id: restrict-patient-data
+    type: pre
+    tool: query_clinical_data
+    when:
+      all:
+        - args.dataset: { in: [patient_records, adverse_events_detailed, lab_results] }
+        - principal.role: { not_in: [pharmacovigilance, clinical_data_manager, medical_monitor] }
+    then:
+      effect: deny
+      message: "Access to {args.dataset} requires pharmacovigilance or clinical data manager role."
+      tags: [access-control, phi, 21cfr11]
+
+  - id: no-unblinding
+    type: pre
+    tool: query_clinical_data
+    when:
+      args.query:
+        contains_any: [treatment_arm, randomization_code, unblind, placebo_assignment]
+    then:
+      effect: deny
+      message: "Unblinding queries are prohibited during active trial phase. Query contained restricted terms."
+      tags: [blinding, gcp, ich-e6]
+
+  # ─── CHANGE CONTROL ────────────────────────────────────────────────
+
+  - id: case-report-requires-ticket
+    type: pre
+    tool: update_case_report
+    when:
+      principal.ticket_ref: { exists: false }
+    then:
+      effect: deny
+      message: "Case report modifications require a tracking ticket (CAPA/deviation number)."
+      tags: [change-control, gxp, capa]
+
+  - id: case-report-authorized-roles
+    type: pre
+    tool: update_case_report
+    when:
+      principal.role: { not_in: [pharmacovigilance, clinical_data_manager] }
+    then:
+      effect: deny
+      message: "Only pharmacovigilance and clinical data managers can modify case reports."
+      tags: [access-control, gxp, separation-of-duties]
+
+  # ─── OUTPUT GOVERNANCE ─────────────────────────────────────────────
+
+  - id: pii-in-any-output
+    type: post
+    tool: "*"
+    when:
+      output.text:
+        matches_any:
+          - '\b\d{3}-\d{2}-\d{4}\b'                              # SSN
+          - '\bPAT-\d{4,8}\b'                                     # Patient ID
+          - '\b[A-Z][a-z]+\s[A-Z][a-z]+,?\s*(age|DOB|born)\b'    # Name + age/DOB
+          - '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'  # Email
+          - '\b(\+1[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\b'  # US phone
+          - '\b(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])/\d{4}\b'   # DOB (MM/DD/YYYY)
+    then:
+      effect: redact
+      message: "PHI/PII (SSN, patient ID, email, phone, DOB) redacted from output."
+      tags: [phi, gdpr, hipaa, redaction]
+      metadata:
+        severity: high
+
+  - id: regulatory-export-pii
+    type: post
+    tool: export_regulatory_document
+    when:
+      output.text:
+        matches_any:
+          - '\b\d{3}-\d{2}-\d{4}\b'                              # SSN
+          - '\bPAT-\d{4,8}\b'                                     # Patient ID
+          - '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'  # Email
+          - '\b(\+1[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\b'  # US phone
+    then:
+      effect: redact
+      message: "PHI/PII redacted from regulatory export."
+      tags: [phi, regulatory-submission, annex11]
+
+  # ─── OPERATIONAL LIMITS ────────────────────────────────────────────
+
+  - id: session-limits
+    type: session
+    limits:
+      max_tool_calls: 20
+      max_calls_per_tool:
+        update_case_report: 3
+        export_regulatory_document: 2
+    then:
+      effect: deny
+      message: "Session limit reached. Summarize findings and stop."
+      tags: [rate-limit, operational-safety]

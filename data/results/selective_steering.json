@@ -1,0 +1,3948 @@
+{
+  "protocol": "docs/selective_steering_protocol.md",
+  "layer": 4,
+  "seed": 20260824,
+  "n_reps": 4,
+  "alpha": 0.25,
+  "train_tasks": [
+    "timeout",
+    "oncall",
+    "bugs",
+    "version"
+  ],
+  "test_tasks": [
+    "db",
+    "loc"
+  ],
+  "eps_star_train": {
+    "u1": 7.517340808174014,
+    "u2": 7.517340808174014,
+    "neg_u1": 7.517340808174014,
+    "neg_u2": 7.517340808174014,
+    "rand_sub": 7.5173422982871525,
+    "rand_full": 7.517340808174014,
+    "rand_full2": 7.517339318060874,
+    "orth_u2": 7.517340808174014
+  },
+  "eps_ranked": [
+    [
+      "rand_full2",
+      7.517339318060874
+    ],
+    [
+      "u1",
+      7.517340808174014
+    ],
+    [
+      "u2",
+      7.517340808174014
+    ],
+    [
+      "neg_u1",
+      7.517340808174014
+    ],
+    [
+      "neg_u2",
+      7.517340808174014
+    ],
+    [
+      "rand_full",
+      7.517340808174014
+    ],
+    [
+      "orth_u2",
+      7.517340808174014
+    ],
+    [
+      "rand_sub",
+      7.5173422982871525
+    ]
+  ],
+  "decision": "SELECTIVE_WEAK",
+  "best_svd_selectivity": 0.4807692307692307,
+  "best_random_selectivity": 0.9259259259259258,
+  "best_target_effect": 0.125,
+  "spearman_eps_controllability": 0.4523809523809416,
+  "spearman_eps_collateral": 0.21428571428570917,
+  "per_direction": {
+    "u1": {
+      "direction_id": "u1",
+      "eps_star_train": 7.517340808174014,
+      "target_effect": 0.125,
+      "collateral": 0.25,
+      "selectivity": 0.4807692307692307,
+      "controllability": 0.125,
+      "mean_d_extra_plus": -0.125,
+      "mean_d_extra_minus": 0.0,
+      "collateral_plus": 0.5,
+      "collateral_minus": 0.0
+    },
+    "u2": {
+      "direction_id": "u2",
+      "eps_star_train": 7.517340808174014,
+      "target_effect": 0.0,
+      "collateral": 0.0,
+      "selectivity": 0.0,
+      "controllability": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "collateral_plus": 0.0,
+      "collateral_minus": 0.0
+    },
+    "neg_u1": {
+      "direction_id": "neg_u1",
+      "eps_star_train": 7.517340808174014,
+      "target_effect": 0.0,
+      "collateral": 0.0,
+      "selectivity": 0.0,
+      "controllability": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "collateral_plus": 0.0,
+      "collateral_minus": 0.0
+    },
+    "neg_u2": {
+      "direction_id": "neg_u2",
+      "eps_star_train": 7.517340808174014,
+      "target_effect": 0.0,
+      "collateral": 0.0,
+      "selectivity": 0.0,
+      "controllability": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "collateral_plus": 0.0,
+      "collateral_minus": 0.0
+    },
+    "rand_sub": {
+      "direction_id": "rand_sub",
+      "eps_star_train": 7.5173422982871525,
+      "target_effect": 0.125,
+      "collateral": 0.125,
+      "selectivity": 0.9259259259259258,
+      "controllability": 0.125,
+      "mean_d_extra_plus": -0.125,
+      "mean_d_extra_minus": 0.0,
+      "collateral_plus": 0.25,
+      "collateral_minus": 0.0
+    },
+    "rand_full": {
+      "direction_id": "rand_full",
+      "eps_star_train": 7.517340808174014,
+      "target_effect": 0.125,
+      "collateral": 0.125,
+      "selectivity": 0.9259259259259258,
+      "controllability": 0.125,
+      "mean_d_extra_plus": -0.125,
+      "mean_d_extra_minus": 0.0,
+      "collateral_plus": 0.25,
+      "collateral_minus": 0.0
+    },
+    "rand_full2": {
+      "direction_id": "rand_full2",
+      "eps_star_train": 7.517339318060874,
+      "target_effect": 0.0,
+      "collateral": 0.0,
+      "selectivity": 0.0,
+      "controllability": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "collateral_plus": 0.0,
+      "collateral_minus": 0.0
+    },
+    "orth_u2": {
+      "direction_id": "orth_u2",
+      "eps_star_train": 7.517340808174014,
+      "target_effect": 0.0,
+      "collateral": 0.0,
+      "selectivity": 0.0,
+      "controllability": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "collateral_plus": 0.0,
+      "collateral_minus": 0.0
+    }
+  },
+  "rows": {
+    "u1": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261490
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261587
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291497
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291594
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321504
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321601
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351511
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351608
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261490
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261587
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291497
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291594
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321504
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 4,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 4,
+          "n_list": 0,
+          "n_search": 4,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py",
+            "code/production_storage.py",
+            "code/production_storage.py",
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code",
+            "search_code",
+            "search_code",
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321601
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351511
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351608
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261490
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261587
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291497
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291594
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u1",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321504
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321601
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351511
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u1",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351608
+        }
+      ]
+    },
+    "u2": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261680
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261777
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291687
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291784
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321694
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321791
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351701
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351798
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261680
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261777
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291687
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291784
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321694
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321791
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351701
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351798
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261680
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261777
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291687
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291784
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321694
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321791
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351701
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351798
+        }
+      ]
+    },
+    "neg_u1": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u1",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261103
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261200
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 3,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "search_code",
+            "search_code"
+          ],
+          "tools": [
+            "search slowly",
+            "search_code",
+            "run_command"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291110
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291207
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u1",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321117
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321214
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351124
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351221
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u1",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261103
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261200
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 3,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "search_code",
+            "search_code"
+          ],
+          "tools": [
+            "search slowly",
+            "search_code",
+            "run_command"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291110
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291207
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u1",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321117
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321214
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351124
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351221
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u1",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261103
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261200
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 3,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "search_code",
+            "search_code"
+          ],
+          "tools": [
+            "search slowly",
+            "search_code",
+            "run_command"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291110
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291207
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u1",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321117
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321214
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351124
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u1",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351221
+        }
+      ]
+    },
+    "neg_u2": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261419
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261516
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291426
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291523
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321433
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321530
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351440
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351537
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261419
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261516
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291426
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291523
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321433
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321530
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351440
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351537
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261419
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261516
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291426
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291523
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321433
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321530
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "neg_u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351440
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "neg_u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351537
+        }
+      ]
+    },
+    "rand_sub": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20260855
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20260952
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20290862
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20290959
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20320869
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20320966
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20350876
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20350973
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20260855
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20260952
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20290862
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20290959
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20320869
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20320966
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20350876
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20350973
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20260855
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20260952
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20290862
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20290959
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_sub",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20320869
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20320966
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20350876
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_sub",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20350973
+        }
+      ]
+    },
+    "rand_full": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261697
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261794
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291704
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291801
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321711
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321808
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351718
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351815
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261697
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261794
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291704
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291801
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321711
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321808
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351718
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351815
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261697
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261794
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291704
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291801
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321711
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321808
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351718
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351815
+        }
+      ]
+    },
+    "rand_full2": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261124
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261221
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291131
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291228
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321138
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321235
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351145
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351242
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261124
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261221
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291131
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291228
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321138
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321235
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351145
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351242
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261124
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261221
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291131
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291228
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321138
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321235
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "rand_full2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351145
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "rand_full2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351242
+        }
+      ]
+    },
+    "orth_u2": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261634
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261731
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291641
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291738
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321648
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321745
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351655
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351752
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261634
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261731
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291641
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291738
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321648
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321745
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351655
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351752
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db",
+          "seed": 20261634
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc",
+          "seed": 20261731
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db",
+          "seed": 20291641
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc",
+          "seed": 20291738
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db",
+          "seed": 20321648
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc",
+          "seed": 20321745
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "direction_id": "orth_u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db",
+          "seed": 20351655
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "direction_id": "orth_u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc",
+          "seed": 20351752
+        }
+      ]
+    }
+  }
+}

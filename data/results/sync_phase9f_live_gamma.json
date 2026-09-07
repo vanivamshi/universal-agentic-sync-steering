@@ -1,0 +1,7855 @@
+{
+  "protocol": "Phase 9F live \u0393 vs fixed (scoped)",
+  "seed": 20260925,
+  "reps": 4,
+  "max_steps": 4,
+  "controller": {
+    "frozen": "8K",
+    "order_fixed": [
+      "H",
+      "C",
+      "O"
+    ],
+    "alpha": {
+      "C": 5.0,
+      "H": 1.5,
+      "O": 1.5
+    },
+    "gamma": "empirical argmax among remaining-error bits; fallback=fixed",
+    "no_weight_tuning": true
+  },
+  "scoped_mstar": [
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+  ],
+  "agg": {
+    "gamma": {
+      "n": 20,
+      "P_hit": 0.65,
+      "mean_delta_E": 1.45,
+      "mean_E_final": 0.7,
+      "mean_E0": 2.15,
+      "mean_P_down_steps": 0.625,
+      "mean_P_up_steps": 0.15,
+      "mean_P_shift_steps": 0.875,
+      "mean_step_dE": -1.125,
+      "mean_n_steps": 2.65,
+      "mean_n_fallback": 0.1
+    },
+    "fixed": {
+      "n": 20,
+      "P_hit": 0.4,
+      "mean_delta_E": 0.75,
+      "mean_E_final": 1.4,
+      "mean_E0": 2.15,
+      "mean_P_down_steps": 0.4458333333333333,
+      "mean_P_up_steps": 0.175,
+      "mean_P_shift_steps": 0.8333333333333333,
+      "mean_step_dE": -0.3875,
+      "mean_n_steps": 3.45,
+      "mean_n_fallback": 0.0
+    }
+  },
+  "per_mstar": {
+    "010": {
+      "gamma": {
+        "n": 4,
+        "P_hit": 0.25,
+        "mean_delta_E": 0.5,
+        "mean_E_final": 1.25,
+        "mean_E0": 1.75,
+        "mean_P_down_steps": 0.375,
+        "mean_P_up_steps": 0.125,
+        "mean_P_shift_steps": 0.625,
+        "mean_step_dE": -0.25,
+        "mean_n_steps": 3.5,
+        "mean_n_fallback": 0.25
+      },
+      "fixed": {
+        "n": 4,
+        "P_hit": 0.5,
+        "mean_delta_E": 0.75,
+        "mean_E_final": 1.0,
+        "mean_E0": 1.75,
+        "mean_P_down_steps": 0.1875,
+        "mean_P_up_steps": 0.125,
+        "mean_P_shift_steps": 0.8125,
+        "mean_step_dE": -0.1875,
+        "mean_n_steps": 4.0,
+        "mean_n_fallback": 0.0
+      },
+      "delta_P_hit": -0.25
+    },
+    "011": {
+      "gamma": {
+        "n": 4,
+        "P_hit": 1.0,
+        "mean_delta_E": 2.0,
+        "mean_E_final": 0.0,
+        "mean_E0": 2.0,
+        "mean_P_down_steps": 0.8125,
+        "mean_P_up_steps": 0.0625,
+        "mean_P_shift_steps": 1.0,
+        "mean_step_dE": -1.8125,
+        "mean_n_steps": 1.75,
+        "mean_n_fallback": 0.0
+      },
+      "fixed": {
+        "n": 4,
+        "P_hit": 0.25,
+        "mean_delta_E": 0.5,
+        "mean_E_final": 1.5,
+        "mean_E0": 2.0,
+        "mean_P_down_steps": 0.4375,
+        "mean_P_up_steps": 0.1875,
+        "mean_P_shift_steps": 0.75,
+        "mean_step_dE": -0.3125,
+        "mean_n_steps": 3.25,
+        "mean_n_fallback": 0.0
+      },
+      "delta_P_hit": 0.75
+    },
+    "100": {
+      "gamma": {
+        "n": 4,
+        "P_hit": 1.0,
+        "mean_delta_E": 2.75,
+        "mean_E_final": 0.0,
+        "mean_E0": 2.75,
+        "mean_P_down_steps": 0.8125,
+        "mean_P_up_steps": 0.0625,
+        "mean_P_shift_steps": 0.875,
+        "mean_step_dE": -2.0,
+        "mean_n_steps": 2.0,
+        "mean_n_fallback": 0.0
+      },
+      "fixed": {
+        "n": 4,
+        "P_hit": 0.5,
+        "mean_delta_E": 1.5,
+        "mean_E_final": 1.25,
+        "mean_E0": 2.75,
+        "mean_P_down_steps": 0.6041666666666666,
+        "mean_P_up_steps": 0.125,
+        "mean_P_shift_steps": 0.8541666666666666,
+        "mean_step_dE": -0.625,
+        "mean_n_steps": 3.25,
+        "mean_n_fallback": 0.0
+      },
+      "delta_P_hit": 0.5
+    },
+    "101": {
+      "gamma": {
+        "n": 4,
+        "P_hit": 0.75,
+        "mean_delta_E": 2.0,
+        "mean_E_final": 0.25,
+        "mean_E0": 2.25,
+        "mean_P_down_steps": 0.75,
+        "mean_P_up_steps": 0.1875,
+        "mean_P_shift_steps": 0.9375,
+        "mean_step_dE": -1.5625,
+        "mean_n_steps": 2.0,
+        "mean_n_fallback": 0.0
+      },
+      "fixed": {
+        "n": 4,
+        "P_hit": 0.5,
+        "mean_delta_E": 1.0,
+        "mean_E_final": 1.25,
+        "mean_E0": 2.25,
+        "mean_P_down_steps": 0.625,
+        "mean_P_up_steps": 0.125,
+        "mean_P_shift_steps": 0.8125,
+        "mean_step_dE": -0.8125,
+        "mean_n_steps": 2.75,
+        "mean_n_fallback": 0.0
+      },
+      "delta_P_hit": 0.25
+    },
+    "110": {
+      "gamma": {
+        "n": 4,
+        "P_hit": 0.25,
+        "mean_delta_E": 0.0,
+        "mean_E_final": 2.0,
+        "mean_E0": 2.0,
+        "mean_P_down_steps": 0.375,
+        "mean_P_up_steps": 0.3125,
+        "mean_P_shift_steps": 0.9375,
+        "mean_step_dE": 0.0,
+        "mean_n_steps": 4.0,
+        "mean_n_fallback": 0.25
+      },
+      "fixed": {
+        "n": 4,
+        "P_hit": 0.25,
+        "mean_delta_E": 0.0,
+        "mean_E_final": 2.0,
+        "mean_E0": 2.0,
+        "mean_P_down_steps": 0.375,
+        "mean_P_up_steps": 0.3125,
+        "mean_P_shift_steps": 0.9375,
+        "mean_step_dE": 0.0,
+        "mean_n_steps": 4.0,
+        "mean_n_fallback": 0.0
+      },
+      "delta_P_hit": 0.0
+    }
+  },
+  "paired": [
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20260956,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20260956,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": -0.07692307692307693,
+                  "n": 13,
+                  "mean_dE": 0.0
+                },
+                "C": {
+                  "Gamma": 0.2857142857142857,
+                  "n": 14,
+                  "mean_dE": -0.2857142857142857
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.2857142857142857
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": -0.07692307692307693,
+                  "n": 13,
+                  "mean_dE": 0.0
+                },
+                "C": {
+                  "Gamma": 0.2857142857142857,
+                  "n": 14,
+                  "mean_dE": -0.2857142857142857
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.2857142857142857
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": -0.07692307692307693,
+                  "n": 13,
+                  "mean_dE": 0.0
+                },
+                "C": {
+                  "Gamma": 0.2857142857142857,
+                  "n": 14,
+                  "mean_dE": -0.2857142857142857
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.2857142857142857
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": -0.07692307692307693,
+                  "n": 13,
+                  "mean_dE": 0.0
+                },
+                "C": {
+                  "Gamma": 0.2857142857142857,
+                  "n": 14,
+                  "mean_dE": -0.2857142857142857
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.2857142857142857
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 0.0,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20260956,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          2,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 2,
+        "delta_E_norm": 2.0,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": -0.5,
+        "actions": [
+          "H",
+          "H",
+          "C",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": -1,
+      "delta_delta_E": -2,
+      "delta_E_final": -2
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20260942,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20260942,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": 0.0,
+                  "n": 3,
+                  "mean_dE": 0.0
+                },
+                "O": {
+                  "Gamma": 1.0,
+                  "n": 9,
+                  "mean_dE": -1.4444444444444444
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 0.0
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 2,
+        "delta_E_norm": 2.0,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 2,
+        "n_episodes": 3,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -1.0,
+        "actions": [
+          "O",
+          "O"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20260942,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "C",
+          "H",
+          "C",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 1,
+      "delta_delta_E": 2,
+      "delta_E_final": 2
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20260959,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20260959,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 0.0
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 0.0
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": null,
+                  "n": 0,
+                  "mean_dE": null
+                }
+              },
+              "fallback": true,
+              "a_star": "H"
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": 0.0,
+                  "n": 3,
+                  "mean_dE": 0.0
+                },
+                "O": {
+                  "Gamma": 1.0,
+                  "n": 9,
+                  "mean_dE": -1.4444444444444444
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 1,
+        "E_final": 1,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "O",
+          "O",
+          "H",
+          "O"
+        ],
+        "n_fallback": 1
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20260959,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 1,
+        "delta_E_norm": 1.0,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": -0.25,
+        "actions": [
+          "O",
+          "O",
+          "H",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": -1,
+      "delta_delta_E": -1,
+      "delta_E_final": -1
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "mstar_key": "010",
+      "seed": 20260976,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20260976,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": -0.07692307692307693,
+                  "n": 13,
+                  "mean_dE": 0.0
+                },
+                "C": {
+                  "Gamma": 0.2857142857142857,
+                  "n": 14,
+                  "mean_dE": -0.2857142857142857
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.2857142857142857
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": 0.0,
+                  "n": 3,
+                  "mean_dE": 0.0
+                },
+                "O": {
+                  "Gamma": 1.0,
+                  "n": 9,
+                  "mean_dE": -1.4444444444444444
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 0.0
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 0.0
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "C",
+          "O",
+          "O",
+          "O"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "mstar_key": "010",
+        "seed": 20260976,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          2,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "H",
+          "C",
+          "C",
+          "O"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261025,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261025,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5384615384615384,
+                  "n": 13,
+                  "mean_dE": -0.9230769230769231
+                },
+                "C": {
+                  "Gamma": 0.5714285714285714,
+                  "n": 14,
+                  "mean_dE": -1.1428571428571428
+                },
+                "O": {
+                  "Gamma": 0.8,
+                  "n": 10,
+                  "mean_dE": -2.4
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 0.8
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 3,
+        "delta_E_norm": 3.0,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 1,
+        "n_episodes": 2,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -3.0,
+        "actions": [
+          "O"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261025,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 3,
+        "E_final": 3,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 0.0,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 1,
+      "delta_delta_E": 3,
+      "delta_E_final": 3
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261042,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261042,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": 1.0,
+                  "n": 1,
+                  "mean_dE": -1.0
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": -0.3333333333333333,
+                  "n": 3,
+                  "mean_dE": 0.6666666666666666
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": -0.3333333333333333
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": 1.0,
+                  "n": 1,
+                  "mean_dE": -1.0
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5384615384615384,
+                  "n": 13,
+                  "mean_dE": -0.9230769230769231
+                },
+                "C": {
+                  "Gamma": 0.5714285714285714,
+                  "n": 14,
+                  "mean_dE": -1.1428571428571428
+                },
+                "O": {
+                  "Gamma": 0.8,
+                  "n": 10,
+                  "mean_dE": -2.4
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 0.8
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 1,
+        "delta_E_norm": 1.0,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -0.25,
+        "actions": [
+          "O",
+          "C",
+          "O",
+          "O"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261042,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          1,
+          1,
+          3,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 1,
+        "E_final": 1,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "O",
+          "C",
+          "O",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 1,
+      "delta_delta_E": 1,
+      "delta_E_final": 1
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261121,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261121,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": -0.3333333333333333,
+                  "n": 3,
+                  "mean_dE": 0.6666666666666666
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": -0.3333333333333333
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 1,
+        "delta_E_norm": 1.0,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 1,
+        "n_episodes": 2,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -1.0,
+        "actions": [
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261121,
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 1,
+        "delta_E_norm": 1.0,
+        "E0": 1,
+        "E_final": 0,
+        "n_steps": 1,
+        "n_episodes": 2,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -1.0,
+        "actions": [
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "mstar_key": "011",
+      "seed": 20261076,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261076,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5384615384615384,
+                  "n": 13,
+                  "mean_dE": -0.9230769230769231
+                },
+                "C": {
+                  "Gamma": 0.5714285714285714,
+                  "n": 14,
+                  "mean_dE": -1.1428571428571428
+                },
+                "O": {
+                  "Gamma": 0.8,
+                  "n": 10,
+                  "mean_dE": -2.4
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": 0.8
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 3,
+        "delta_E_norm": 3.0,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 1,
+        "n_episodes": 2,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -3.0,
+        "actions": [
+          "O"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "mstar_key": "011",
+        "seed": 20261076,
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          3,
+          1,
+          3,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 1,
+        "delta_E_norm": 1.0,
+        "E0": 3,
+        "E_final": 2,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.5,
+        "P_up_steps": 0.5,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -0.25,
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 1,
+      "delta_delta_E": 2,
+      "delta_E_final": 2
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261125,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261125,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          3,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.0,
+                  "n": 9,
+                  "mean_dE": -0.1111111111111111
+                },
+                "C": {
+                  "Gamma": 0.7777777777777777,
+                  "n": 9,
+                  "mean_dE": -1.2222222222222223
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.7777777777777777
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": -0.8,
+                  "n": 10,
+                  "mean_dE": 1.4
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": -0.8
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -1.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.75
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.0,
+                  "n": 9,
+                  "mean_dE": -0.1111111111111111
+                },
+                "C": {
+                  "Gamma": 0.7777777777777777,
+                  "n": 9,
+                  "mean_dE": -1.2222222222222223
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.7777777777777777
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 2,
+        "delta_E_norm": 2.0,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.75,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -0.5,
+        "actions": [
+          "C",
+          "O",
+          "C",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261125,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          1,
+          3,
+          3
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": -1,
+        "delta_E_norm": -1.0,
+        "E0": 2,
+        "E_final": 3,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": 0.25,
+        "actions": [
+          "H",
+          "H",
+          "O",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 1,
+      "delta_delta_E": 3,
+      "delta_E_final": 3
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261142,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261142,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -1.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.75
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 3,
+        "delta_E_norm": 3.0,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 1,
+        "n_episodes": 2,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -3.0,
+        "actions": [
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261142,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          2,
+          2,
+          3,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 1,
+        "delta_E_norm": 1.0,
+        "E0": 3,
+        "E_final": 2,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.5,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -0.25,
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 1,
+      "delta_delta_E": 2,
+      "delta_E_final": 2
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261190,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261190,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -1.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.75
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -1.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.75
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 3,
+        "delta_E_norm": 3.0,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 2,
+        "n_episodes": 3,
+        "P_down_steps": 0.5,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 0.5,
+        "mean_step_dE": -1.5,
+        "actions": [
+          "C",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261190,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 3,
+        "delta_E_norm": 3.0,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 2,
+        "n_episodes": 3,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -1.5,
+        "actions": [
+          "H",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "mstar_key": "100",
+      "seed": 20261176,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261176,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -1.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.75
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 3,
+        "delta_E_norm": 3.0,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 1,
+        "n_episodes": 2,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -3.0,
+        "actions": [
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "mstar_key": "100",
+        "seed": 20261176,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          3,
+          3,
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 3,
+        "delta_E_norm": 3.0,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 3,
+        "n_episodes": 4,
+        "P_down_steps": 0.6666666666666666,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 0.6666666666666666,
+        "mean_step_dE": -1.0,
+        "actions": [
+          "H",
+          "H",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20261225,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261225,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -0.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.25
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -0.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.25
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": -0.8,
+                  "n": 10,
+                  "mean_dE": 0.8
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": -0.8
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -0.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.25
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 1,
+        "delta_E_norm": 1.0,
+        "E0": 2,
+        "E_final": 1,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.5,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": -0.25,
+        "actions": [
+          "C",
+          "C",
+          "O",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261225,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 3,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "O"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 1,
+      "delta_E_final": 1
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20261242,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261242,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.8888888888888888,
+                  "n": 9,
+                  "mean_dE": -1.6666666666666667
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 9,
+                  "mean_dE": -2.3333333333333335
+                },
+                "O": {
+                  "Gamma": 1.0,
+                  "n": 1,
+                  "mean_dE": -1.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 3,
+        "delta_E_norm": 3.0,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 1,
+        "n_episodes": 2,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -3.0,
+        "actions": [
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261242,
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          3,
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 3,
+        "delta_E_norm": 3.0,
+        "E0": 3,
+        "E_final": 0,
+        "n_steps": 2,
+        "n_episodes": 3,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -1.5,
+        "actions": [
+          "H",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20261259,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261259,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          3,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -0.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.25
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dE": -3,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.8888888888888888,
+                  "n": 9,
+                  "mean_dE": -1.6666666666666667
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 9,
+                  "mean_dE": -2.3333333333333335
+                },
+                "O": {
+                  "Gamma": 1.0,
+                  "n": 1,
+                  "mean_dE": -1.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 2,
+        "delta_E_norm": 2.0,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 2,
+        "n_episodes": 3,
+        "P_down_steps": 0.5,
+        "P_up_steps": 0.5,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -1.0,
+        "actions": [
+          "C",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261259,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          3,
+          3,
+          3
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 2,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": -1,
+        "delta_E_norm": -1.0,
+        "E0": 2,
+        "E_final": 3,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.5,
+        "mean_step_dE": 0.25,
+        "actions": [
+          "H",
+          "O",
+          "H",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 1,
+      "delta_delta_E": 3,
+      "delta_E_final": 3
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "mstar_key": "101",
+      "seed": 20261276,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261276,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": 0.5,
+                  "n": 4,
+                  "mean_dE": -0.5
+                },
+                "C": {
+                  "Gamma": 1.0,
+                  "n": 4,
+                  "mean_dE": -1.25
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 1.0
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 2,
+        "delta_E_norm": 2.0,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 1,
+        "n_episodes": 2,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -2.0,
+        "actions": [
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "mstar_key": "101",
+        "seed": 20261276,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dE": -2,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H",
+                "C"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 2,
+        "delta_E_norm": 2.0,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 1,
+        "n_episodes": 2,
+        "P_down_steps": 1.0,
+        "P_up_steps": 0.0,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -2.0,
+        "actions": [
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20261325,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20261325,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          2,
+          3
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": 0.25,
+                  "n": 4,
+                  "mean_dE": -0.25
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.25
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": -0.15384615384615385,
+                  "n": 13,
+                  "mean_dE": 0.15384615384615385
+                }
+              },
+              "fallback": false,
+              "a_star": "H",
+              "Gamma_star": -0.15384615384615385
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": -0.5555555555555556,
+                  "n": 9,
+                  "mean_dE": 0.5555555555555556
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": -0.5555555555555556
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": 0.25,
+                  "n": 4,
+                  "mean_dE": -0.25
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.25
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": -1,
+        "delta_E_norm": -1.0,
+        "E0": 2,
+        "E_final": 3,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.5,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": 0.25,
+        "actions": [
+          "C",
+          "H",
+          "C",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20261325,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          2,
+          3
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": -1,
+        "delta_E_norm": -1.0,
+        "E0": 2,
+        "E_final": 3,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.5,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": 0.25,
+        "actions": [
+          "C",
+          "H",
+          "C",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20261342,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20261342,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": 0.25,
+                  "n": 4,
+                  "mean_dE": -0.25
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.25
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": -0.15384615384615385,
+                  "n": 13,
+                  "mean_dE": 0.15384615384615385
+                }
+              },
+              "fallback": false,
+              "a_star": "H",
+              "Gamma_star": -0.15384615384615385
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": -0.5555555555555556,
+                  "n": 9,
+                  "mean_dE": 0.5555555555555556
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": -0.5555555555555556
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": -0.5555555555555556,
+                  "n": 9,
+                  "mean_dE": 0.5555555555555556
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": -0.5555555555555556
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "C",
+          "H",
+          "O",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20261342,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 3,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          }
+        ],
+        "hit": 0,
+        "delta_E": 0,
+        "delta_E_norm": 0.0,
+        "E0": 2,
+        "E_final": 2,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": 0.0,
+        "actions": [
+          "C",
+          "H",
+          "O",
+          "C"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20261359,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20261359,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": 0.25,
+                  "n": 4,
+                  "mean_dE": -0.25
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.25
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "by_a": {
+                "O": {
+                  "Gamma": -0.5555555555555556,
+                  "n": 9,
+                  "mean_dE": 0.5555555555555556
+                }
+              },
+              "fallback": false,
+              "a_star": "O",
+              "Gamma_star": -0.5555555555555556
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": 0.25,
+                  "n": 4,
+                  "mean_dE": -0.25
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.25
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": -0.15384615384615385,
+                  "n": 13,
+                  "mean_dE": 0.15384615384615385
+                }
+              },
+              "fallback": false,
+              "a_star": "H",
+              "Gamma_star": -0.15384615384615385
+            },
+            "a_gamma_unconstrained": "H"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 2,
+        "delta_E_norm": 2.0,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.75,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -0.5,
+        "actions": [
+          "C",
+          "O",
+          "C",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20261359,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "O",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dE": 1,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "O"
+              ],
+              "a_star": "O",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "O"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 1,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          }
+        ],
+        "hit": 1,
+        "delta_E": 2,
+        "delta_E_norm": 2.0,
+        "E0": 2,
+        "E_final": 0,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.75,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 1.0,
+        "mean_step_dE": -0.5,
+        "actions": [
+          "C",
+          "O",
+          "C",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "mstar_key": "110",
+      "seed": 20261376,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "gamma": {
+        "policy": "gamma",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20261376,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          3,
+          3
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": 0.25,
+                  "n": 4,
+                  "mean_dE": -0.25
+                },
+                "O": {
+                  "Gamma": 0.0,
+                  "n": 1,
+                  "mean_dE": 0.0
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": 0.25
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "gamma",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": -0.15384615384615385,
+                  "n": 13,
+                  "mean_dE": 0.15384615384615385
+                }
+              },
+              "fallback": false,
+              "a_star": "H",
+              "Gamma_star": -0.15384615384615385
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "by_a": {
+                "C": {
+                  "Gamma": -0.5555555555555556,
+                  "n": 9,
+                  "mean_dE": 0.5555555555555556
+                }
+              },
+              "fallback": false,
+              "a_star": "C",
+              "Gamma_star": -0.5555555555555556
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "gamma",
+            "S_before": [
+              0,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "by_a": {
+                "H": {
+                  "Gamma": null,
+                  "n": 0,
+                  "mean_dE": null
+                },
+                "C": {
+                  "Gamma": null,
+                  "n": 0,
+                  "mean_dE": null
+                },
+                "O": {
+                  "Gamma": null,
+                  "n": 0,
+                  "mean_dE": null
+                }
+              },
+              "fallback": true,
+              "a_star": "H"
+            },
+            "a_gamma_unconstrained": "H"
+          }
+        ],
+        "hit": 0,
+        "delta_E": -1,
+        "delta_E_norm": -1.0,
+        "E0": 2,
+        "E_final": 3,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": 0.25,
+        "actions": [
+          "C",
+          "H",
+          "C",
+          "H"
+        ],
+        "n_fallback": 1
+      },
+      "fixed": {
+        "policy": "fixed",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "mstar_key": "110",
+        "seed": 20261376,
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "traj_E": [
+          2,
+          1,
+          1,
+          3,
+          3
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dE": -1,
+            "dS": 1,
+            "down": 1,
+            "up": 0,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C",
+                "O"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 1,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dE": 0,
+            "dS": 1,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          },
+          {
+            "t": 2,
+            "a": "C",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dE": 2,
+            "dS": 1,
+            "down": 0,
+            "up": 1,
+            "neutral": 0,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "C"
+              ],
+              "a_star": "C",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "C"
+          },
+          {
+            "t": 3,
+            "a": "H",
+            "policy": "fixed",
+            "S_before": [
+              0,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dE": 0,
+            "dS": 0,
+            "down": 0,
+            "up": 0,
+            "neutral": 1,
+            "hit_after": 0,
+            "meta": {
+              "relevant": [
+                "H",
+                "C",
+                "O"
+              ],
+              "a_star": "H",
+              "fallback": false,
+              "by_a": {}
+            },
+            "a_gamma_unconstrained": "H"
+          }
+        ],
+        "hit": 0,
+        "delta_E": -1,
+        "delta_E_norm": -1.0,
+        "E0": 2,
+        "E_final": 3,
+        "n_steps": 4,
+        "n_episodes": 5,
+        "P_down_steps": 0.25,
+        "P_up_steps": 0.25,
+        "P_shift_steps": 0.75,
+        "mean_step_dE": 0.25,
+        "actions": [
+          "C",
+          "H",
+          "C",
+          "H"
+        ],
+        "n_fallback": 0
+      },
+      "delta_hit": 0,
+      "delta_delta_E": 0,
+      "delta_E_final": 0
+    }
+  ],
+  "gate": {
+    "hypothesis": "Live empirical \u0393-argmax among remaining-error bits beats fixed H\u2192C\u2192O on scoped targets without new actuators",
+    "scoped_targets": [
+      "010",
+      "011",
+      "100",
+      "101",
+      "110"
+    ],
+    "reps": 4,
+    "P_hit_gamma": 0.65,
+    "P_hit_fixed": 0.4,
+    "delta_P_hit": 0.25,
+    "mean_delta_E_gamma": 1.45,
+    "mean_delta_E_fixed": 0.75,
+    "mean_P_down_gamma": 0.625,
+    "mean_P_down_fixed": 0.4458333333333333,
+    "n_pairs_gamma_hit_only": 7,
+    "n_pairs_fixed_hit_only": 2,
+    "n_pairs_both_hit": 6,
+    "gamma_wins_delta_E": 8,
+    "fixed_wins_delta_E": 2,
+    "read": "Scoped live test only. Controllers share free S0; differ only in single-channel action selection. Expand kernel before 000/001/111/full 8-way."
+  }
+}

@@ -1,0 +1,9717 @@
+{
+  "protocol": "8-way validation C\u2192H\u2192O",
+  "alpha": 1.5,
+  "reps": 8,
+  "seed": 20260909,
+  "order": [
+    "C",
+    "H",
+    "O"
+  ],
+  "arms": [
+    "none",
+    "predictive",
+    "converted",
+    "random"
+  ],
+  "mstar_set": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "agg": {
+    "none": {
+      "n": 64,
+      "P_hit": 0.09375,
+      "P_hit0": 0.109375,
+      "P_C": 0.453125,
+      "P_H": 0.5,
+      "P_O": 0.5,
+      "mean_delta_E_total": 0.09375,
+      "mean_delta_E_C": 0.09375,
+      "mean_delta_E_H": 0.125,
+      "mean_delta_E_O": -0.125,
+      "mean_E0": 1.640625,
+      "mean_E3": 1.546875,
+      "mean_E_traj": [
+        1.640625,
+        1.546875,
+        1.421875,
+        1.546875
+      ],
+      "mean_n_interventions": 0.0
+    },
+    "predictive": {
+      "n": 64,
+      "P_hit": 0.125,
+      "P_hit0": 0.15625,
+      "P_C": 0.40625,
+      "P_H": 0.546875,
+      "P_O": 0.5,
+      "mean_delta_E_total": -0.109375,
+      "mean_delta_E_C": -0.171875,
+      "mean_delta_E_H": 0.140625,
+      "mean_delta_E_O": -0.078125,
+      "mean_E0": 1.4375,
+      "mean_E3": 1.546875,
+      "mean_E_traj": [
+        1.4375,
+        1.609375,
+        1.46875,
+        1.546875
+      ],
+      "mean_n_interventions": 1.53125
+    },
+    "converted": {
+      "n": 64,
+      "P_hit": 0.109375,
+      "P_hit0": 0.109375,
+      "P_C": 0.46875,
+      "P_H": 0.5625,
+      "P_O": 0.5,
+      "mean_delta_E_total": 0.0625,
+      "mean_delta_E_C": -0.015625,
+      "mean_delta_E_H": -0.015625,
+      "mean_delta_E_O": 0.09375,
+      "mean_E0": 1.53125,
+      "mean_E3": 1.46875,
+      "mean_E_traj": [
+        1.53125,
+        1.546875,
+        1.5625,
+        1.46875
+      ],
+      "mean_n_interventions": 1.5625
+    },
+    "random": {
+      "n": 64,
+      "P_hit": 0.1875,
+      "P_hit0": 0.15625,
+      "P_C": 0.515625,
+      "P_H": 0.515625,
+      "P_O": 0.5625,
+      "mean_delta_E_total": 0.0,
+      "mean_delta_E_C": -0.21875,
+      "mean_delta_E_H": 0.25,
+      "mean_delta_E_O": -0.03125,
+      "mean_E0": 1.40625,
+      "mean_E3": 1.40625,
+      "mean_E_traj": [
+        1.40625,
+        1.625,
+        1.375,
+        1.40625
+      ],
+      "mean_n_interventions": 1.578125
+    }
+  },
+  "per_mstar": {
+    "none": {
+      "000": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.875,
+        "P_H": 0.125,
+        "P_O": 0.25,
+        "mean_delta_E_total": 0.5,
+        "mean_delta_E_C": 0.5,
+        "mean_delta_E_H": 0.0,
+        "mean_delta_E_O": 0.0,
+        "mean_E0": 2.25,
+        "mean_E3": 1.75,
+        "mean_E_traj": [
+          2.25,
+          1.75,
+          1.75,
+          1.75
+        ],
+        "mean_n_interventions": 0.0,
+        "mstar": [
+          0,
+          0,
+          0
+        ]
+      },
+      "001": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.75,
+        "P_H": 0.125,
+        "P_O": 0.625,
+        "mean_delta_E_total": 0.0,
+        "mean_delta_E_C": 0.0,
+        "mean_delta_E_H": 0.0,
+        "mean_delta_E_O": 0.0,
+        "mean_E0": 1.5,
+        "mean_E3": 1.5,
+        "mean_E_traj": [
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "mean_n_interventions": 0.0,
+        "mstar": [
+          0,
+          0,
+          1
+        ]
+      },
+      "010": {
+        "n": 8,
+        "P_hit": 0.25,
+        "P_hit0": 0.25,
+        "P_C": 0.75,
+        "P_H": 0.875,
+        "P_O": 0.375,
+        "mean_delta_E_total": 0.0,
+        "mean_delta_E_C": 0.0,
+        "mean_delta_E_H": -0.375,
+        "mean_delta_E_O": 0.375,
+        "mean_E0": 1.0,
+        "mean_E3": 1.0,
+        "mean_E_traj": [
+          1.0,
+          1.0,
+          1.375,
+          1.0
+        ],
+        "mean_n_interventions": 0.0,
+        "mstar": [
+          0,
+          1,
+          0
+        ]
+      },
+      "011": {
+        "n": 8,
+        "P_hit": 0.5,
+        "P_hit0": 0.5,
+        "P_C": 0.625,
+        "P_H": 0.75,
+        "P_O": 0.625,
+        "mean_delta_E_total": -0.25,
+        "mean_delta_E_C": 0.125,
+        "mean_delta_E_H": 0.125,
+        "mean_delta_E_O": -0.5,
+        "mean_E0": 0.75,
+        "mean_E3": 1.0,
+        "mean_E_traj": [
+          0.75,
+          0.625,
+          0.5,
+          1.0
+        ],
+        "mean_n_interventions": 0.0,
+        "mstar": [
+          0,
+          1,
+          1
+        ]
+      },
+      "100": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.125,
+        "P_H": 0.125,
+        "P_O": 0.125,
+        "mean_delta_E_total": 0.125,
+        "mean_delta_E_C": 0.125,
+        "mean_delta_E_H": 0.375,
+        "mean_delta_E_O": -0.375,
+        "mean_E0": 2.75,
+        "mean_E3": 2.625,
+        "mean_E_traj": [
+          2.75,
+          2.625,
+          2.25,
+          2.625
+        ],
+        "mean_n_interventions": 0.0,
+        "mstar": [
+          1,
+          0,
+          0
+        ]
+      },
+      "101": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.25,
+        "P_H": 0.125,
+        "P_O": 0.75,
+        "mean_delta_E_total": 0.375,
+        "mean_delta_E_C": 0.125,
+        "mean_delta_E_H": 0.25,
+        "mean_delta_E_O": 0.0,
+        "mean_E0": 2.25,
+        "mean_E3": 1.875,
+        "mean_E_traj": [
+          2.25,
+          2.125,
+          1.875,
+          1.875
+        ],
+        "mean_n_interventions": 0.0,
+        "mstar": [
+          1,
+          0,
+          1
+        ]
+      },
+      "110": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.25,
+        "P_H": 0.875,
+        "P_O": 0.25,
+        "mean_delta_E_total": 0.0,
+        "mean_delta_E_C": 0.125,
+        "mean_delta_E_H": 0.0,
+        "mean_delta_E_O": -0.125,
+        "mean_E0": 1.625,
+        "mean_E3": 1.625,
+        "mean_E_traj": [
+          1.625,
+          1.5,
+          1.5,
+          1.625
+        ],
+        "mean_n_interventions": 0.0,
+        "mstar": [
+          1,
+          1,
+          0
+        ]
+      },
+      "111": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.125,
+        "P_C": 0.0,
+        "P_H": 1.0,
+        "P_O": 1.0,
+        "mean_delta_E_total": 0.0,
+        "mean_delta_E_C": -0.25,
+        "mean_delta_E_H": 0.625,
+        "mean_delta_E_O": -0.375,
+        "mean_E0": 1.0,
+        "mean_E3": 1.0,
+        "mean_E_traj": [
+          1.0,
+          1.25,
+          0.625,
+          1.0
+        ],
+        "mean_n_interventions": 0.0,
+        "mstar": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "predictive": {
+      "000": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.375,
+        "P_H": 0.375,
+        "P_O": 0.5,
+        "mean_delta_E_total": 0.0,
+        "mean_delta_E_C": 0.0,
+        "mean_delta_E_H": 0.0,
+        "mean_delta_E_O": 0.0,
+        "mean_E0": 1.75,
+        "mean_E3": 1.75,
+        "mean_E_traj": [
+          1.75,
+          1.75,
+          1.75,
+          1.75
+        ],
+        "mean_n_interventions": 1.875,
+        "mstar": [
+          0,
+          0,
+          0
+        ]
+      },
+      "001": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.75,
+        "P_H": 0.25,
+        "P_O": 0.625,
+        "mean_delta_E_total": -0.125,
+        "mean_delta_E_C": 0.125,
+        "mean_delta_E_H": -0.5,
+        "mean_delta_E_O": 0.25,
+        "mean_E0": 1.25,
+        "mean_E3": 1.375,
+        "mean_E_traj": [
+          1.25,
+          1.125,
+          1.625,
+          1.375
+        ],
+        "mean_n_interventions": 1.625,
+        "mstar": [
+          0,
+          0,
+          1
+        ]
+      },
+      "010": {
+        "n": 8,
+        "P_hit": 0.25,
+        "P_hit0": 0.375,
+        "P_C": 0.375,
+        "P_H": 0.75,
+        "P_O": 0.625,
+        "mean_delta_E_total": -0.625,
+        "mean_delta_E_C": -1.125,
+        "mean_delta_E_H": 0.25,
+        "mean_delta_E_O": 0.25,
+        "mean_E0": 0.625,
+        "mean_E3": 1.25,
+        "mean_E_traj": [
+          0.625,
+          1.75,
+          1.5,
+          1.25
+        ],
+        "mean_n_interventions": 1.25,
+        "mstar": [
+          0,
+          1,
+          0
+        ]
+      },
+      "011": {
+        "n": 8,
+        "P_hit": 0.75,
+        "P_hit0": 0.625,
+        "P_C": 0.75,
+        "P_H": 0.75,
+        "P_O": 0.75,
+        "mean_delta_E_total": -0.125,
+        "mean_delta_E_C": -0.5,
+        "mean_delta_E_H": 0.625,
+        "mean_delta_E_O": -0.25,
+        "mean_E0": 0.625,
+        "mean_E3": 0.75,
+        "mean_E_traj": [
+          0.625,
+          1.125,
+          0.5,
+          0.75
+        ],
+        "mean_n_interventions": 0.375,
+        "mstar": [
+          0,
+          1,
+          1
+        ]
+      },
+      "100": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.25,
+        "P_C": 0.25,
+        "P_H": 0.0,
+        "P_O": 0.0,
+        "mean_delta_E_total": -0.75,
+        "mean_delta_E_C": -0.375,
+        "mean_delta_E_H": 0.0,
+        "mean_delta_E_O": -0.375,
+        "mean_E0": 2.0,
+        "mean_E3": 2.75,
+        "mean_E_traj": [
+          2.0,
+          2.375,
+          2.375,
+          2.75
+        ],
+        "mean_n_interventions": 2.0,
+        "mstar": [
+          1,
+          0,
+          0
+        ]
+      },
+      "101": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.625,
+        "P_H": 0.25,
+        "P_O": 0.625,
+        "mean_delta_E_total": 0.625,
+        "mean_delta_E_C": -0.125,
+        "mean_delta_E_H": 0.875,
+        "mean_delta_E_O": -0.125,
+        "mean_E0": 2.125,
+        "mean_E3": 1.5,
+        "mean_E_traj": [
+          2.125,
+          2.25,
+          1.375,
+          1.5
+        ],
+        "mean_n_interventions": 2.125,
+        "mstar": [
+          1,
+          0,
+          1
+        ]
+      },
+      "110": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.125,
+        "P_H": 1.0,
+        "P_O": 0.125,
+        "mean_delta_E_total": 0.0,
+        "mean_delta_E_C": 0.25,
+        "mean_delta_E_H": 0.0,
+        "mean_delta_E_O": -0.25,
+        "mean_E0": 1.75,
+        "mean_E3": 1.75,
+        "mean_E_traj": [
+          1.75,
+          1.5,
+          1.5,
+          1.75
+        ],
+        "mean_n_interventions": 1.75,
+        "mstar": [
+          1,
+          1,
+          0
+        ]
+      },
+      "111": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.0,
+        "P_H": 1.0,
+        "P_O": 0.75,
+        "mean_delta_E_total": 0.125,
+        "mean_delta_E_C": 0.375,
+        "mean_delta_E_H": -0.125,
+        "mean_delta_E_O": -0.125,
+        "mean_E0": 1.375,
+        "mean_E3": 1.25,
+        "mean_E_traj": [
+          1.375,
+          1.0,
+          1.125,
+          1.25
+        ],
+        "mean_n_interventions": 1.25,
+        "mstar": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "converted": {
+      "000": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.625,
+        "P_H": 0.125,
+        "P_O": 0.375,
+        "mean_delta_E_total": 0.125,
+        "mean_delta_E_C": 0.25,
+        "mean_delta_E_H": 0.0,
+        "mean_delta_E_O": -0.125,
+        "mean_E0": 2.0,
+        "mean_E3": 1.875,
+        "mean_E_traj": [
+          2.0,
+          1.75,
+          1.75,
+          1.875
+        ],
+        "mean_n_interventions": 1.75,
+        "mstar": [
+          0,
+          0,
+          0
+        ]
+      },
+      "001": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.625,
+        "P_H": 0.25,
+        "P_O": 0.625,
+        "mean_delta_E_total": -0.25,
+        "mean_delta_E_C": -0.5,
+        "mean_delta_E_H": -0.125,
+        "mean_delta_E_O": 0.375,
+        "mean_E0": 1.25,
+        "mean_E3": 1.5,
+        "mean_E_traj": [
+          1.25,
+          1.75,
+          1.875,
+          1.5
+        ],
+        "mean_n_interventions": 1.5,
+        "mstar": [
+          0,
+          0,
+          1
+        ]
+      },
+      "010": {
+        "n": 8,
+        "P_hit": 0.25,
+        "P_hit0": 0.125,
+        "P_C": 1.0,
+        "P_H": 1.0,
+        "P_O": 0.25,
+        "mean_delta_E_total": 0.125,
+        "mean_delta_E_C": -0.125,
+        "mean_delta_E_H": -0.5,
+        "mean_delta_E_O": 0.75,
+        "mean_E0": 0.875,
+        "mean_E3": 0.75,
+        "mean_E_traj": [
+          0.875,
+          1.0,
+          1.5,
+          0.75
+        ],
+        "mean_n_interventions": 0.875,
+        "mstar": [
+          0,
+          1,
+          0
+        ]
+      },
+      "011": {
+        "n": 8,
+        "P_hit": 0.5,
+        "P_hit0": 0.625,
+        "P_C": 0.625,
+        "P_H": 0.875,
+        "P_O": 0.75,
+        "mean_delta_E_total": -0.125,
+        "mean_delta_E_C": 0.25,
+        "mean_delta_E_H": -0.375,
+        "mean_delta_E_O": 0.0,
+        "mean_E0": 0.625,
+        "mean_E3": 0.75,
+        "mean_E_traj": [
+          0.625,
+          0.375,
+          0.75,
+          0.75
+        ],
+        "mean_n_interventions": 0.5,
+        "mstar": [
+          0,
+          1,
+          1
+        ]
+      },
+      "100": {
+        "n": 8,
+        "P_hit": 0.125,
+        "P_hit0": 0.0,
+        "P_C": 0.375,
+        "P_H": 0.125,
+        "P_O": 0.375,
+        "mean_delta_E_total": 0.5,
+        "mean_delta_E_C": 0.25,
+        "mean_delta_E_H": 0.25,
+        "mean_delta_E_O": 0.0,
+        "mean_E0": 2.625,
+        "mean_E3": 2.125,
+        "mean_E_traj": [
+          2.625,
+          2.375,
+          2.125,
+          2.125
+        ],
+        "mean_n_interventions": 2.625,
+        "mstar": [
+          1,
+          0,
+          0
+        ]
+      },
+      "101": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.25,
+        "P_H": 0.25,
+        "P_O": 0.875,
+        "mean_delta_E_total": 0.625,
+        "mean_delta_E_C": 0.125,
+        "mean_delta_E_H": 0.5,
+        "mean_delta_E_O": 0.0,
+        "mean_E0": 2.25,
+        "mean_E3": 1.625,
+        "mean_E_traj": [
+          2.25,
+          2.125,
+          1.625,
+          1.625
+        ],
+        "mean_n_interventions": 2.125,
+        "mstar": [
+          1,
+          0,
+          1
+        ]
+      },
+      "110": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.25,
+        "P_H": 0.875,
+        "P_O": 0.0,
+        "mean_delta_E_total": -0.25,
+        "mean_delta_E_C": -0.125,
+        "mean_delta_E_H": 0.0,
+        "mean_delta_E_O": -0.125,
+        "mean_E0": 1.625,
+        "mean_E3": 1.875,
+        "mean_E_traj": [
+          1.625,
+          1.75,
+          1.75,
+          1.875
+        ],
+        "mean_n_interventions": 1.875,
+        "mstar": [
+          1,
+          1,
+          0
+        ]
+      },
+      "111": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.125,
+        "P_C": 0.0,
+        "P_H": 1.0,
+        "P_O": 0.75,
+        "mean_delta_E_total": -0.25,
+        "mean_delta_E_C": -0.25,
+        "mean_delta_E_H": 0.125,
+        "mean_delta_E_O": -0.125,
+        "mean_E0": 1.0,
+        "mean_E3": 1.25,
+        "mean_E_traj": [
+          1.0,
+          1.25,
+          1.125,
+          1.25
+        ],
+        "mean_n_interventions": 1.25,
+        "mstar": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "random": {
+      "000": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.75,
+        "P_H": 0.125,
+        "P_O": 0.5,
+        "mean_delta_E_total": 0.0,
+        "mean_delta_E_C": -0.375,
+        "mean_delta_E_H": 0.125,
+        "mean_delta_E_O": 0.25,
+        "mean_E0": 1.625,
+        "mean_E3": 1.625,
+        "mean_E_traj": [
+          1.625,
+          2.0,
+          1.875,
+          1.625
+        ],
+        "mean_n_interventions": 2.0,
+        "mstar": [
+          0,
+          0,
+          0
+        ]
+      },
+      "001": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 1.0,
+        "P_H": 0.0,
+        "P_O": 0.5,
+        "mean_delta_E_total": -0.125,
+        "mean_delta_E_C": 0.375,
+        "mean_delta_E_H": -0.5,
+        "mean_delta_E_O": 0.0,
+        "mean_E0": 1.375,
+        "mean_E3": 1.5,
+        "mean_E_traj": [
+          1.375,
+          1.0,
+          1.5,
+          1.5
+        ],
+        "mean_n_interventions": 1.5,
+        "mstar": [
+          0,
+          0,
+          1
+        ]
+      },
+      "010": {
+        "n": 8,
+        "P_hit": 0.375,
+        "P_hit0": 0.375,
+        "P_C": 0.375,
+        "P_H": 0.75,
+        "P_O": 0.75,
+        "mean_delta_E_total": -0.5,
+        "mean_delta_E_C": -1.125,
+        "mean_delta_E_H": 0.375,
+        "mean_delta_E_O": 0.25,
+        "mean_E0": 0.625,
+        "mean_E3": 1.125,
+        "mean_E_traj": [
+          0.625,
+          1.75,
+          1.375,
+          1.125
+        ],
+        "mean_n_interventions": 1.25,
+        "mstar": [
+          0,
+          1,
+          0
+        ]
+      },
+      "011": {
+        "n": 8,
+        "P_hit": 0.875,
+        "P_hit0": 0.625,
+        "P_C": 0.875,
+        "P_H": 1.0,
+        "P_O": 1.0,
+        "mean_delta_E_total": 0.5,
+        "mean_delta_E_C": -0.625,
+        "mean_delta_E_H": 0.5,
+        "mean_delta_E_O": 0.625,
+        "mean_E0": 0.625,
+        "mean_E3": 0.125,
+        "mean_E_traj": [
+          0.625,
+          1.25,
+          0.75,
+          0.125
+        ],
+        "mean_n_interventions": 0.5,
+        "mstar": [
+          0,
+          1,
+          1
+        ]
+      },
+      "100": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.25,
+        "P_C": 0.125,
+        "P_H": 0.0,
+        "P_O": 0.25,
+        "mean_delta_E_total": -0.625,
+        "mean_delta_E_C": -0.5,
+        "mean_delta_E_H": 0.625,
+        "mean_delta_E_O": -0.75,
+        "mean_E0": 2.0,
+        "mean_E3": 2.625,
+        "mean_E_traj": [
+          2.0,
+          2.5,
+          1.875,
+          2.625
+        ],
+        "mean_n_interventions": 2.25,
+        "mstar": [
+          1,
+          0,
+          0
+        ]
+      },
+      "101": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.375,
+        "P_H": 0.5,
+        "P_O": 0.5,
+        "mean_delta_E_total": 0.25,
+        "mean_delta_E_C": 0.125,
+        "mean_delta_E_H": 0.5,
+        "mean_delta_E_O": -0.375,
+        "mean_E0": 1.875,
+        "mean_E3": 1.625,
+        "mean_E_traj": [
+          1.875,
+          1.75,
+          1.25,
+          1.625
+        ],
+        "mean_n_interventions": 1.75,
+        "mstar": [
+          1,
+          0,
+          1
+        ]
+      },
+      "110": {
+        "n": 8,
+        "P_hit": 0.0,
+        "P_hit0": 0.0,
+        "P_C": 0.125,
+        "P_H": 1.0,
+        "P_O": 0.0,
+        "mean_delta_E_total": -0.125,
+        "mean_delta_E_C": 0.375,
+        "mean_delta_E_H": 0.0,
+        "mean_delta_E_O": -0.5,
+        "mean_E0": 1.75,
+        "mean_E3": 1.875,
+        "mean_E_traj": [
+          1.75,
+          1.375,
+          1.375,
+          1.875
+        ],
+        "mean_n_interventions": 1.75,
+        "mstar": [
+          1,
+          1,
+          0
+        ]
+      },
+      "111": {
+        "n": 8,
+        "P_hit": 0.25,
+        "P_hit0": 0.0,
+        "P_C": 0.5,
+        "P_H": 0.75,
+        "P_O": 1.0,
+        "mean_delta_E_total": 0.625,
+        "mean_delta_E_C": 0.0,
+        "mean_delta_E_H": 0.375,
+        "mean_delta_E_O": 0.25,
+        "mean_E0": 1.375,
+        "mean_E3": 0.75,
+        "mean_E_traj": [
+          1.375,
+          1.375,
+          1.0,
+          0.75
+        ],
+        "mean_n_interventions": 1.625,
+        "mstar": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "trials": {
+    "none": [
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          3.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 3.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          3.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 3.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          1.0,
+          3.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          3.0,
+          1.0,
+          3.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          0.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          0.0,
+          1.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "none",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      }
+    ],
+    "predictive": [
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          3.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          3.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          3.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": -3.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          3.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          2.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 2.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          0.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -3.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          3.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -3.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": -3.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -3.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          3.0,
+          2.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          0.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": -3.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          3.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": -3.0,
+        "delta_E_C": -3.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          1.0,
+          3.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          3.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "predictive",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 3
+      }
+    ],
+    "converted": [
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          3.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          3.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          3.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 3.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          3.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          1.0,
+          3.0,
+          1.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": 2.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 2.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          1.0,
+          3.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          2.0,
+          3.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          2.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          3.0,
+          0.0
+        ],
+        "delta_E_total": 3.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 3.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          0.0,
+          2.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 3.0,
+        "delta_E_H": -2.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          3.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          3.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "converted",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          0.0,
+          1.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      }
+    ],
+    "random": [
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          3.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          3.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": -3.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          3.0,
+          1.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 1.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 1.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          3.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 3.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 3.0,
+        "delta_E_C": 3.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          3.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -3.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          2.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          3.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          3.0,
+          3.0
+        ],
+        "delta_E_total": -3.0,
+        "delta_E_C": -2.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          0.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": -3.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          1.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          3.0,
+          3.0,
+          2.0
+        ],
+        "delta_E_total": -2.0,
+        "delta_E_C": -3.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 1,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          0.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          1.0,
+          3.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 2.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          0,
+          1
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -2.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          0
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "delta_E_total": -1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 3
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 3
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          1,
+          0,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "delta_E_total": 2.0,
+        "delta_E_C": 1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "delta_E_total": 1.0,
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 1.0,
+        "hit": 1,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2
+      },
+      {
+        "arm": "random",
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "delta_E_total": 0.0,
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "hit": 0,
+        "hit0": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1
+      }
+    ]
+  },
+  "gate": {
+    "question_A": "Does converted improve sync vs baseline/random?",
+    "question_B": "Reliable arbitrary m*? (not required)",
+    "eight_way": "OPEN",
+    "converted_beats_none_delta_E": false,
+    "converted_beats_none_hit": true,
+    "converted_beats_random_delta_E": true,
+    "converted_beats_random_hit": false,
+    "converted_beats_predictive_delta_E": true,
+    "converted_beats_predictive_hit": false,
+    "ranking_hypothesis_vc_gt_vp_gt_rand_none": false,
+    "converted_delta_E_positive": true,
+    "question_A_pass": false,
+    "question_B_pass": false
+  },
+  "claim_frame": "conversion produces causal control, but causal control does not automatically yield arbitrary sequential synchronization"
+}

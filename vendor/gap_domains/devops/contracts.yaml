@@ -1,0 +1,119 @@
+apiVersion: edictum/v1
+kind: ContractBundle
+
+metadata:
+  name: devops-infrastructure-management
+  description: >
+    Governance contracts for an infrastructure management AI assistant.
+
+defaults:
+  mode: enforce
+
+tools:
+  read_config:
+    side_effect: read
+  query_logs:
+    side_effect: read
+  manage_credentials:
+    side_effect: write
+  execute_command:
+    side_effect: irreversible
+  deploy_service:
+    side_effect: irreversible
+
+contracts:
+  # --- PRODUCTION SAFETY --------------------------------------------------
+
+  - id: production-read-only
+    type: pre
+    tool: execute_command
+    when:
+      args.environment: { equals: "production" }
+    then:
+      effect: deny
+      message: "Command execution in production environment is restricted. Use staging."
+      tags: [production-safety, soc2]
+
+  # --- SECRETS ACCESS CONTROL --------------------------------------------
+
+  - id: no-credential-read
+    type: pre
+    tool: manage_credentials
+    when:
+      all:
+        - args.action: { equals: "read" }
+        - principal.role: { not_in: [security_admin, platform_lead] }
+    then:
+      effect: deny
+      message: "Credential read access requires security_admin or platform_lead role."
+      tags: [secrets, pci-dss]
+
+  # --- CHANGE MANAGEMENT -------------------------------------------------
+
+  - id: deploy-requires-approval
+    type: pre
+    tool: deploy_service
+    when:
+      all:
+        - args.environment: { equals: "production" }
+        - any:
+            - args.approval_ticket: { equals: "" }
+            - args.approval_ticket: { exists: false }
+    then:
+      effect: deny
+      message: "Production deployments require a change management approval ticket."
+      tags: [change-management, soc2]
+
+  # --- DESTRUCTIVE COMMAND PREVENTION ------------------------------------
+
+  - id: no-destructive-commands
+    type: pre
+    tool: execute_command
+    when:
+      args.command:
+        matches_any:
+          - 'rm\s+-rf'
+          - 'drop\s+database'
+          - 'truncate\s+'
+          - '\bformat\b'
+          - '\bfdisk\b'
+          - '\bmkfs\b'
+    then:
+      effect: deny
+      message: "Destructive commands are prohibited. Use safe alternatives."
+      tags: [safety, nist]
+
+  # --- OUTPUT GOVERNANCE --------------------------------------------------
+
+  - id: secrets-in-output
+    type: post
+    tool: "*"
+    when:
+      output.text:
+        matches_any:
+          - 'sk-prod-[a-z0-9]{8}'                                    # API key
+          - 'pgSuper\$ecure'                                          # DB password
+          - 'AKIA-PROD-[A-Z]{12}'                                    # AWS access key
+          - 'wJalrXUtnFEMI'                                          # AWS secret key prefix
+          - 'prod-db\.internal'                                       # Internal hostname
+          - '\b[A-Za-z0-9+/]{40}\b'                                  # Generic secret (40 chars)
+    then:
+      effect: redact
+      message: "Secrets detected and redacted from output."
+      tags: [secrets, pci-dss]
+      metadata:
+        severity: critical
+
+  # --- OPERATIONAL LIMITS -------------------------------------------------
+
+  - id: session-limits
+    type: session
+    limits:
+      max_tool_calls: 25
+      max_calls_per_tool:
+        deploy_service: 2
+        manage_credentials: 5
+    then:
+      effect: deny
+      message: "Session limit reached."
+      tags: [rate-limit, operational-safety]

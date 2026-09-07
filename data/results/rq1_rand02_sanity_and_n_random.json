@@ -1,0 +1,311 @@
+{
+  "check": "rand_02_mechanistic_sanity_and_n_random_power",
+  "orthogonality_to_safety_learned": {
+    "rand_00_L4": {
+      "max_abs_cos": 0.011339779624419993,
+      "cosines": {
+        "assistant_axis_L4": -0.011339779624419993,
+        "harmlessness_L4": 8.671230526148543e-09,
+        "refusal_L4": 1.3557720874128598e-06,
+        "syntax_L4": 9.179508984966805e-09,
+        "domain_content_coding_L4": -6.523933589533404e-09,
+        "domain_content_therapy_L4": -2.2116883619666128e-09,
+        "domain_content_writing_L4": -7.825876440371166e-09
+      }
+    },
+    "rand_01_L4": {
+      "max_abs_cos": 0.035289463517227206,
+      "cosines": {
+        "assistant_axis_L4": -0.035289463517227206,
+        "harmlessness_L4": -1.7717828322202922e-07,
+        "refusal_L4": -3.4362621819262334e-07,
+        "syntax_L4": 2.778557002536264e-10,
+        "domain_content_coding_L4": -1.0041440760485965e-09,
+        "domain_content_therapy_L4": -1.849755334147607e-09,
+        "domain_content_writing_L4": -1.456530823035207e-08
+      }
+    },
+    "rand_02_L4": {
+      "max_abs_cos": 0.011987480575059899,
+      "cosines": {
+        "assistant_axis_L4": -0.011987480575059899,
+        "harmlessness_L4": 7.302756128441806e-07,
+        "refusal_L4": 1.3865860085150727e-06,
+        "syntax_L4": -1.1680581935707979e-08,
+        "domain_content_coding_L4": -3.959106313622396e-09,
+        "domain_content_therapy_L4": 5.572751951739285e-09,
+        "domain_content_writing_L4": 1.6115315339126912e-08
+      }
+    },
+    "rand_03_L4": {
+      "max_abs_cos": 0.014592027870266113,
+      "cosines": {
+        "assistant_axis_L4": -0.014592027870266113,
+        "harmlessness_L4": 5.949594385611795e-07,
+        "refusal_L4": 8.715898011232501e-07,
+        "syntax_L4": -8.049039218124832e-09,
+        "domain_content_coding_L4": -1.2031061546319277e-08,
+        "domain_content_therapy_L4": 1.0029665896416073e-08,
+        "domain_content_writing_L4": 5.617156002488133e-11
+      }
+    }
+  },
+  "alignment_with_activation_geometry": {
+    "L4": {
+      "n_windows": 24,
+      "n_prose": 16,
+      "n_tool": 8,
+      "pc_var_frac_top4": [
+        0.6416022777557373,
+        0.22704210877418518,
+        0.03160755708813667,
+        0.019372647628188133
+      ],
+      "per_random": {
+        "rand_00_L4": {
+          "cos_mean_all": -0.02680054961555791,
+          "cos_mean_prose": -0.022871190560801613,
+          "cos_mean_tool": -0.03228593113663465,
+          "cos_tool_minus_prose_mean_dir": -0.020145564080187556,
+          "abs_cos_PC": [
+            0.02018799192393217,
+            0.011273921536549311,
+            0.0190084653595974,
+            0.014282007956718247
+          ],
+          "max_abs_cos_PC": 0.02018799192393217
+        },
+        "rand_01_L4": {
+          "cos_mean_all": 0.023916608849060612,
+          "cos_mean_prose": 0.024916755785766912,
+          "cos_mean_tool": 0.01998558092213739,
+          "cos_tool_minus_prose_mean_dir": -0.008990512708932228,
+          "abs_cos_PC": [
+            0.00963831065023115,
+            0.05132362823050801,
+            0.01816974849288936,
+            0.04402035363415133
+          ],
+          "max_abs_cos_PC": 0.05132362823050801
+        },
+        "rand_02_L4": {
+          "cos_mean_all": -0.008627465167869938,
+          "cos_mean_prose": -0.0037299251186035847,
+          "cos_mean_tool": -0.01750760535467257,
+          "cos_tool_minus_prose_mean_dir": -0.02822295695269969,
+          "abs_cos_PC": [
+            0.027575511251752893,
+            0.027410095609730498,
+            0.04923367796235084,
+            0.023439674257416342
+          ],
+          "max_abs_cos_PC": 0.04923367796235084
+        },
+        "rand_03_L4": {
+          "cos_mean_all": -0.028836388077133342,
+          "cos_mean_prose": -0.03341625933899451,
+          "cos_mean_tool": -0.017488922701132465,
+          "cos_tool_minus_prose_mean_dir": 0.03103005745644416,
+          "abs_cos_PC": [
+            0.03112633611440509,
+            0.0029150539817204358,
+            0.004255332187896858,
+            0.0051168436195782735
+          ],
+          "max_abs_cos_PC": 0.03112633611440509
+        }
+      },
+      "rank_by_max_abs_cos_PC": [
+        [
+          "rand_01_L4",
+          0.05132362823050801
+        ],
+        [
+          "rand_02_L4",
+          0.04923367796235084
+        ],
+        [
+          "rand_03_L4",
+          0.03112633611440509
+        ],
+        [
+          "rand_00_L4",
+          0.02018799192393217
+        ]
+      ],
+      "rank_by_abs_cos_mean_all": [
+        [
+          "rand_03_L4",
+          0.028836388077133342
+        ],
+        [
+          "rand_00_L4",
+          0.02680054961555791
+        ],
+        [
+          "rand_01_L4",
+          0.023916608849060612
+        ],
+        [
+          "rand_02_L4",
+          0.008627465167869938
+        ]
+      ]
+    },
+    "L22": {
+      "n_windows": 24,
+      "n_prose": 16,
+      "n_tool": 8,
+      "pc_var_frac_top4": [
+        0.5816037058830261,
+        0.18266212940216064,
+        0.07541653513908386,
+        0.02847662754356861
+      ],
+      "per_random": {
+        "rand_00_L4": {
+          "cos_mean_all": -0.039677905927105434,
+          "cos_mean_prose": -0.04523210761860156,
+          "cos_mean_tool": -0.023752583876451645,
+          "cos_tool_minus_prose_mean_dir": 0.04670777875073889,
+          "abs_cos_PC": [
+            0.046844564825139795,
+            0.005483341581534081,
+            0.004861134639880381,
+            0.01214903787105037
+          ],
+          "max_abs_cos_PC": 0.046844564825139795
+        },
+        "rand_01_L4": {
+          "cos_mean_all": 7.66244973179897e-05,
+          "cos_mean_prose": 0.004754189316870858,
+          "cos_mean_tool": -0.010188860811923134,
+          "cos_tool_minus_prose_mean_dir": -0.02783364429903817,
+          "abs_cos_PC": [
+            0.028627895404721312,
+            0.032238662884958934,
+            0.023371824936735543,
+            0.03838685281733129
+          ],
+          "max_abs_cos_PC": 0.03838685281733129
+        },
+        "rand_02_L4": {
+          "cos_mean_all": 0.006948259032946356,
+          "cos_mean_prose": 0.006565159728900417,
+          "cos_mean_tool": 0.007132685358772529,
+          "cos_tool_minus_prose_mean_dir": -0.00011976153114490184,
+          "abs_cos_PC": [
+            0.0003524893132163722,
+            0.01125317235384029,
+            0.041231057510974924,
+            0.06547819348776587
+          ],
+          "max_abs_cos_PC": 0.06547819348776587
+        },
+        "rand_03_L4": {
+          "cos_mean_all": -0.0005932606477664013,
+          "cos_mean_prose": -0.005606738862136359,
+          "cos_mean_tool": 0.010457675913351634,
+          "cos_tool_minus_prose_mean_dir": 0.030008846448418586,
+          "abs_cos_PC": [
+            0.03068465963817349,
+            0.02748551027960121,
+            0.010793588774203671,
+            0.02540594562735299
+          ],
+          "max_abs_cos_PC": 0.03068465963817349
+        }
+      },
+      "rank_by_max_abs_cos_PC": [
+        [
+          "rand_02_L4",
+          0.06547819348776587
+        ],
+        [
+          "rand_00_L4",
+          0.046844564825139795
+        ],
+        [
+          "rand_01_L4",
+          0.03838685281733129
+        ],
+        [
+          "rand_03_L4",
+          0.03068465963817349
+        ]
+      ],
+      "rank_by_abs_cos_mean_all": [
+        [
+          "rand_00_L4",
+          0.039677905927105434
+        ],
+        [
+          "rand_02_L4",
+          0.006948259032946356
+        ],
+        [
+          "rand_03_L4",
+          0.0005932606477664013
+        ],
+        [
+          "rand_01_L4",
+          7.66244973179897e-05
+        ]
+      ]
+    }
+  },
+  "n_random_power": {
+    "absolute_deltas": {
+      "rand_00_L4": 1.7904245807647707,
+      "rand_01_L4": -3.508751527404788,
+      "rand_02_L4": 5.508030365753173,
+      "rand_03_L4": -1.4995544960021974
+    },
+    "sample_mean": 0.5725372307777397,
+    "sample_sd": 3.9493807166231774,
+    "sample_range": 9.016781893157962,
+    "estimates": {
+      "halfwidth_0.3": {
+        "n_needed": 665.7752340559794,
+        "n_ceil": 666
+      },
+      "halfwidth_0.5": {
+        "n_needed": 239.67908426015256,
+        "n_ceil": 240
+      },
+      "halfwidth_1.0": {
+        "n_needed": 59.91977106503814,
+        "n_ceil": 60
+      },
+      "SE_0.3": {
+        "n_needed": 173.30675605372224,
+        "n_ceil": 174
+      },
+      "SE_0.5": {
+        "n_needed": 62.39043217934001,
+        "n_ceil": 63
+      },
+      "current_n4": {
+        "SE": 1.9746903583115887,
+        "CI95_halfwidth_approx": 3.8703931022907136
+      }
+    },
+    "recommendation": "With observed sd\u22483.95 on absolute \u0394 (n=4 estimate; uncertain), 95% CI half-width ~1.0 needs \u224860 random directions; ~0.5 needs \u2248240; ~0.3 needs \u2248670. Current n=4 has SE\u22481.97 / half-width\u22483.9 \u2014 mean unusable. Preregister n_random \u2265 64 at 32B; re-estimate s after first wave; escalate toward ~100\u2013200 if sd stays near 4. If sd shrinks toward ~2, n\u224860\u201380 may suffice for half-width ~0.5. rand_02 sanity check found no special alignment with mean activation or top residual PCs, so more randoms is the right fix."
+  },
+  "absolute_deltas": {
+    "rand_00_L4": 1.7904245807647707,
+    "rand_01_L4": -3.508751527404788,
+    "rand_02_L4": 5.508030365753173,
+    "rand_03_L4": -1.4995544960021974
+  },
+  "rand_02_verdict": {
+    "max_abs_cos_vs_safety_learned": 0.011987480575059899,
+    "L4_max_abs_cos_PC": 0.04923367796235084,
+    "L4_max_abs_cos_PC_others_max": 0.05132362823050801,
+    "L4_abs_cos_mean_all": 0.008627465167869938,
+    "L4_abs_cos_mean_all_others_max": 0.028836388077133342,
+    "L22_max_abs_cos_PC": 0.06547819348776587,
+    "interpretation": "rand_02 is orthogonal to the safety/learned span (by construction; max|cos|~0.01). Its |cos| to top PCs / mean activation at L4/L22 is not uniquely high vs the other three randoms \u2014 so the large absolute \u0394 / magnitude residual is NOT explained by incidental alignment with mean activation or top residual PCs on this check. Treat as sampling variance from n=4 until more randoms are drawn; do not invent a subspace-alignment story."
+  },
+  "status": "06b_closed_with_rand02_sanity_and_n_random_power"
+}

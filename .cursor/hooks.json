@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": ".venv/bin/python .cursor/hooks/sync_session_reset.py",
+        "timeout": 10
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": ".venv/bin/python .cursor/hooks/sync_secret_detect.py",
+        "timeout": 30
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": ".venv/bin/python .cursor/hooks/sync_secret_detect.py",
+        "timeout": 30
+      }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": ".venv/bin/python .cursor/hooks/sync_secret_after_response.py",
+        "timeout": 15
+      }
+    ],
+    "stop": [
+      {
+        "command": ".venv/bin/python .cursor/hooks/sync_secret_stop.py",
+        "timeout": 20,
+        "loop_limit": 2
+      }
+    ]
+  }
+}

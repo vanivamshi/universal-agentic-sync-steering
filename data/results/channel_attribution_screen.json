@@ -1,0 +1,553 @@
+{
+  "stage": "SCREEN_DESCRIPTIVE",
+  "layer": 4,
+  "n_pos": 8,
+  "n_neg": 4,
+  "floor_of_power": true,
+  "hidden_size": 1024,
+  "seed": 20260811,
+  "gxa": {
+    "method": "grad_x_act_contrastive_nll",
+    "n_nonzero_|s|": 1024,
+    "max_|s|": 0.001989931319258176,
+    "by_condition": {
+      "identity": {
+        "control_correct": 0.6666666666666666,
+        "task_attempted": 1.0,
+        "tool_violation": 0.16666666666666666,
+        "spurious_refusal": 0.25,
+        "unique_token_ratio": 0.8945325684920579,
+        "n_channels": 0,
+        "channels_head": []
+      },
+      "bottom_16": {
+        "control_correct": 0.6666666666666666,
+        "task_attempted": 1.0,
+        "tool_violation": 0.16666666666666666,
+        "spurious_refusal": 0.25,
+        "unique_token_ratio": 0.9143932633527528,
+        "n_channels": 16,
+        "channels_head": [
+          607,
+          464,
+          913,
+          625,
+          77,
+          844,
+          401,
+          863,
+          319,
+          256,
+          82,
+          781
+        ]
+      },
+      "top_16": {
+        "control_correct": 0.0,
+        "task_attempted": 0.0,
+        "tool_violation": 0.0,
+        "spurious_refusal": 0.0,
+        "unique_token_ratio": 0.27521318143508666,
+        "n_channels": 16,
+        "channels_head": [
+          16,
+          29,
+          35,
+          53,
+          713,
+          8,
+          3,
+          23,
+          660,
+          102,
+          992,
+          41
+        ]
+      },
+      "random_16": {
+        "control_correct": 0.75,
+        "task_attempted": 1.0,
+        "tool_violation": 0.16666666666666666,
+        "spurious_refusal": 0.16666666666666666,
+        "unique_token_ratio": 0.8675811930908749,
+        "n_channels": 16,
+        "channels_head": [
+          771,
+          295,
+          573,
+          757,
+          587,
+          953,
+          365,
+          661,
+          296,
+          452,
+          512,
+          280
+        ]
+      },
+      "bottom_64": {
+        "control_correct": 0.6666666666666666,
+        "task_attempted": 1.0,
+        "tool_violation": 0.08333333333333333,
+        "spurious_refusal": 0.3333333333333333,
+        "unique_token_ratio": 0.8980311317550148,
+        "n_channels": 64,
+        "channels_head": [
+          607,
+          464,
+          913,
+          625,
+          77,
+          844,
+          401,
+          863,
+          319,
+          256,
+          82,
+          781
+        ]
+      },
+      "top_64": {
+        "control_correct": 0.0,
+        "task_attempted": 0.0,
+        "tool_violation": 0.0,
+        "spurious_refusal": 0.0,
+        "unique_token_ratio": 0.21173453782545315,
+        "n_channels": 64,
+        "channels_head": [
+          16,
+          29,
+          35,
+          53,
+          713,
+          8,
+          3,
+          23,
+          660,
+          102,
+          992,
+          41
+        ]
+      },
+      "random_64": {
+        "control_correct": 0.8333333333333334,
+        "task_attempted": 1.0,
+        "tool_violation": 0.16666666666666666,
+        "spurious_refusal": 0.0,
+        "unique_token_ratio": 0.897883280863157,
+        "n_channels": 64,
+        "channels_head": [
+          7,
+          463,
+          685,
+          576,
+          139,
+          937,
+          626,
+          340,
+          480,
+          441,
+          729,
+          132
+        ]
+      }
+    },
+    "top16": [
+      {
+        "channel": 16,
+        "s": 0.001989931319258176,
+        "abs_s": 0.001989931319258176
+      },
+      {
+        "channel": 29,
+        "s": 0.0008354640604011365,
+        "abs_s": 0.0008354640604011365
+      },
+      {
+        "channel": 35,
+        "s": 0.000756827816076111,
+        "abs_s": 0.000756827816076111
+      },
+      {
+        "channel": 53,
+        "s": -0.0006033172576849211,
+        "abs_s": 0.0006033172576849211
+      },
+      {
+        "channel": 713,
+        "s": -0.0005239143473545482,
+        "abs_s": 0.0005239143473545482
+      },
+      {
+        "channel": 8,
+        "s": 0.000520926589388182,
+        "abs_s": 0.000520926589388182
+      },
+      {
+        "channel": 3,
+        "s": 0.0004901296979369363,
+        "abs_s": 0.0004901296979369363
+      },
+      {
+        "channel": 23,
+        "s": 0.00042247202509315684,
+        "abs_s": 0.00042247202509315684
+      },
+      {
+        "channel": 660,
+        "s": 0.0004105245384380396,
+        "abs_s": 0.0004105245384380396
+      },
+      {
+        "channel": 102,
+        "s": 0.00039983525584830204,
+        "abs_s": 0.00039983525584830204
+      },
+      {
+        "channel": 992,
+        "s": -0.0003834133262898831,
+        "abs_s": 0.0003834133262898831
+      },
+      {
+        "channel": 41,
+        "s": -0.0003642144238256151,
+        "abs_s": 0.0003642144238256151
+      },
+      {
+        "channel": 1,
+        "s": -0.0003415094806769048,
+        "abs_s": 0.0003415094806769048
+      },
+      {
+        "channel": 28,
+        "s": -0.00032892542594709084,
+        "abs_s": 0.00032892542594709084
+      },
+      {
+        "channel": 777,
+        "s": 0.00032747427661661277,
+        "abs_s": 0.00032747427661661277
+      },
+      {
+        "channel": 905,
+        "s": 0.000316269347990783,
+        "abs_s": 0.000316269347990783
+      }
+    ],
+    "bottom16": [
+      {
+        "channel": 607,
+        "s": 3.1909507924865466e-08,
+        "abs_s": 3.1909507924865466e-08
+      },
+      {
+        "channel": 464,
+        "s": -4.9924580025617615e-08,
+        "abs_s": 4.9924580025617615e-08
+      },
+      {
+        "channel": 913,
+        "s": 5.1264805733808316e-08,
+        "abs_s": 5.1264805733808316e-08
+      },
+      {
+        "channel": 625,
+        "s": -1.1549130540799979e-07,
+        "abs_s": 1.1549130540799979e-07
+      },
+      {
+        "channel": 77,
+        "s": -1.6037511763045131e-07,
+        "abs_s": 1.6037511763045131e-07
+      },
+      {
+        "channel": 844,
+        "s": 2.0698129077345584e-07,
+        "abs_s": 2.0698129077345584e-07
+      },
+      {
+        "channel": 401,
+        "s": 3.5811069665214745e-07,
+        "abs_s": 3.5811069665214745e-07
+      },
+      {
+        "channel": 863,
+        "s": -3.682518698866488e-07,
+        "abs_s": 3.682518698866488e-07
+      },
+      {
+        "channel": 319,
+        "s": -3.718039778277671e-07,
+        "abs_s": 3.718039778277671e-07
+      },
+      {
+        "channel": 256,
+        "s": 4.477124093682505e-07,
+        "abs_s": 4.477124093682505e-07
+      },
+      {
+        "channel": 82,
+        "s": 4.5332397746733477e-07,
+        "abs_s": 4.5332397746733477e-07
+      },
+      {
+        "channel": 781,
+        "s": -4.962205011338483e-07,
+        "abs_s": 4.962205011338483e-07
+      },
+      {
+        "channel": 146,
+        "s": -5.351810159481829e-07,
+        "abs_s": 5.351810159481829e-07
+      },
+      {
+        "channel": 444,
+        "s": -5.49133545746372e-07,
+        "abs_s": 5.49133545746372e-07
+      },
+      {
+        "channel": 217,
+        "s": 6.3053477106223e-07,
+        "abs_s": 6.3053477106223e-07
+      },
+      {
+        "channel": 370,
+        "s": 6.373735388365276e-07,
+        "abs_s": 6.373735388365276e-07
+      }
+    ],
+    "pattern": {
+      "pattern": "SELECTOR_WORKS",
+      "note": "bottom-16 inert and top-16 drops \u2014 ranking is causal on this sample (in-sample only).",
+      "delta_bottom_16": 0.0,
+      "delta_top_16": -0.6666666666666666,
+      "causal_claim": false,
+      "reporting": "in-sample only; not a validated selector for new tasks"
+    }
+  },
+  "per_channel_nll": {
+    "method": "zero_one_channel_delta_teacherforced_nll",
+    "base_nll": 0.048193721449933946,
+    "n_nonzero_delta": 1024,
+    "by_condition": {
+      "identity": {
+        "control_correct": 0.6666666666666666,
+        "task_attempted": 1.0,
+        "tool_violation": 0.16666666666666666,
+        "spurious_refusal": 0.25,
+        "unique_token_ratio": 0.8945325684920579,
+        "n_channels": 0,
+        "channels_head": []
+      },
+      "bottom_16": {
+        "control_correct": 0.8333333333333334,
+        "task_attempted": 1.0,
+        "tool_violation": 0.08333333333333333,
+        "spurious_refusal": 0.16666666666666666,
+        "unique_token_ratio": 0.9176209392705493,
+        "n_channels": 16,
+        "channels_head": [
+          63,
+          893,
+          422,
+          746,
+          888,
+          989,
+          673,
+          767,
+          822,
+          32,
+          942,
+          961
+        ]
+      },
+      "top_16": {
+        "control_correct": 0.0,
+        "task_attempted": 0.0,
+        "tool_violation": 0.0,
+        "spurious_refusal": 0.0,
+        "unique_token_ratio": 1.0,
+        "n_channels": 16,
+        "channels_head": [
+          35,
+          1,
+          13,
+          3,
+          277,
+          96,
+          30,
+          16,
+          28,
+          41,
+          158,
+          9
+        ]
+      },
+      "random_16": {
+        "control_correct": 0.75,
+        "task_attempted": 1.0,
+        "tool_violation": 0.16666666666666666,
+        "spurious_refusal": 0.16666666666666666,
+        "unique_token_ratio": 0.8675811930908749,
+        "n_channels": 16,
+        "channels_head": [
+          771,
+          295,
+          573,
+          757,
+          587,
+          953,
+          365,
+          661,
+          296,
+          452,
+          512,
+          280
+        ]
+      },
+      "bottom_64": {
+        "control_correct": 0.9166666666666666,
+        "task_attempted": 1.0,
+        "tool_violation": 0.08333333333333333,
+        "spurious_refusal": 0.0,
+        "unique_token_ratio": 0.9079060227957427,
+        "n_channels": 64,
+        "channels_head": [
+          63,
+          893,
+          422,
+          746,
+          888,
+          989,
+          673,
+          767,
+          822,
+          32,
+          942,
+          961
+        ]
+      },
+      "top_64": {
+        "control_correct": 0.0,
+        "task_attempted": 0.0,
+        "tool_violation": 0.0,
+        "spurious_refusal": 0.0,
+        "unique_token_ratio": 0.337540235882285,
+        "n_channels": 64,
+        "channels_head": [
+          35,
+          1,
+          13,
+          3,
+          277,
+          96,
+          30,
+          16,
+          28,
+          41,
+          158,
+          9
+        ]
+      },
+      "random_64": {
+        "control_correct": 0.8333333333333334,
+        "task_attempted": 1.0,
+        "tool_violation": 0.16666666666666666,
+        "spurious_refusal": 0.0,
+        "unique_token_ratio": 0.897883280863157,
+        "n_channels": 64,
+        "channels_head": [
+          7,
+          463,
+          685,
+          576,
+          139,
+          937,
+          626,
+          340,
+          480,
+          441,
+          729,
+          132
+        ]
+      }
+    },
+    "top16": [
+      {
+        "channel": 35,
+        "delta_nll": 2.262747756166694
+      },
+      {
+        "channel": 1,
+        "delta_nll": 0.35333848538963747
+      },
+      {
+        "channel": 13,
+        "delta_nll": 0.07047390344087034
+      },
+      {
+        "channel": 3,
+        "delta_nll": 0.035645939836588994
+      },
+      {
+        "channel": 277,
+        "delta_nll": 0.03334679365313302
+      },
+      {
+        "channel": 96,
+        "delta_nll": 0.02530459039068471
+      },
+      {
+        "channel": 30,
+        "delta_nll": 0.025000525599656
+      },
+      {
+        "channel": 16,
+        "delta_nll": 0.02118076160938169
+      },
+      {
+        "channel": 28,
+        "delta_nll": 0.00900997434897969
+      },
+      {
+        "channel": 41,
+        "delta_nll": 0.00889584435693299
+      },
+      {
+        "channel": 158,
+        "delta_nll": 0.00838973221834749
+      },
+      {
+        "channel": 9,
+        "delta_nll": 0.006554412112260856
+      },
+      {
+        "channel": 134,
+        "delta_nll": 0.0050078717952904625
+      },
+      {
+        "channel": 12,
+        "delta_nll": -0.0039072930036733525
+      },
+      {
+        "channel": 29,
+        "delta_nll": 0.0034964580942566173
+      },
+      {
+        "channel": 126,
+        "delta_nll": 0.003292670415248722
+      }
+    ],
+    "pattern": {
+      "pattern": "SELECTOR_WORKS",
+      "note": "bottom-16 inert and top-16 drops \u2014 ranking is causal on this sample (in-sample only).",
+      "delta_bottom_16": 0.16666666666666674,
+      "delta_top_16": -0.6666666666666666,
+      "causal_claim": false,
+      "reporting": "in-sample only; not a validated selector for new tasks"
+    }
+  },
+  "holdout_licensed": false,
+  "causal_claim": false
+}

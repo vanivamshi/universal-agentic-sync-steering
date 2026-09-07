@@ -1,0 +1,39 @@
+{
+  "protocol": "5C contrast replicate (matched)",
+  "alpha": 1.5,
+  "reps": 8,
+  "seed": 20260907,
+  "C_contrast": {
+    "abs_dM_C_from": 3.3608734607696533,
+    "abs_dM_C_to": 2.7924026250839233,
+    "retention": 0.8308562216574652,
+    "cross_from": 0.8709085583686829,
+    "cross_to": 1.1585415601730347,
+    "cross_ratio": 1.3302677405571983,
+    "dM_H_from_mean": 0.0011882781982421875,
+    "dM_H_to_mean": 0.9350926876068115
+  },
+  "H_contrast": {
+    "abs_dM_H_from": 15.598760604858398,
+    "abs_dM_H_to": 12.570208549499512,
+    "retention": 0.8058466225569477,
+    "cross_from": 0.265439510345459,
+    "cross_to": 0.17461344599723816,
+    "cross_ratio": 0.6578276375283607,
+    "dM_H_from_mean": 1.2674846649169922,
+    "dM_H_to_mean": 1.7320585250854492
+  },
+  "gate": {
+    "C_cross_worsens": true,
+    "H_cross_worsens": false,
+    "keep_as_trajectory_coupling": true,
+    "discard_as_unstable": false,
+    "note": "Keep C\u2192H coupling finding iff cross_ratio>1.25; else discard. 8-way validation proceeds regardless."
+  },
+  "original_5C": {
+    "C_retention": 0.83,
+    "C_cross_ratio": 1.33,
+    "H_retention": 0.81,
+    "H_cross_ratio": 0.66
+  }
+}

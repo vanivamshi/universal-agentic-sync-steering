@@ -1,0 +1,230 @@
+{
+  "J": [
+    [
+      0.0,
+      -0.25,
+      0.0
+    ],
+    [
+      0.0,
+      0.25,
+      0.0
+    ],
+    [
+      0.0,
+      0.25,
+      0.0
+    ]
+  ],
+  "diag": [
+    0.0,
+    0.25,
+    0.0
+  ],
+  "offdiag_l2": 0.3535533905932738,
+  "diag_abs_mean": 0.08333333333333333,
+  "approx_diagonal": false,
+  "channels": [
+    "C",
+    "H",
+    "O"
+  ],
+  "J_plus_only": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "mode": "causal",
+  "S_base": [
+    0.0,
+    1.0,
+    0.5
+  ],
+  "alpha": 0.5,
+  "reps": 2,
+  "neutral_task": "api",
+  "mean_deltas": {
+    "v_C": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "v_H": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "v_O": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "arms": [
+    {
+      "arm": "+v_C",
+      "channel": "C",
+      "sign": 1.0,
+      "S_base": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "S_mean": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "delta_S": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_delta": 0.0,
+      "collateral": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "-v_C",
+      "channel": "C",
+      "sign": -1.0,
+      "S_base": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "S_mean": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "delta_S": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_delta": 0.0,
+      "collateral": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "+v_H",
+      "channel": "H",
+      "sign": 1.0,
+      "S_base": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "S_mean": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "delta_S": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_delta": 0.0,
+      "collateral": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "-v_H",
+      "channel": "H",
+      "sign": -1.0,
+      "S_base": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "S_mean": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "delta_S": [
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "target_delta": -0.5,
+      "collateral": [
+        0.5,
+        -0.5
+      ]
+    },
+    {
+      "arm": "+v_O",
+      "channel": "O",
+      "sign": 1.0,
+      "S_base": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "S_mean": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "delta_S": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_delta": 0.0,
+      "collateral": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "-v_O",
+      "channel": "O",
+      "sign": -1.0,
+      "S_base": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "S_mean": [
+        0.0,
+        1.0,
+        0.5
+      ],
+      "delta_S": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_delta": 0.0,
+      "collateral": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "bank_meta_status": "candidates_from_free_runs_not_causally_validated",
+  "v_C_status": "candidate_from_observed_plan",
+  "note": "J from paired-seed \u00b1\u03b1 single-channel steers. Ideal \u2248 diagonal. Do not freeze if proxy v_C or weak diag."
+}

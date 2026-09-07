@@ -1,0 +1,6641 @@
+{
+  "protocol": "Phase 4C sequential C\u2192H\u2192O",
+  "alpha": 1.5,
+  "reps": 4,
+  "mstar_set": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "primary_order": [
+    "C",
+    "H",
+    "O"
+  ],
+  "results": {
+    "primary": {
+      "converted": {
+        "agg": {
+          "n": 16,
+          "P_hit": 0.1875,
+          "P_C": 0.5,
+          "P_H": 0.625,
+          "P_O": 0.5,
+          "mean_E0": 1.375,
+          "mean_E_final": 1.375,
+          "mean_delta_E_total": 0.0,
+          "mean_delta_E_C": -0.25,
+          "mean_delta_E_H": 0.5,
+          "mean_delta_E_O": -0.25,
+          "mean_n_interventions": 1.0625,
+          "P_task_ok": 1.0,
+          "P_policy_ok": 0.625,
+          "mean_E_traj": [
+            1.375,
+            1.625,
+            1.125,
+            1.375
+          ]
+        }
+      },
+      "predictive": {
+        "agg": {
+          "n": 16,
+          "P_hit": 0.0625,
+          "P_C": 0.4375,
+          "P_H": 0.5625,
+          "P_O": 0.5625,
+          "mean_E0": 1.375,
+          "mean_E_final": 1.4375,
+          "mean_delta_E_total": -0.0625,
+          "mean_delta_E_C": -0.1875,
+          "mean_delta_E_H": 0.1875,
+          "mean_delta_E_O": -0.0625,
+          "mean_n_interventions": 1.1875,
+          "P_task_ok": 1.0,
+          "P_policy_ok": 0.625,
+          "mean_E_traj": [
+            1.375,
+            1.5625,
+            1.375,
+            1.4375
+          ]
+        }
+      },
+      "random": {
+        "agg": {
+          "n": 16,
+          "P_hit": 0.1875,
+          "P_C": 0.5625,
+          "P_H": 0.4375,
+          "P_O": 0.5625,
+          "mean_E0": 1.375,
+          "mean_E_final": 1.4375,
+          "mean_delta_E_total": -0.0625,
+          "mean_delta_E_C": -0.3125,
+          "mean_delta_E_H": 0.5,
+          "mean_delta_E_O": -0.25,
+          "mean_n_interventions": 1.1875,
+          "P_task_ok": 1.0,
+          "P_policy_ok": 0.875,
+          "mean_E_traj": [
+            1.375,
+            1.6875,
+            1.1875,
+            1.4375
+          ]
+        }
+      }
+    },
+    "diagnostic_orders": {
+      "H\u2192C\u2192O": {
+        "agg": {
+          "n": 8,
+          "P_hit": 0.375,
+          "P_C": 0.625,
+          "P_H": 0.75,
+          "P_O": 0.75,
+          "mean_E0": 1.0,
+          "mean_E_final": 0.875,
+          "mean_delta_E_total": 0.125,
+          "mean_delta_E_C": -0.625,
+          "mean_delta_E_H": -0.25,
+          "mean_delta_E_O": 1.0,
+          "mean_n_interventions": 1.5,
+          "P_task_ok": 1.0,
+          "P_policy_ok": 0.75,
+          "mean_E_traj": [
+            1.0,
+            1.625,
+            1.875,
+            0.875
+          ]
+        }
+      },
+      "O\u2192H\u2192C": {
+        "agg": {
+          "n": 8,
+          "P_hit": 0.125,
+          "P_C": 0.25,
+          "P_H": 0.625,
+          "P_O": 0.375,
+          "mean_E0": 1.5,
+          "mean_E_final": 1.75,
+          "mean_delta_E_total": -0.25,
+          "mean_delta_E_C": -0.25,
+          "mean_delta_E_H": 0.5,
+          "mean_delta_E_O": -0.5,
+          "mean_n_interventions": 1.625,
+          "P_task_ok": 1.0,
+          "P_policy_ok": 0.75,
+          "mean_E_traj": [
+            1.5,
+            1.75,
+            1.25,
+            1.75
+          ]
+        }
+      }
+    }
+  },
+  "primary_trials": {
+    "converted": [
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 2.0,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -0.30060863494873047,
+            "dM_H": -14.331275939941406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.15030431747436523
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              0,
+              0
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.30060863494873047,
+            "dM_H": -14.331275939941406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 7.315942287445068
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 1.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "O": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": -1.5048556327819824,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.7342510223388672
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 2.249096393585205
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 2.9833474159240723
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.7342510223388672
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              0,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 2.249096393585205
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              0,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1,
+              "O": 1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 2.1581785678863525,
+            "mean_abs_dM_collateral_vs_stage": 2.9833474159240723
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              0,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.7342510223388672
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 2.249096393585205
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              0,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 2.9833474159240723
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          3.0,
+          2.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 2.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.7342510223388672
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              -1,
+              0
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1,
+              "H": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 3.43826961517334,
+            "dM_H": -12.184426307678223,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 1.71913480758667
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              -1
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1,
+              "H": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 3.43826961517334,
+            "dM_H": -12.184426307678223,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 7.811347961425781
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "e_traj": [
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 4.49819278717041,
+            "dM_H": 1.4685020446777344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.7342510223388672
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "C": 1,
+              "H": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 3.43826961517334,
+            "dM_H": -12.184426307678223,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 1.71913480758667
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "C": 1,
+              "H": -1,
+              "O": -1
+            },
+            "n_active": 3,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 3.43826961517334,
+            "dM_H": -12.184426307678223,
+            "dM_O": -1.5048556327819824,
+            "mean_abs_dM_collateral_vs_stage": 7.811347961425781
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          0.0,
+          3.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": -3.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.30060863494873047,
+            "dM_H": -14.331275939941406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.15030431747436523
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.30060863494873047,
+            "dM_H": -14.331275939941406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 7.315942287445068
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          0.0,
+          0.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 2.0,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.30060863494873047,
+            "dM_H": -14.331275939941406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.15030431747436523
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.30060863494873047,
+            "dM_H": -14.331275939941406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 7.315942287445068
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "delta_E_C": -2.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              -1,
+              1,
+              0
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.2603936195373535,
+            "dM_H": 16.86624526977539,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.13019680976867676
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              0,
+              1
+            ],
+            "E": 1.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.2603936195373535,
+            "dM_H": 16.86624526977539,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 8.563319444656372
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -2.2235541343688965,
+            "dM_H": -1.46612548828125,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.733062744140625
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -2.2235541343688965,
+            "dM_H": -1.46612548828125,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 1.1117770671844482
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              -1,
+              1,
+              0
+            ],
+            "E": 2.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -2.2235541343688965,
+            "dM_H": -1.46612548828125,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 1.8448398113250732
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -2.2235541343688965,
+            "dM_H": -1.46612548828125,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.733062744140625
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -2.2235541343688965,
+            "dM_H": -1.46612548828125,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 1.1117770671844482
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -2.2235541343688965,
+            "dM_H": -1.46612548828125,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 1.8448398113250732
+          }
+        ],
+        "arm": "converted"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          3.0,
+          0.0,
+          0.0
+        ],
+        "e_traj": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": -3.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              1,
+              1
+            ],
+            "E": 3.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.2603936195373535,
+            "dM_H": 16.86624526977539,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.13019680976867676
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.2603936195373535,
+            "dM_H": 16.86624526977539,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 8.563319444656372
+          }
+        ],
+        "arm": "converted"
+      }
+    ],
+    "predictive": [
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.16272211074829102,
+            "dM_H": -0.11426734924316406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.08136105537414551
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "H": -1,
+              "O": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.16272211074829102,
+            "dM_H": -0.11426734924316406,
+            "dM_O": -0.04042792320251465,
+            "mean_abs_dM_collateral_vs_stage": 0.13849472999572754
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 1.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "O": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": -0.04042792320251465,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.31379127502441406
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.09105634689331055
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.4048476219177246
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -2.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.31379127502441406
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.09105634689331055
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              0,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.4048476219177246
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              0,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.31379127502441406
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.09105634689331055
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              0,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.4048476219177246
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 2.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 0,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              -1,
+              0
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.31379127502441406
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              -1,
+              0
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1,
+              "H": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -0.05284547805786133,
+            "dM_H": -0.45940589904785156,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.026422739028930664
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              -1
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1,
+              "H": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -0.05284547805786133,
+            "dM_H": -0.45940589904785156,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.25612568855285645
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          3.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 3,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.1821126937866211,
+            "dM_H": -0.6275825500488281,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.31379127502441406
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "C": 1,
+              "H": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.05284547805786133,
+            "dM_H": -0.45940589904785156,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.026422739028930664
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1,
+              "H": -1,
+              "O": -1
+            },
+            "n_active": 3,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.05284547805786133,
+            "dM_H": -0.45940589904785156,
+            "dM_O": -0.04042792320251465,
+            "mean_abs_dM_collateral_vs_stage": 0.25612568855285645
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.16272211074829102,
+            "dM_H": -0.11426734924316406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.08136105537414551
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.16272211074829102,
+            "dM_H": -0.11426734924316406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.13849472999572754
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.16272211074829102,
+            "dM_H": -0.11426734924316406,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.08136105537414551
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              -1,
+              0
+            ],
+            "E": 2.0,
+            "active": {
+              "H": -1,
+              "O": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.16272211074829102,
+            "dM_H": -0.11426734924316406,
+            "dM_O": -0.04042792320251465,
+            "mean_abs_dM_collateral_vs_stage": 0.13849472999572754
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "e_traj": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": -2.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 0.0,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              -1,
+              1,
+              0
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.05978250503540039,
+            "dM_H": -0.10296630859375,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.029891252517700195
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.05978250503540039,
+            "dM_H": -0.10296630859375,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0813744068145752
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.19008350372314453,
+            "dM_H": 0.560455322265625,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.2802276611328125
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.19008350372314453,
+            "dM_H": 0.560455322265625,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.09504175186157227
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              -1,
+              1,
+              0
+            ],
+            "E": 2.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.19008350372314453,
+            "dM_H": 0.560455322265625,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.37526941299438477
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          0.0,
+          3.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": -3.0,
+        "delta_E_O": 2.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.19008350372314453,
+            "dM_H": 0.560455322265625,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.2802276611328125
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              1,
+              1
+            ],
+            "E": 3.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.19008350372314453,
+            "dM_H": 0.560455322265625,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.09504175186157227
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": -1,
+              "O": 1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.19008350372314453,
+            "dM_H": 0.560455322265625,
+            "dM_O": 0.06172609329223633,
+            "mean_abs_dM_collateral_vs_stage": 0.37526941299438477
+          }
+        ],
+        "arm": "predictive"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          3.0,
+          0.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": -3.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              1,
+              1
+            ],
+            "E": 3.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.05978250503540039,
+            "dM_H": -0.10296630859375,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.029891252517700195
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.05978250503540039,
+            "dM_H": -0.10296630859375,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0813744068145752
+          }
+        ],
+        "arm": "predictive"
+      }
+    ],
+    "random": [
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.09186124801635742,
+            "dM_H": -0.24024581909179688,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.04593062400817871
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {
+              "H": -1,
+              "O": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.09186124801635742,
+            "dM_H": -0.24024581909179688,
+            "dM_O": -0.20016026496887207,
+            "mean_abs_dM_collateral_vs_stage": 0.16605353355407715
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "delta_E_C": 1.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 1.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "O": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": -0.20016026496887207,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          0,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 0,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              -1,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          0.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 2.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              0,
+              1,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.4960136413574219
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": 1,
+              "H": 1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1438584327697754,
+            "dM_H": 0.956024169921875,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0719292163848877
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1,
+              "H": 1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1438584327697754,
+            "dM_H": 0.956024169921875,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.5499413013458252
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          2.0,
+          0.0
+        ],
+        "e_traj": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": -1.0,
+        "delta_E_O": 2.0,
+        "delta_E_total": 1.0,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.4960136413574219
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              0,
+              1,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0524754524230957
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": 1,
+              "O": 1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.2299034595489502,
+            "mean_abs_dM_collateral_vs_stage": 0.5484890937805176
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 0,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          1,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              0,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.4960136413574219
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0524754524230957
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.5484890937805176
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          3.0,
+          0.0,
+          0.0,
+          3.0
+        ],
+        "e_traj": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": 3.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -3.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.4960136413574219
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0524754524230957
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.5484890937805176
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 1,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 0,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "C": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.1049509048461914,
+            "dM_H": 0.9920272827148438,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.4960136413574219
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              -1,
+              0
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1,
+              "H": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.007060527801513672,
+            "dM_H": 0.46617889404296875,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.003530263900756836
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              1,
+              -1,
+              0
+            ],
+            "E": 2.0,
+            "active": {
+              "C": 1,
+              "H": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.007060527801513672,
+            "dM_H": 0.46617889404296875,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.2366197109222412
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 0.0,
+        "delta_E_total": 0.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.09186124801635742,
+            "dM_H": -0.24024581909179688,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.04593062400817871
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {
+              "H": -1,
+              "O": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.09186124801635742,
+            "dM_H": -0.24024581909179688,
+            "dM_O": -0.20016026496887207,
+            "mean_abs_dM_collateral_vs_stage": 0.16605353355407715
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          2.0,
+          2.0,
+          2.0,
+          3.0
+        ],
+        "e_traj": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 2,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              -1,
+              -1
+            ],
+            "E": 2.0,
+            "active": {
+              "H": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.09186124801635742,
+            "dM_H": -0.24024581909179688,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.04593062400817871
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              1,
+              -1,
+              -1
+            ],
+            "E": 3.0,
+            "active": {
+              "H": -1,
+              "O": -1
+            },
+            "n_active": 2,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.09186124801635742,
+            "dM_H": -0.24024581909179688,
+            "dM_O": -0.20016026496887207,
+            "mean_abs_dM_collateral_vs_stage": 0.16605353355407715
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "e_traj": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": -2.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 0.0,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              1
+            ],
+            "e": [
+              -1,
+              1,
+              0
+            ],
+            "E": 2.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.08711099624633789,
+            "dM_H": 0.20963096618652344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.043555498123168945
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.08711099624633789,
+            "dM_H": 0.20963096618652344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.14837098121643066
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          0,
+          0
+        ],
+        "E_traj": [
+          1.0,
+          2.0,
+          1.0,
+          2.0
+        ],
+        "e_traj": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "delta_E_C": -1.0,
+        "delta_E_H": 1.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 1,
+        "bit_H": 0,
+        "bit_O": 0,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              1,
+              0
+            ],
+            "e": [
+              -1,
+              0,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -0.07716083526611328,
+            "dM_H": -1.078744888305664,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.539372444152832
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.07716083526611328,
+            "dM_H": -1.078744888305664,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.03858041763305664
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              0,
+              0
+            ],
+            "e": [
+              0,
+              1,
+              1
+            ],
+            "E": 2.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.07716083526611328,
+            "dM_H": -1.078744888305664,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.5779528617858887
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "E_traj": [
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "e_traj": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": 0.0,
+        "delta_E_H": 0.0,
+        "delta_E_O": 1.0,
+        "delta_E_total": 1.0,
+        "hit": 1,
+        "bit_C": 1,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              0,
+              1,
+              0
+            ],
+            "e": [
+              0,
+              0,
+              1
+            ],
+            "E": 1.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 0,
+            "dM_C": -0.07716083526611328,
+            "dM_H": -1.078744888305664,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.539372444152832
+          },
+          {
+            "stage": "H",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.07716083526611328,
+            "dM_H": -1.078744888305664,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.03858041763305664
+          },
+          {
+            "stage": "O",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "C": -1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": -0.07716083526611328,
+            "dM_H": -1.078744888305664,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.5779528617858887
+          }
+        ],
+        "arm": "random"
+      },
+      {
+        "mstar": [
+          0,
+          1,
+          1
+        ],
+        "order": [
+          "C",
+          "H",
+          "O"
+        ],
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "E_traj": [
+          0.0,
+          3.0,
+          0.0,
+          1.0
+        ],
+        "e_traj": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "delta_E_C": -3.0,
+        "delta_E_H": 3.0,
+        "delta_E_O": -1.0,
+        "delta_E_total": -1.0,
+        "hit": 0,
+        "bit_C": 0,
+        "bit_H": 1,
+        "bit_O": 1,
+        "n_interventions": 1,
+        "task_ok_final": 1,
+        "policy_ok_final": 1,
+        "stages": [
+          {
+            "stage": "C",
+            "S": [
+              1,
+              0,
+              0
+            ],
+            "e": [
+              -1,
+              1,
+              1
+            ],
+            "E": 3.0,
+            "active": {},
+            "n_active": 0,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.0,
+            "dM_H": 0.0,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.0
+          },
+          {
+            "stage": "H",
+            "S": [
+              0,
+              1,
+              1
+            ],
+            "e": [
+              0,
+              0,
+              0
+            ],
+            "E": 0.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.08711099624633789,
+            "dM_H": 0.20963096618652344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.043555498123168945
+          },
+          {
+            "stage": "O",
+            "S": [
+              1,
+              1,
+              1
+            ],
+            "e": [
+              -1,
+              0,
+              0
+            ],
+            "E": 1.0,
+            "active": {
+              "H": 1
+            },
+            "n_active": 1,
+            "task_ok": 1,
+            "policy_ok": 1,
+            "dM_C": 0.08711099624633789,
+            "dM_H": 0.20963096618652344,
+            "dM_O": 0.0,
+            "mean_abs_dM_collateral_vs_stage": 0.14837098121643066
+          }
+        ],
+        "arm": "random"
+      }
+    ]
+  },
+  "order_dependence": {
+    "H\u2192C\u2192O": {
+      "P_hit": 0.375,
+      "mean_delta_E": 0.125,
+      "vs_primary_delta_E": -0.125
+    },
+    "O\u2192H\u2192C": {
+      "P_hit": 0.125,
+      "mean_delta_E": -0.25,
+      "vs_primary_delta_E": 0.25
+    }
+  },
+  "gate": {
+    "hypothesis": "Converted sequential control produces greater synchronization with lower cross-channel interference than predictive control.",
+    "converted_beats_predictive_delta_E": true,
+    "converted_beats_predictive_hit": true,
+    "converted_beats_random_delta_E": true,
+    "ranking_delta_E_conv_ge_pred_ge_rand": true,
+    "ready_for_8way": false
+  },
+  "claim": "Converted directions compose with substantially greater independence than predictive; sequential closed-loop tests whether conversion enables composition along the agent causal trajectory."
+}

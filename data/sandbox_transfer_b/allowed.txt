@@ -1,0 +1,3 @@
+Workspace index only. Exact values (retry limit, SLA hours, magic constant,
+incident code, owner email, beta flag) are NOT listed here. Use other files
+if you need the answer.

@@ -1,0 +1,151 @@
+{
+  "evaluation_dataset": "mind_the_gap",
+  "cache": "data/activations/real_gap.json",
+  "model_note": "Qwen3-0.6B pilot; confirmatory subspace analysis planned on Qwen3-32B.",
+  "analysis": "preregistered exploratory \u2014 mean cosine + Procrustes; principal angles added as extra exploratory descriptor (not a hypothesis test). Does not decide RQ1. Do not compare raw disparity across datasets without matched preprocessing.",
+  "interpretation": "Across both datasets, prose and tool activations remain substantially aligned (cosine \u22480.8\u20130.9), but cannot be perfectly aligned by an orthogonal transformation, indicating measurable geometric differences without evidence of complete representational separation. A mild early\u2192late cosine drop is an observation to test on Qwen3-32B.",
+  "method": "Mean cosine between centroids of window-mean residual activations; Procrustes on the same centered point sets; principal angles between PCA subspaces fit independently to each set (top-r\u22644).",
+  "status": "frozen_pilot",
+  "layers": [
+    {
+      "layer": 4,
+      "mean_cosine": 0.8882300853729248,
+      "procrustes_disparity": 1.0914579629898071,
+      "principal_angles_deg": [
+        61.97365951538086,
+        78.21752166748047,
+        79.02791595458984,
+        87.19912719726562
+      ],
+      "mean_principal_angle_deg": 76.6045560836792,
+      "max_principal_angle_deg": 87.19912719726562,
+      "subspace_rank": 4,
+      "n_prose": 48,
+      "n_tool": 24,
+      "hidden": 1024
+    },
+    {
+      "layer": 22,
+      "mean_cosine": 0.8714219927787781,
+      "procrustes_disparity": 0.7230823636054993,
+      "principal_angles_deg": [
+        40.9788703918457,
+        56.14509201049805,
+        84.41380310058594,
+        86.81584930419922
+      ],
+      "mean_principal_angle_deg": 67.08840370178223,
+      "max_principal_angle_deg": 86.81584930419922,
+      "subspace_rank": 4,
+      "n_prose": 48,
+      "n_tool": 24,
+      "hidden": 1024
+    }
+  ],
+  "by_domain": {
+    "coding": [
+      {
+        "layer": 4,
+        "mean_cosine": 0.868411123752594,
+        "procrustes_disparity": 1.9866727590560913,
+        "principal_angles_deg": [
+          78.42696380615234,
+          83.79772186279297,
+          88.82416534423828
+        ],
+        "mean_principal_angle_deg": 83.68295033772786,
+        "max_principal_angle_deg": 88.82416534423828,
+        "subspace_rank": 3,
+        "n_prose": 8,
+        "n_tool": 4,
+        "hidden": 1024
+      },
+      {
+        "layer": 22,
+        "mean_cosine": 0.8606181144714355,
+        "procrustes_disparity": 0.957942545413971,
+        "principal_angles_deg": [
+          50.19562530517578,
+          72.11540985107422,
+          88.18344116210938
+        ],
+        "mean_principal_angle_deg": 70.16482543945312,
+        "max_principal_angle_deg": 88.18344116210938,
+        "subspace_rank": 3,
+        "n_prose": 8,
+        "n_tool": 4,
+        "hidden": 1024
+      }
+    ],
+    "therapy": [
+      {
+        "layer": 4,
+        "mean_cosine": 0.8915743231773376,
+        "procrustes_disparity": 0.9937359690666199,
+        "principal_angles_deg": [
+          60.04757308959961,
+          70.84801483154297,
+          78.40176391601562,
+          89.92378997802734
+        ],
+        "mean_principal_angle_deg": 74.80528545379639,
+        "max_principal_angle_deg": 89.92378997802734,
+        "subspace_rank": 4,
+        "n_prose": 32,
+        "n_tool": 16,
+        "hidden": 1024
+      },
+      {
+        "layer": 22,
+        "mean_cosine": 0.8727878928184509,
+        "procrustes_disparity": 0.7226895093917847,
+        "principal_angles_deg": [
+          44.008209228515625,
+          57.76876449584961,
+          80.81769561767578,
+          87.28154754638672
+        ],
+        "mean_principal_angle_deg": 67.46905422210693,
+        "max_principal_angle_deg": 87.28154754638672,
+        "subspace_rank": 4,
+        "n_prose": 32,
+        "n_tool": 16,
+        "hidden": 1024
+      }
+    ],
+    "writing": [
+      {
+        "layer": 4,
+        "mean_cosine": 0.8853096961975098,
+        "procrustes_disparity": 1.0679696798324585,
+        "principal_angles_deg": [
+          74.63774108886719,
+          83.48961639404297,
+          88.2108154296875
+        ],
+        "mean_principal_angle_deg": 82.11272430419922,
+        "max_principal_angle_deg": 88.2108154296875,
+        "subspace_rank": 3,
+        "n_prose": 8,
+        "n_tool": 4,
+        "hidden": 1024
+      },
+      {
+        "layer": 22,
+        "mean_cosine": 0.864348292350769,
+        "procrustes_disparity": 0.522047758102417,
+        "principal_angles_deg": [
+          61.56175994873047,
+          67.3118896484375,
+          84.8293228149414
+        ],
+        "mean_principal_angle_deg": 71.2343241373698,
+        "max_principal_angle_deg": 84.8293228149414,
+        "subspace_rank": 3,
+        "n_prose": 8,
+        "n_tool": 4,
+        "hidden": 1024
+      }
+    ]
+  }
+}

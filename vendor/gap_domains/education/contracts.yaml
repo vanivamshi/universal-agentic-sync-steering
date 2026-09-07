@@ -1,0 +1,126 @@
+apiVersion: edictum/v1
+kind: ContractBundle
+
+metadata:
+  name: education-academic-administration
+  description: >
+    Governance contracts for an academic administration AI assistant.
+
+defaults:
+  mode: enforce
+
+tools:
+  query_student_records:
+    side_effect: read
+  search_enrollment:
+    side_effect: read
+  generate_transcript:
+    side_effect: read
+  update_grades:
+    side_effect: write
+  send_to_guardian:
+    side_effect: write
+
+contracts:
+  # ─── ACCESS CONTROL ────────────────────────────────────────────────
+
+  - id: restrict-student-records
+    type: pre
+    tool: query_student_records
+    when:
+      all:
+        - principal.role: { not_in: [teacher, counselor, registrar, principal] }
+    then:
+      effect: deny
+      message: "Student records access requires teacher, counselor, registrar, or principal role."
+      tags: [ferpa, access-control]
+
+  # ─── GRADE APPROVAL ────────────────────────────────────────────────
+
+  - id: grade-instructor-approval
+    type: pre
+    tool: update_grades
+    when:
+      any:
+        - args.instructor_code: { equals: "" }
+        - args.instructor_code: { exists: false }
+    then:
+      effect: deny
+      message: "Grade modifications require an instructor approval code."
+      tags: [academic-integrity, ferpa]
+
+  # ─── DISCIPLINARY DISCLOSURE ────────────────────────────────────────
+
+  - id: no-disciplinary-disclosure
+    type: post
+    tool: send_to_guardian
+    when:
+      output.text:
+        matches_any:
+          - '\b(warning|suspension|expulsion|disciplinary|violation|incident)\b'
+    then:
+      effect: deny
+      message: "Disciplinary information cannot be disclosed. Output suppressed."
+      tags: [ferpa, student-privacy]
+      metadata:
+        severity: critical
+
+  # ─── ACCOMMODATION CONFIDENTIALITY ──────────────────────────────────
+
+  - id: accommodation-confidential-guardian
+    type: post
+    tool: send_to_guardian
+    when:
+      output.text:
+        matches_any:
+          - '\b(504\s*[Pp]lan|IEP|accommodation|ADHD|disability)\b'
+    then:
+      effect: deny
+      message: "Accommodation/disability information is protected under IDEA. Output suppressed."
+      tags: [idea, disability-privacy]
+      metadata:
+        severity: critical
+
+  - id: accommodation-confidential-transcript
+    type: post
+    tool: generate_transcript
+    when:
+      output.text:
+        matches_any:
+          - '\b(504\s*[Pp]lan|IEP|accommodation|ADHD|disability)\b'
+    then:
+      effect: deny
+      message: "Accommodation/disability information is protected under IDEA. Output suppressed."
+      tags: [idea, disability-privacy]
+      metadata:
+        severity: critical
+
+  # ─── OUTPUT GOVERNANCE ─────────────────────────────────────────────
+
+  - id: student-pii-in-output
+    type: post
+    tool: "*"
+    when:
+      output.text:
+        matches_any:
+          - '\b\d{3}-\d{2}-\d{4}\b'                              # SSN
+          - '\b(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])/\d{4}\b'   # DOB (MM/DD/YYYY)
+          - '\b\d+\s+[A-Z][a-z]+\s+(Ave|St|Blvd|Dr|Ln|Rd|Way)\b'  # Street address
+    then:
+      effect: redact
+      message: "Student PII (SSN, DOB, address) redacted from output."
+      tags: [ferpa, coppa]
+
+  # ─── OPERATIONAL LIMITS ─────────────────────────────────────────────
+
+  - id: session-limits
+    type: session
+    limits:
+      max_tool_calls: 20
+      max_calls_per_tool:
+        update_grades: 5
+        send_to_guardian: 3
+    then:
+      effect: deny
+      message: "Session limit reached."
+      tags: [rate-limit, operational-safety]

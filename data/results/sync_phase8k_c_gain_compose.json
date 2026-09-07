@@ -1,0 +1,1161 @@
+{
+  "protocol": "Phase 8K C gain compose H\u2192C\u2192O",
+  "alphas": {
+    "C": 5.0,
+    "H": 1.5,
+    "O": 1.5
+  },
+  "c_stem": "PLAN: I will ",
+  "order": [
+    "H",
+    "C",
+    "O"
+  ],
+  "reps": 2,
+  "eight_way": true,
+  "mstar_set": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "selected": {
+    "n": 8,
+    "P_hit": 0.375,
+    "P_C": 0.625,
+    "P_H": 0.625,
+    "P_O": 0.875,
+    "mean_delta_E_total": 0.625,
+    "mean_delta_E_C": 0.0,
+    "mean_delta_E_H": 0.625,
+    "mean_delta_E_O": 0.0,
+    "mean_E_traj": [
+      1.5,
+      0.875,
+      0.875,
+      0.875
+    ]
+  },
+  "eight_way_agg": {
+    "n": 16,
+    "P_hit": 0.25,
+    "P_C": 0.6875,
+    "P_H": 0.6875,
+    "P_O": 0.5625,
+    "mean_delta_E_total": 0.4375,
+    "mean_delta_E_C": 0.25,
+    "mean_delta_E_H": 0.125,
+    "mean_delta_E_O": 0.0625,
+    "mean_E_traj": [
+      1.5,
+      1.375,
+      1.125,
+      1.0625
+    ]
+  },
+  "gate": {
+    "hypothesis": "\u03b1_C=5 stem-prefill flips \u0394E_C\u22650 vs 8I (\u22120.25) while preserving H/O",
+    "ref_8I_H_then_C": {
+      "P_hit": 0.38,
+      "mean_delta_E_total": 0.75,
+      "mean_delta_E_C": -0.25,
+      "mean_delta_E_H": 0.62,
+      "mean_delta_E_O": 0.375,
+      "P_C": 0.62,
+      "P_H": 0.75,
+      "P_O": 0.88
+    },
+    "delta_E_C": 0.0,
+    "delta_E_H": 0.625,
+    "delta_E_O": 0.0,
+    "delta_E_C_ge_0": true,
+    "delta_E_C_improves_vs_8I": true,
+    "H_preserved": true,
+    "O_nonneg": true,
+    "P_hit": 0.375,
+    "P_C": 0.625,
+    "P_H": 0.625,
+    "P_O": 0.875,
+    "compose_pass": true,
+    "eight_way_recommended": true,
+    "read": "If \u0394E_C\u22650 and H preserved: wire this controller to full 8-way. If \u0394E_C still <0: C site/gain still insufficient \u2014 then mechanistic, not more \u03b1. No skip. No new v yet."
+  },
+  "trials_selected": [
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "E_traj": [
+        1.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "delta_E_total": -2.0,
+      "delta_E_H": -2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 0,
+      "bit_O": 0,
+      "n_interventions": 3,
+      "n_episodes": 4
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        2.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 1.0,
+      "delta_E_H": 1.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "E_traj": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 0,
+      "n_episodes": 1
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        1
+      ],
+      "E_traj": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 0,
+      "bit_O": 1,
+      "n_interventions": 1,
+      "n_episodes": 2
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        1,
+        0
+      ],
+      "E_traj": [
+        3.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 2.0,
+      "delta_E_H": 2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 0,
+      "bit_O": 1,
+      "n_interventions": 1,
+      "n_episodes": 2
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        2.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 2.0,
+      "delta_E_H": 2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 1,
+      "n_episodes": 2
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "E_traj": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 0,
+      "n_episodes": 1
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "E_traj": [
+        3.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 2.0,
+      "delta_E_H": 2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 2,
+      "n_episodes": 3
+    }
+  ],
+  "trials_eight": [
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "E_traj": [
+        1.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "delta_E_total": -2.0,
+      "delta_E_H": -2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 0,
+      "bit_O": 0,
+      "n_interventions": 3,
+      "n_episodes": 4
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        2.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 1.0,
+      "delta_E_H": 1.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "E_traj": [
+        2.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 1.0,
+      "delta_E_H": 1.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 0,
+      "bit_O": 1,
+      "n_interventions": 1,
+      "n_episodes": 2
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        1.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "delta_E_total": -1.0,
+      "delta_E_H": -1.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 1,
+      "bit_O": 0,
+      "n_interventions": 3,
+      "n_episodes": 4
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "E_traj": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 0,
+      "n_interventions": 1,
+      "n_episodes": 2
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        0,
+        1,
+        0
+      ],
+      "E_traj": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 0,
+      "n_episodes": 1
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "E_traj": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 0,
+      "n_episodes": 1
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "E_traj": [
+        3.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 2.0,
+      "delta_E_H": 2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        3.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 3.0,
+      "delta_E_H": 1.0,
+      "delta_E_C": 2.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        2.0,
+        3.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 2.0,
+      "delta_E_H": -1.0,
+      "delta_E_C": 3.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        2.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 1.0,
+      "delta_E_H": 1.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 0,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+      ],
+      "delta_E_total": 1.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 1.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 0,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "E_traj": [
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 1,
+      "bit_O": 0,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 0,
+      "bit_O": 1,
+      "n_interventions": 1,
+      "n_episodes": 2
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        1.0,
+        1.0,
+        2.0,
+        2.0
+      ],
+      "delta_E_total": -1.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": -1.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 0,
+      "bit_O": 0,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        1
+      ],
+      "E_traj": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 0,
+      "bit_O": 1,
+      "n_interventions": 1,
+      "n_episodes": 2
+    }
+  ],
+  "trials": [
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "E_traj": [
+        1.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "delta_E_total": -2.0,
+      "delta_E_H": -2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 0,
+      "bit_O": 0,
+      "n_interventions": 3,
+      "n_episodes": 4
+    },
+    {
+      "mstar": [
+        0,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        2.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 1.0,
+      "delta_E_H": 1.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 2,
+      "n_episodes": 3
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "E_traj": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 0,
+      "n_episodes": 1
+    },
+    {
+      "mstar": [
+        1,
+        1,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        0,
+        1
+      ],
+      "E_traj": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 0,
+      "bit_O": 1,
+      "n_interventions": 1,
+      "n_episodes": 2
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        1,
+        1,
+        0
+      ],
+      "E_traj": [
+        3.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 2.0,
+      "delta_E_H": 2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 1,
+      "bit_H": 0,
+      "bit_O": 1,
+      "n_interventions": 1,
+      "n_episodes": 2
+    },
+    {
+      "mstar": [
+        1,
+        0,
+        0
+      ],
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "S_final": [
+        1,
+        0,
+        0
+      ],
+      "E_traj": [
+        2.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 2.0,
+      "delta_E_H": 2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 1,
+      "n_episodes": 2
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "S_final": [
+        0,
+        1,
+        1
+      ],
+      "E_traj": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "delta_E_total": 0.0,
+      "delta_E_H": 0.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 1,
+      "bit_C": 1,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 0,
+      "n_episodes": 1
+    },
+    {
+      "mstar": [
+        0,
+        1,
+        1
+      ],
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "S_final": [
+        1,
+        1,
+        1
+      ],
+      "E_traj": [
+        3.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta_E_total": 2.0,
+      "delta_E_H": 2.0,
+      "delta_E_C": 0.0,
+      "delta_E_O": 0.0,
+      "hit": 0,
+      "bit_C": 0,
+      "bit_H": 1,
+      "bit_O": 1,
+      "n_interventions": 2,
+      "n_episodes": 3
+    }
+  ]
+}

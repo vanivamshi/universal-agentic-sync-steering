@@ -1,0 +1,2653 @@
+{
+  "protocol": "/Users/vamshisunku.mohan/multidim-steering-agentic-alignment/docs/selective_steering_protocol.md",
+  "experiment": "SELECTIVE_STEERING_V4",
+  "decision": "SELECTIVE_V4_WEAK",
+  "layer": 4,
+  "alpha": 0.25,
+  "lambda": 0.05,
+  "token_ids": {
+    "tool_id": 151657,
+    "notool_ids": [
+      40,
+      785,
+      28715,
+      32313,
+      151645
+    ]
+  },
+  "subspace_dim_k": 2,
+  "u_star_id": "theta_31",
+  "train_S_spread": 0.6728014178874381,
+  "prediction": {
+    "spearman_trainS_vs_held_abs_dP": -0.69999999999993,
+    "train_S": {
+      "u_star": 2.1244989607497353,
+      "u1": 2.0807875072972792,
+      "u2": 0.4479613602738823,
+      "rand_full": 1.2006424030858285,
+      "orth_u2": 1.1960865016796312
+    },
+    "held_abs_dP": {
+      "u_star": 0.0,
+      "u1": 0.0,
+      "u2": 0.0,
+      "rand_full": 0.0,
+      "orth_u2": 0.0
+    }
+  },
+  "per_direction_train": {
+    "theta_00": {
+      "D_T": -0.2422022819519043,
+      "D_C": 0.060831922106444836,
+      "S": 2.0807875072972792,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.2422022819519043
+    },
+    "theta_01": {
+      "D_T": -0.2306079864501953,
+      "D_C": 0.05661974474787712,
+      "S": 2.020220456696992,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.2306079864501953
+    },
+    "theta_02": {
+      "D_T": -0.2166581153869629,
+      "D_C": 0.0536394314840436,
+      "S": 1.9363654632044165,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.2166581153869629
+    },
+    "theta_03": {
+      "D_T": -0.2004871368408203,
+      "D_C": 0.05252101458609104,
+      "S": 1.8213201619513764,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.2004871368408203
+    },
+    "theta_04": {
+      "D_T": -0.17667865753173828,
+      "D_C": 0.053371007554233074,
+      "S": 1.6119599243509177,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.17667865753173828
+    },
+    "theta_05": {
+      "D_T": -0.1462259292602539,
+      "D_C": 0.055825309827923775,
+      "S": 1.3270324313537007,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.1462259292602539
+    },
+    "theta_06": {
+      "D_T": -0.1099553108215332,
+      "D_C": 0.05933699291199446,
+      "S": 1.0056959943222785,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.11217641830444336
+    },
+    "theta_07": {
+      "D_T": -0.07198905944824219,
+      "D_C": 0.0633699195459485,
+      "S": 0.7126832768002781,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.08085823059082031
+    },
+    "theta_08": {
+      "D_T": -0.036833763122558594,
+      "D_C": 0.06741312146186829,
+      "S": 0.4479613602738823,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.05200958251953125
+    },
+    "theta_09": {
+      "D_T": -0.011757373809814453,
+      "D_C": 0.07091875374317169,
+      "S": 0.269689307693714,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.03238058090209961
+    },
+    "theta_10": {
+      "D_T": -0.0037355422973632812,
+      "D_C": 0.07343411073088646,
+      "S": 0.22740911783790335,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.027533531188964844
+    },
+    "theta_11": {
+      "D_T": 0.0027875900268554688,
+      "D_C": 0.07464342191815376,
+      "S": 0.20870847063921877,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.024957656860351562
+    },
+    "theta_12": {
+      "D_T": 0.009110450744628906,
+      "D_C": 0.07437243033200502,
+      "S": 0.21663942055060612,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.025594711303710938
+    },
+    "theta_13": {
+      "D_T": 0.015185832977294922,
+      "D_C": 0.07260572537779808,
+      "S": 0.2180229002342496,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.025341510772705078
+    },
+    "theta_14": {
+      "D_T": 0.020248889923095703,
+      "D_C": 0.06949389819055796,
+      "S": 0.2073614705430899,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.023761272430419922
+    },
+    "theta_15": {
+      "D_T": 0.011836528778076172,
+      "D_C": 0.06538069155067205,
+      "S": 0.1407147165294649,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.017348766326904297
+    },
+    "theta_16": {
+      "D_T": -0.005259513854980469,
+      "D_C": 0.060831922106444836,
+      "S": 0.27450998942939775,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.03088665008544922
+    },
+    "theta_17": {
+      "D_T": -0.027111053466796875,
+      "D_C": 0.05661974474787712,
+      "S": 0.45012485719563455,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.04525566101074219
+    },
+    "theta_18": {
+      "D_T": -0.047995567321777344,
+      "D_C": 0.0536394314840436,
+      "S": 0.6094090793973479,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.057791709899902344
+    },
+    "theta_19": {
+      "D_T": -0.06719398498535156,
+      "D_C": 0.05252101458609104,
+      "S": 0.728842682104689,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.0682220458984375
+    },
+    "theta_20": {
+      "D_T": -0.08371543884277344,
+      "D_C": 0.053371007554233074,
+      "S": 0.8583585092872597,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.08371543884277344
+    },
+    "theta_21": {
+      "D_T": -0.09682846069335938,
+      "D_C": 0.055825309827923775,
+      "S": 0.9450812190520298,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.09682846069335938
+    },
+    "theta_22": {
+      "D_T": -0.10642433166503906,
+      "D_C": 0.05933699291199446,
+      "S": 0.9915301535375893,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.10642433166503906
+    },
+    "theta_23": {
+      "D_T": -0.1230020523071289,
+      "D_C": 0.0633699195459485,
+      "S": 1.1013354907651585,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.1230020523071289
+    },
+    "theta_24": {
+      "D_T": -0.14381885528564453,
+      "D_C": 0.06741312146186829,
+      "S": 1.243755952155919,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.14381885528564453
+    },
+    "theta_25": {
+      "D_T": -0.1698617935180664,
+      "D_C": 0.07091875374317169,
+      "S": 1.4274148578214554,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.1698617935180664
+    },
+    "theta_26": {
+      "D_T": -0.19367599487304688,
+      "D_C": 0.07343411073088646,
+      "S": 1.5974995590942747,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.19367599487304688
+    },
+    "theta_27": {
+      "D_T": -0.21005630493164062,
+      "D_C": 0.07464342191815376,
+      "S": 1.7180088856493514,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.21005630493164062
+    },
+    "theta_28": {
+      "D_T": -0.22359466552734375,
+      "D_C": 0.07437243033200502,
+      "S": 1.8290233500347584,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.22359466552734375
+    },
+    "theta_29": {
+      "D_T": -0.2413015365600586,
+      "D_C": 0.07260572537779808,
+      "S": 1.9823441234762598,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.2413015365600586
+    },
+    "theta_30": {
+      "D_T": -0.2512960433959961,
+      "D_C": 0.06949389819055796,
+      "S": 2.087692841245099,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.2512960433959961
+    },
+    "theta_31": {
+      "D_T": -0.2515683174133301,
+      "D_C": 0.06538069155067205,
+      "S": 2.1244989607497353,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.2515683174133301
+    },
+    "u1": {
+      "D_T": -0.2422022819519043,
+      "D_C": 0.060831922106444836,
+      "S": 2.0807875072972792,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.2422022819519043
+    },
+    "u2": {
+      "D_T": -0.036833763122558594,
+      "D_C": 0.06741312146186829,
+      "S": 0.4479613602738823,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.05200958251953125
+    },
+    "neg_u1": {
+      "D_T": -0.005259513854980469,
+      "D_C": 0.060831922106444836,
+      "S": 0.27450998942939775,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.03088665008544922
+    },
+    "neg_u2": {
+      "D_T": -0.14381885528564453,
+      "D_C": 0.06741312146186829,
+      "S": 1.243755952155919,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.14381885528564453
+    },
+    "rand_full": {
+      "D_T": -0.1271228790283203,
+      "D_C": 0.05632607266306877,
+      "S": 1.2006424030858285,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.1271228790283203
+    },
+    "orth_u2": {
+      "D_T": -0.12654781341552734,
+      "D_C": 0.05624802503734827,
+      "S": 1.1960865016796312,
+      "m_T_baseline_mean": 0.769195556640625,
+      "D_T_abs": 0.12654781341552734
+    }
+  },
+  "heldout_scores": {
+    "u_star": {
+      "D_T": -0.22076129913330078,
+      "D_C": 0.06832801550626755,
+      "S": 1.8656722855426202,
+      "bidirectional_decision": true,
+      "P_tool_base": 0.625,
+      "P_tool_plus": 0.625,
+      "P_tool_minus": 0.625,
+      "dP_plus": 0.0,
+      "dP_minus": 0.0,
+      "abs_dP_max": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "mean_d_calls_plus": 0.0,
+      "mean_d_calls_minus": 0.0,
+      "bidirectional_behavior": false,
+      "mean_d_tool_plus": 0.0,
+      "mean_d_tool_minus": 0.0
+    },
+    "u1": {
+      "D_T": -0.20920276641845703,
+      "D_C": 0.06183025240898132,
+      "S": 1.8707171084025516,
+      "bidirectional_decision": true,
+      "P_tool_base": 0.625,
+      "P_tool_plus": 0.625,
+      "P_tool_minus": 0.625,
+      "dP_plus": 0.0,
+      "dP_minus": 0.0,
+      "abs_dP_max": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "mean_d_calls_plus": 0.0,
+      "mean_d_calls_minus": 0.0,
+      "bidirectional_behavior": false,
+      "mean_d_tool_plus": 0.0,
+      "mean_d_tool_minus": 0.0
+    },
+    "u2": {
+      "D_T": -0.04748249053955078,
+      "D_C": 0.07367104664444923,
+      "S": 0.38394185080410614,
+      "bidirectional_decision": true,
+      "P_tool_base": 0.5,
+      "P_tool_plus": 0.5,
+      "P_tool_minus": 0.5,
+      "dP_plus": 0.0,
+      "dP_minus": 0.0,
+      "abs_dP_max": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "mean_d_calls_plus": 0.0,
+      "mean_d_calls_minus": 0.0,
+      "bidirectional_behavior": false,
+      "mean_d_tool_plus": 0.0,
+      "mean_d_tool_minus": 0.0
+    },
+    "rand_full": {
+      "D_T": -0.14508438110351562,
+      "D_C": 0.05598798021674156,
+      "S": 1.3688757989993143,
+      "bidirectional_decision": true,
+      "P_tool_base": 0.5,
+      "P_tool_plus": 0.5,
+      "P_tool_minus": 0.5,
+      "dP_plus": 0.0,
+      "dP_minus": 0.0,
+      "abs_dP_max": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "mean_d_calls_plus": 0.0,
+      "mean_d_calls_minus": 0.0,
+      "bidirectional_behavior": false,
+      "mean_d_tool_plus": 0.0,
+      "mean_d_tool_minus": 0.0
+    },
+    "orth_u2": {
+      "D_T": -0.14463233947753906,
+      "D_C": 0.05589144863188267,
+      "S": 1.3658547630256137,
+      "bidirectional_decision": true,
+      "P_tool_base": 0.75,
+      "P_tool_plus": 0.75,
+      "P_tool_minus": 0.75,
+      "dP_plus": 0.0,
+      "dP_minus": 0.0,
+      "abs_dP_max": 0.0,
+      "mean_d_extra_plus": 0.0,
+      "mean_d_extra_minus": 0.0,
+      "mean_d_calls_plus": 0.0,
+      "mean_d_calls_minus": 0.0,
+      "bidirectional_behavior": false,
+      "mean_d_tool_plus": 0.0,
+      "mean_d_tool_minus": 0.0
+    }
+  },
+  "rows": {
+    "u_star": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u_star",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u_star",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u_star",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u_star",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u_star",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u_star",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u_star",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u_star",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u_star",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u_star",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ]
+    },
+    "u1": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u1",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u1",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u1",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u1",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u1",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u1",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u1",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u1",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u1",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u1",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ]
+    },
+    "u2": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ]
+    },
+    "rand_full": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "rand_full",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "rand_full",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ]
+    },
+    "orth_u2": {
+      "baseline": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database.txt"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "baseline",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "plus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "orth_u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "plus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "orth_u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "plus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database.txt"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "plus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "plus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ],
+      "minus": [
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "orth_u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code/production_storage.py"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "minus",
+          "rep": 0,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 0,
+          "n_calls": 0,
+          "n_extra_paths": 0,
+          "p_extra": 0,
+          "n_exploratory": 0,
+          "n_list": 0,
+          "n_search": 0,
+          "n_read": 0,
+          "paths": [],
+          "tools": [],
+          "arm_id": "orth_u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "minus",
+          "rep": 1,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database.txt"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "production"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "minus",
+          "rep": 2,
+          "task_id": "loc"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "database"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "db"
+        },
+        {
+          "tool_emission": 1,
+          "n_calls": 1,
+          "n_extra_paths": 1,
+          "p_extra": 1,
+          "n_exploratory": 1,
+          "n_list": 0,
+          "n_search": 1,
+          "n_read": 0,
+          "paths": [
+            "code"
+          ],
+          "tools": [
+            "search_code"
+          ],
+          "arm_id": "orth_u2",
+          "arm": "minus",
+          "rep": 3,
+          "task_id": "loc"
+        }
+      ]
+    }
+  }
+}

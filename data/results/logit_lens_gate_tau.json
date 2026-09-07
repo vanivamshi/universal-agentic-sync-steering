@@ -1,0 +1,142 @@
+{
+  "passed": false,
+  "n_pairs": 6,
+  "mean_prose_entropy": 0.3184714714686076,
+  "mean_tool_entropy": 0.2722129250566165,
+  "mean_delta_tool_minus_prose": -0.04625854641199112,
+  "paired_t": -1.5904678907013454,
+  "p_value_one_sided": 0.05586468888162077,
+  "alpha": 0.05,
+  "layer": 27,
+  "rows": [
+    {
+      "transcript_id": "tau_retail_5_0_short",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.24337689578533173,
+      "n_tokens": 39,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "tau_retail_5_0_short",
+      "message_index": 4,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.30222612619400024,
+      "n_tokens": 40,
+      "window_name": "find_user_id_by_name_zip"
+    },
+    {
+      "transcript_id": "tau_retail_7_0_short",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.32173824310302734,
+      "n_tokens": 31,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "tau_retail_7_0_short",
+      "message_index": 4,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.29346710443496704,
+      "n_tokens": 40,
+      "window_name": "find_user_id_by_name_zip"
+    },
+    {
+      "transcript_id": "tau_retail_6_0_short",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.31352072954177856,
+      "n_tokens": 31,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "tau_retail_6_0_short",
+      "message_index": 4,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.2737184464931488,
+      "n_tokens": 40,
+      "window_name": "find_user_id_by_name_zip"
+    },
+    {
+      "transcript_id": "tau_airline_12_0_short",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.3187505900859833,
+      "n_tokens": 40,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "tau_airline_12_0_short",
+      "message_index": 4,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.32998383045196533,
+      "n_tokens": 34,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "tau_airline_12_0_short",
+      "message_index": 6,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.19236959517002106,
+      "n_tokens": 27,
+      "window_name": "get_user_details"
+    },
+    {
+      "transcript_id": "tau_retail_8_0_short",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.303025484085083,
+      "n_tokens": 38,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "tau_retail_8_0_short",
+      "message_index": 4,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.28803056478500366,
+      "n_tokens": 40,
+      "window_name": "find_user_id_by_name_zip"
+    },
+    {
+      "transcript_id": "tau_retail_10_0_short",
+      "message_index": 2,
+      "window_kind": "prose",
+      "layer": 27,
+      "mean_entropy": 0.40480026602745056,
+      "n_tokens": 25,
+      "window_name": ""
+    },
+    {
+      "transcript_id": "tau_retail_10_0_short",
+      "message_index": 4,
+      "window_kind": "tool_call",
+      "layer": 27,
+      "mean_entropy": 0.283465713262558,
+      "n_tokens": 28,
+      "window_name": "find_user_id_by_email"
+    }
+  ],
+  "notes": "FAIL (transcript pairing): tool entropy not significantly below prose \u2014 revise windows. turn_pairs=0 transcript_pairs=6 cohens_d_paired=-0.649",
+  "cohens_d_paired": -0.6493057974164904,
+  "pair_mode_used": "transcript",
+  "layer_choice": "preregistered_final",
+  "evaluation_dataset": "tau_bench",
+  "reporting": {
+    "emphasis": "Expected direction, moderate paired effect size, insufficient evidence on the short subset \u2014 inconclusive replication, not a contradiction.",
+    "layer_note": "Final layer (27): \u0394<0 with paired Cohen's d\u2248\u22120.65 but p\u22480.056 (\u03b1 not reached). GAP exploratory layer 14 does not transfer (wrong-direction \u0394). Motivates multi-layer analysis on Qwen3-32B without over-speculation.",
+    "evaluation_dataset": "tau_bench_short",
+    "relation_to_section_1": "\u00a71 definitive result remains Mind the GAP only. Do not cite \u03c4 as a second PASS.",
+    "status": "inconclusive_exploratory"
+  }
+}

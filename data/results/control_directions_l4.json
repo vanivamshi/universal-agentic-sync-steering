@@ -1,0 +1,187 @@
+{
+  "model": "qwen3-0.6b",
+  "pilot": true,
+  "layers": [
+    4
+  ],
+  "depth_fractions_approx": [
+    0.14814814814814814
+  ],
+  "gate": {
+    "threshold": 0.7,
+    "required_layers": 1,
+    "total_layers": 1,
+    "criterion": "at least 1/1 fixed mid/late layers with split-half cosine >= 0.7"
+  },
+  "learned_controls": [
+    {
+      "direction_id": "syntax",
+      "kind": "syntax",
+      "domain": null,
+      "n_pairs": 12,
+      "n_boot": 400,
+      "n_splits_per_stat": 20,
+      "threshold": 0.7,
+      "required_layers": 1,
+      "layers": [
+        {
+          "layer": 4,
+          "split_half_cosine": 0.8883356511592865,
+          "bca_ci95": [
+            0.8385686755180359,
+            0.9097266674041748
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.896473363611352,
+            "acceleration": 0.011733082683310693,
+            "a_lo": 0.00012596882706228385,
+            "a_hi": 0.5716023883978028,
+            "prop_below_hat": 0.185
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        }
+      ],
+      "n_layers_passing": 1,
+      "passed": true,
+      "status": "eligible_for_step5"
+    },
+    {
+      "direction_id": "domain_content_coding",
+      "kind": "domain_content",
+      "domain": "coding",
+      "n_pairs": 12,
+      "n_boot": 400,
+      "n_splits_per_stat": 20,
+      "threshold": 0.7,
+      "required_layers": 1,
+      "layers": [
+        {
+          "layer": 4,
+          "split_half_cosine": 0.9189399719238281,
+          "bca_ci95": [
+            0.8736182868480682,
+            0.9441073447465896
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.1446338117380105,
+            "acceleration": -0.0033527996358553407,
+            "a_lo": 0.011781283087833716,
+            "a_hi": 0.9515140303032457,
+            "prop_below_hat": 0.4425
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        }
+      ],
+      "n_layers_passing": 1,
+      "passed": true,
+      "status": "eligible_for_step5"
+    },
+    {
+      "direction_id": "domain_content_therapy",
+      "kind": "domain_content",
+      "domain": "therapy",
+      "n_pairs": 24,
+      "n_boot": 400,
+      "n_splits_per_stat": 20,
+      "threshold": 0.7,
+      "required_layers": 1,
+      "layers": [
+        {
+          "layer": 4,
+          "split_half_cosine": 0.895514115691185,
+          "bca_ci95": [
+            0.8649773240089417,
+            0.9162658125162124
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.34512553119495254,
+            "acceleration": 0.014592074322687571,
+            "a_lo": 0.005009048377769998,
+            "a_hi": 0.9046791250800745,
+            "prop_below_hat": 0.365
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": true
+        }
+      ],
+      "n_layers_passing": 1,
+      "passed": true,
+      "status": "eligible_for_step5"
+    },
+    {
+      "direction_id": "domain_content_writing",
+      "kind": "domain_content",
+      "domain": "writing",
+      "n_pairs": 12,
+      "n_boot": 400,
+      "n_splits_per_stat": 20,
+      "threshold": 0.7,
+      "required_layers": 1,
+      "layers": [
+        {
+          "layer": 4,
+          "split_half_cosine": 0.760266575217247,
+          "bca_ci95": [
+            0.6703518867492676,
+            0.7982967585325241
+          ],
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.9345892911780087,
+            "acceleration": 0.03359284760069034,
+            "a_lo": 0.00017670740977693278,
+            "a_hi": 0.5506741151006852,
+            "prop_below_hat": 0.175
+          },
+          "meets_threshold": true,
+          "ci_lower_meets_threshold": false
+        }
+      ],
+      "n_layers_passing": 1,
+      "passed": true,
+      "status": "eligible_for_step5"
+    }
+  ],
+  "random_controls": [
+    {
+      "layer": 4,
+      "seed": 20260730,
+      "n_random": 16,
+      "hidden_size": 1024,
+      "min_norm": 0.9999998807907104,
+      "max_norm": 1.0000001192092896,
+      "max_abs_dot_with_fixed_basis": 2.7939677238464355e-08,
+      "max_abs_pairwise_cosine": 2.8405338525772095e-08,
+      "passed": true
+    }
+  ],
+  "all_learned_controls_passed": true,
+  "all_random_controls_passed": true,
+  "step4_passed": true,
+  "status": "eligible_for_step5_pilot",
+  "artifacts": {
+    "learned_directions": "data/directions/controls_l4.jsonl",
+    "random_directions": "data/directions/random_controls_l4.jsonl",
+    "contrast_pairs": [
+      "/Users/vamshisunku.mohan/bluedot_alignment/data/contrast_pairs/syntax_control_pilot.jsonl",
+      "/Users/vamshisunku.mohan/bluedot_alignment/data/contrast_pairs/domain_content_coding_pilot.jsonl",
+      "/Users/vamshisunku.mohan/bluedot_alignment/data/contrast_pairs/domain_content_therapy_pilot_v2.jsonl",
+      "/Users/vamshisunku.mohan/bluedot_alignment/data/contrast_pairs/domain_content_writing_pilot.jsonl"
+    ]
+  },
+  "interpretation": "Step 4 validates extraction reliability only. It does not show safety-specific deprivilege; that interaction is tested in Step 5.",
+  "revision_history": [
+    {
+      "control": "domain_content_therapy",
+      "version": "v1",
+      "n_pairs": 12,
+      "result": "FAIL (2/4 layers >= 0.70)",
+      "action": "One documented revision: expand to 24 pairs with more parallel syntax. If v2 fails, exclude; do not tune again."
+    }
+  ]
+}

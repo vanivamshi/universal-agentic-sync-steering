@@ -1,0 +1,35 @@
+{
+  "J": [
+    [
+      0.0,
+      -0.25,
+      0.0
+    ],
+    [
+      0.0,
+      0.25,
+      0.0
+    ],
+    [
+      0.0,
+      0.25,
+      0.0
+    ]
+  ],
+  "diag": [
+    0.0,
+    0.25,
+    0.0
+  ],
+  "offdiag_l2": 0.3535533905932738,
+  "diag_abs_mean": 0.08333333333333333,
+  "approx_diagonal": false,
+  "channels": [
+    "C",
+    "H",
+    "O"
+  ],
+  "mode": "causal",
+  "note": "J from paired-seed \u00b1\u03b1 single-channel steers. Ideal \u2248 diagonal. Do not freeze if proxy v_C or weak diag.",
+  "v_C_status": "candidate_from_observed_plan"
+}

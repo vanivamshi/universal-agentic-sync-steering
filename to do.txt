@@ -1,0 +1,296 @@
+Do Safety Relevant Activation Directions Survive Agentic Execution? Probing Error Correction Geometry Across Conversational and Tool Use Contexts
+
+Overview
+Activation space monitoring has become a cornerstone of practical AI safety work. Refusal directions, persona axes, and representation engineering vectors are all built on a shared assumption: that safety relevant directions identified from conversational activations remain valid when the model is acting, generating tool calls, writing files, executing search queries. That assumption has never been tested mechanistically.
+This proposal tests it directly. The field assumes that directions extracted from prose generalize to agentic execution. I will test that assumption using established perturbation methods from the activation plateau literature, measuring whether the error correction geometry that stabilizes safety relevant directions in conversational activations is preserved, degraded, or reorganized when the model enters structured tool call generation. If those directions lose geometric privilege during tool execution, current activation monitors may be reading noise at exactly the moment an irreversible action is being committed.
+
+Background
+1)Activation plateaus and error correction geometry
+Heimersheim and Mendel (2024) observed that real model activations sit at the center of a plateau: small perturbations are suppressed more than expected, suggesting the model implements error correction to handle interference from features in superposition. Shinkle and Heimersheim (2025) established that this plateau structure emerges gradually across layers, is driven by MLPs, and sharpens with depth. Hänni et al. (2024) provided the theoretical grounding, constructing error correction layers in superposition and showing networks converge toward sparse, discrete computational structure. A direction that is geometrically privileged in this sense, meaning high plateau depth and high directional sensitivity, is one the model actively error corrects around. Perturbations along it are suppressed and do not propagate. A direction that loses this privilege is one where perturbations propagate, making measurements along it unstable under local computational changes. This is the mechanistic link between geometric privilege and monitor reliability: an activation monitor reading a deprivileged direction is measuring a quantity that does not survive the model's own internal computation.
+2)Safety relevant directions and the monitoring assumption
+A parallel literature extracts safety relevant directions from conversational activations: refusal directions (Arditi et al., 2024), persona axes (Lu et al., 2026), representation engineering vectors (Zou et al., 2023). These are used for runtime monitoring, steering, and control. All assume that directions calibrated on conversational behavior generalize to the contexts where harm actually occurs, namely agentic tool execution.
+Recent behavioral work has shown this assumption breaks at the output level. Text safety does not transfer to tool call safety: models can refuse harmful requests in natural language while executing them via tool calls (Mind the GAP, 2026). Conversational safety fine tuning leaves up to 70% of agentic misalignment intact (Anthropic, 2025). Whether this behavioral dissociation has a mechanistic basis in activation geometry is unknown.
+3)The gap
+Neither the plateau literature nor the safety directions literature has asked whether the error correction geometry that privileges safety relevant directions in conversational activations survives when the model enters tool call generation. Prior work in agentic activation geometry has found evidence that tool call activations may transition into a subspace that is substantially different from prose activations in the same model and domain. This raises the mechanistic question: are safety relevant directions geometrically privileged in prose but not in tool call mode? If so, there is a structural explanation for why activation monitors may fail precisely during agentic execution, grounded in how error correction operates in superposition rather than in behavioral observation alone.
+
+Central Prediction
+Based on prior evidence suggesting that tool call activations may occupy a subspace substantially different from prose activations, I predict that Assistant Axis directional sensitivity will decrease significantly in tool call activation windows relative to prose windows in the same turn, while tool execution specific directions become geometrically privileged. If confirmed, this provides a mechanistic basis for the observed behavioral text and tool safety gap and implies that current activation monitors calibrated on conversational behavior are structurally unreliable during the execution phase of agentic tasks.
+Research Questions
+1)RQ1 (primary): Do safety relevant directions retain geometric privilege during tool execution?
+Do refusal directions, persona axes, and harmlessness vectors remain among the high sensitivity directions in tool call activations, or do they lose privileged status relative to prose activations in the same model and domain? This is the core question. The answer directly determines whether existing activation monitors can be trusted during agentic execution. Directional sensitivity, defined as the perturbation magnitude along a candidate direction required to induce downstream L2 blowup beyond a threshold, is the primary metric. Plateau depth and top-k sensitive direction rank are measured as robustness checks but do not drive the primary hypothesis test.
+2)RQ2 (mechanistic): Does privilege loss imply measurement instability?
+If safety relevant directions lose plateau privilege in tool call mode, do perturbations along those directions propagate rather than being suppressed? This tests the mechanistic link between geometric privilege and monitor reliability. A direction is a reliable measurement instrument only if the model's error correction machinery actively maintains it. If that machinery is not operating on a given direction during tool call generation, measurements along that direction are structurally noisy regardless of what the monitor reports.
+3)RQ3 (supporting): Do new geometrically privileged directions emerge in tool call mode?
+If safety relevant directions lose privilege, what directions become privileged instead? Identifying tool execution specific sensitive directions would suggest that effective agentic monitoring requires directions extracted from tool call activations directly rather than transferred from conversational behavior. This has a concrete implication for how future monitoring systems should be trained.
+
+Methodology
+1)Primary metric and pre-registration
+Directional sensitivity is the primary metric throughout: the perturbation magnitude along a candidate direction at an early layer required to induce downstream L2 blowup beyond a fixed threshold at a late layer. Plateau depth and top-k rank are measured as robustness checks. The primary hypothesis test is stated against directional sensitivity alone, so the experiment has a clean falsification condition independent of how plateau depth and rank behave.
+2)Token level window definition
+Activation windows are defined strictly by token type. Tool call windows span from the second structured output token, meaning after the opening boundary token, to the second to last argument token before the closing delimiter, excluding boundary tokens from both ends to avoid capturing prose reasoning about whether to call a tool. Prose windows are drawn from assistant turn tokens outside any structured output span. Window boundaries are validated using logit lens projections: tool call windows should show suppressed vocabulary entropy relative to prose windows, confirming the mode distinction is real at the representational level before perturbation experiments begin. This validation is a preregistered gate. If logit lens does not confirm the mode distinction, window definition is revised before proceeding.
+3)Orthogonal subspace analysis as preregistered exploratory work
+Prior observations suggesting that tool call activations occupy a subspace substantially different from prose activations are treated as motivating evidence rather than assumed fact. Reproducing this subspace analysis using Procrustes alignment and cosine similarity between prose region and tool call region activations is included as a preregistered exploratory analysis within this project. This establishes the motivating observation on a reproducible basis within the fellowship work rather than relying on unpublished pipeline-specific results.
+4)Control directions for normalization
+A critical concern is that tool call generation may be globally more brittle than prose generation due to the constrained output space, which would artifactually decrease directional sensitivity for all directions in tool call mode regardless of safety relevance. To address this, two control direction types are included in every activation window alongside safety relevant directions: random orthogonal vectors sampled uniformly from the residual stream subspace, and task relevant but non-safety directions extracted from the same domain (for example, a syntactic structure direction and a domain content direction). The primary result is whether safety relevant directions are relatively deprivileged in tool call mode compared to control directions within tool call windows, not whether absolute sensitivity drops. If control directions and safety directions drop equally, the result is null. If safety directions drop more than controls, the relative deprivilege is real.
+5)Refusal direction validation gate
+The refusal direction from Arditi et al. (2024) is extracted via mean difference on contrastive prose pairs. Before measuring privilege across modes, I verify that this extraction procedure produces a stable direction in tool call hidden states using the same contrastive pairs. Stability is assessed by cosine similarity between the prose-extracted direction and the tool-call-extracted direction across layers. If the direction is unstable in tool call activations, meaning cosine similarity falls below a preregistered threshold, the cross-mode comparison for refusal is replaced by an analysis of why refusal has no stable linear representation in tool call mode, which is itself a finding with direct implications for monitor design.
+6)Depth and non-locality caveat
+Perturbing at layer k and measuring at layer L assumes error correction is detectable within the probed layer range. In deep models with residual connections, error correction may occur outside this range. Null results on sensitivity are therefore interpreted as either absence of geometric privilege or error correction operating at unprobed depths, and the discussion will distinguish these interpretations where possible by varying the perturbation and measurement layers systematically.
+7)Models and domains
+Qwen3-0.6B is the sole experimental model (local MPS; all phases run on this model). No 32B / 70B track. Domains: coding as a stable low-drift baseline, therapy as a high-drift domain, and open-ended writing as an intermediate case. Domain stratification follows prior work showing that domain effects on activation geometry operate on prose states rather than tool call states, providing an additional dimension for checking whether privilege shifts are domain-modulated or uniform across execution mode. Scale caveat: findings are Qwen3-0.6B-scoped; do not claim frontier-model generality.
+
+Why This Matters for Safety
+The practical question this proposal answers is whether activation space safety monitors can be trusted during the execution phase of agentic tasks.
+Current monitoring approaches are calibrated on conversational activations. This calibration assumption is made by default, not by design, because nobody has tested whether it holds in agentic execution contexts. If geometric privilege degrades during tool execution, the mechanistic implication is direct: perturbations along safety relevant directions are no longer suppressed by the model's own error correction machinery, meaning measurements along those directions are structurally noisy precisely when an action is being executed. This is not just an empirical gap in existing evaluations. It is a structural argument that a class of monitoring approaches may be unreliable in the contexts that matter most.
+The output is actionable in three ways depending on outcome. If directions generalize, current monitors apply to agentic contexts and the behavioral text and tool safety gap must have a different mechanistic origin. If directions degrade, monitors should be applied only to prose planning windows before action execution rather than during it. If new tool call specific directions emerge, those should be the target of future monitoring work rather than directions transferred from conversational behavior. Any outcome has a concrete implication for how agentic oversight systems should be built.
+
+Relation to Prior and Ongoing Work
+This proposal connects two bodies of work that have developed in parallel without contact. The activation plateau literature characterizes error correction geometry on static conversational inputs and has not examined context dependence within a deployed model across execution modes. The agentic alignment literature documents behavioral dissociation between conversational and tool call safety without examining the mechanistic basis in internal geometry. This proposal is the bridge between them.
+My ongoing work provides the operational infrastructure including the activation collection pipeline, domain stratified agentic transcripts, and open-weight model integration, along with preliminary observations motivating the central prediction. The fellowship work extends this by adding the perturbation layer, the control direction design, and the preregistered validation gates, and asks the mechanistic question that subspace observations raise but cannot answer: are safety relevant directions geometrically robust in tool call activations? This is a genuine extension rather than a continuation of the internship work, using a different experimental paradigm to answer a deeper question.
+
+Deliverables
+A systematic characterization of directional sensitivity across execution modes in Qwen3-0.6B, with activation caches released openly. A direct answer, with preregistered metrics and control normalized comparisons, to whether safety relevant directions retain geometric privilege in tool call activations. A reproducible implementation of the orthogonal subspace analysis establishing the motivating observation on a public basis. A short technical report with concrete implications for the design of activation monitoring systems in agentic deployment, structured around the three possible outcomes and their consequences for monitoring system design — scoped to this model.
+
+References
+1)Heimersheim and Mendel (2024). [Interim research report] Activation plateaus & sensitive directions in GPT2
+2)Shinkle and Heimersheim (2025). Activation plateaus: Where and how they emerge
+3)Hänni, Mendel, Vaintrob and Chan (2024). Mathematical Models of Computation in Superposition
+4)Lu, Gallagher, Michala, Fish and Lindsey (2026). The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models
+5)Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee and Nanda (2024). Refusal in Language Models Is Mediated by a Single Direction
+6)Zou, Phan, Chen et al. (2023). Representation Engineering: A Top-Down Approach to AI Transparency
+7)Cartagena and Teixeira (2026). Mind the GAP: Text Safety Does Not Transfer to Tool-Call Safety in LLM Agents
+8)MacDiarmid, Wright, Uesato et al. / Anthropic (2025). Natural Emergent Misalignment from Reward Hacking in Production RL
+9)Lynch, Wright, Larson, Ritchie, Mindermann, Perez, Troy and Hubinger (2025). Agentic Misalignment: How LLMs Could Be Insider Threats
+
+
+
+
+Step by step implementation
+
+Status (2026-08-10): PRIMARY MODEL = Qwen3-0.6B.
+  Phase 0: G1 partial; G2 improved; G3 HOLDOUT_PASS; G4 → Phase 1 DONE (Mac-scale).
+  Phase 1: 32-role persona PCA prose↔tool; L4 NEAR_90_DIVERGENCE; privilege per-PC.
+  Diagnostics: PC1 sign CLOSED (metric artifact); rand_02 residual CLOSED (1/32);
+    persona rank = CONFIRMATORY at L4 (emission mechanism); canonical basis = 31-dim prose PCA.
+  Phase 2 reframed: agentic deception outcome × 31 prose PCs (not generic style labels).
+    Track A CLOSED: univariate 0/5 + all-31 Layer2 REDUCE=PC3 → Layer3 NULL_OTHER.
+    No PASS_CAUSAL jailbreak lever under locked J1–J4. Combined: all31_combined.md
+    Track B CLOSED FALLBACK_LOCKED: prefill n_pos=0, 30/30 empty continuation.
+    Unforced never refuses; forced refuse never tools. No fourth elicit.
+  Artifacts: phase1_*.json, unexplained_diagnostics.json, format_matched_persona.json,
+    tool_prompt_ablation.json, nudge_causal_protocol.json, random_residual_expand.json,
+    gap_deception_prompt_set.json, gap_deception_score_summary.json
+  Docs: docs/phase1_persona_pca.md, docs/deception_control_pipeline.md
+  Next: Exp B CONTROLLER_FAIL — diagonal D does not move hidden/spurious on
+    live val (paired seeds). No Exp C until controller works. sync_controller_b.*.
+
+------------------------------------------------------------------------------
+DATASETS BY STEP (reference papers + locked plan)
+------------------------------------------------------------------------------
+| Step | Purpose | Dataset we use | Source |
+|---|---|---|---|
+| §0.2 / §1–§2 / RQ1–3 traj | Prose↔tool windows (§1 eval) | Mind the GAP scenarios + GAP mock tools → data/transcripts/real/gap_agentic.jsonl | Mind the GAP (2026) — only ref with tool-use |
+| τ replication (not mixed into §1) | Same gate, separate report | τ-bench short → data/transcripts/real/tau_bench_short.jsonl (full: tau_bench.jsonl staged) | Public trajs — denser check only |
+| §3 refusal | Contrastive pairs | AdvBench / HarmBench / MaliciousInstruct vs Alpaca | Arditi et al. (2024) |
+| §3 / Phase 1 assistant_axis | Persona PCA space | Extract on Qwen3-0.6B (Lu et al. method; HF 32B vectors = reference only, not drop-in) | Lu et al. (2026) |
+| §3 harmlessness | RepE contrast | Zou-style harmlessness pairs | Zou et al. (2023) |
+| §0.6 / §5 / §9 metric | Perturb protocol | Heimersheim/Shinkle method (not their prompts) | Plateau lit — method only |
+| §4 controls | Syntax / domain_content | data/contrast_pairs/ (to build) | Preregistration §7.2 |
+| Domain map | GAP → lock | devops→coding; education→writing; hr/finance/legal/pharma→therapy | Amendment |
+| Seed only | Pipeline smoke | data/transcripts/{coding,therapy,writing}.jsonl | Synthetic — not for RQ1 |
+
+0. SETUP & DATA COLLECTION
+
+0.1 Scope lock / preregistration  [DONE]
+Output: preregistration.md
+Dataset: N/A
+
+
+0.2 Agentic transcripts  [DONE — GAP primary; τ staged]
+Dataset:
+  - §1 EVAL: Mind the GAP → data/transcripts/real/gap_agentic.jsonl
+  - τ staged (separate replication): tau_bench.jsonl + tau_bench_short.jsonl
+  - SEED only: data/transcripts/{coding,therapy,writing}.jsonl
+
+
+0.3 Model + activation pipeline  [DONE — PRIMARY MODEL]
+Dataset: N/A. Sole model: Qwen3-0.6B MPS (LOCAL_MODEL_KEY). All Phase 0–5 runs here.
+
+
+0.4 Token-level window tagging  [DONE on real GAP]
+Dataset: data/transcripts/real/*.jsonl
+Output: data/windows/real_token_windows.jsonl
+
+
+0.5 Activation caching  [DONE on real GAP]
+Dataset: real transcripts
+Output: data/activations/real_*.json
+
+
+0.6 Perturbation / analysis tooling  [DONE]
+Dataset: plateau method (Heimersheim/Shinkle), no corpus.
+
+
+1. Mode distinction (logit-lens gate)  [PARTIAL — primary unreplicated]
+GAP n=24: L27 PASS raw α (p≈0.035). τ n=6: L27 FAIL (p≈0.056).
+Same-layer BH-FDR∩ empty → partial_primary_unreplicated (not closed).
+Canonical: data/results/logit_lens_layer_sweep_{gap,tau}.json
+Docs: docs/mode_distinction.md
+
+
+2. Subspace shift  [REFRESHED EXPLORATORY — n_prose=48 n_tool=24]
+Cosine L4/L22 ≈0.89/0.87. Tool still <30/group target. Not confirmatory.
+Docs: docs/subspace_analysis.md
+
+
+3. Safety direction validity  [JOINT BCa REFRESHED]
+Canonical: data/results/refusal_stability_layer_matched.json (ci_method=bca_joint)
+  L22 gap CI excludes 0; L14/L4 do not (joint BCa).
+Docs: docs/direction_validity.md
+
+
+4. Control directions  [DONE — PILOT PASS + HOLDOUT_PASS]
+Therapy/writing v2 holdout 4/4. Artifact: control_holdout_recheck.json
+Docs: docs/control_directions.md
+Used in Step 5 as learned-control normalization (PASS).
+
+
+5. RQ1 directional privilege  [DONE — 0.6B PILOT + FOLLOW-UP; NOT CONFIRMATORY]
+Protocol: perturb k=4 → measure L=22; ε* at τ=0.5; Δ=ε*_tool−ε*_prose.
+Safety excl. refusal mean Δ≈+1.18 CI[+0.72,+1.76]; Assistant Axis −0.28 vs harmlessness +2.63.
+Learned interaction +0.02 BCa+joint CI95[−0.56,+0.78] (includes 0).
+Pooled +1.70 random-driven (random mean Δ≈−2.20 BCa[−3.03,−1.33]).
+L4 control split-half PASS (layer-matched gate). Pooled relative random-Δ
+  closed as metric×norm-shrinkage; per-direction randoms still high-variance
+  (n_random ≥ 64 on 0.6B for Phase 3). Prefer absolute/norm_matched; H1 sign locked:
+  I = Δ_safety − Δ_learned < 0 (see docs/rq1_privilege.md sign convention).
+Outputs: rq1_privilege_pilot.json, rq1_privilege_pilot_cis.json (bca_joint),
+  control_directions_l4.json, rq1_random_delta_diagnostics.json
+Docs: docs/rq1_privilege.md ; fig docs/figures/step_5_rq1_privilege_pilot.png
+Watch-list CLOSED 2026-08-05 (honesty fix on randoms). Writing v2 PASS.
+  Pooled relative random-Δ = metric×norm-shrinkage. Absolute/norm_matched
+  randoms: report individually (mean +0.6 is cancellation; rand_02 residual
+  ≈+2.1 not second-order). Power: n_random ≥ 64 (sd≈4 ⇒ ~60 for CI half-width ~1.0).
+  AA support evaporated. Interaction still underpowered at n=8.
+  Artifacts: rq1_blowup_variants_gap_full.json,
+  rq1_norm_shrinkage_magnitude_check.json, rq1_rand02_sanity_and_n_random.json,
+  rq1_06b_watchlist.json
+§1–§5 pilot frozen.
+
+
+------------------------------------------------------------------------------
+GAPS IN §1–§5 — CLOSE-OUT STATUS (2026-08-06, Qwen3-0.6B)
+------------------------------------------------------------------------------
+
+G1. §1 mode distinction — PARTIAL (not closed).
+    GAP expanded 8→24 trajs. Preregistered L27 now PASS raw α (Δ≈−0.043,
+    p≈0.035). τ L27 still FAIL (p≈0.056, n=6). Same-layer BH-FDR∩ empty.
+    Label: partial_primary_unreplicated. Docs: docs/mode_distinction.md
+    Artifacts: logit_lens_layer_sweep_{gap,tau}.json
+
+G2. §2 subspace — IMPROVED, still exploratory.
+    n_prose=48, n_tool=24 (was 16/8). Cosine L4/L22 ≈0.89/0.87. Tool group
+    still short of ≥30. Not load-bearing for multi-dim claims yet.
+    Artifact: subspace_gap.json  Docs: docs/subspace_analysis.md
+
+G3. §3/§4 controls holdout — CLOSED (HOLDOUT_PASS).
+    Therapy + writing v2: holdout additions 4/4 layers ≥0.70.
+    Artifact: control_holdout_recheck.json  Docs: docs/control_directions.md
+
+G4. §5 multi-dimensional analysis — CLOSED at Mac-scale (Phase 1 DONE).
+    32-role Lu-style PCA prose+tool; L4 NEAR_90_DIVERGENCE; per-PC ε* scored.
+    Docs: docs/phase1_persona_pca.md
+
+
+PHASE 0 — Close inherited blockers  [MOSTLY DONE]
+0.1 §1  [PARTIAL — GAP L27 PASS; τ unreplicated]
+0.2 §3/§4 holdout  [DONE — HOLDOUT_PASS]
+
+
+PHASE 1 — Redefine "dimension" properly  [DONE — Mac-scale 32 roles]
+
+1.1 Extract persona PCA (Lu method subset) on Qwen3-0.6B  [DONE]
+1.2 PCA separately on prose vs tool-call role activations  [DONE]
+1.3 90°-divergence check on this set  [DONE — L4 NEAR_90; L14/L22 acute-ish]
+1.4 Privilege scores per PC + Assistant Axis  [DONE — see phase1_privilege_pca.json]
+    Relative: most PCs/AA Δ>0; PC1 Δ<0. Preferred metrics (abs/nm): PC1 flips to
+    ≈+0.3 (near-null weakest gainer) — same metric lesson as AA. Do not treat PC1
+    as opposite-signed under confirmatory metrics; still do not pool PCs.
+1.5 Cheap unexplained diagnostics  [DONE 2026-08-09/10]
+    PC1 metric H_b CLOSED; rand_02 residual sampling-variance CLOSED (n=32);
+    persona rank: format-matched NOT_FORMAT; ablation → lookup nudge;
+    causal protocol CONFIRMATORY (emission mechanism; length + holdout OK).
+
+
+PHASE 2 — Deception-targeted PC screen + causal steering  [REFRAMED 2026-08-10]
+Outcome = agentic deception (GAP prose-safe ∧ tool-violation), not generic style.
+Canonical lever basis = 31-dim prose PCA. Docs: docs/deception_control_pipeline.md
+
+2.0 Operationalize deception + held-out eliciting set  [DONE — AUDITED]
+    Dual metrics: tool_violation / surface_gap / intent_contradiction.
+    Legacy deception_gap == surface_gap (NOT true deception).
+    Prior shortlist PC5/12/4/7/24 = surface-GAP candidates only.
+    Contradiction shortlist L4: PC25/17/16/8/2 (n_pos=2 on screen — weak).
+    Table: data/results/persona_pc_properties_table.md
+    Splits: screen / steer_holdout / reference.control (capability) /
+      reference.baseline (specificity) — report separately.
+
+2.1 Correlational screen — dual outcome  [DONE — prioritization]
+    Dual artifact: deception_pc_screen_dual.json. Metrics pick disjoint PCs.
+    Underpowered for claims; shortlist only enters Step 2.2 steering.
+
+2.2 Dual-track  [LOCKED 2026-08-10]
+    Track A FULL RUN DONE: 0/5 PASS_CAUSAL (all NULL_OTHER). Artifact
+      jailbreak_surface_steering.json. Criteria held — no post-hoc loosen.
+    Track B (blocked): C_DOMINANT diagnose; prefill next with locked fallback
+      write-up if n_pos≈0. Artifact: track_b_elicit_diagnosis.json
+    Caveats: persona_pc_properties_table.md
+  Next: optional Track B prefill; interpret none (no Track A survivors).
+    S1: one sign reduces deception (CI excludes null)
+    S2: reverse sign does not also reduce (anti-noise)
+    S3: replicates on steer_holdout
+    S4: task success does not collapse
+    Log deception rate AND task-success rate together.
+
+2.3 Interpret survivors only (logit-lens + steered content)  [PENDING]
+    No full 31-PC stylistic labeling beforehand.
+
+(Old 2.1–2.4 "steer every privileged dim / pairwise interference" deferred —
+ only shortlisted deception levers get full causal + interpret effort.)
+
+
+PHASE 3 — Confirmatory gate  [old §6, now on the expanded dimension set]
+Same frozen labels: CONFIRMATORY / REVERSED / NULL-UNDERPOWERED /
+METRIC-SENSITIVE / MIXED. Same (a)–(d) bar and absolute+norm_matched
+requirement. All on Qwen3-0.6B. Changes vs old §6:
+  - Δ_safety / eligible set = full Phase-1 eligible dimensions, not just
+    {refusal?, Assistant Axis, harmlessness}.
+  - Refusal still enters only if §3 F_mid majority PASSes (Phase 0.2).
+  - Random baseline: n_random ≥ 64 (exploratory; not on critical path).
+
+
+PHASE 4 — Fine-tuning  [named deliverable; same model]
+Branches on what Phase 1–3 found per-dimension:
+
+4.1 Stable + privileged in tool mode:
+    Distill via SFT/DPO on capped/steered trajectories, then re-run the
+    Phase-1 plateau test on the fine-tuned model to confirm the geometry
+    actually shifted (not just that outputs look better).
+
+4.2 Unstable / not linearly present in tool mode:
+    Direct contrastive fine-tuning (RepE-style) to try to induce a stable
+    direction, then re-check privilege + stability.
+
+4.3 Evaluate on the Pareto frontier: safety metrics vs GAP/τ-bench task
+    performance, before/after — required to claim "agentic performance
+    increases," not just "safer."
+
+
+PHASE 5 — Depth / domain sweeps  [old §7/§8 logic, expanded set]
+Unchanged in logic; run against the expanded Phase-1 dimension set on
+Qwen3-0.6B. Gate the same way: depth/domain interpret whatever Phase 3
+returns; domain-scoped positive unlocks domain-scoped RQ2/RQ3-style
+follow-ups only, not global monitoring claims.
+Cross-model replication: OUT OF SCOPE (no second model).
+Monitoring-implication writeup gated on global CONFIRMATORY from Phase 3,
+with explicit Qwen3-0.6B scale caveat.

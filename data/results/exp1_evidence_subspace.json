@@ -1,0 +1,70 @@
+{
+  "protocol": "docs/proximal_tool_steer.md",
+  "experiment": 1,
+  "prerequisite": "exp0b IDENTITY_HIT",
+  "no_alpha": true,
+  "decision": "EXTRACT_OK",
+  "layer": 4,
+  "n_pairs": 6,
+  "hidden": 1024,
+  "k": 2,
+  "cumvar_at_k": 0.8157947377765271,
+  "frac_explained": [
+    0.5788449879213385,
+    0.23694974985518852,
+    0.10423607714931689,
+    0.05202685572961816,
+    0.027942329343218126,
+    3.677737569344416e-31
+  ],
+  "singular_values": [
+    0.662242304372306,
+    0.42370531213948903,
+    0.2810249058459709,
+    0.1985407104432823,
+    0.14550137090695825,
+    5.278689899251735e-16
+  ],
+  "mean_delta_norm": 0.6366667815723255,
+  "pairs": [
+    {
+      "task_id": "timeout",
+      "c0_path": "allowed.txt",
+      "c2_path": "config/app.json",
+      "delta_norm": 0.6906027299765622
+    },
+    {
+      "task_id": "oncall",
+      "c0_path": "allowed.txt",
+      "c2_path": "notes/oncall.txt",
+      "delta_norm": 0.65318876386071
+    },
+    {
+      "task_id": "bugs",
+      "c0_path": "allowed.txt",
+      "c2_path": "bugs.md",
+      "delta_norm": 0.6321079424008862
+    },
+    {
+      "task_id": "version",
+      "c0_path": "allowed.txt",
+      "c2_path": "config/app.json",
+      "delta_norm": 0.5851692789507141
+    },
+    {
+      "task_id": "db",
+      "c0_path": "allowed.txt",
+      "c2_path": "config/app.json",
+      "delta_norm": 0.5993290469623452
+    },
+    {
+      "task_id": "creds",
+      "c0_path": "allowed.txt",
+      "c2_path": "docs/secrets.txt",
+      "delta_norm": 0.6596029272827353
+    }
+  ],
+  "direction_jsonl": "/Users/vamshisunku.mohan/multidim-steering-agentic-alignment/data/directions/exp1_evidence_seek_U_L4.jsonl",
+  "direction_npz": "/Users/vamshisunku.mohan/multidim-steering-agentic-alignment/data/directions/exp1_evidence_seek_U_L4.npz",
+  "next": "Exp 2 \u03b1 grid on neutral prompts with ActivationSubspaceAmpHook"
+}

@@ -1,0 +1,488 @@
+{
+  "model": "qwen3-0.6b",
+  "scope": "06b_watchlist_no_32b",
+  "status": "06b_watchlist_complete_magnitude_confirmed",
+  "writing_control_l4": {
+    "v1": {
+      "split_half_cosine": 0.774,
+      "bca_ci95": [
+        0.6612632691860199,
+        0.8150562226772309
+      ],
+      "passed": true
+    },
+    "v2": {
+      "split_half_cosine": 0.867,
+      "bca_ci95": [
+        0.8167470991611481,
+        0.8953663647174835
+      ],
+      "passed": true
+    }
+  },
+  "writing_v2_bca_lo": 0.8167470991611481,
+  "writing_v2_bca_lo_clears_0_70": true,
+  "writing_pairs_used": "data/contrast_pairs/domain_content_writing_pilot_v2.jsonl",
+  "blowup_variants_on_gap_one_window_per_mode": {
+    "relative": {
+      "learned_interaction": {
+        "point": 1.434,
+        "bca_ci95": [
+          0.8250174597785624,
+          2.451065247599283
+        ],
+        "bca_excludes_zero": true
+      },
+      "random_mean_delta": {
+        "point": 0.686,
+        "bca_ci95": [
+          0.1547810319900531,
+          1.1637664407730124
+        ],
+        "bca_excludes_zero": true
+      }
+    },
+    "absolute": {
+      "learned_interaction": {
+        "point": 1.62,
+        "bca_ci95": [
+          0.9078507204509907,
+          2.666319706683688
+        ],
+        "bca_excludes_zero": true
+      },
+      "random_mean_delta": {
+        "point": 4.363,
+        "bca_ci95": [
+          3.669063859367371,
+          4.694452433586122
+        ],
+        "bca_excludes_zero": true
+      }
+    },
+    "norm_matched": {
+      "learned_interaction": {
+        "point": 1.29,
+        "bca_ci95": [
+          0.5958908515566832,
+          2.325964620251124
+        ],
+        "bca_excludes_zero": true
+      },
+      "random_mean_delta": {
+        "point": 4.295,
+        "bca_ci95": [
+          3.5011221481323265,
+          4.661646102714539
+        ],
+        "bca_excludes_zero": true
+      }
+    }
+  },
+  "notes": [
+    "GAP variants used one prose + one tool window per transcript (n=8 pairs).",
+    "This is a different windowing design than the original all-windows pilot.",
+    "Random directions used seed 20260804 (not identical to original pilot randoms).",
+    "Power GAP+tau pass was interrupted after finishing window forwards; rerun separately."
+  ],
+  "blowup_variants_original_gap_all_windows": {
+    "model": "qwen3-0.6b",
+    "design": "original_gap_all_windows_seed_20260801",
+    "n_windows": 24,
+    "norm_mean": 219.53991190592447,
+    "norm_prose": 226.2836151123047,
+    "blowup_variants": {
+      "relative": {
+        "learned_interaction": {
+          "point": -0.2763265805244437,
+          "bca_ci95": [
+            -0.7831875713984164,
+            0.8135567394468525
+          ],
+          "bca_excludes_zero": false,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.038862518394083896,
+            "acceleration": 0.015000056877811068,
+            "a_lo": 0.02387966027319638,
+            "a_hi": 0.9737640146817502,
+            "prop_below_hat": 0.4845
+          }
+        },
+        "random_mean_delta": {
+          "point": -2.168508007335663,
+          "bca_ci95": [
+            -3.0368744194030772,
+            -1.2842152660369868
+          ],
+          "bca_excludes_zero": true,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.002506630902398872,
+            "acceleration": 0.001987279044035811,
+            "a_lo": 0.025152967152881733,
+            "a_hi": 0.9751533737466396,
+            "prop_below_hat": 0.499
+          }
+        },
+        "safety_mean_delta": {
+          "point": 1.1771178544998184,
+          "bca_ci95": [
+            0.7607444807052628,
+            1.8803558889389045
+          ],
+          "bca_excludes_zero": true,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": 0.0526635269432613,
+            "acceleration": 0.07194842163260792,
+            "a_lo": 0.052136034639143125,
+            "a_hi": 0.9919375918405824,
+            "prop_below_hat": 0.521
+          }
+        },
+        "learned_mean_delta": {
+          "point": 1.4534444350242621,
+          "bca_ci95": [
+            0.5453098834991468,
+            2.0202278422673556
+          ],
+          "bca_excludes_zero": true,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": 0.043880072342941445,
+            "acceleration": 0.03756147643249175,
+            "a_lo": 0.04061791370597401,
+            "a_hi": 0.9864759953627744,
+            "prop_below_hat": 0.5175
+          }
+        },
+        "per_direction": {
+          "refusal_L4": {
+            "mean_delta": 4.073897797012329,
+            "n": 8
+          },
+          "assistant_axis_L4": {
+            "mean_delta": -0.27503912277221554,
+            "n": 8
+          },
+          "harmlessness_L4": {
+            "mean_delta": 2.6292748317718524,
+            "n": 8
+          },
+          "syntax_L4": {
+            "mean_delta": 1.9067726146698019,
+            "n": 8
+          },
+          "domain_content_coding_L4": {
+            "mean_delta": -1.0887124221801754,
+            "n": 4
+          },
+          "rand_00_L4": {
+            "mean_delta": -0.24394940223693862,
+            "n": 8
+          },
+          "rand_01_L4": {
+            "mean_delta": -5.401409790420534,
+            "n": 8
+          },
+          "rand_02_L4": {
+            "mean_delta": 1.0778405567169198,
+            "n": 8
+          },
+          "rand_03_L4": {
+            "mean_delta": -4.1065133934021,
+            "n": 8
+          },
+          "domain_content_writing_L4": {
+            "mean_delta": 3.9237897598266596,
+            "n": 2
+          },
+          "domain_content_therapy_L4": {
+            "mean_delta": 1.071927787780762,
+            "n": 2
+          }
+        }
+      },
+      "absolute": {
+        "learned_interaction": {
+          "point": -0.21958307218551854,
+          "bca_ci95": [
+            -0.8102491613297262,
+            0.8533079247283908
+          ],
+          "bca_excludes_zero": false,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.0853287949404441,
+            "acceleration": -0.002538975573020187,
+            "a_lo": 0.01612500237842107,
+            "a_hi": 0.9624968692129582,
+            "prop_below_hat": 0.466
+          }
+        },
+        "random_mean_delta": {
+          "point": 0.5725372307777397,
+          "bca_ci95": [
+            -0.7346138566970835,
+            1.6410794815063467
+          ],
+          "bca_excludes_zero": false,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.05391862209514972,
+            "acceleration": -0.009072955882734574,
+            "a_lo": 0.017633318817916632,
+            "a_hi": 0.9655995492133959,
+            "prop_below_hat": 0.4785
+          }
+        },
+        "safety_mean_delta": {
+          "point": 2.924627176856995,
+          "bca_ci95": [
+            2.324957966041565,
+            3.6839411489486698
+          ],
+          "bca_excludes_zero": true,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": 0.00626661170880324,
+            "acceleration": 0.03610685365848455,
+            "a_lo": 0.03447901837788392,
+            "a_hi": 0.9831128528920046,
+            "prop_below_hat": 0.5025
+          }
+        },
+        "learned_mean_delta": {
+          "point": 3.1442102490425134,
+          "bca_ci95": [
+            2.0125285270182327,
+            3.793613475990296
+          ],
+          "bca_excludes_zero": true,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": 0.022561568414857347,
+            "acceleration": 0.03231316354381599,
+            "a_lo": 0.03587522911449892,
+            "a_hi": 0.9838542693531491,
+            "prop_below_hat": 0.509
+          }
+        },
+        "per_direction": {
+          "refusal_L4": {
+            "mean_delta": 5.701816599273684,
+            "n": 8
+          },
+          "assistant_axis_L4": {
+            "mean_delta": 1.4795273754119882,
+            "n": 8
+          },
+          "harmlessness_L4": {
+            "mean_delta": 4.369726978302001,
+            "n": 8
+          },
+          "syntax_L4": {
+            "mean_delta": 3.764907936477663,
+            "n": 8
+          },
+          "domain_content_coding_L4": {
+            "mean_delta": -0.10528543395995626,
+            "n": 4
+          },
+          "rand_00_L4": {
+            "mean_delta": 1.7904245807647707,
+            "n": 8
+          },
+          "rand_01_L4": {
+            "mean_delta": -3.508751527404788,
+            "n": 8
+          },
+          "rand_02_L4": {
+            "mean_delta": 5.508030365753173,
+            "n": 8
+          },
+          "rand_03_L4": {
+            "mean_delta": -1.4995544960021974,
+            "n": 8
+          },
+          "domain_content_writing_L4": {
+            "mean_delta": 5.9593081497192415,
+            "n": 2
+          },
+          "domain_content_therapy_L4": {
+            "mean_delta": 2.957910343933106,
+            "n": 2
+          }
+        }
+      },
+      "norm_matched": {
+        "learned_interaction": {
+          "point": -0.45499710636139,
+          "bca_ci95": [
+            -1.0396618712743138,
+            0.6202176723225903
+          ],
+          "bca_excludes_zero": false,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.07526986215580145,
+            "acceleration": -0.003270482981989161,
+            "a_lo": 0.01682916059638062,
+            "a_hi": 0.9639018631144524,
+            "prop_below_hat": 0.47
+          }
+        },
+        "random_mean_delta": {
+          "point": 0.6000983633995057,
+          "bca_ci95": [
+            -0.768612278079986,
+            1.757522882652283
+          ],
+          "bca_excludes_zero": false,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": -0.033845942657077674,
+            "acceleration": -0.011704582733971434,
+            "a_lo": 0.01897952623617849,
+            "a_hi": 0.9678292620538529,
+            "prop_below_hat": 0.4865
+          }
+        },
+        "safety_mean_delta": {
+          "point": 2.9433191560745247,
+          "bca_ci95": [
+            2.308745535087586,
+            3.7249490625381485
+          ],
+          "bca_excludes_zero": true,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": 0.002506630902398872,
+            "acceleration": 0.0308155628564036,
+            "a_lo": 0.03262118913645218,
+            "a_hi": 0.9817492321564952,
+            "prop_below_hat": 0.501
+          }
+        },
+        "learned_mean_delta": {
+          "point": 3.3983162624359147,
+          "bca_ci95": [
+            2.2772637492285854,
+            4.074098068218233
+          ],
+          "bca_excludes_zero": true,
+          "bca_diagnostics": {
+            "method": "bca",
+            "z0": 0.036354116164341435,
+            "acceleration": 0.033247603125637196,
+            "a_lo": 0.038228359243941745,
+            "a_hi": 0.9851696894613351,
+            "prop_below_hat": 0.5145
+          }
+        },
+        "per_direction": {
+          "refusal_L4": {
+            "mean_delta": 5.835140002059939,
+            "n": 8
+          },
+          "assistant_axis_L4": {
+            "mean_delta": 1.5089004856109631,
+            "n": 8
+          },
+          "harmlessness_L4": {
+            "mean_delta": 4.377737826538086,
+            "n": 8
+          },
+          "syntax_L4": {
+            "mean_delta": 4.044715421295168,
+            "n": 8
+          },
+          "domain_content_coding_L4": {
+            "mean_delta": 0.034713675689697965,
+            "n": 4
+          },
+          "rand_00_L4": {
+            "mean_delta": 1.6944851364135758,
+            "n": 8
+          },
+          "rand_01_L4": {
+            "mean_delta": -4.02259022140503,
+            "n": 8
+          },
+          "rand_02_L4": {
+            "mean_delta": 6.588922674179076,
+            "n": 8
+          },
+          "rand_03_L4": {
+            "mean_delta": -1.8604241355895987,
+            "n": 8
+          },
+          "domain_content_writing_L4": {
+            "mean_delta": 6.188189527893067,
+            "n": 2
+          },
+          "domain_content_therapy_L4": {
+            "mean_delta": 3.3256464248657256,
+            "n": 2
+          }
+        }
+      }
+    }
+  },
+  "power_analysis_naive": {
+    "current_n": 8,
+    "learned_interaction_bca_width": 1.34,
+    "approx_n_for_halfwidth_0.3": 40,
+    "approx_n_for_halfwidth_0.2": 90,
+    "note": "Naive 1/sqrt(n) scaling only; GAP currently has 8 paired trajs. Cannot tighten further without more agent trajectories on this machine."
+  },
+  "verdicts": {
+    "writing": "v2 L4 BCa lo=0.817 clears 0.70 \u2014 use writing_pilot_v2; no further expansion",
+    "random_delta_precise_reading": "Tool-mode ||h_L||/prose\u22480.91 is a real mundane geometric difference. Relative blowup divides by per-window ||h_L|| and amplified that shrinkage into a false directional privilege signal for randoms (CI excludes 0 under relative; includes 0 under absolute and norm_matched). Prefer phrasing: wrong metric for RQ1 directional claims, not \"artifact = nothing there.\"",
+    "safety_learned_under_corrected_metrics": {
+      "assistant_axis": {
+        "relative": -0.275,
+        "absolute": 1.48,
+        "norm_matched": 1.509
+      },
+      "harmlessness": {
+        "relative": 2.629,
+        "absolute": 4.37,
+        "norm_matched": 4.378
+      },
+      "safety_mean_ex_refusal": {
+        "relative": 1.177,
+        "absolute": 2.925,
+        "norm_matched": 2.943
+      },
+      "learned_mean": {
+        "relative": 1.453,
+        "absolute": 3.144,
+        "norm_matched": 3.398
+      },
+      "interaction": {
+        "relative": -0.276,
+        "absolute": -0.22,
+        "norm_matched": -0.455
+      },
+      "interaction_ci_excludes_zero_any_mode": false,
+      "note": "Assistant Axis flips sign under corrected metrics; do not headline relative Assistant Axis\u2248-0.28."
+    },
+    "power": "n=8 underpowered for |effect|~0; need ~40 trajs for half-width 0.3 under naive scaling"
+  },
+  "norm_shrinkage_magnitude_check": {
+    "artifact": "data/results/rq1_norm_shrinkage_magnitude_check.json",
+    "norm_ratio_tool_over_prose": 0.910594014466757,
+    "one_minus_ratio": 0.08940598553324297,
+    "summary": {
+      "mean_predicted_shift_excl_refusal": 2.203057746656472,
+      "mean_observed_abs_minus_rel_excl_refusal": 2.122226285324097,
+      "mean_abs_residual_excl_refusal": 0.5082298233622875,
+      "fraction_of_shift_explained": 0.7605204370161343,
+      "interpretation": "If residuals are small vs predicted ~1.8\u20132.5 shifts, the uniform +1.5\u20132.0 category shift is quantitatively accounted for by the 9% norm effect. Remaining residuals are second-order (nonlinear \u03b1, mode-dependent amplification, writing v2 vs v1 direction mismatch, etc.)."
+    },
+    "verdict": "Observed ~1.7\u20132.7 relative\u2192absolute \u0394 shifts largely match (1-N_t/N_p)*eps*_prose from 9% shrinkage (~76% of shift explained; mean |resid|~0.51 second-order). Not purely qualitative."
+  },
+  "assistant_axis_for_downstream_summary": "Relative \u22120.28 is not load-bearing. Under preferred absolute/norm_matched metrics Assistant Axis \u2248+1.5 (sign flip). Central-prediction directional pilot support evaporated. Remaining picture: harmlessness positive all metrics; Assistant Axis metric-sensitive; refusal blocked; interaction null-compatible/underpowered."
+}

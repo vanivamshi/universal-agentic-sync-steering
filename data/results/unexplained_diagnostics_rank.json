@@ -1,0 +1,101 @@
+{
+  "model": "qwen3-0.6b",
+  "date": "2026-08-09",
+  "purpose": "Cheap causal probes for PC1 sign, rank collapse, rand_02 residual",
+  "rank_equal_n": {
+    "cache": "/Users/vamshisunku.mohan/bluedot_alignment/data/activations/real_gap.json",
+    "n_boot": 100,
+    "protocol": "Window-mean PCA on GAP cache. Equal-n: subsample prose to n_tool and recompute dims@90%. Also norm-normalize rows before PCA. Note: Phase-1 persona PCA already used equal n_roles=32; this tests the window-count version of H_b.",
+    "by_layer": {
+      "4": {
+        "n_prose": 48,
+        "n_tool": 24,
+        "n_equal": 24,
+        "full": {
+          "prose_dims90": 8,
+          "tool_dims90": 13,
+          "prose_pc1": 0.7374906811032409,
+          "tool_pc1": 0.20852377246121256,
+          "rank_gap": -5
+        },
+        "full_normed": {
+          "prose_dims90": 8,
+          "tool_dims90": 13,
+          "rank_gap": -5
+        },
+        "equal_n_boot": {
+          "prose_dims90_mean": 6.0,
+          "prose_dims90_std": 0.5477225575051661,
+          "tool_dims90_mean": 13.0,
+          "tool_dims90_std": 0.0,
+          "rank_gap_mean": -7.0,
+          "mean_angle_mean": 77.00408678627151,
+          "mean_angle_std": 1.3726444645033218,
+          "frac_of_full_gap_closed_by_equal_n": -0.3999999999999999
+        },
+        "equal_n_boot_normed": {
+          "prose_dims90_mean": 5.99,
+          "tool_dims90_mean": 13.0,
+          "rank_gap_mean": -7.01,
+          "mean_angle_mean": 76.88898571701554
+        },
+        "persona_pca_note": "Phase-1 persona PCA used equal n_roles=32 in both modes, so unequal window counts cannot explain that rank collapse. This block tests window-mean PCA H_b only.",
+        "decision": "H_b_UNLIKELY \u2014 rank gap survives equal-n"
+      },
+      "22": {
+        "n_prose": 48,
+        "n_tool": 24,
+        "n_equal": 24,
+        "full": {
+          "prose_dims90": 14,
+          "tool_dims90": 14,
+          "prose_pc1": 0.5305179818233092,
+          "tool_pc1": 0.1885733475519225,
+          "rank_gap": 0
+        },
+        "full_normed": {
+          "prose_dims90": 14,
+          "tool_dims90": 14,
+          "rank_gap": 0
+        },
+        "equal_n_boot": {
+          "prose_dims90_mean": 9.79,
+          "prose_dims90_std": 0.4958830507286975,
+          "tool_dims90_mean": 14.0,
+          "tool_dims90_std": 0.0,
+          "rank_gap_mean": -4.210000000000001,
+          "mean_angle_mean": 67.61971713987023,
+          "mean_angle_std": 2.287961942672949,
+          "frac_of_full_gap_closed_by_equal_n": 0.0
+        },
+        "equal_n_boot_normed": {
+          "prose_dims90_mean": 9.82,
+          "tool_dims90_mean": 14.0,
+          "rank_gap_mean": -4.18,
+          "mean_angle_mean": 67.99781730704882
+        },
+        "persona_pca_note": "Phase-1 persona PCA used equal n_roles=32 in both modes, so unequal window counts cannot explain that rank collapse. This block tests window-mean PCA H_b only.",
+        "decision": "H_b_UNLIKELY \u2014 rank gap survives equal-n"
+      }
+    }
+  },
+  "persona_pca_equal_n_roles": {
+    "n_roles": 32,
+    "note": "Persona PCA prose and tool matrices both used the same n_roles; H_b (unequal sample size) does NOT explain Phase-1 dims@90% collapse. Window equal-n block above is a separate test.",
+    "phase1_dims90": {
+      "4": {
+        "prose": 20,
+        "tool": 8
+      },
+      "14": {
+        "prose": 19,
+        "tool": 8
+      },
+      "22": {
+        "prose": 17,
+        "tool": 9
+      }
+    }
+  },
+  "elapsed_s": 1.4856219291687012
+}

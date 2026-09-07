@@ -1,0 +1,76 @@
+{
+  "source": "/Users/vamshisunku.mohan/multidim-steering-agentic-alignment/data/results/sync_channel_free_runs_cache.npz",
+  "n": 32,
+  "phase": {
+    "C": "h_report",
+    "H": "h_tool",
+    "O": "h_report"
+  },
+  "C": {
+    "n0": 12,
+    "n1": 20,
+    "ok_counts": true,
+    "auc": 0.95,
+    "cohen_d": 2.8443989604796136,
+    "v_norm": 0.9999999999996518,
+    "scores_mean_0": -1.1485624936745558,
+    "scores_mean_1": 1.7239354475536168
+  },
+  "H": {
+    "n0": 16,
+    "n1": 16,
+    "ok_counts": true,
+    "auc": 1.0,
+    "cohen_d": 74.20591078365243,
+    "v_norm": 0.9999999999992989,
+    "scores_mean_0": -0.6686125456375639,
+    "scores_mean_1": 0.7578504470187134
+  },
+  "O": {
+    "n0": 7,
+    "n1": 9,
+    "ok_counts": true,
+    "auc": 0.8888888888888888,
+    "cohen_d": 1.5760234589003757,
+    "v_norm": 0.9999999999973356,
+    "scores_mean_0": -4.228891749647047,
+    "scores_mean_1": -3.853596612536568
+  },
+  "O_note": "primary contrast is O|H=1 when enough H=1; else pooled O",
+  "occupancy_CHO": {
+    "010": 6,
+    "011": 6,
+    "100": 11,
+    "101": 5,
+    "110": 1,
+    "111": 3
+  },
+  "C_label": "observed_PLAN",
+  "factor_balance": {
+    "C": {
+      "n0": 12,
+      "n1": 20
+    },
+    "H": {
+      "n0": 16,
+      "n1": 16
+    },
+    "O": {
+      "n0": 7,
+      "n1": 9
+    },
+    "goal": "plenty of 0 and 1 per factor \u2014 not all 8 CHO cells"
+  },
+  "identification_gate": {
+    "learn_v_C": true,
+    "learn_v_H": true,
+    "learn_v_O": true,
+    "ready_for_causal_J": true,
+    "ready_for_8way": false,
+    "messages": [
+      "C: AUC=0.950 ok",
+      "H: AUC=1.000 ok",
+      "O: AUC=0.889 ok"
+    ]
+  }
+}

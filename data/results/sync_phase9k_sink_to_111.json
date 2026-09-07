@@ -1,0 +1,5063 @@
+{
+  "protocol": "Phase 9K 000\u2192(010|011)\u2192111",
+  "seed": 20260930,
+  "reps": 8,
+  "max_steps_acq": 8,
+  "max_steps_escape": 6,
+  "agg": {
+    "via_011": {
+      "n": 8,
+      "n_acq": 2,
+      "P_acq_000": 0.25,
+      "P_ever_111": 0.125,
+      "P_ever_111_given_acq": 0.5,
+      "P_hit_111_given_acq": 0.5,
+      "P_saw_010_given_acq": 0.0,
+      "P_saw_011_given_acq": 0.5,
+      "P_intended_via_given_acq": 0.5,
+      "path_examples": [
+        {
+          "path": [
+            "011",
+            "100",
+            "011",
+            "011",
+            "110",
+            "001",
+            "011",
+            "110",
+            "011"
+          ],
+          "acts": [
+            "H",
+            "O",
+            "H",
+            "C",
+            "H",
+            "O",
+            "H",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "011",
+            "100",
+            "011",
+            "111",
+            "111",
+            "000",
+            "000",
+            "111"
+          ],
+          "acts": [
+            "H",
+            "O",
+            "H",
+            "C",
+            "H",
+            "O",
+            "H"
+          ],
+          "ever000": 1,
+          "ever111": 1
+        },
+        {
+          "path": [
+            "011",
+            "110",
+            "010",
+            "011",
+            "110",
+            "010",
+            "101",
+            "100",
+            "010"
+          ],
+          "acts": [
+            "H",
+            "H",
+            "H",
+            "H",
+            "H",
+            "H",
+            "O",
+            "O"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "010",
+            "111",
+            "111",
+            "110",
+            "111",
+            "100",
+            "000",
+            "110",
+            "011",
+            "100",
+            "011",
+            "011",
+            "101"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "H",
+            "H",
+            "C",
+            "O",
+            "O",
+            "O",
+            "C",
+            "O",
+            "C",
+            "C"
+          ],
+          "ever000": 1,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "111",
+            "100",
+            "100",
+            "100",
+            "011",
+            "100",
+            "100",
+            "010",
+            "100"
+          ],
+          "acts": [
+            "C",
+            "O",
+            "H",
+            "O",
+            "H",
+            "O",
+            "H",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "011",
+            "100",
+            "011",
+            "100",
+            "011",
+            "011",
+            "100",
+            "010",
+            "110"
+          ],
+          "acts": [
+            "H",
+            "O",
+            "H",
+            "O",
+            "H",
+            "C",
+            "O",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "011",
+            "111",
+            "100",
+            "011",
+            "111",
+            "100",
+            "010",
+            "110",
+            "010"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "O",
+            "H",
+            "C",
+            "O",
+            "H",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "011",
+            "111",
+            "010",
+            "100",
+            "111",
+            "101",
+            "100",
+            "010",
+            "100"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "H",
+            "O",
+            "C",
+            "O",
+            "O",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        }
+      ]
+    },
+    "via_010": {
+      "n": 8,
+      "n_acq": 2,
+      "P_acq_000": 0.25,
+      "P_ever_111": 0.25,
+      "P_ever_111_given_acq": 1.0,
+      "P_hit_111_given_acq": 1.0,
+      "P_saw_010_given_acq": 0.0,
+      "P_saw_011_given_acq": 0.5,
+      "P_intended_via_given_acq": 0.0,
+      "path_examples": [
+        {
+          "path": [
+            "011",
+            "100",
+            "011",
+            "011",
+            "110",
+            "001",
+            "011",
+            "110",
+            "011"
+          ],
+          "acts": [
+            "H",
+            "O",
+            "H",
+            "C",
+            "H",
+            "O",
+            "H",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "011",
+            "100",
+            "011",
+            "111",
+            "111",
+            "000",
+            "000",
+            "100",
+            "011",
+            "001",
+            "111"
+          ],
+          "acts": [
+            "H",
+            "O",
+            "H",
+            "C",
+            "H",
+            "H",
+            "C",
+            "O",
+            "C",
+            "H"
+          ],
+          "ever000": 1,
+          "ever111": 1
+        },
+        {
+          "path": [
+            "011",
+            "110",
+            "010",
+            "011",
+            "110",
+            "010",
+            "101",
+            "100",
+            "010"
+          ],
+          "acts": [
+            "H",
+            "H",
+            "H",
+            "H",
+            "H",
+            "H",
+            "O",
+            "O"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "010",
+            "111",
+            "111",
+            "110",
+            "111",
+            "100",
+            "000",
+            "111"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "H",
+            "H",
+            "C",
+            "O",
+            "H"
+          ],
+          "ever000": 1,
+          "ever111": 1
+        },
+        {
+          "path": [
+            "111",
+            "100",
+            "100",
+            "100",
+            "011",
+            "100",
+            "100",
+            "010",
+            "100"
+          ],
+          "acts": [
+            "C",
+            "O",
+            "H",
+            "O",
+            "H",
+            "O",
+            "H",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "011",
+            "100",
+            "011",
+            "100",
+            "011",
+            "011",
+            "100",
+            "010",
+            "110"
+          ],
+          "acts": [
+            "H",
+            "O",
+            "H",
+            "O",
+            "H",
+            "C",
+            "O",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "011",
+            "111",
+            "100",
+            "011",
+            "111",
+            "100",
+            "010",
+            "110",
+            "010"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "O",
+            "H",
+            "C",
+            "O",
+            "H",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        },
+        {
+          "path": [
+            "011",
+            "111",
+            "010",
+            "100",
+            "111",
+            "101",
+            "100",
+            "010",
+            "100"
+          ],
+          "acts": [
+            "H",
+            "C",
+            "H",
+            "O",
+            "C",
+            "O",
+            "O",
+            "H"
+          ],
+          "ever000": 0,
+          "ever111": 0
+        }
+      ]
+    }
+  },
+  "paired": [
+    {
+      "rep": 0,
+      "seed": 20260930,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "via_011": {
+        "forced_a": "O",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011",
+          "011",
+          "110",
+          "001",
+          "011",
+          "110",
+          "011"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              0,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "H",
+          "O",
+          "H",
+          "C",
+          "H",
+          "O",
+          "H",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "O",
+          "H",
+          "C",
+          "H",
+          "O",
+          "H",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 0,
+        "arm": "via_011",
+        "intended_via": "011",
+        "intended_via_hit": 0
+      },
+      "via_010": {
+        "forced_a": "H",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011",
+          "011",
+          "110",
+          "001",
+          "011",
+          "110",
+          "011"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              0,
+              0,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          }
+        ],
+        "actions": [
+          "H",
+          "O",
+          "H",
+          "C",
+          "H",
+          "O",
+          "H",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "O",
+          "H",
+          "C",
+          "H",
+          "O",
+          "H",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 8,
+        "arm": "via_010",
+        "intended_via": "010",
+        "intended_via_hit": 0
+      }
+    },
+    {
+      "rep": 1,
+      "seed": 20261130,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "via_011": {
+        "forced_a": "O",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011",
+          "111",
+          "111",
+          "000",
+          "000",
+          "111"
+        ],
+        "escape_path": [
+          "000",
+          "000",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 5,
+            "phase": "escape",
+            "a": "O",
+            "mstar": "111",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dS": 0,
+            "mode": "forced_escape",
+            "cache_hit": false
+          },
+          {
+            "t": 6,
+            "phase": "escape",
+            "a": "H",
+            "mstar": "111",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dS": 1,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "H",
+          "O",
+          "H",
+          "C",
+          "H",
+          "O",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "O",
+          "H",
+          "C",
+          "H"
+        ],
+        "escape_actions": [
+          "O",
+          "H"
+        ],
+        "ever_000": 1,
+        "ever_111": 1,
+        "hit_111": 1,
+        "land_t": 4,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 0,
+        "arm": "via_011",
+        "intended_via": "011",
+        "intended_via_hit": 0
+      },
+      "via_010": {
+        "forced_a": "H",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011",
+          "111",
+          "111",
+          "000",
+          "000",
+          "100",
+          "011",
+          "001",
+          "111"
+        ],
+        "escape_path": [
+          "000",
+          "000",
+          "100",
+          "011",
+          "001",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 5,
+            "phase": "escape",
+            "a": "H",
+            "mstar": "111",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dS": 0,
+            "mode": "forced_escape",
+            "cache_hit": false
+          },
+          {
+            "t": 6,
+            "phase": "escape",
+            "a": "C",
+            "mstar": "111",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          },
+          {
+            "t": 7,
+            "phase": "escape",
+            "a": "O",
+            "mstar": "111",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          },
+          {
+            "t": 8,
+            "phase": "escape",
+            "a": "C",
+            "mstar": "111",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          },
+          {
+            "t": 9,
+            "phase": "escape",
+            "a": "H",
+            "mstar": "111",
+            "S_before": [
+              0,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 0,
+            "dS": 1,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "H",
+          "O",
+          "H",
+          "C",
+          "H",
+          "H",
+          "C",
+          "O",
+          "C",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "O",
+          "H",
+          "C",
+          "H"
+        ],
+        "escape_actions": [
+          "H",
+          "C",
+          "O",
+          "C",
+          "H"
+        ],
+        "ever_000": 1,
+        "ever_111": 1,
+        "hit_111": 1,
+        "land_t": 4,
+        "intermediary_first": "011",
+        "saw_010": 0,
+        "saw_011": 1,
+        "n_cache_hits": 5,
+        "arm": "via_010",
+        "intended_via": "010",
+        "intended_via_hit": 0
+      }
+    },
+    {
+      "rep": 2,
+      "seed": 20261330,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "via_011": {
+        "forced_a": "O",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "110",
+          "010",
+          "011",
+          "110",
+          "010",
+          "101",
+          "100",
+          "010"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "O",
+          "O"
+        ],
+        "acq_actions": [
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "O",
+          "O"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 0,
+        "arm": "via_011",
+        "intended_via": "011",
+        "intended_via_hit": 0
+      },
+      "via_010": {
+        "forced_a": "H",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "110",
+          "010",
+          "011",
+          "110",
+          "010",
+          "101",
+          "100",
+          "010"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          }
+        ],
+        "actions": [
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "O",
+          "O"
+        ],
+        "acq_actions": [
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "O",
+          "O"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 8,
+        "arm": "via_010",
+        "intended_via": "010",
+        "intended_via_hit": 0
+      }
+    },
+    {
+      "rep": 3,
+      "seed": 20261530,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "via_011": {
+        "forced_a": "O",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          0,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111",
+          "111",
+          "110",
+          "111",
+          "100",
+          "000",
+          "110",
+          "011",
+          "100",
+          "011",
+          "011",
+          "101"
+        ],
+        "escape_path": [
+          "000",
+          "110",
+          "011",
+          "100",
+          "011",
+          "011",
+          "101"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 6,
+            "phase": "escape",
+            "a": "O",
+            "mstar": "111",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "forced_escape",
+            "cache_hit": false
+          },
+          {
+            "t": 7,
+            "phase": "escape",
+            "a": "O",
+            "mstar": "111",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          },
+          {
+            "t": 8,
+            "phase": "escape",
+            "a": "C",
+            "mstar": "111",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          },
+          {
+            "t": 9,
+            "phase": "escape",
+            "a": "O",
+            "mstar": "111",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          },
+          {
+            "t": 10,
+            "phase": "escape",
+            "a": "C",
+            "mstar": "111",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 0,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          },
+          {
+            "t": 11,
+            "phase": "escape",
+            "a": "C",
+            "mstar": "111",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "gamma_prime",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "H",
+          "H",
+          "C",
+          "O",
+          "O",
+          "O",
+          "C",
+          "O",
+          "C",
+          "C"
+        ],
+        "acq_actions": [
+          "H",
+          "C",
+          "H",
+          "H",
+          "C",
+          "O"
+        ],
+        "escape_actions": [
+          "O",
+          "O",
+          "C",
+          "O",
+          "C",
+          "C"
+        ],
+        "ever_000": 1,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": 5,
+        "intermediary_first": "011",
+        "saw_010": 0,
+        "saw_011": 1,
+        "n_cache_hits": 0,
+        "arm": "via_011",
+        "intended_via": "011",
+        "intended_via_hit": 1
+      },
+      "via_010": {
+        "forced_a": "H",
+        "S0": [
+          0,
+          1,
+          0
+        ],
+        "S_final": [
+          1,
+          1,
+          1
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "path": [
+          "010",
+          "111",
+          "111",
+          "110",
+          "111",
+          "100",
+          "000",
+          "111"
+        ],
+        "escape_path": [
+          "000",
+          "111"
+        ],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 3,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 0,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 6,
+            "phase": "escape",
+            "a": "H",
+            "mstar": "111",
+            "S_before": [
+              0,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 0,
+            "dS": 1,
+            "mode": "forced_escape",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "H",
+          "H",
+          "C",
+          "O",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "C",
+          "H",
+          "H",
+          "C",
+          "O"
+        ],
+        "escape_actions": [
+          "H"
+        ],
+        "ever_000": 1,
+        "ever_111": 1,
+        "hit_111": 1,
+        "land_t": 5,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 6,
+        "arm": "via_010",
+        "intended_via": "010",
+        "intended_via_hit": 0
+      }
+    },
+    {
+      "rep": 4,
+      "seed": 20261730,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "via_011": {
+        "forced_a": "O",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "100",
+          "100",
+          "100",
+          "011",
+          "100",
+          "100",
+          "010",
+          "100"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "C",
+          "O",
+          "H",
+          "O",
+          "H",
+          "O",
+          "H",
+          "H"
+        ],
+        "acq_actions": [
+          "C",
+          "O",
+          "H",
+          "O",
+          "H",
+          "O",
+          "H",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 0,
+        "arm": "via_011",
+        "intended_via": "011",
+        "intended_via_hit": 0
+      },
+      "via_010": {
+        "forced_a": "H",
+        "S0": [
+          1,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "111",
+          "100",
+          "100",
+          "100",
+          "011",
+          "100",
+          "100",
+          "010",
+          "100"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          }
+        ],
+        "actions": [
+          "C",
+          "O",
+          "H",
+          "O",
+          "H",
+          "O",
+          "H",
+          "H"
+        ],
+        "acq_actions": [
+          "C",
+          "O",
+          "H",
+          "O",
+          "H",
+          "O",
+          "H",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 8,
+        "arm": "via_010",
+        "intended_via": "010",
+        "intended_via_hit": 0
+      }
+    },
+    {
+      "rep": 5,
+      "seed": 20261930,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "via_011": {
+        "forced_a": "O",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011",
+          "100",
+          "011",
+          "011",
+          "100",
+          "010",
+          "110"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "H",
+          "O",
+          "H",
+          "O",
+          "H",
+          "C",
+          "O",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "O",
+          "H",
+          "O",
+          "H",
+          "C",
+          "O",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 0,
+        "arm": "via_011",
+        "intended_via": "011",
+        "intended_via_hit": 0
+      },
+      "via_010": {
+        "forced_a": "H",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "100",
+          "011",
+          "100",
+          "011",
+          "011",
+          "100",
+          "010",
+          "110"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 2,
+            "dS": 0,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          }
+        ],
+        "actions": [
+          "H",
+          "O",
+          "H",
+          "O",
+          "H",
+          "C",
+          "O",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "O",
+          "H",
+          "O",
+          "H",
+          "C",
+          "O",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 8,
+        "arm": "via_010",
+        "intended_via": "010",
+        "intended_via_hit": 0
+      }
+    },
+    {
+      "rep": 6,
+      "seed": 20262130,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "via_011": {
+        "forced_a": "O",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "111",
+          "100",
+          "011",
+          "111",
+          "100",
+          "010",
+          "110",
+          "010"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "O",
+          "H",
+          "C",
+          "O",
+          "H",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "C",
+          "O",
+          "H",
+          "C",
+          "O",
+          "H",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 0,
+        "arm": "via_011",
+        "intended_via": "011",
+        "intended_via_hit": 0
+      },
+      "via_010": {
+        "forced_a": "H",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          0,
+          1,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "111",
+          "100",
+          "011",
+          "111",
+          "100",
+          "010",
+          "110",
+          "010"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "O",
+          "H",
+          "C",
+          "O",
+          "H",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "C",
+          "O",
+          "H",
+          "C",
+          "O",
+          "H",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 8,
+        "arm": "via_010",
+        "intended_via": "010",
+        "intended_via_hit": 0
+      }
+    },
+    {
+      "rep": 7,
+      "seed": 20262330,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "via_011": {
+        "forced_a": "O",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "111",
+          "010",
+          "100",
+          "111",
+          "101",
+          "100",
+          "010",
+          "100"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": false
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "H",
+          "O",
+          "C",
+          "O",
+          "O",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "C",
+          "H",
+          "O",
+          "C",
+          "O",
+          "O",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 0,
+        "arm": "via_011",
+        "intended_via": "011",
+        "intended_via_hit": 0
+      },
+      "via_010": {
+        "forced_a": "H",
+        "S0": [
+          0,
+          1,
+          1
+        ],
+        "S_final": [
+          1,
+          0,
+          0
+        ],
+        "traj_S": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "011",
+          "111",
+          "010",
+          "100",
+          "111",
+          "101",
+          "100",
+          "010",
+          "100"
+        ],
+        "escape_path": [],
+        "steps": [
+          {
+            "t": 0,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 2,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 1,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 3,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 2,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 3,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              1,
+              1,
+              1
+            ],
+            "E_before": 1,
+            "E_after": 3,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 4,
+            "phase": "acq",
+            "a": "C",
+            "mstar": "000",
+            "S_before": [
+              1,
+              1,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              1
+            ],
+            "E_before": 3,
+            "E_after": 2,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 5,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              1
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 2,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 6,
+            "phase": "acq",
+            "a": "O",
+            "mstar": "000",
+            "S_before": [
+              1,
+              0,
+              0
+            ],
+            "S_after": [
+              0,
+              1,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          },
+          {
+            "t": 7,
+            "phase": "acq",
+            "a": "H",
+            "mstar": "000",
+            "S_before": [
+              0,
+              1,
+              0
+            ],
+            "S_after": [
+              1,
+              0,
+              0
+            ],
+            "E_before": 1,
+            "E_after": 1,
+            "dS": 1,
+            "mode": "sink_seek",
+            "cache_hit": true
+          }
+        ],
+        "actions": [
+          "H",
+          "C",
+          "H",
+          "O",
+          "C",
+          "O",
+          "O",
+          "H"
+        ],
+        "acq_actions": [
+          "H",
+          "C",
+          "H",
+          "O",
+          "C",
+          "O",
+          "O",
+          "H"
+        ],
+        "escape_actions": [],
+        "ever_000": 0,
+        "ever_111": 0,
+        "hit_111": 0,
+        "land_t": null,
+        "intermediary_first": null,
+        "saw_010": 0,
+        "saw_011": 0,
+        "n_cache_hits": 8,
+        "arm": "via_010",
+        "intended_via": "010",
+        "intended_via_hit": 0
+      }
+    }
+  ],
+  "gate": {
+    "hypothesis": "Forced 000\u2014O/H\u2192010/011 then \u0393' reaches 111 under frozen 8K",
+    "n_reps": 8,
+    "P_ever_111_given_acq_any_arm": 1.0,
+    "n_reps_with_acq": 2,
+    "per_arm": {
+      "via_011": {
+        "P_acq_000": 0.25,
+        "P_ever_111_given_acq": 0.5,
+        "P_hit_111_given_acq": 0.5
+      },
+      "via_010": {
+        "P_acq_000": 0.25,
+        "P_ever_111_given_acq": 1.0,
+        "P_hit_111_given_acq": 1.0
+      }
+    },
+    "path_complete": true,
+    "read": "Primary: P(ever 111|acq 000)>0 on either arm completes the sink\u2192111 path."
+  }
+}

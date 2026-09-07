@@ -1,0 +1,23 @@
+{
+  "architecture": "hierarchical_H_only",
+  "frozen": true,
+  "graph": "C(observe) \u2192 H(actuator) \u2192 execution \u2192 O(observe)",
+  "controller": "d = g_H(e_H) v_H",
+  "actuators": {
+    "v_C": null,
+    "v_H": "primary",
+    "v_O": null
+  },
+  "v_C_status": "observe_only_frozen_out",
+  "scientific_claim": "Dense intervention supports H as causal bottleneck. Closed-loop sync not yet effective. Next: measure whether v_H displaces the tool-selection margin M_H.",
+  "status_pipeline": [
+    "A PASS",
+    "B.1 H pass / C weak / O null",
+    "B.2 H mediation SUPPORT",
+    "Architecture FROZEN (H-only)",
+    "Closed-loop FAIL / not yet effective",
+    "YOU ARE HERE: H decision-boundary experiment",
+    "then: reliable H suppression \u2192 H\u2192O propagation \u2192 held-out sync \u2192 8-way"
+  ],
+  "not": "8way|C+H|generic_dose|more_free_runs"
+}

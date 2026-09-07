@@ -1,8 +1,7 @@
 # Universal Agentic Sync Steering
 
-Control the agent’s **tool ↔ plan ↔ report** sync state with frozen activation
-actuators and short-horizon planning — not by learning a new direction for every
-failure mode.
+We investigate whether activation-level interventions can give an agent direct control over the relationship between what it **plans (C)**, what it **executes through tools (H)**, and what it **reports in its final output (O)**. Building on Heimersheim and Mendel’s work on activation plateaus and sensitive directions, we begin with agent trajectories and extract layer-4 activations around planning, tool-use, and reporting decisions. We learn predictive directions for the three channels and convert them into causal steering directions by projecting each predictive direction onto its local decision gradient, obtaining \(v_C\), \(v_H\), and \(v_O\). We validate these directions at the actual generation sites and calibrate their intervention magnitude and timing. The agent state is represented as \(S=(C,H,O)\in\{0,1\}^3\), giving eight possible configurations. To control transitions between these configurations, we estimate a target-conditioned shift signal \(\Gamma(a\mid S,m^*)\), which measures how likely an intervention \(a\in\{\pm v_C,\pm v_H,\pm v_O\}\) is to move the current state toward a target \(m^*\). A one-step anti-stagnation memory produces \(\Gamma'\), and when greedy selection is insufficient, short-horizon beam search over the signed causal actuators finds intermediate state trajectories to the target. The resulting controller provides target-conditioned causal control over planning, tool execution, and final disclosure, enabling transitions across the eight configurations without retraining the underlying model.
+
 
 
 

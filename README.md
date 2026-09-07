@@ -4,16 +4,9 @@ Control the agent’s **tool ↔ plan ↔ report** sync state with frozen activa
 actuators and short-horizon planning — not by learning a new direction for every
 failure mode.
 
-**Model:** Qwen3-0.6B (local). **Sites locked at L4** via Heim plateau graphs.
 
-**Active claim:**
-
-> All 8 discrete sync states \(m^*\in\{0,1\}^3\) are **reachable** under frozen
-> \(v_C,v_H,v_O\). Universal **acquisition** needs planning over **both polarities**
-> \(\{\pm C,\pm H,\pm O\}\). Reliable **retention** after acquisition is still open.
 
 Builds on [Agentic-alignment-drift](https://github.com/vanivamshi/Agentic-alignment-drift).
-Sibling archive: [multidim-steering-agentic-alignment](https://github.com/vanivamshi/multidim-steering-agentic-alignment).
 
 ---
 

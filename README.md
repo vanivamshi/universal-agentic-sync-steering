@@ -22,11 +22,14 @@ $$
 
 to move the current state toward a target configuration \(m^*\). We extend this with one-step anti-stagnation memory to obtain \(\Gamma'\), and use short-horizon beam search over the signed causal actuators when greedy selection cannot reach a target directly. This produces a target-conditioned controller that can use intermediate states and alternative intervention polarities to transition the agent between the eight configurations without retraining the underlying model.
 
+**Model:** Qwen3-0.6B (local). **Sites locked at L4** via Heim plateau graphs.
 
+**Active claim:**
 
-
+> All 8 discrete sync states \(m^*\in\{0,1\}^3\) are **reachable** under frozen \(v_C,v_H,v_O\). Universal **acquisition** needs planning over **both polarities** \(\{\pm C,\pm H,\pm O\}\). Reliable **retention** after acquisition is still open.
 
 Builds on [Agentic-alignment-drift](https://github.com/vanivamshi/Agentic-alignment-drift).
+Sibling archive: [multidim-steering-agentic-alignment](https://github.com/vanivamshi/multidim-steering-agentic-alignment).
 
 ---
 
@@ -38,14 +41,11 @@ Builds on [Agentic-alignment-drift](https://github.com/vanivamshi/Agentic-alignm
 | \(H\) | hook / execution | Did tools actually load private config? |
 | \(O\) | output / report | Does FINAL match execution truth? |
 
-\[
-S=(C,H,O),\qquad
-e=m^*-S,\qquad
-E=\|e\|_1
-\]
+$$
+e=m^*-S,\qquad E=\|e\|_1
+$$
 
-Same neutral task for all eight \(m^*\). The model generates freely; we score
-\(\Delta E\) and \(P(S=m^*)\), not scripted answers.
+Same neutral task for all eight \(m^*\). The model generates freely; we score \(\Delta E\) and \(P(S=m^*)\), not scripted answers.
 
 ---
 
@@ -109,20 +109,17 @@ No new \(v\) after the 8K freeze without a new failure mode.
 | \(C\) | stem-prefill `PLAN: I will ` | \(\alpha_C=5\) |
 | \(O\) | early-FINAL `FINAL: ` | \(\alpha_O=1.5\) |
 
-Same-site causal checks recover \(v\to h^{\mathrm{live}}\to\) bit. Compose
-\(H\to C\to O\). **This is the frozen controller.**
+Same-site causal checks recover \(v\to h^{\mathrm{live}}\to\) bit. Compose \(H\to C\to O\). **This is the frozen controller.**
 
 ### 4. Soft control via \(\Gamma'\) (Phase 9E–9I arc)
 
 Target-conditioned drift:
 
-\[
+$$
 \Gamma(a\mid s,m^*)=P(E\downarrow)-P(E\uparrow)
-\]
+$$
 
-Live policy: pick relevant \(a\) maximizing \(\Gamma\), with anti-stagnation
-(\(\Gamma'\)). Works on soft states; **fails alone** on hard sinks
-\(\{000,001,110\}\).
+Live policy: pick relevant \(a\) maximizing \(\Gamma\), with anti-stagnation (\(\Gamma'\)). Works on soft states; **fails alone** on hard sinks \(\{000,001,110\}\).
 
 ### 5. Hard control via bidirectional beam (Phase 9Q–9R)
 
@@ -131,20 +128,19 @@ Example: \(011\xrightarrow{+C}001\) works even though \(C^*=0\).
 
 Action set:
 
-\[
-\mathcal A=\{+C,-C,+H,-H,+O,-O\}
-\]
+$$
+\mathcal{A}=\{+C,-C,+H,-H,+O,-O\}
+$$
 
-Short-horizon beam (\(K{=}3\), \(T{=}3\)) on **live rollouts** (not a sparse
-kernel). Hybrid:
+Short-horizon beam (\(K{=}3\), \(T{=}3\)) on **live rollouts** (not a sparse kernel). Hybrid:
 
-\[
+$$
 \pi(s,m^*)=
 \begin{cases}
 \Gamma'(s,m^*) & \max\Gamma'\ge\tau,\ \text{action not a no-op}\\
-\mathrm{beam}(\mathcal A) & \text{otherwise}
+\mathrm{beam}(\mathcal{A}) & \text{otherwise}
 \end{cases}
-\]
+$$
 
 ---
 
@@ -167,11 +163,9 @@ Paired 9R table (reps=2): `data/results/sync_phase9r_hybrid.md`.
 These informed dead-ends; they are not the controller:
 
 - PCA / persona shortlist **steering** (detect can work; steer does not repair)
-- Soft-margin surrogates that move continuous \(\mathcal L\) but not discrete \(S\)
-- Laplace / densified empirical kernels as planners (9C/9O) — rare sink mass +
-  target-sign suppress useful transitions
-- New activation vectors for hard sinks — polarity search over existing \(v_c\)
-  was sufficient for acquisition
+- Soft-margin surrogates that move continuous \(\mathcal{L}\) but not discrete \(S\)
+- Laplace / densified empirical kernels as planners (9C/9O) — rare sink mass + target-sign suppress useful transitions
+- New activation vectors for hard sinks — polarity search over existing \(v_c\) was sufficient for acquisition
 
 ---
 

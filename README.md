@@ -28,6 +28,7 @@ to move the current state toward a target configuration $m^{\ast}$. We extend th
 Builds on [Agentic-alignment-drift](https://github.com/vanivamshi/Agentic-alignment-drift).
 
 Research article written on the project - https://github.com/vanivamshi/Research-blogs/blob/main/universal-agentic-alignment.md
+
 ---
 
 ## Sync state

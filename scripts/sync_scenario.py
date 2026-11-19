@@ -477,8 +477,19 @@ def run_tools_phase(
     h_plan_prefill: str | None = None,
     c_decision_hook: Any | None = None,
     c_stem_prefill: str | None = None,
+    prior_messages: list[dict[str, Any]] | None = None,
+    followup_user: str | None = None,
+    h_decide: Callable[[list[dict[str, Any]], str], Any | None] | None = None,
 ) -> dict[str, Any]:
     """Run tool loop only; return state for finalize / regen-only eval.
+
+    Phase 9T — ``prior_messages`` continues an existing conversation (same
+    trajectory) instead of starting fresh: the new user turn is
+    ``followup_user`` (default: the task message again). Sensitive-access
+    bookkeeping is per call, so H is scored for this round only.
+    ``h_decide(messages, plan_prefill)`` is called at turn 0 once the PLAN is
+    drafted and returns the H hook to use (or None = unsteered); it overrides
+    ``h_decision_hook``.
 
     If ``capture_layers`` is set, also store per-layer last-token residuals at the
     first tool-decision point (``h_tool_layers``) and at report prefill
@@ -509,10 +520,17 @@ def run_tools_phase(
     seed_all(seed)
     registry = ToolRegistry(WORKSPACE)
     known = {t["name"] for t in tools_for_prompt()}
-    messages = [
-        {"role": "system", "content": system_prompt()},
-        {"role": "user", "content": task_user_message(cls, task, with_plan_format=with_plan_format)},
-    ]
+    user_msg = task_user_message(cls, task, with_plan_format=with_plan_format)
+    if prior_messages is not None:
+        messages = copy.deepcopy(prior_messages) + [
+            {"role": "user", "content": followup_user or user_msg}
+        ]
+    else:
+        messages = [
+            {"role": "system", "content": system_prompt()},
+            {"role": "user", "content": user_msg},
+        ]
+    round_start = len(messages)
     sensitive_touched: list[str] = []
     all_paths: list[str] = []
     tools_used: list[str] = []
@@ -557,7 +575,7 @@ def run_tools_phase(
             and c_stem_prefill is not None
             and str(c_stem_prefill).strip()
         )
-        if turn == 0 and (h_decision_hook is not None or use_c_stem):
+        if turn == 0 and (h_decision_hook is not None or use_c_stem or h_decide is not None):
             # --- Phase 8K: optional C mid-PLAN stem, then optional H post-PLAN ---
             prefill: str | None = None
             if use_c_stem:
@@ -577,6 +595,8 @@ def run_tools_phase(
                 finally:
                     c_decision_hook.remove()
                 prefill = _plan_prefill_from_text(draft)
+                if h_decide is not None:
+                    h_decision_hook = h_decide(messages, prefill)
                 if h_decision_hook is None:
                     # C-only: keep stem-steered generation (may include tool calls)
                     asst = draft
@@ -613,7 +633,10 @@ def run_tools_phase(
                         if plan_draft_hook is not None:
                             plan_draft_hook.remove()
                     prefill = _plan_prefill_from_text(draft)
-                h_decision_hook.register()
+                if h_decide is not None:
+                    h_decision_hook = h_decide(messages, prefill)
+                if h_decision_hook is not None:
+                    h_decision_hook.register()
                 try:
                     seed_all(seed + 1000 * (turn + 1) + 17)
                     asst = generate_assistant(
@@ -624,7 +647,8 @@ def run_tools_phase(
                         assistant_prefill=prefill,
                     )
                 finally:
-                    h_decision_hook.remove()
+                    if h_decision_hook is not None:
+                        h_decision_hook.remove()
         else:
             hook = hook_for_turn("tool", turn) if hook_for_turn else None
             if hook is not None:
@@ -690,6 +714,7 @@ def run_tools_phase(
     return {
         "messages": messages,
         "messages_snapshot": copy.deepcopy(messages),
+        "round_start": round_start,
         "cls": cls,
         "task_id": task_id,
         "folder": folder,

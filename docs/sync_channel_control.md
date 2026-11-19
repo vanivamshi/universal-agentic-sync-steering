@@ -920,6 +920,30 @@ $$
 
 ---
 
+# Phase 9S — Configuration retention: latch vs arrival-path replay — **implemented, not yet run**
+
+**Diagnosis.** The controller records the discrete state $S$ at each step but does not keep the full intervention history that produced it. 9R retention (`apply_channel` in `run_phase9j_sink_seeking.py`) runs a fresh episode with a new seed, **one** channel, at **target** polarity. Only the H `plan_prefill` carries over. So 9M/9R $P_{\mathrm{ret}}$ measured *independent re-acquisition*, not maintenance of an acquired configuration, and not continuation of one model trajectory. This also changes how the 9M and 9R negatives should be read. Because 56–68% of successful moves used the opposite polarity, target-sign retain does not reconstruct the acquisition procedure.
+
+**State object.** `activation_pipeline/sync_state.py::SyncState` keeps `S`, `plan`, the ordered signed `path`, and the composed `active` view (last sign per channel wins). Both views are kept: `active` alone cannot represent repeated or ordered interventions on one channel.
+
+**Design.** Acquisition is the 9R hybrid, run once per trial. All arms start from the same acquired trial. Frozen $v_c$ and gains, no new $v$.
+
+| arm | retention procedure | isolates |
+|---|---|---|
+| A `stay_seek` | 9R retain, unchanged (own seeds) | baseline |
+| B `latch` | composed `active`, arrival signs, one episode | accumulated configuration |
+| B0 `latch_tsign` | same channels, target signs | arrival polarity (B vs B0) |
+| C `path_replay` | ordered path, single-channel episodes, plan threaded from `plan0` | arrival sequence (C vs B) |
+| D `path_shuffled` | same signed actions, permuted | ordering (C vs D) |
+
+B, B0, C and D share rollout seeds. Report ret@1 and ret@2, rollout hit counts and $P_{\mathrm{final}}$, with counts and Wilson CIs, soft and hard pooled separately. Paired discordance uses the exact sign test.
+
+**Scope caveat.** Every arm is a fresh-episode replay, so this tests **configuration retention**, not persistent state retention. In C/D the sub-episodes are coupled only through the H plan prefill, so C vs D mainly tests "last action + threaded plan". If B and C both fail, that *motivates* persistent conversational context or activation-level feedback. It does not by itself show they are necessary.
+
+`scripts/run_phase9s_latch.py` → `data/results/sync_phase9s_latch.{json,md}` (also writes a `path_cache` of $(S_0,m^*)\to$ arrival recipes).
+
+---
+
 # Artifacts
 
 - `data/results/sync_8way_validation.json` (+ `_enriched`, `_analysis`, `_r2`)

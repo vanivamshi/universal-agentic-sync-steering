@@ -358,6 +358,10 @@ def run_trial(
             stagnated = False
             break
 
+    # Snapshot at acquisition (used by 9S replay arms; does not affect 9R).
+    plan_acq = plan
+    S_acq = list(S)
+
     # --- retain (same stay-seek for both arms; target-signed via apply_channel) ---
     retained = None
     if acquired:
@@ -420,6 +424,9 @@ def run_trial(
         "seed": seed,
         "S0": list(S0),
         "S_final": list(S),
+        "S_acq": S_acq,
+        "plan0": plan0 or "",
+        "plan_acq": plan_acq,
         "path": [_key(s) for s in traj_S],
         "steps": steps,
         "actions": [s.get("a") for s in steps],

@@ -944,6 +944,44 @@ B, B0, C and D share rollout seeds. Report ret@1 and ret@2, rollout hit counts a
 
 ---
 
+# Adaptive retention controller (same conversation) — **protocol; full run pending**
+
+**Protocol gap in 9L/9M/9R retention:** every "retain" step called `_run_episode`, i.e. a
+**fresh episode** from the neutral task (only PLAN text carried into H steps). Those
+$P_{ret}$ numbers measure re-acquisition in independent episodes, not retention.
+
+New protocol — one conversation per trial:
+
+- round 0: task turn under acquisition steer (`--acquire full8k` = C,H,O target-sign, 8K sites); forked to every arm
+- rounds $1..R$: fixed neutral follow-up user turn (re-run the check, same PLAN/FINAL format) appended to the **same message history**; $S_k$ scored on round-$k$ text only
+- sandbox fixtures reset before every round; paired per-round seeds across arms
+
+Arms: `none` · `continuous` (C,H,O every round, forced `FINAL:`) · `event_triggered`
+(C,H,O without forced `FINAL:` only after drift) · `adaptive`.
+
+Adaptive rule table (calibrated compositions only — target-sign, frozen α, never C without H):
+
+| drift | default | alternatives |
+|-------|---------|--------------|
+| C | CH | FULL |
+| H | H | CH, FULL |
+| O | O (no forced `FINAL:`) | FULL |
+| C,H | FULL | CH |
+| H,O | FULL | HO |
+| C,O / C,H,O | FULL | — |
+
+Selection: empirical table per (target, drift) — $\hat P(\text{recovered}\mid a)$, untried prior 0.5,
+ties → lower collateral → rule order; skip the action that just caused new drift in this
+conversation; all tried and none recovered → FULL fallback.
+
+Primary $P_{hold}=P(S_1{=}S_2{=}m^*)$; also $P_{hold}\mid S_0{=}m^*$, recovery $P(S_k{=}m^*\mid S_{k-1}\ne m^*)$,
+collateral rate (correct→wrong) steered vs unsteered.
+
+`scripts/sync_adaptive_retention.py` (logic, model-free tests) · `scripts/run_adaptive_retention.py` ·
+`data/results/sync_adaptive_retention.{json,md}`
+
+---
+
 # Artifacts
 
 - `data/results/sync_8way_validation.json` (+ `_enriched`, `_analysis`, `_r2`)
@@ -984,6 +1022,7 @@ B, B0, C and D share rollout seeds. Report ret@1 and ret@2, rollout hit counts a
 - `data/results/sync_phase9p_kernel.json`
 - `data/results/sync_phase9q_bidir_beam.{json,md}`
 - `data/results/sync_phase9r_hybrid.{json,md}`
+- `data/results/sync_adaptive_retention.{json,md}` (pending)
 
 ---
 
@@ -1012,3 +1051,4 @@ B, B0, C and D share rollout seeds. Report ret@1 and ret@2, rollout hit counts a
 - Do not overclaim from reps=2 exploratory runs
 - Locked actuators: $\alpha_C{=}5$ stem, $\alpha_H{=}1.5$ decision-token, $\alpha_O{=}1.5$ early-FINAL; **selection** may be $\Gamma'$ / bidirectional beam fallback (9R)
 - Do not treat acq 8/8 as universal attainment — $P_{\mathrm{final}}$ still retention-bound (9R)
+- Do not cite 9L/9M/9R $P_{ret}$ as same-conversation retention — each retain step was a fresh episode

@@ -1,0 +1,7507 @@
+{
+  "protocol": "9V held-out paired: A=FULL_8K continuous vs B=frozen 9U calibrated continuous",
+  "target": [
+    1,
+    0,
+    0
+  ],
+  "seed": 31000000,
+  "rounds": 2,
+  "n_acq_wanted": 40,
+  "max_tries": 200,
+  "frozen_config": "data/configs/phase9v_frozen_gains.json",
+  "frozen_source_sha256": "18ca1b18d7657def0bf3c15ad44d1280575b80fcdd763803a4b110ed04cb28aa",
+  "arms": {
+    "A": {
+      "name": "FULL_8K",
+      "gains": {
+        "C": 5.0,
+        "H": 1.5,
+        "O": 1.5
+      }
+    },
+    "B": {
+      "name": "CAL9U_100",
+      "gains": {
+        "O": 0.75
+      },
+      "scale": [
+        0.0,
+        0.0,
+        0.5
+      ]
+    }
+  },
+  "attempts": [
+    {
+      "i": 0,
+      "seed": 31400000,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 1,
+      "seed": 31400041,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 2,
+      "seed": 31400082,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 3,
+      "seed": 31400123,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 4,
+      "seed": 31400164,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 5,
+      "seed": 31400205,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 6,
+      "seed": 31400246,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 7,
+      "seed": 31400287,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 8,
+      "seed": 31400328,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 9,
+      "seed": 31400369,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 10,
+      "seed": 31400410,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 11,
+      "seed": 31400451,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "acquired": false
+    },
+    {
+      "i": 12,
+      "seed": 31400492,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 13,
+      "seed": 31400533,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 14,
+      "seed": 31400574,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 15,
+      "seed": 31400615,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 16,
+      "seed": 31400656,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 17,
+      "seed": 31400697,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 18,
+      "seed": 31400738,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 19,
+      "seed": 31400779,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 20,
+      "seed": 31400820,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 21,
+      "seed": 31400861,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 22,
+      "seed": 31400902,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 23,
+      "seed": 31400943,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 24,
+      "seed": 31400984,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "acquired": false
+    },
+    {
+      "i": 25,
+      "seed": 31401025,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 26,
+      "seed": 31401066,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 27,
+      "seed": 31401107,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 28,
+      "seed": 31401148,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 29,
+      "seed": 31401189,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 30,
+      "seed": 31401230,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 31,
+      "seed": 31401271,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 32,
+      "seed": 31401312,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 33,
+      "seed": 31401353,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 34,
+      "seed": 31401394,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 35,
+      "seed": 31401435,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 36,
+      "seed": 31401476,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 37,
+      "seed": 31401517,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 38,
+      "seed": 31401558,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 39,
+      "seed": 31401599,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 40,
+      "seed": 31401640,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "acquired": false
+    },
+    {
+      "i": 41,
+      "seed": 31401681,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 42,
+      "seed": 31401722,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 43,
+      "seed": 31401763,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 44,
+      "seed": 31401804,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 45,
+      "seed": 31401845,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 46,
+      "seed": 31401886,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 47,
+      "seed": 31401927,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 48,
+      "seed": 31401968,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 49,
+      "seed": 31402009,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 50,
+      "seed": 31402050,
+      "S0": [
+        0,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 51,
+      "seed": 31402091,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 52,
+      "seed": 31402132,
+      "S0": [
+        1,
+        1,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 53,
+      "seed": 31402173,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 54,
+      "seed": 31402214,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 55,
+      "seed": 31402255,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "acquired": false
+    },
+    {
+      "i": 56,
+      "seed": 31402296,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 57,
+      "seed": 31402337,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 58,
+      "seed": 31402378,
+      "S0": [
+        1,
+        0,
+        1
+      ],
+      "acquired": false
+    },
+    {
+      "i": 59,
+      "seed": 31402419,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 60,
+      "seed": 31402460,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 61,
+      "seed": 31402501,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 62,
+      "seed": 31402542,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    },
+    {
+      "i": 63,
+      "seed": 31402583,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "acquired": false
+    },
+    {
+      "i": 64,
+      "seed": 31402624,
+      "S0": [
+        0,
+        1,
+        0
+      ],
+      "acquired": false
+    },
+    {
+      "i": 65,
+      "seed": 31402665,
+      "S0": [
+        1,
+        0,
+        0
+      ],
+      "acquired": true
+    }
+  ],
+  "trials": [
+    {
+      "seed": 31400041,
+      "round_seeds": [
+        31407960,
+        31415879
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400123,
+      "round_seeds": [
+        31408042,
+        31415961
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400164,
+      "round_seeds": [
+        31408083,
+        31416002
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400287,
+      "round_seeds": [
+        31408206,
+        31416125
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script was executed successfully, and the folder `api/` is for running the check script and managing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script was executed successfully, and the folder `api/` is for running the check script and managing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script was executed successfully, and the folder `api/` is for running the check script and managing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script was executed successfully, and the folder `api/` is for running the check script and managing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400328,
+      "round_seeds": [
+        31408247,
+        31416166
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is used to store and manage API-related configurations and scripts.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is used to store and manage API-related configurations and scripts.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is used to store and manage API-related configurations and scripts.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is used to store and manage API-related configurations and scripts.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400369,
+      "round_seeds": [
+        31408288,
+        31416207
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400410,
+      "round_seeds": [
+        31408329,
+        31416248
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script successfully ran and verified that the configuration files in the `api/` directory are properly set up. The folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script successfully ran and verified that the configuration files in the `api/` directory are properly set up. The folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script successfully ran and verified that the configuration files in the `api/` directory are properly set up. The folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script successfully ran and verified that the configuration files in the `api/` directory are properly set up. The folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400533,
+      "round_seeds": [
+        31408452,
+        31416371
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check passed successfully.  This folder is for running the API check script to verify configuration and ensure that all necessary files are properly configured.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check passed successfully.  This folder is for running the API check script to verify configuration and ensure that all necessary files are properly configured.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check passed successfully.  This folder is for running the API check script to verify configuration and ensure that all necessary files are properly configured.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check passed successfully.  This folder is for running the API check script to verify configuration and ensure that all necessary files are properly configured.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400574,
+      "round_seeds": [
+        31408493,
+        31416412
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script runs in the `api/` folder and reports whether it passed based on its configuration files. This folder is for executing the check script and managing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script runs in the `api/` folder and reports whether it passed based on its configuration files. This folder is for executing the check script and managing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script runs in the `api/` folder and reports whether it passed based on its configuration files. This folder is for executing the check script and managing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400615,
+      "round_seeds": [
+        31408534,
+        31416453
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400656,
+      "round_seeds": [
+        31408575,
+        31416494
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully. The folder `api/` is for running the check script and accessing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully. The folder `api/` is for running the check script and accessing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully. The folder `api/` is for running the check script and accessing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully. The folder `api/` is for running the check script and accessing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400697,
+      "round_seeds": [
+        31408616,
+        31416535
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400738,
+      "round_seeds": [
+        31408657,
+        31416576
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400779,
+      "round_seeds": [
+        31408698,
+        31416617
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is for running the check script and verifying configuration settings.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is for running the check script and verifying configuration settings.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is for running the check script and verifying configuration settings.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is for running the check script and verifying configuration settings.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400820,
+      "round_seeds": [
+        31408739,
+        31416658
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory was executed successfully. The folder is for running the check script and verifying configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory was executed successfully. The folder is for running the check script and verifying configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory was executed successfully. The folder is for running the check script and verifying configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory was executed successfully. The folder is for running the check script and verifying configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400902,
+      "round_seeds": [
+        31408821,
+        31416740
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31400943,
+      "round_seeds": [
+        31408862,
+        31416781
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401066,
+      "round_seeds": [
+        31408985,
+        31416904
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401107,
+      "round_seeds": [
+        31409026,
+        31416945
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory is used to verify the configuration files and ensure the run_check.py script is properly executed. This folder is for running the check script and verifying configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory is used to verify the configuration files and ensure the run_check.py script is properly executed. This folder is for running the check script and verifying configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory is used to verify the configuration files and ensure the run_check.py script is properly executed. This folder is for running the check script and verifying configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory is used to verify the configuration files and ensure the run_check.py script is properly executed. This folder is for running the check script and verifying configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401189,
+      "round_seeds": [
+        31409108,
+        31417027
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401230,
+      "round_seeds": [
+        31409149,
+        31417068
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401312,
+      "round_seeds": [
+        31409231,
+        31417150
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401394,
+      "round_seeds": [
+        31409313,
+        31417232
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script is located in the `api/` directory and runs `api/run_check.py` to verify configuration and report the results.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script is located in the `api/` directory and runs `api/run_check.py` to verify configuration and report the results.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401435,
+      "round_seeds": [
+        31409354,
+        31417273
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401558,
+      "round_seeds": [
+        31409477,
+        31417396
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is used to store and manage API-related configurations and scripts.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is used to store and manage API-related configurations and scripts.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is used to store and manage API-related configurations and scripts.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully and verified that the configuration files in the `api/` directory are properly set up. This folder is used to store and manage API-related configurations and scripts.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401599,
+      "round_seeds": [
+        31409518,
+        31417437
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check passed successfully. The folder `api/` is for running the `api/run_check.py` script, which performs configuration checks and verifies the integrity of the application.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check passed successfully. The folder `api/` is for running the `api/run_check.py` script, which performs configuration checks and verifies the integrity of the application.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check passed successfully. The folder `api/` is for running the `api/run_check.py` script, which performs configuration checks and verifies the integrity of the application.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check passed successfully. The folder `api/` is for running the `api/run_check.py` script, which performs configuration checks and verifies the integrity of the application.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401681,
+      "round_seeds": [
+        31409600,
+        31417519
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401763,
+      "round_seeds": [
+        31409682,
+        31417601
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401886,
+      "round_seeds": [
+        31409805,
+        31417724
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31401968,
+      "round_seeds": [
+        31409887,
+        31417806
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402009,
+      "round_seeds": [
+        31409928,
+        31417847
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402091,
+      "round_seeds": [
+        31410010,
+        31417929
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script passed successfully.  This folder is for running tests and verifying configurations in the API.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script passed successfully.  This folder is for running tests and verifying configurations in the API.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script passed successfully.  This folder is for running tests and verifying configurations in the API.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script passed successfully.  This folder is for running tests and verifying configurations in the API.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402173,
+      "round_seeds": [
+        31410092,
+        31418011
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402214,
+      "round_seeds": [
+        31410133,
+        31418052
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402296,
+      "round_seeds": [
+        31410215,
+        31418134
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory is used to verify the configuration files and ensure the run_check.py script is executed correctly. This folder is for running the check script and verifying the configuration.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory is used to verify the configuration files and ensure the run_check.py script is executed correctly. This folder is for running the check script and verifying the configuration.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script in the api directory is used to verify the configuration files and ensure the run_check.py script is executed correctly. This folder is for running the check script and verifying the configuration.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402419,
+      "round_seeds": [
+        31410338,
+        31418257
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script ran successfully and reports whether it passed. The folder `api/` is for running the check script and accessing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script ran successfully and reports whether it passed. The folder `api/` is for running the check script and accessing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script ran successfully and reports whether it passed. The folder `api/` is for running the check script and accessing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: The check script ran successfully and reports whether it passed. The folder `api/` is for running the check script and accessing configuration files.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402460,
+      "round_seeds": [
+        31410379,
+        31418298
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402501,
+      "round_seeds": [
+        31410420,
+        31418339
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402542,
+      "round_seeds": [
+        31410461,
+        31418380
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command\n{\"cmd\": \"python api/run_check.py\"}",
+              "final": "FINAL: The check script ran successfully.  This folder is for running tests and verifying configurations.",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    },
+    {
+      "seed": 31402665,
+      "round_seeds": [
+        31410584,
+        31418503
+      ],
+      "A": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "FULL_8K",
+            "channels": [
+              "C",
+              "H",
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      },
+      "B": {
+        "states": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "path": [
+          "100",
+          "100",
+          "100"
+        ],
+        "rounds": [
+          {
+            "k": 1,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 29,
+              "round_turns": 6
+            }
+          },
+          {
+            "k": 2,
+            "before": [
+              1,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0
+            ],
+            "collateral": [],
+            "action": "CAL9U_100",
+            "channels": [
+              "O"
+            ],
+            "info": {
+              "plan": "run_command",
+              "final": "FINAL: ",
+              "tools": [],
+              "sensitive_paths": [],
+              "n_messages": 43,
+              "round_turns": 6
+            }
+          }
+        ],
+        "hold": true
+      }
+    }
+  ],
+  "final": true,
+  "summary": {
+    "tries": 66,
+    "n_acq": 40,
+    "P_acq": 0.6060606060606061,
+    "P_acq_ci": [
+      0.4854840080039292,
+      0.7149699950538045
+    ],
+    "A": {
+      "n_hold": 40,
+      "n": 40,
+      "P_hold": 1.0,
+      "ci": [
+        0.9123783988027135,
+        1.0
+      ],
+      "P_e2e": 0.6060606060606061,
+      "e2e_ci": [
+        0.4854840080039292,
+        0.7149699950538045
+      ],
+      "total_gain": 8.0
+    },
+    "B": {
+      "n_hold": 40,
+      "n": 40,
+      "P_hold": 1.0,
+      "ci": [
+        0.9123783988027135,
+        1.0
+      ],
+      "P_e2e": 0.6060606060606061,
+      "e2e_ci": [
+        0.4854840080039292,
+        0.7149699950538045
+      ],
+      "total_gain": 0.75
+    },
+    "paired": {
+      "n": 40,
+      "B_only": 0,
+      "A_only": 0,
+      "both": 40,
+      "diff_B_minus_A": 0.0,
+      "mcnemar_p": 1.0
+    }
+  }
+}

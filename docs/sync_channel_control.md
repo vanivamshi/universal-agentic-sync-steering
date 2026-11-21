@@ -982,6 +982,50 @@ collateral rate (correct→wrong) steered vs unsteered.
 
 ---
 
+# Phase 9U → 9V — calibrated continuous retention: frozen gains, held-out paired validation
+
+**9U result** (`sync_phase9u_retention_gains.md`). Same-conversation retention after $S_0=m^*$, 2 rounds.
+Per-target gain multipliers chosen one factor at a time on a calibration pool, then compared with full 8K continuous steering on a disjoint pool:
+
+| $m^*$ | selected (C,H,O) gains | A (8K) | B (calibrated) | total gain |
+|---|---|---:|---:|---:|
+| `100` | 0, 0, 0.75 | 12/12 | 12/12 | 8 → 0.75 |
+| `101` | 0, 0, 0.75 | 12/12 | 12/12 | 8 → 0.75 |
+| `110` | 0, 0.75, 0.75 | 1/2 | 2/2 | 8 → 1.5 |
+| `111` | 0, 1.5, 1.5 | 11/12 | 10/12 | 8 → 3 |
+
+Pooled 36/38 in both arms. Calibrated gains **matched** 8K retention using roughly 3–10× less total gain. They did **not** retain better.
+For `100`/`101`, removing O dropped calibration hold to 3/6, with every first flip on O, so O is the necessary channel there.
+The gains were selected on n=2–6 conversations, so the winner's curse applies, and `110` rests on n=2.
+
+**9V protocol** (`scripts/run_phase9v_heldout_retention.py`). This tests the selected gains, frozen. Nothing is re-searched.
+
+- **Freeze:** `--freeze` copies each 9U `chosen_scale` verbatim into `data/configs/phase9v_frozen_gains.json` along with the source SHA-256. Every run re-verifies those hashes, and the script contains no calibration code.
+- **Controller:** `scripts/sync_retention_controller.py::retention_action(cfg, m*)` is target-conditioned and non-adaptive. It applies the same continuous action every round (target-sign, forced `FINAL:`). Uncalibrated targets raise an error.
+- **Seeds:** the base is 31000000, and the runner asserts no overlap with any 9U seed range.
+- **Pairing:** each acquired round-0 conversation (full 8K steering) is forked to A = `FULL_8K` and B = `CAL9U_<m*>`, and both forks use identical round seeds.
+- **Primary:** $P(S_1{=}S_2{=}m^*\mid S_0{=}m^*)$ per arm with a Wilson 95% CI. Paired discordance (B-only / A-only) is tested with exact McNemar.
+- **Secondary:** acquisition rate $P(S_0{=}m^*)$ over all attempts, and end-to-end $P(S_0{=}S_1{=}S_2{=}m^*)$ per arm.
+- **Allocation** ($n_{acq}$, max attempts): `100` (40, 200), `101` (40, 400), `110` (20, 1200; 9U acquired 2/60), `111` (24, 300).
+- **Reading:** B is a candidate default if its hold rate stays at A's level with overlapping CIs and few A-only discordances. That means *not distinguishable at this n*. It does not prove equivalence.
+
+**9V result** (`sync_phase9v_heldout_retention.md`; `110` not run, so 9U n=2 remains its only evidence):
+
+| $m^*$ | acq | A (8K) | B (frozen) | B-only / A-only | McNemar p | total gain |
+|---|---:|---:|---:|---:|---:|---:|
+| `100` | 40/66 | 40/40 [0.91, 1] | 40/40 [0.91, 1] | 0 / 0 | 1.00 | 8 → 0.75 |
+| `101` | 40/151 | 40/40 [0.91, 1] | 40/40 [0.91, 1] | 0 / 0 | 1.00 | 8 → 0.75 |
+| `111` | 24/96 | 15/24 [0.43, 0.79] | 18/24 [0.55, 0.88] | 8 / 5 | 0.58 | 8 → 3 |
+
+Pooled: A 95/104, B 98/104. For `100`/`101`, O at 0.75 alone retains as well as full 8K on fresh seeds, so it can be the default there.
+For `111` the two arms fail in *different* ways. All 9 A failures are C flips (`111→011`), consistent with the 9U observation that C at α=5 destabilises C.
+Of the 6 B failures, 5 flip C and H together (`→001`) and one flips C like A.
+The difference between arms is not significant. `111` retention stays at roughly 60–75% under either controller, so it is not solved.
+
+`scripts/test_sync_retention_controller.py` (model-free) · `data/results/sync_phase9v_heldout_retention{,_t<m*>}.{json,md}`
+
+---
+
 # Artifacts
 
 - `data/results/sync_8way_validation.json` (+ `_enriched`, `_analysis`, `_r2`)
@@ -1023,6 +1067,9 @@ collateral rate (correct→wrong) steered vs unsteered.
 - `data/results/sync_phase9q_bidir_beam.{json,md}`
 - `data/results/sync_phase9r_hybrid.{json,md}`
 - `data/results/sync_adaptive_retention.{json,md}` (pending)
+- `data/results/sync_phase9u_retention_gains{,_t<m*>}.{json,md}`
+- `data/configs/phase9v_frozen_gains.json` (frozen 9U gains)
+- `data/results/sync_phase9v_heldout_retention{,_t<m*>}.{json,md}`
 
 ---
 
@@ -1052,3 +1099,4 @@ collateral rate (correct→wrong) steered vs unsteered.
 - Locked actuators: $\alpha_C{=}5$ stem, $\alpha_H{=}1.5$ decision-token, $\alpha_O{=}1.5$ early-FINAL; **selection** may be $\Gamma'$ / bidirectional beam fallback (9R)
 - Do not treat acq 8/8 as universal attainment — $P_{\mathrm{final}}$ still retention-bound (9R)
 - Do not cite 9L/9M/9R $P_{ret}$ as same-conversation retention — each retain step was a fresh episode
+- Do not re-tune 9U gains on 9V results — 9V tests the frozen config only

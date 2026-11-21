@@ -1,0 +1,114 @@
+{
+  "schema": "phase9v-frozen-gains/v1",
+  "base_gains": {
+    "C": 5.0,
+    "H": 1.5,
+    "O": 1.5
+  },
+  "targets": {
+    "100": {
+      "scale": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "gains": {
+        "O": 0.75
+      },
+      "total_gain": 0.75,
+      "source": "data/results/sync_phase9u_retention_gains_t100.json",
+      "source_sha256": "18ca1b18d7657def0bf3c15ad44d1280575b80fcdd763803a4b110ed04cb28aa",
+      "seed_9u": 20261121,
+      "eval_seeds_9u": [
+        20711122,
+        20711204,
+        20711286,
+        20711368,
+        20711409,
+        20711450,
+        20711491,
+        20711532,
+        20711573,
+        20711696,
+        20711778,
+        20711819
+      ]
+    },
+    "101": {
+      "scale": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "gains": {
+        "O": 0.75
+      },
+      "total_gain": 0.75,
+      "source": "data/results/sync_phase9u_retention_gains_t101.json",
+      "source_sha256": "0d5c0338df309b38eb581c847562a7e2892f4638abedfecb5f29e6cbcac4a543",
+      "seed_9u": 20261121,
+      "eval_seeds_9u": [
+        20811204,
+        20811368,
+        20811491,
+        20811696,
+        20811901,
+        20812024,
+        20812065,
+        20812106,
+        20812147,
+        20812721,
+        20812844,
+        20813008
+      ]
+    },
+    "110": {
+      "scale": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "gains": {
+        "H": 0.75,
+        "O": 0.75
+      },
+      "total_gain": 1.5,
+      "source": "data/results/sync_phase9u_retention_gains_t110.json",
+      "source_sha256": "4253bf923e011aa0a1fa5de3387feb8bec5b03105b3d0ce6161306b4c01232d7",
+      "seed_9u": 20261121,
+      "eval_seeds_9u": [
+        20911573,
+        20911737
+      ]
+    },
+    "111": {
+      "scale": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "gains": {
+        "H": 1.5,
+        "O": 1.5
+      },
+      "total_gain": 3.0,
+      "source": "data/results/sync_phase9u_retention_gains_t111.json",
+      "source_sha256": "9915f75abbe472debfefa38c8c1cd4aef07975c84036bf4aefe93111534a0b6c",
+      "seed_9u": 20261121,
+      "eval_seeds_9u": [
+        21011163,
+        21011286,
+        21011327,
+        21011450,
+        21011614,
+        21011696,
+        21011819,
+        21012106,
+        21012188,
+        21012434,
+        21012803,
+        21012967
+      ]
+    }
+  }
+}

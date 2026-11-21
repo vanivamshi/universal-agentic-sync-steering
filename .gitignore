@@ -24,3 +24,7 @@ data/sandbox_sync/private/
 **/.env
 **/.env.*
 !.env.example
+
+# Local env / run logs
+.venv/
+logs/

@@ -1136,6 +1136,29 @@ Paired results: 66 conversations held under both arms, 19 under B only, 8 under 
 
 ---
 
+# Phase 9Y — order-swapped re-execution of the 9X conversations (diagnostic)
+
+**Why.** The 9X arm-order draw came out AB×63 / BA×37, and B's advantage was concentrated in AB-order conversations. Each fork starts from the same round-0 conversation and uses the same round seeds, so outcomes should not depend on execution order. 9Y checks that before any change to the retention controller.
+
+**Protocol** (`scripts/run_phase9y_111_order_swap.py`; committed before the run):
+
+- **Same conversations:** all 100 9X conversations, in 9X order. Round 0 is regenerated under full 8K with the same seed, and the run checks that it re-reaches `111`.
+- **Swapped order:** A and B are run in the **reverse** of their 9X order, with the same round seeds.
+- **Same frozen gains:** `phase9x_frozen_111.json`, SHA-checked against 9X.
+- **Same environment:** asserted equal to the environment recorded in 9X, or the run refuses to start.
+- **Analysis:**
+  1. paired B vs A, with the 9X decision rule re-applied;
+  2. the same comparison within each original 9X order stratum;
+  3. C-alone and C+H failures per arm;
+  4. position effects, both per arm (first vs second execution, paired across 9X/9Y) and pooled regardless of arm;
+  5. exact reproduction of every fork against 9X (states plus per-round plan, final text, tools and sensitive paths).
+- **Not a replication.** 9Y reuses the 9X conversations, so it is analysed separately and never pooled with 9X as 200 conversations. Establishing generalisation still needs a new-seed replication.
+- **Deployment table:** unchanged while 9Y runs.
+
+`scripts/test_phase9y_111_order_swap.py` (model-free) · `data/results/sync_phase9y_111_order_swap.{json,md}`
+
+---
+
 # Artifacts
 
 - `data/results/sync_8way_validation.json` (+ `_enriched`, `_analysis`, `_r2`)
@@ -1183,6 +1206,7 @@ Paired results: 66 conversations held under both arms, 19 under B only, 8 under 
 - `data/results/sync_phase9w_111_cho_calibration.{json,md}`
 - `data/configs/phase9x_frozen_111.json` (frozen 9X arms)
 - `data/results/sync_phase9x_111_confirm.{json,md}`
+- `data/results/sync_phase9y_111_order_swap.{json,md}`
 
 ---
 

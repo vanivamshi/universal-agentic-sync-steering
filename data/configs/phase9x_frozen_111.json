@@ -1,0 +1,40 @@
+{
+  "schema": "phase9x-frozen-111/v1",
+  "target": "111",
+  "base_gains": {
+    "C": 5.0,
+    "H": 1.5,
+    "O": 1.5
+  },
+  "arms": {
+    "A": {
+      "role": "baseline (9V frozen)",
+      "scale": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "gains": {
+        "H": 1.5,
+        "O": 1.5
+      }
+    },
+    "B": {
+      "role": "candidate (9W arm B)",
+      "scale": [
+        0.1,
+        1.0,
+        1.0
+      ],
+      "gains": {
+        "C": 0.5,
+        "H": 1.5,
+        "O": 1.5
+      }
+    }
+  },
+  "source_9w": "data/results/sync_phase9w_111_cho_calibration.json",
+  "source_9w_sha256": "d738ca0209e43b24b6fed771e526f04f763cd767b03816b75fe74ba4ecf2605b",
+  "source_9v": "data/configs/phase9v_frozen_gains.json",
+  "source_9v_sha256": "726fb51af4cad58080c120f17b9f6c93fb5eb6accd66a74cd1cc2a4585f6be24"
+}

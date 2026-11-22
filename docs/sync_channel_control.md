@@ -1081,6 +1081,43 @@ The difference between arms is not significant. `111` retention stays at roughly
 
 `scripts/test_phase9w_111_cho_calibration.py` (model-free) · `data/results/sync_phase9w_111_cho_calibration.{json,md}`
 
+**Deployment status after 9W** (replaces the 9V table above):
+
+| $m^*$ | retention config | status |
+|---|---|---|
+| `100` | O = 0.75 | validated on new seeds (9V) |
+| `101` | O = 0.75 | validated on new seeds (9V) |
+| `111` | C = 0.5, H = 1.5, O = 1.5 | provisional candidate (9W), awaiting confirmation in 9X. The 9V baseline (C = 0) stays the comparator. |
+| `110` | (H = 0.75, O = 0.75) | insufficient evaluation evidence (9U, n=2) |
+
+No further exploration of C = 1.0 or lower H/O gains is planned unless 9X contradicts 9W.
+
+---
+
+# Phase 9X — preregistered paired confirmation for `111`
+
+**Preregistration.** This section and `data/configs/phase9x_frozen_111.json` were committed **before** any 9X conversation was run.
+
+- **Arms** (frozen; `--freeze` copies them from the 9W result with source SHA-256s, re-verified on every run):
+  - A = C 0, H 1.5, O 1.5 (the 9V baseline)
+  - B = C 0.5, H 1.5, O 1.5 (the 9W candidate)
+
+  No gain is retuned.
+- **Seeds:** the base is 51000000, and the runner asserts no overlap with the 9U, 9V or 9W envelopes.
+- **Budget:** $n_{acq}=100$ conversations, with at most 700 attempts.
+- **Pairing and order:** each conversation acquired under full 8K at round 0 is forked to A and B with identical round seeds. The order in which the two arms run is drawn only *after* acquisition, from a coin seeded by the acquisition seed, and recorded.
+- **Environment:** the run uses one fixed environment: CUDA, RTX A6000, float32, torch 2.8.0+cu129, transformers 5.24.0. It is recorded in the output, and a resume in any other environment is refused.
+- **Primary outcome:** both-round retention, $S_1{=}S_2{=}111\mid S_0{=}111$.
+- **Primary comparison:** paired B vs A, exact two-sided McNemar. This is the only test, so no multiplicity correction applies.
+- **Secondary outcomes:** C-alone first flips, and C+H joint first flips.
+- **Selection rule:**
+  - B is **confirmed as the `111` candidate** if hold(B) ≥ hold(A) **and** B-only > A-only discordances.
+  - B is called **better than A** only if McNemar p < 0.05 in B's favour.
+  - Otherwise B is not confirmed, and A remains the baseline.
+- **Pooling:** none. 9V (MPS) and 9W (different seeds) are reported separately.
+
+`scripts/run_phase9x_111_confirm.py` · `scripts/test_phase9x_111_confirm.py` (model-free) · `data/results/sync_phase9x_111_confirm.{json,md}`
+
 ---
 
 # Artifacts
@@ -1128,6 +1165,8 @@ The difference between arms is not significant. `111` retention stays at roughly
 - `data/configs/phase9v_frozen_gains.json` (frozen 9U gains)
 - `data/results/sync_phase9v_heldout_retention{,_t<m*>}.{json,md}`
 - `data/results/sync_phase9w_111_cho_calibration.{json,md}`
+- `data/configs/phase9x_frozen_111.json` (frozen 9X arms)
+- `data/results/sync_phase9x_111_confirm.{json,md}`
 
 ---
 

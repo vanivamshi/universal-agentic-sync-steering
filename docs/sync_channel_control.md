@@ -1155,6 +1155,22 @@ Paired results: 66 conversations held under both arms, 19 under B only, 8 under 
 - **Not a replication.** 9Y reuses the 9X conversations, so it is analysed separately and never pooled with 9X as 200 conversations. Establishing generalisation still needs a new-seed replication.
 - **Deployment table:** unchanged while 9Y runs.
 
+**9Y result** (`sync_phase9y_111_order_swap.md`). Round 0 re-reached `111` in 100/100 conversations.
+
+| run | order AB / BA | A hold | B hold | B-only / A-only | McNemar p |
+|---|---|---:|---:|---:|---:|
+| 9X | 63 / 37 | 74/100 | 85/100 | 19 / 8 | 0.052 |
+| 9Y (swapped) | 37 / 63 | 74/100 | 85/100 | 19 / 8 | 0.052 |
+
+- **Execution order has no effect.** 99/100 forks per arm reproduce 9X **exactly**: states, plan text, final text, tools and sensitive paths. Every one of the 100 conversations has the same hold outcome per arm. Within each arm, hold when run first equals hold when run second (A 74 = 74, B 85 = 85, with 0 discordant).
+- **The single non-identical conversation** (seed 51010332) differs in both arms from round 1 onward. The regenerated round-0 conversation was therefore not bit-identical, even though it still reached `111`. Both arms failed in both runs, only with different final states (9X: A `011`, B `011`; 9Y: A `011`, B `101`). This is residual GPU nondeterminism in one acquisition, not an order effect.
+- **The 9X stratum imbalance is a property of the conversations, not of order.** The AB stratum gives B 15 / A 5 and the BA stratum 4 / 3, in both runs. Order was assigned by a coin, so the difference between strata is chance heterogeneity across conversations.
+- **"First-executed vs second-executed" in 9Y** (84 vs 75, p = 0.12) only reflects which arm happened to run first (B in 63 pairs). The per-arm comparison above shows no position effect.
+- **Failure anatomy matches 9X** to within the one conversation: A has 13 C-alone and 7 C+H failures, B has 7 C-alone and 3 C+H.
+- **Implication.** Given the conversation, the round seeds and the environment, outcomes are effectively deterministic. 9Y therefore removes execution order as an explanation for B's advantage, but it adds no new evidence about generalisation. The evidence for B is still 9W (4 / 1) plus 9X (19 / 8, p = 0.052). A new-seed replication is the only way to strengthen it.
+
+**Deployment status after 9Y:** unchanged. `111` → B (C 0.5, H 1.5, O 1.5) is the confirmed candidate and is not shown superior.
+
 `scripts/test_phase9y_111_order_swap.py` (model-free) · `data/results/sync_phase9y_111_order_swap.{json,md}`
 
 ---

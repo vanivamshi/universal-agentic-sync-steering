@@ -1116,6 +1116,22 @@ No further exploration of C = 1.0 or lower H/O gains is planned unless 9X contra
   - Otherwise B is not confirmed, and A remains the baseline.
 - **Pooling:** none. 9V (MPS) and 9W (different seeds) are reported separately.
 
+**9X result** (`sync_phase9x_111_confirm.md`). 100 conversations acquired out of 323 attempts (P(acquire) = 0.31). Same CUDA environment as preregistered.
+
+| arm | C, H, O | hold | 95% CI | failures: C alone / C+H / H-first |
+|---|---|---:|---|---|
+| A | 0, 1.5, 1.5 | 74/100 | [0.65, 0.82] | 13 / 7 / 6 |
+| B | 0.5, 1.5, 1.5 | **85/100** | [0.77, 0.91] | 8 / 3 / 4 |
+
+Paired results: 66 conversations held under both arms, 19 under B only, 8 under A only, and 7 under neither. Exact McNemar **p = 0.052**.
+
+- **Decision (preregistered):** B is **confirmed as the `111` candidate**. It holds more often than A, and its discordances favour it 19 to 8. B is **not shown better than A**, because p = 0.052 misses the preregistered 0.05 threshold. The direction matches 9W (4 to 1).
+- **B reduces failures across the board without removing any failure mode.** C-alone flips drop from 13 to 8 and C+H flips from 7 to 3, but neither reaches zero. The 9W observation that weak C prevents C+H collapse does **not** fully replicate: B still had 3 C+H failures here.
+- **Order check (not preregistered).** The draw split 63 AB to 37 BA. B's advantage comes mostly from AB-order conversations (B-only 15 vs A-only 5) rather than BA-order ones (4 vs 3). The forks should not depend on run order, and this split is consistent with chance at these counts. Still, a deterministic re-run of the same conversations in the opposite order would rule out leakage between forks.
+- 9W (C+H 0/3) and 9X are not pooled.
+
+**Deployment status after 9X:** `111` → **B (C 0.5, H 1.5, O 1.5) is the operating configuration**, because it is confirmed under the selection rule. It is not claimed to be superior, and `111` is not solved, with about 15% of acquired conversations still failing. `100`/`101` are unchanged (O = 0.75, validated). `110` is still unvalidated.
+
 `scripts/run_phase9x_111_confirm.py` · `scripts/test_phase9x_111_confirm.py` (model-free) · `data/results/sync_phase9x_111_confirm.{json,md}`
 
 ---

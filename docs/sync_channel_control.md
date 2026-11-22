@@ -1024,6 +1024,63 @@ The difference between arms is not significant. `111` retention stays at roughly
 
 `scripts/test_sync_retention_controller.py` (model-free) · `data/results/sync_phase9v_heldout_retention{,_t<m*>}.{json,md}`
 
+**Deployment status after 9V.**
+
+| $m^*$ | retention config | status |
+|---|---|---|
+| `100` | O = 0.75 | frozen default. Full 8K is kept as a benchmark only. |
+| `101` | O = 0.75 | frozen default. Full 8K is kept as a benchmark only. |
+| `111` | H = 1.5, O = 1.5, C = 0 | current baseline, **not solved**. 9W targets it. |
+| `110` | (H = 0.75, O = 0.75) | **unvalidated**. 9U evaluated only n=2 conversations. |
+
+9V shows that the `100`/`101` configurations retain as well as full 8K on new seeds while using about 10× less gain. It does **not** show that calibrated steering beats full 8K.
+
+---
+
+# Phase 9W — targeted C/H/O calibration for `111`
+
+**Why.** Under both 9V controllers, `111` loses C. With full 8K (C=5), all 9 failures were C alone (`111→011`). With C=0 (H/O=1.5), 5/6 failures were C+H together (`→001`), 4 of them in round 2.
+9W therefore searches for a C/H/O setting that keeps C. It does not push all channels harder, and it does not test C=5 again.
+
+**Protocol** (`scripts/run_phase9w_111_cho_calibration.py`, fixed before the run):
+
+| arm | C | H | O | purpose |
+|---|---:|---:|---:|---|
+| A | 0 | 1.5 | 1.5 | frozen 9V baseline (control; asserted equal to `phase9v_frozen_gains.json`) |
+| B | 0.5 | 1.5 | 1.5 | weak C support |
+| C | 1.0 | 1.5 | 1.5 | moderate C support |
+| D | 0 | 0.75 | 0.75 | lower H/O gains |
+
+- **Seeds:** the base is 41000000, and the runner asserts no overlap with the 9U or 9V seed envelopes.
+- **Pairing:** each round-0 conversation acquired under full 8K is forked to all four arms, and every fork uses identical round seeds.
+- **Budget:** $n_{acq}=40$, with at most 400 attempts.
+- **Primary:** $P(S_1{=}S_2{=}111\mid S_0{=}111)$ per arm with a Wilson 95% CI. Arms B, C and D are each compared with A by paired discordance and exact McNemar, with a Holm correction across the 3 comparisons.
+- **Failure anatomy:**
+  - exact final state;
+  - round of first failure;
+  - bits flipped in that round (C alone vs C with H);
+  - collateral, meaning bits that were correct entering a later round and wrong after it;
+  - reversions.
+- **Reading:** a B/C/D arm replaces A as the `111` baseline only if it holds at least as often as A **and** has more arm-only than A-only discordances. Declaring `111` solved additionally requires confirming that arm on a separate held-out seed range.
+
+**9W result** (`sync_phase9w_111_cho_calibration.md`). 40 conversations acquired out of 148 attempts (P(acquire) = 0.27).
+
+| arm | C, H, O | hold | 95% CI | arm-only / A-only | McNemar p (Holm) | failures: C alone / C+H / H-first |
+|---|---|---:|---|---:|---:|---|
+| A | 0, 1.5, 1.5 | 34/40 | [0.71, 0.93] | — | — | 4 / 1 / 1 |
+| B | 0.5, 1.5, 1.5 | **37/40** | [0.80, 0.97] | 4 / 1 | 0.375 (0.75) | 2 / 0 / 1 |
+| C | 1.0, 1.5, 1.5 | 34/40 | [0.71, 0.93] | 3 / 3 | 1.00 (1.00) | 5 / 0 / 1 |
+| D | 0, 0.75, 0.75 | 31/40 | [0.62, 0.88] | 0 / 3 | 0.25 (0.75) | 4 / 4 / 1 |
+
+- **B** (weak C = 0.5) meets the pre-stated baseline rule: it holds at least as often as A, and its discordances favour it 4 to 1. It becomes the **candidate** `111` baseline. The difference is not significant, so B is not shown to be better, and `111` is **not solved**. The next step is a held-out confirmation of B against A on a new seed range.
+- **Weak C prevents C+H collapse.** No C+H failure occurred in either arm with C > 0. C-alone flips were not reduced, though: B had 2, C had 5, and A had 4.
+- **Moderate C (1.0) gives no gain over A,** and C-alone flips go back up. This fits the 9V result that strong C destabilises C. The useful window for C looks narrow, around 0.5.
+- **Lowering H/O gains (D) hurts.** D has the most failures, and it is the only arm where C+H is a common failure pattern (4 of 9). This repeats the 9V pattern for C=0, which points to H/O at 1.5 as the setting that keeps H stable.
+- **Arm A deviates from 9V.** Here A holds 34/40 (0.85) and its failures are mostly C alone. In 9V the same configuration held 18/24 (0.75) and failed mostly C+H. The CIs overlap, but the run environment also changed: 9W ran on CUDA (RTX A6000, float32, transformers 5.24), while earlier phases ran locally on MPS. The arms are paired within 9W, so the comparisons between them are valid. Absolute rates should not be pooled with 9V.
+- No failed trial reverted to `111` in a later round.
+
+`scripts/test_phase9w_111_cho_calibration.py` (model-free) · `data/results/sync_phase9w_111_cho_calibration.{json,md}`
+
 ---
 
 # Artifacts
@@ -1070,6 +1127,7 @@ The difference between arms is not significant. `111` retention stays at roughly
 - `data/results/sync_phase9u_retention_gains{,_t<m*>}.{json,md}`
 - `data/configs/phase9v_frozen_gains.json` (frozen 9U gains)
 - `data/results/sync_phase9v_heldout_retention{,_t<m*>}.{json,md}`
+- `data/results/sync_phase9w_111_cho_calibration.{json,md}`
 
 ---
 

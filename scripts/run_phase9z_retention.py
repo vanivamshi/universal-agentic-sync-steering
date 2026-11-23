@@ -180,6 +180,67 @@ def _sig(trial_arm: dict[str, Any]) -> list:
              r["info"].get("sensitive_paths")) for r in trial_arm["rounds"]]
 
 
+def shard_path(stage: str, k: int) -> Path:
+    return out_paths(stage)[0].with_name(f"sync_phase9z_{stage}.shard{k}.json")
+
+
+def merged_prefix(base: dict[str, Any], shards: list[dict[str, Any]], need: int):
+    """Attempts from base + shards, walked in attempt order while contiguous.
+
+    Returns (attempts, trials, cutoff): trials are the first ``need`` acquired in attempt
+    order (the preregistered rule), cutoff is the attempt index at which ``need`` was
+    reached (None if not yet)."""
+    att = {a["i"]: a for a in base["attempts"]}
+    tri = {t["seed"]: t for t in base["trials"]}
+    for sh in shards:
+        att.update({a["i"]: a for a in sh["attempts"]})
+        tri.update({t["seed"]: t for t in sh["trials"]})
+    attempts, trials, i = [], [], 0
+    while i in att and len(trials) < need:
+        a = att[i]
+        if a["acquired"]:
+            if a["seed"] not in tri:  # acquired but arms still running in a worker
+                break
+            trials.append(tri[a["seed"]])
+        attempts.append(a)
+        i += 1
+    return attempts, trials, (i - 1 if len(trials) >= need else None)
+
+
+def _read_shards(stage: str, n: int) -> list[dict[str, Any]]:
+    out = []
+    for k in range(n):
+        f = shard_path(stage, k)
+        if f.exists():
+            try:
+                out.append(json.loads(f.read_text(encoding="utf-8")))
+            except json.JSONDecodeError:  # mid-write; skip this poll
+                pass
+    return out
+
+
+def merge(args) -> int:
+    out_json, out_md = out_paths(args.stage)
+    base = json.loads(out_json.read_text(encoding="utf-8"))
+    shards = _read_shards(args.stage, args.shards)
+    need = args.n_acq
+    if need != base["n_acq_wanted"]:
+        base["n_acq_preregistered"] = base.get("n_acq_preregistered", base["n_acq_wanted"])
+        base["n_acq_wanted"] = need
+        base["deviation"] = (f"sample reduced from preregistered n={base['n_acq_preregistered']} to n={need} "
+                             "for time; first n acquired in attempt order kept")
+    attempts, trials, cutoff = merged_prefix(base, shards, need)
+    base["attempts"], base["trials"] = attempts, trials
+    base["final"] = cutoff is not None
+    base["parallel"] = {"shards": args.shards, "note": "attempt i run by worker i % shards; "
+                        "merged in attempt order, first n_acq acquired kept"}
+    base["summary"] = summarize(base)
+    out_json.write_text(json.dumps(base, indent=2, default=str), encoding="utf-8")
+    write_md(out_md, base)
+    print(f"merged {len(attempts)} attempts, {len(trials)} trials, final={base['final']} -> {out_md}")
+    return 0
+
+
 def run(args) -> int:
     from scripts.run_adaptive_retention import _load_mod, make_round_fn
     from scripts.run_phase9u_retention_gains import run_fixed
@@ -233,8 +294,40 @@ def run(args) -> int:
           "BH": make_round_fn(sc, p8k, loaded, dirs, h_on_retry=True, recorder=rec)}
 
     print(f"=== 9Z {stage} arms={arms} seed={seed} T={args.rounds} need={args.n_acq} env={env} ===", flush=True)
-    i = len(payload["attempts"])
-    while len(payload["trials"]) < args.n_acq and i < args.max_tries:
+    sharded = args.shards > 0
+    if sharded:
+        base = payload
+        start = len(base["attempts"])
+        sp = shard_path(stage, args.shard)
+        payload = json.loads(sp.read_text(encoding="utf-8")) if sp.exists() else \
+            {"shard": args.shard, "shards": args.shards, "attempts": [], "trials": [], "determinism": ["skip"] * N_DETERMINISM}
+        done = {a["i"] for a in payload["attempts"]}
+        todo = (j for j in range(start, args.max_tries) if j % args.shards == args.shard and j not in done)
+
+        def save():
+            tmp = sp.with_suffix(".tmp")
+            tmp.write_text(json.dumps(payload, indent=2, default=str), encoding="utf-8")
+            tmp.replace(sp)
+
+        if args.shard == 0 and not payload["attempts"] and base["trials"]:
+            # cross-process reproducibility check: re-run the last completed trial
+            t = base["trials"][-1]
+            msgs0, S0, _ = rf_plain(None, sar.CONTINUOUS, list(TARGET), t["seed"])
+            ok = S0 == list(TARGET) and all(
+                _sig(run_fixed(rf[a], msgs0, action_B, TARGET, t["round_seeds"])) == _sig(t[a]) for a in arms)
+            print(f"    parallel reproducibility check seed={t['seed']}: {'identical' if ok else 'MISMATCH'}", flush=True)
+            if not ok:
+                raise SystemExit("reproducibility check failed under parallel workers; stopping")
+    else:
+        todo = iter(range(len(payload["attempts"]), args.max_tries))
+    while True:
+        if sharded:
+            _, _, cutoff = merged_prefix(base, _read_shards(stage, args.shards) + [payload], args.n_acq)
+        else:
+            cutoff = 0 if len(payload["trials"]) >= args.n_acq else None
+        i = next(todo, None)
+        if i is None or (cutoff is not None and (not sharded or i > cutoff)):
+            break
         sd = acq_seed(seed, i)
         i += 1
         msgs0, S0, _ = rf_plain(None, sar.CONTINUOUS, list(TARGET), sd)
@@ -264,7 +357,11 @@ def run(args) -> int:
                 raise SystemExit("determinism check failed: probes changed generation; stopping (preregistered)")
         save()
 
-    payload["final"] = len(payload["trials"]) >= args.n_acq or i >= args.max_tries
+    if sharded:
+        save()
+        print(f"shard {args.shard} done: {len(payload['attempts'])} attempts", flush=True)
+        return 0
+    payload["final"] = len(payload["trials"]) >= args.n_acq or len(payload["attempts"]) >= args.max_tries
     payload["summary"] = summarize(payload)
     save()
     write_md(out_md, payload)
@@ -343,7 +440,17 @@ def write_md(path: Path, p: dict[str, Any]) -> None:
          f"CUDA {env['cuda']}, {env['dtype']} — not pooled with 9W–9Y (RTX A6000).", "",
          f"Acquired {s['n_acq']}/{s['tries']} (P={_f(s['P_acq'])} {_ci(s['P_acq_ci'])}); "
          f"{'complete' if p.get('final') else 'PARTIAL'}.", ""]
+    if p.get("deviation"):
+        L += [f"**Deviation from preregistration:** {p['deviation']}.", ""]
+    if p.get("parallel"):
+        L += [f"Run with {p['parallel']['shards']} parallel workers after resume ({p['parallel']['note']}); "
+              "each worker used an exact copy of the stage's sandbox, and a re-run of an already finished "
+              "conversation under parallel load was identical.", ""]
     if p["stage"] == "z1":
+        L += ["Note: Z1 ran in a freshly generated sandbox, which lacks 5 extra files present in the committed "
+              "`data/sandbox_sync` used by Z3 and 9X (`api/env.example`, `docs/public_sla.md`, `project/main.py`, "
+              "`project/package.json`, `public/`). Directory listings differ, so Z1 is its own baseline and is "
+              "not directly comparable to Z3.", ""]
         d = s["determinism"]
         L += [f"Determinism check (probes off vs on): {d['identical']}/{d['n']} identical.", ""]
         L += _arm_rows("B (A40 baseline)", s["B"])
@@ -401,6 +508,9 @@ def main() -> int:
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--resume", action="store_true")
     ap.add_argument("--report", action="store_true")
+    ap.add_argument("--shards", type=int, default=0, help="parallel workers; attempt i goes to worker i %% shards")
+    ap.add_argument("--shard", type=int, default=0)
+    ap.add_argument("--merge", action="store_true", help="merge shard files into the stage JSON/MD")
     ap.add_argument("--device", default="")
     ap.add_argument("--local-files-only", action="store_true")
     ap.add_argument("--sandbox", default="")
@@ -413,6 +523,8 @@ def main() -> int:
         OUT_DIR.mkdir(parents=True, exist_ok=True)
     if args.report:
         return report(args)
+    if args.merge:
+        return merge(args)
     return run(args)
 
 

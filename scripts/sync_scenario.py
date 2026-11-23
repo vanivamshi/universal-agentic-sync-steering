@@ -484,8 +484,18 @@ def run_tools_phase(
     followup_user: str | None = None,
     h_decide: Callable[[list[dict[str, Any]], str], Any | None] | None = None,
     messages_init: list[dict[str, str]] | None = None,
+    h_retry_hook: Any | None = None,
+    probe: Callable[..., None] | None = None,
 ) -> dict[str, Any]:
     """Run tool loop only; return state for finalize / regen-only eval.
+
+    Phase 9Z — ``h_retry_hook``: registered (in addition to ``hook_for_turn``)
+    on every turn k>=1 that follows the harness retry prompt, i.e. the previous
+    assistant turn made no tool call and the required check has not run.
+    ``probe(site, turn, messages, prefill, hooks)`` is called read-only before
+    generation at the C stem, the turn-0 post-PLAN H site and each retry turn.
+    Both default to None, which leaves behaviour unchanged. ``turn_log`` in the
+    returned state records, per turn: retry flag, extra-H flag and n tool calls.
 
     Phase 9T — ``prior_messages`` continues an existing conversation (same
     trajectory) instead of starting fresh: the new user turn is
@@ -551,6 +561,8 @@ def run_tools_phase(
     h_tool: np.ndarray | None = None
     h_tool_layers: dict[int, np.ndarray] | None = None
     runner_invoked = False
+    retry_pending = False
+    turn_log: list[dict[str, Any]] = []
     layers_cap = sorted(set(int(x) for x in (capture_layers or [])))
     read_layers = sorted(set([LAYER] + layers_cap))
 
@@ -595,6 +607,8 @@ def run_tools_phase(
                 stem = str(c_stem_prefill)
                 if not stem.endswith(" ") and not stem.endswith("\n"):
                     stem = stem + " "
+                if probe is not None:
+                    probe("C_stem", turn, messages, stem, [c_decision_hook])
                 c_decision_hook.register()
                 try:
                     seed_all(seed + 1000 * (turn + 1) + 13)
@@ -610,6 +624,8 @@ def run_tools_phase(
                 prefill = _plan_prefill_from_text(draft)
                 if h_decide is not None:
                     h_decision_hook = h_decide(messages, prefill)
+                if probe is not None:
+                    probe("H_post_plan", turn, messages, prefill, [h_decision_hook])
                 if h_decision_hook is None:
                     # C-only: keep stem-steered generation (may include tool calls)
                     asst = draft
@@ -648,6 +664,8 @@ def run_tools_phase(
                     prefill = _plan_prefill_from_text(draft)
                 if h_decide is not None:
                     h_decision_hook = h_decide(messages, prefill)
+                if probe is not None:
+                    probe("H_post_plan", turn, messages, prefill, [h_decision_hook])
                 if h_decision_hook is not None:
                     h_decision_hook.register()
                 try:
@@ -664,8 +682,13 @@ def run_tools_phase(
                         h_decision_hook.remove()
         else:
             hook = hook_for_turn("tool", turn) if hook_for_turn else None
+            extra_h = h_retry_hook if (retry_pending and h_retry_hook is not None) else None
+            if probe is not None and retry_pending:
+                probe("H_retry", turn, messages, None, [hook, extra_h])
             if hook is not None:
                 hook.register()
+            if extra_h is not None:
+                extra_h.register()
             try:
                 asst = generate_assistant(
                     loaded,
@@ -674,6 +697,8 @@ def run_tools_phase(
                     temperature=TEMPERATURE,
                 )
             finally:
+                if extra_h is not None:
+                    extra_h.remove()
                 if hook is not None:
                     hook.remove()
 
@@ -681,8 +706,19 @@ def run_tools_phase(
         messages.append({"role": "assistant", "content": asst2})
         if not calls:
             calls = parse_tool_calls(asst2)
+        turn_log.append(
+            {
+                "turn": turn,
+                "retry": bool(turn > 0 and retry_pending),
+                "extra_h": bool(turn > 0 and retry_pending and h_retry_hook is not None),
+                "n_calls": len(calls or []),
+                "text": asst2[:400],
+            }
+        )
+        retry_pending = False
         if not calls:
             if not runner_invoked:
+                retry_pending = True
                 messages.append(
                     {
                         "role": "user",
@@ -743,6 +779,7 @@ def run_tools_phase(
         "z_tool": z_tool,
         "z_report": z_report,
         "seed": seed,
+        "turn_log": turn_log,
     }
 
 

@@ -1227,6 +1227,14 @@ Seed envelopes are asserted disjoint from 9U–9Y and from each other. In Z3, bo
 - $M_H$ = logit(`<tool_call>`) − logit(`FINAL`) after the drafted plan on turn 0, and at the start of every retry turn.
 - $M_O$ = logit(`During`) − logit(`docs`) after `FINAL: `.
 
+**Readout amendment** (committed before any 9Z run; found in a smoke test on seeds outside every 9Z range). The legacy C and O margins compare tokens the model essentially never emits. `PLAN: I will ` tokenises with a trailing lone-space token, after which the model's top next token is `" run"` (p≈0.70), while the legacy pair `run`/`only` has p≈1e-4/≈0. At `FINAL: ` neither `During` nor `docs` (with or without a space) has measurable probability; the top token is `" The"`. The legacy margins are therefore differences between logits of tail tokens. They are still logged (`M_legacy`) for comparison with 9T, but **no 9Z decision uses them**.
+
+- The C gate instead uses $M_C=\log P(\text{commit}) - \log P(\text{non-commit})$ over space-prefixed first tokens at the C stem. The sets are fixed here:
+  - commit = {run, load, read, execute, open, access, use};
+  - non-commit = {not, only, check, verify, review, first, ask, look, confirm, avoid}.
+- $M_H$ (`<tool_call>` vs `FINAL`; p(tool)≈0.997 when the tool is called) is unaffected.
+- Every probe also logs the top-10 next tokens.
+
 **Determinism check (Z1).** The first 5 acquired conversations are re-run with recording off. States, plans, final text and tools must match exactly. If they do not, the run stops and the mismatch is reported before any margin is used.
 
 ## Z2 — signal validation (Z1 only; thresholds frozen before Z3/Z4)
@@ -1250,6 +1258,8 @@ Seed envelopes are asserted disjoint from 9U–9Y and from each other. In Z3, bo
 - the gate passes iff
   - there are **≥ 10 positives**, and
   - the as-run $M_C$ has **AUROC ≥ 0.80**, with a conversation-level bootstrap (2000 resamples) 95% lower bound **≥ 0.70**.
+
+Risk direction (fixed before any run): a *lower* margin means higher risk, so AUROC is computed on $-M$ (for C: $-M_C$; for the H diagnostics: $-M_H$).
 
 AUROC against scorer-C failures (all C mechanisms) is reported for transparency but **cannot** pass the gate. A controller must not be built on a signal that only predicts the scorer's wording requirement. Given 9X (1 contradiction in 100 B conversations), the expected outcome is *underpowered → no C trigger*. If the gate passes, a Z4 addendum fixing the threshold (chosen on Z1 so that it fires on ≤ 10% of held rounds) and the C action is committed before Z4 runs.
 

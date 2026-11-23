@@ -66,7 +66,25 @@ def followup_message(sc, task: dict[str, Any]) -> str:
     )
 
 
-def make_round_fn(sc, p8k, loaded, dirs, *, task_id: str = NEUTRAL_TASK, cls: str = NEUTRAL_CLS):
+def make_round_fn(
+    sc,
+    p8k,
+    loaded,
+    dirs,
+    *,
+    task_id: str = NEUTRAL_TASK,
+    cls: str = NEUTRAL_CLS,
+    h_on_retry: bool = False,
+    recorder=None,
+):
+    """Same-conversation round runner.
+
+    Phase 9Z options (defaults leave behaviour unchanged):
+      h_on_retry  also register the action's H hook on in-round retry turns
+                  (only if the action steers H; a no-op otherwise).
+      recorder    object with probe(site, turn, messages, prefill, hooks) and
+                  drain() -> list; read-only margin probes, stored in info.
+    """
     from scripts.sync_eq import extract_plan, score_plan
     from scripts.sync_h_decision import make_steer_hook
 
@@ -83,13 +101,15 @@ def make_round_fn(sc, p8k, loaded, dirs, *, task_id: str = NEUTRAL_TASK, cls: st
             n0 = len(msgs_init)
 
         # --- hooks: same sites as run_phase8k._run_episode ---
-        h_hook = c_hook = o_hook = tool_c_hook = None
+        h_hook = c_hook = o_hook = tool_c_hook = h_retry = None
         c_stem = None
         report_prefill = None
         if action is not None:
             signs, gains = action.signs(target), action.gains()
             if "H" in signs:
                 h_hook = make_steer_hook(loaded, dirs["H"], gains["H"] * signs["H"])
+                if h_on_retry:
+                    h_retry = make_steer_hook(loaded, dirs["H"], gains["H"] * signs["H"])
             if "C" in signs:
                 c_hook = make_steer_hook(loaded, dirs["C"], gains["C"] * signs["C"])
                 tool_c_hook = make_steer_hook(loaded, dirs["C"], gains["C"] * signs["C"])
@@ -118,12 +138,16 @@ def make_round_fn(sc, p8k, loaded, dirs, *, task_id: str = NEUTRAL_TASK, cls: st
                 c_decision_hook=c_hook,
                 c_stem_prefill=c_stem,
                 messages_init=msgs_init,
+                h_retry_hook=h_retry,
+                probe=(recorder.probe if recorder is not None else None),
             )
+            if recorder is not None:
+                recorder.probe("O_final", -1, state["messages"], "FINAL: ", [o_hook])
             out = sc.finalize_episode(
                 loaded, state, hook_for_turn=hook_for_turn, report_prefill=report_prefill
             )
         finally:
-            for h in (h_hook, c_hook, o_hook, tool_c_hook):
+            for h in (h_hook, c_hook, o_hook, tool_c_hook, h_retry):
                 if h is not None:
                     try:
                         h.remove()
@@ -151,6 +175,11 @@ def make_round_fn(sc, p8k, loaded, dirs, *, task_id: str = NEUTRAL_TASK, cls: st
             "n_messages": len(new_messages),
             "round_turns": len(round_asst),
         }
+        if h_on_retry or recorder is not None:
+            info["turn_log"] = state.get("turn_log", [])
+            info["h_retry_fired"] = any(t.get("extra_h") for t in state.get("turn_log", []))
+        if recorder is not None:
+            info["margins"] = recorder.drain()
         return new_messages, [C, H, O], info
 
     return round_fn

@@ -420,6 +420,7 @@ def run_trial(
         "seed": seed,
         "S0": list(S0),
         "S_final": list(S),
+        "plan_final": plan,
         "path": [_key(s) for s in traj_S],
         "steps": steps,
         "actions": [s.get("a") for s in steps],

@@ -427,6 +427,7 @@ def run_trial(
         "S_acq": S_acq,
         "plan0": plan0 or "",
         "plan_acq": plan_acq,
+        "plan_final": plan,
         "path": [_key(s) for s in traj_S],
         "steps": steps,
         "actions": [s.get("a") for s in steps],
